@@ -1,0 +1,91 @@
+{
+ "id": "NaL_Cb42WyY",
+ "channel": "3blue1brown",
+ "title": "Pi hiding in prime regularities",
+ "duration_s": 1783,
+ "upload_date": "20170519",
+ "targets": {
+  "wpm": {
+   "p25": 160.79,
+   "median": 169.42,
+   "p75": 174.3,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.76,
+   "median": 1.99,
+   "p75": 2.09,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.55,
+   "median": 0.67,
+   "p75": 0.84,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.82,
+   "median": 0.96,
+   "p75": 1.09,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 2.49,
+   "median": 2.97,
+   "p75": 3.96,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.24,
+   "median": 0.32,
+   "p75": 0.43,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.24,
+   "median": 0.28,
+   "p75": 0.37,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.17,
+   "median": 0.26,
+   "p75": 0.35,
+   "n": 19
+  },
+  "sent_len": {
+   "p25": 22.58,
+   "median": 23.66,
+   "p75": 24.33,
+   "n": 19
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.35,
+   "default": "OFF",
+   "position_median": 0.94
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.2,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.04,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "teaser-next",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/QJYmyhnaaek.txt",
+  "deep/corpus/compact/BLkz5LGWihw.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

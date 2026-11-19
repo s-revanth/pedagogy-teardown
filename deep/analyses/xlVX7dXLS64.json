@@ -1,0 +1,126 @@
+{
+ "id": "xlVX7dXLS64",
+ "channel": "Reducible",
+ "title": "Breadth First Search (BFS): Visualized and Explained",
+ "captions": "automatic",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "hook-question|roadmap",
+   "Shortest paths from a start vertex; intuition, implementation, flood fill application"
+  ],
+  [
+   "0:34",
+   "H",
+   "analogy",
+   "Balls with strings: pull vertex 0 up, strings tighten, levels appear"
+  ],
+  [
+   "1:18",
+   "B",
+   "analogy-breakpoint",
+   "Extend intuition to a messier graph: visit distance-1 then distance-2"
+  ],
+  [
+   "1:46",
+   "N",
+   "minimal-definition-then-refine",
+   "Why shortest path is found upon first visit; equal edge weights; many valid orders"
+  ],
+  [
+   "2:30",
+   "I",
+   "callback-to-hook",
+   "Implementation is DFS iterative with a queue instead of a stack"
+  ],
+  [
+   "3:25",
+   "N",
+   "visible-repetition",
+   "Trace queue step by step on small graph including already-marked pops"
+  ],
+  [
+   "5:15",
+   "H",
+   "toy-world",
+   "Flood fill: grid of integers, same-value connectivity"
+  ],
+  [
+   "6:13",
+   "H",
+   "analogy",
+   "Paint bucket tool in MS Paint"
+  ],
+  [
+   "6:57",
+   "N",
+   "commit-to-answer|humor",
+   "It is a graph problem in disguise; grid pixels as vertices, edges to neighbours"
+  ],
+  [
+   "7:51",
+   "I",
+   "build-and-verify",
+   "Code: queue, visited set, recolour, neighbours function with bounds checks"
+  ],
+  [
+   "9:58",
+   "N",
+   "recap",
+   "Takeaway: change of perspective makes it a graph problem"
+  ],
+  [
+   "10:13",
+   "N",
+   "admin",
+   "Outro"
+  ]
+ ],
+ "metrics": {
+  "first_question": "0:00",
+  "notation_first": "2:44",
+  "key_term": "breadth-first search / shortest path",
+  "misconception": "none",
+  "brute_force": "no",
+  "examples": "1 simple graph (balls and strings), 1 larger graph, queue trace, 5x5 image flood fill with two start points",
+  "ending": "Takeaway of re-framing; short"
+ },
+ "principles": {
+  "1": "confirmed: a graph traversal already understood from the prior video; paint bucket (6:13)",
+  "2": "confirmed: notation delayed until after intuition, 2:44",
+  "3": "partly: refers back to the DFS iterative interface, only swaps stack for queue (2:30)",
+  "4": "confirmed: balls and strings first (0:34), then levels, then queue",
+  "5": "partly: queue trace is stepped by hand (3:25)",
+  "6": "not-observed",
+  "7": "partly: viewer not asked to guess; 'graph problem in disguise' stated",
+  "8": "partly: flat speech; fewer examples than DFS video",
+  "9": "partly: second graph and two flood fill start points",
+  "10": "confirmed: string graph, bigger graph, small queue trace, then grid",
+  "11": "confirmed: intuition, levels, queue, application",
+  "12": "confirmed: DFS video callback, MS Paint, interview problems",
+  "13": "partly: guarantees explained (shortest path on first visit) with limited depth"
+ },
+ "new_moves": [
+  {
+   "name": "problem-in-disguise",
+   "what": "Present a familiar-looking non-graph problem then reveal it reduces to the algorithm just taught",
+   "evidence": "6:57-9:58"
+  },
+  {
+   "name": "physical-model-as-proof-sketch",
+   "what": "Strings pulled tight make levels visible and imply shortest paths",
+   "evidence": "0:48-1:18"
+  }
+ ],
+ "theory": "A physical analogy (balls on strings) gives the whole structure of the algorithm and its key property in under a minute, then the implementation is introduced as a minimal diff on a previous video's code. The application recasts a familiar tool, paint bucket, as the algorithm.",
+ "velocity": [
+  "Scene builder: physics-style 'pull the graph' animation as a reusable analogy scene for layered traversal",
+  "Orchestrator: when a prior concept is known, present new algorithm as a diff against it and diff highlight in the code view",
+  "Playbook: 'disguise' application at end, ask learner which vertex/edge model fits before reveal"
+ ],
+ "quote": [
+  "0:48",
+  "imagine a graph like this one represents balls with strings attached"
+ ]
+}

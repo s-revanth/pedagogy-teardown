@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reducible Storyboard</title>
+<style>
+:root{--bg:#f6f4ee;--fg:#1c2230;--mut:#5b6475;--card:#fff;--line:#d9d4c7;--acc:#1f6f8b;--acc2:#d9822b;--ok:#2e7d4f;--part:#b8860b;--bad:#b23a3a;--none:#8a8f9a;--sk:#eef3f5}
+@media (prefers-color-scheme:dark){:root{--bg:#10151f;--fg:#e8ebf2;--mut:#98a2b6;--card:#192030;--line:#2b3448;--acc:#5bb7d5;--acc2:#f0a24f;--ok:#5cc08a;--part:#e0b84a;--bad:#e07a7a;--none:#7b8294;--sk:#131a28}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;padding:0 16px 48px;max-width:1200px;margin-inline:auto}
+h1{font-size:2rem;margin:28px 0 4px}h2{font-size:1.25rem;margin:36px 0 10px;border-bottom:2px solid var(--acc);padding-bottom:4px}
+.sub{color:var(--mut);margin:0 0 8px}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 14px}
+.panel{flex:0 0 280px;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;font-size:.88rem}
+.panel .n{color:var(--acc2);font-weight:700;font-size:.8rem}
+.panel h3{margin:0 0 6px;font-size:1.15rem}
+.panel svg{width:100%;height:auto;background:var(--sk);border-radius:6px;border:1px solid var(--line)}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
+.tags span{background:var(--sk);border:1px solid var(--line);border-radius:10px;padding:0 7px;font-size:.72rem;color:var(--acc)}
+.panel ul{margin:6px 0 0;padding-left:16px;color:var(--mut)}
+.panel p{margin:6px 0}
+.bar{display:grid;grid-template-columns:minmax(120px,230px) 1fr 40px;gap:8px;align-items:center;margin:3px 0;font-size:.85rem}
+.bar i{display:block;height:12px;border-radius:6px;background:var(--acc)}
+.bar div.t{background:var(--line);border-radius:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.cell{border:1px solid var(--line);border-left:8px solid var(--none);border-radius:6px;background:var(--card);padding:6px 8px;font-size:.8rem}
+.cell b{display:block}.cell em{font-style:normal;font-weight:700}
+.c-ok{border-left-color:var(--ok)}.c-ok em{color:var(--ok)}.c-part{border-left-color:var(--part)}.c-part em{color:var(--part)}.c-bad{border-left-color:var(--bad)}.c-bad em{color:var(--bad)}.c-none em{color:var(--none)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;font-size:.88rem}.card h3{margin:0 0 6px;font-size:1rem;color:var(--acc)}
+.card .f{color:var(--mut);margin-top:6px;font-style:italic}
+footer{color:var(--mut);font-size:.8rem;margin-top:30px}
+</style></head><body>
+<h1>How Reducible teaches</h1>
+<p class="sub">12 algorithm videos. Failure first, names last. Counts are n/12; 11 of 12 have automatic captions, so timestamps are approximate.</p>
+
+<h2>The lesson arc</h2>
+<p class="sub">Swipe the panels. Not every video has every stage.</p>
+<div class="strip" id="strip"></div>
+
+<h2>Move frequency (n/12)</h2><div id="bars"></div>
+
+<h2>Principle scorecard</h2>
+<p class="sub">Verdict is text plus colour. Counts: confirmed / partly / contradicted / not observed.</p>
+<div class="grid" id="grid"></div>
+
+<h2>New theories</h2><div class="cards" id="cards"></div>
+<footer>Source: reports/Reducible.md and analyses/ for the 12 Reducible video ids. Single-rater annotation.</footer>
+
+<script>
+const S='stroke="currentColor" fill="none" stroke-width="2"';
+const sk=(b)=>`<svg viewBox="0 0 240 120" style="color:var(--fg)" role="img" aria-hidden="true">${b}</svg>`;
+const AC='var(--acc)',A2='var(--acc2)';
+const panels=[
+{n:1,t:'Hook or goal',nar:'Promises something beautiful or surprising, names the gap.',tags:['hook-question','hook-paradox','roadmap'],ex:['JPEG 1:11 15 MB vs 0.8 MB','FFT 0:00 useful vs beautiful'],
+ svg:`<rect x="20" y="20" width="80" height="80" ${S}/><rect x="140" y="55" width="30" height="10" fill="${A2}"/><text x="130" y="48" font-size="12" fill="currentColor">15 MB</text><text x="130" y="90" font-size="12" fill="currentColor">0.8 MB ?</text>`},
+{n:2,t:'Home problem',nar:'Minimal definition of something the viewer half-knows; terms postponed.',tags:['minimal-definition-then-refine','toy-world','analogy'],ex:['Graph theory 0:00 circles and lines','BFS 0:34 balls and strings'],
+ svg:`<circle cx="60" cy="40" r="10" ${S}/><circle cx="130" cy="75" r="10" ${S}/><circle cx="190" cy="35" r="10" ${S}/><path d="M69 45L121 70M139 70L182 41" ${S}/>`},
+{n:3,t:'Brute force',nar:'Runs the obvious slow method, in full, by hand.',tags:['brute-force-first','act-it-out','visible-repetition'],ex:['FFT 2:05 multiply term by term','DFS 1:39 long literal walk'],
+ svg:`<g ${S}>${[0,1,2,3,4].map(i=>`<rect x="${20+i*42}" y="40" width="34" height="34"/>`).join('')}</g><path d="M37 30L79 30L121 30L163 30" stroke="${A2}" stroke-width="3" fill="none" marker-end=""/><text x="20" y="100" font-size="12" fill="currentColor">step, step, step...</text>`},
+{n:4,t:'Failure or cost',nar:'Lets the method break or shows its price as a number.',tags:['failure-shown','inline-quiz','simulation-as-argument'],ex:['PNG 13:13 gradient defeats tools','Collisions 14:00 1h40m'],
+ svg:`<path d="M20 100L60 80L100 60L140 30L200 15" ${S}/><path d="M170 80l30 30M200 80l-30 30" stroke="var(--bad)" stroke-width="4"/><text x="20" y="20" font-size="12" fill="currentColor">cost per frame</text>`},
+{n:5,t:'Special-case ladder',nar:'Smallest case, then next, same shape each time; viewer notices the repeat.',tags:['special-case-first','visible-repetition','learner-discovers'],ex:['FFT 8:44 x^2 then x^3','Hanoi 3:26 n=3 then 4:32 n=4'],
+ svg:`<g fill="${AC}"><rect x="30" y="85" width="40" height="14"/><rect x="90" y="70" width="40" height="29"/><rect x="150" y="50" width="40" height="49"/></g><text x="30" y="40" font-size="12" fill="currentColor">n=2 → 3 → 4</text>`},
+{n:6,t:'Derive the insight',nar:'Writes the constraint, solves it, and only then says what it is.',tags:['design-it-yourself','multiple-decompositions','commit-to-answer'],ex:['FFT 13:34 x2^2 = -1 gives i','Marching squares 12:22 draw 12 more cases'],
+ svg:`<text x="20" y="45" font-size="16" fill="currentColor">x² = −1</text><path d="M95 40h30" ${S}/><text x="135" y="45" font-size="16" fill="${A2}">x = i</text><text x="20" y="90" font-size="12" fill="currentColor">name comes later</text>`},
+{n:7,t:'Name, notation, code',nar:'Symbols and code as a receipt for what was already seen.',tags:['notation-after-concept','rule-list','notation-compaction'],ex:['FFT 16:21 omega','JPEG 18:03 formula'],
+ svg:`<rect x="20" y="15" width="200" height="90" rx="6" ${S}/><g fill="currentColor" font-size="11" font-family="monospace"><text x="30" y="40">def fft(p):</text><text x="40" y="58">...</text><text x="40" y="76" fill="${A2}">w = exp(2πi/n)</text></g>`},
+{n:8,t:'Verify and trace',nar:'Checks on a bigger case or traces calls; admits what was skipped.',tags:['build-and-verify','honest-caveat','act-it-out'],ex:['Recursion 9:20 is that coincidence?','DFS 8:47 call-by-call trace'],
+ svg:`<path d="M30 60l25 25l55-60" stroke="var(--ok)" stroke-width="6" fill="none"/><text x="130" y="95" font-size="12" fill="currentColor">proof left to link</text>`},
+{n:9,t:'Recap and callback',nar:'Lists the few ideas, then lands the opening line.',tags:['recap','callback-to-hook','teaser-next'],ex:['GJK 29:24 three shifts','Hanoi 20:05 recap, 15:29 callback'],
+ svg:`<circle cx="60" cy="60" r="30" ${S}/><path d="M90 60h60" ${S}/><circle cx="180" cy="60" r="30" ${S}/><path d="M60 30a40 40 0 0 1 120 0" stroke="${A2}" stroke-width="2" fill="none" stroke-dasharray="4 3"/>`}
+];
+document.getElementById('strip').innerHTML=panels.map(p=>`<div class="panel"><div class="n">STEP ${p.n}</div><h3>${p.t}</h3>${sk(p.svg)}<p>${p.nar}</p><div class="tags">${p.tags.map(t=>`<span>${t}</span>`).join('')}</div><ul>${p.ex.map(e=>`<li>${e}</li>`).join('')}</ul></div>`).join('');
+
+const moves=[['roadmap',12],['minimal-definition-then-refine',12],['honest-caveat',11],['build-and-verify',11],['recap',11],['visible-repetition',10],['humor (light, dry)',10],['hook-question',9],['special-case-first',9],['notation-after-concept',9],['callback-to-hook',9],['toy-world',9],['generalize-to-other-domains',8],['learner-discovers',8],['inline-quiz',8],['analogy',8],['brute-force-first',6],['failure-shown',6],['multiple-decompositions',6],['design-it-yourself',6],['rule-list',6],['hook-paradox',5],['commit-to-answer',5],['simulation-as-argument',5],['act-it-out',4],['analogy-breakpoint',3],['second-person-role',2]];
+document.getElementById('bars').innerHTML=moves.map(([m,n])=>`<div class="bar"><span>${m}</span><div class="t"><i style="width:${n/12*100}%"></i></div><b>${n}/12</b></div>`).join('');
+
+const pr=[[1,'Start from familiar','Confirmed',10,2,0,0],[2,'Symbols cost effort','Mostly confirmed',7,5,0,0],[3,'Habit builds comfort','Weak',1,5,0,6],[4,'Analogy then rigor','Partly',2,7,0,3],[5,'Act it out','Partly',5,5,0,2],[6,'Brute force first','Confirmed',8,1,1,2],[7,'Learner discovers','Mostly confirmed',7,4,1,0],[8,'Pace by novelty','Partly',1,11,0,0],[9,'Repeat across examples','Confirmed',10,2,0,0],[10,'Tiny to bigger','Confirmed',11,1,0,0],[11,'Dependency order','Confirmed',12,0,0,0],[12,'Connect outside','Partly',5,7,0,0],[13,'12-year-old plus depth','Partly',3,9,0,0]];
+const cls=v=>v.includes('onfirmed')?'c-ok':v=='Weak'?'c-none':'c-part';
+document.getElementById('grid').innerHTML=pr.map(r=>`<div class="cell ${cls(r[2])}"><b>${r[0]}. ${r[1]}</b><em>${r[2]}</em><br>${r[3]} / ${r[4]} / ${r[5]} / ${r[6]}</div>`).join('');
+
+const th=[['Failure is the stepping stone','Each tool is the repair of a failure just watched. FFT 8:02, 12:29; PNG 4:37, 13:13; DFS 7:37.','If a tool follows a visible failure of the last one, learners restate why it exists more often than if it comes first.'],
+['Invent, derive, then name','Object is produced from a constraint or walk, then labelled. FFT 13:46-16:35; DFS 1:25; JPEG 18:03.','If a symbol appears after the learner produces its referent, symbol-to-meaning errors drop.'],
+['Make the cost felt','A running number motivates each stage. Collisions 14:00, 18:38; JPEG 1:41; FFT 8:16.','If cost is shown as waiting time, learners rate each optimisation as more needed than with big-O alone.'],
+['New interface as a diff','Show only what changed from the algorithm already held. BFS 2:30; FFT 26:19; DFS 16:34.','If version two is a highlighted change to version one, time to a correct implementation falls.'],
+['Plan with empty slots','Unknowns are listed and ticked off. FFT 6:55; GJK 17:14-26:06; Hanoi 0:57.','If open parts are listed and closed in order, learners abandon dense segments less often.'],
+['Say the feeling out loud','Name confusion at idea-rate peaks. GJK 16:45, 29:09; FFT 20:32; PNG 13:13.','If dense segments carry a spoken regulation line, completion rises.']];
+document.getElementById('cards').innerHTML=th.map(t=>`<div class="card"><h3>${t[0]}</h3>${t[1]}<div class="f">Falsifiable: ${t[2]}</div></div>`).join('');
+</script></body></html>

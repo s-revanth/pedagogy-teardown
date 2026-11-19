@@ -1,0 +1,91 @@
+{
+ "id": "9cNmUNHSBac",
+ "channel": "veritasium",
+ "title": "Most People Don't Know How Bikes Work",
+ "duration_s": 681,
+ "upload_date": "20211128",
+ "targets": {
+  "wpm": {
+   "p25": 156.63,
+   "median": 164.01,
+   "p75": 178.55,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.68,
+   "median": 2.05,
+   "p75": 2.39,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.79,
+   "median": 1.46,
+   "p75": 1.74,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.5,
+   "median": 0.62,
+   "p75": 1.25,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.85,
+   "median": 2.34,
+   "p75": 3.23,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.19,
+   "p75": 0.22,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.06,
+   "median": 0.1,
+   "p75": 0.16,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.4,
+   "median": 0.73,
+   "p75": 0.84,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 13.9,
+   "median": 15.43,
+   "p75": 15.82,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.95,
+   "default": "ON",
+   "position_median": 0.06
+  },
+  "teaser": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 1861,
+ "exemplars": [
+  "deep/corpus/compact/IV3dnLzthDA.txt",
+  "deep/corpus/compact/IgF3OX8nT0w.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Veritasium Storyboard</title>
+<style>
+:root{--bg:#f4f1ea;--fg:#1c1c1c;--card:#fff;--line:#d8d2c4;--acc:#d9480f;--acc2:#0b7285;--ok:#2b8a3e;--part:#e8a500;--no:#c92a2a;--na:#adb5bd;--muted:#5c5c5c}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--fg:#ece9e2;--card:#1f2228;--line:#363a43;--acc:#ff8a4c;--acc2:#4cc9e0;--ok:#69db7c;--part:#ffd43b;--no:#ff6b6b;--na:#6c7280;--muted:#a8a8a8}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif;padding:16px;overflow-x:hidden}
+h1{font-size:2rem;margin:0}h2{margin:32px 0 8px;border-bottom:3px solid var(--acc);display:inline-block}p.s{color:var(--muted);margin:4px 0 12px}
+.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.p{flex:0 0 min(280px,82vw);scroll-snap-align:start;background:var(--card);border:2px solid var(--fg);border-radius:6px;padding:10px}
+.n{font:700 .75rem monospace;color:var(--acc)}.p h3{margin:2px 0 6px;font-size:1.2rem}
+svg{width:100%;height:90px;background:var(--bg);border:1px dashed var(--line);border-radius:4px}svg *{stroke:var(--fg);fill:none;stroke-width:2}svg .f{fill:var(--acc);stroke:none}svg text{fill:var(--fg);stroke:none;font:11px sans-serif}
+.p p{font-size:.85rem;margin:6px 0}.tag{display:inline-block;font:.7rem monospace;background:var(--acc2);color:#fff;color:var(--bg);border-radius:3px;padding:1px 5px;margin:1px}.ex{font-size:.8rem;color:var(--muted);margin:2px 0}
+.bar{display:grid;grid-template-columns:minmax(110px,170px) 1fr 34px;gap:8px;align-items:center;margin:3px 0;font-size:.85rem}.bar i{display:block;height:12px;background:var(--acc);border-radius:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}.g{border:2px solid;border-radius:4px;padding:6px;font-size:.78rem;background:var(--card)}.g b{display:block}
+.ok{border-color:var(--ok)}.pa{border-color:var(--part)}.no{border-color:var(--na)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}.c{background:var(--card);border-left:6px solid var(--acc2);padding:10px;border-radius:4px;font-size:.85rem}.c b{display:block;margin-bottom:4px}
+</style></head><body>
+<h1>How Veritasium teaches</h1><p class="s">Twelve videos, one arc: make the viewer need the idea, then deliver it. Swipe the panels.</p>
+<div class="strip">
+<div class="p"><div class="n">1</div><h3>Odd object or myth</h3><svg viewBox="0 0 200 90"><circle class="f" cx="40" cy="45" r="14"/><circle class="f" cx="70" cy="55" r="14"/><circle class="f" cx="55" cy="30" r="14"/><text x="105" y="50">"not what you think"</text></svg><p>Narrator shows a strange sight and states the popular explanation, then says it is wrong.</p><span class="tag">hook-paradox</span><span class="tag">misconception-first</span><div class="ex">Shade balls 0:00</div><div class="ex">Blue LED 0:00</div></div>
+<div class="p"><div class="n">2</div><h3>Question backlog</h3><svg viewBox="0 0 200 90"><text x="10" y="20">? why black</text><text x="10" y="40">? safe</text><text x="10" y="60">? cost</text><text x="10" y="80">? real purpose</text><path d="M120 45h60"/></svg><p>Lists the viewer's questions fast, promising each will be paid off later.</p><span class="tag">roadmap</span><span class="tag">hook-question</span><div class="ex">Shade balls 0:51</div><div class="ex">Asteroids 1:32</div></div>
+<div class="p"><div class="n">3</div><h3>Go there, do it</h3><svg viewBox="0 0 200 90"><path d="M20 60h160M40 60l20-20h50l20 20"/><circle class="f" cx="85" cy="32" r="6"/></svg><p>Presenter acts it out: drives the boat, holds the sphere, shrinks to ant size.</p><span class="tag">act-it-out</span><span class="tag">expert-dialogue</span><div class="ex">Shade balls 1:09</div><div class="ex">EUV 1:04</div></div>
+<div class="p"><div class="n">4</div><h3>Obstacle ladder</h3><svg viewBox="0 0 200 90"><path d="M20 80h30V60h30V40h30V20h30"/><text x="25" y="72">x</text><text x="55" y="52">x</text><text x="85" y="32">x</text></svg><p>Reasonable alternatives are tried and rejected, so the answer feels forced.</p><span class="tag">brute-force-first</span><span class="tag">failure-shown</span><div class="ex">Shade balls 4:23</div><div class="ex">Asteroids 14:39</div></div>
+<div class="p"><div class="n">5</div><h3>Minimal explanation block</h3><svg viewBox="0 0 200 90"><rect x="40" y="20" width="120" height="50"/><text x="55" y="50">one analogy + term</text></svg><p>Theory arrives when the plot needs it, via a plain analogy; notation comes last or never.</p><span class="tag">analogy</span><span class="tag">minimal-definition-then-refine</span><div class="ex">Blue LED 4:06</div><div class="ex">Aerogel 7:18</div></div>
+<div class="p"><div class="n">6</div><h3>Cheap test</h3><svg viewBox="0 0 200 90"><rect x="20" y="40" width="40" height="30"/><rect x="80" y="40" width="40" height="30"/><rect x="140" y="40" width="40" height="30"/><path class="f" d="M148 62h24v6h-24z"/></svg><p>A small controlled experiment checks the idea; one parameter varies at a time.</p><span class="tag">build-and-verify</span><span class="tag">simulation-as-argument</span><div class="ex">Shade balls 6:17</div><div class="ex">Wave tank 3:01</div></div>
+<div class="p"><div class="n">7</div><h3>Defuse the myth</h3><svg viewBox="0 0 200 90"><circle cx="100" cy="45" r="25"/><path d="M82 27l36 36M118 27L82 63" style="stroke:var(--no)"/></svg><p>Presenter asks for a prediction, then breaks the planted belief.</p><span class="tag">commit-to-answer</span><span class="tag">misconception-first</span><div class="ex">Shade balls 10:02</div><div class="ex">Asteroids 11:51</div></div>
+<div class="p"><div class="n">8</div><h3>Generalise, call back</h3><svg viewBox="0 0 200 90"><circle cx="50" cy="45" r="8" class="f"/><path d="M60 45h50M110 45h30l-8-8m8 8l-8 8"/><circle cx="165" cy="45" r="8"/></svg><p>Widens to other fields, then returns to the hook line, then teaser or sponsor.</p><span class="tag">generalize</span><span class="tag">callback-to-hook</span><div class="ex">Collatz 18:55</div><div class="ex">EUV 50:05</div></div>
+</div>
+<h2>Move frequency (videos of 12)</h2>
+<div id="bars"></div>
+<h2>Principle scorecard</h2><p class="s">Border colour plus label: green confirmed, amber partly, grey not observed. Counts are confirmed / partly / contradicted / not observed.</p>
+<div class="grid" id="grid"></div>
+<h2>New theories</h2>
+<div class="cards">
+<div class="c"><b>Plant, delay, pay off</b>Early question answered late sustains the middle. Shade balls 0:51 to 8:57; leaded petrol 2:34 to 12:34. If answered only at the end, retention of the middle rises.</div>
+<div class="c"><b>Necessity ladder</b>Show alternatives failing. Shade balls 4:39; asteroids 14:39. If two or three rejections come first, learners can say why the answer works.</div>
+<div class="c"><b>Theory when the plot calls</b>Blue LED 4:06; PFAS 2:02. A block after a failed attempt is recalled better than textbook order.</div>
+<div class="c"><b>Prediction before data</b>Leaded petrol 14:57; wave tank 7:46. Predicted curves first improves reading of unseen charts.</div>
+<div class="c"><b>Spectacle then back-fill</b>Aerogel suit 0:54; lightest solid 0:37. Demo before definition makes learners ask the mechanism earlier.</div>
+<div class="c"><b>Evidence with its limit</b>Collatz 10:18 to 17:48; asteroids 1:16. Limits after each result cut overconfident claims.</div>
+<div class="c"><b>Objection by character</b>Infinite hotel 3:50; wave tank 11:00. In-scene objections remove the "yes but" gap.</div>
+</div>
+<script>
+var m=[["hook-paradox",11],["act-it-out",11],["story",11],["analogy",11],["failure-shown",10],["minimal-definition",10],["generalize",10],["simulation-as-argument",10],["misconception-first",9],["roadmap",9],["build-and-verify",9],["commit-to-answer",9],["design-it-yourself",8],["callback-to-hook",8],["brute-force-first",7],["special-case-first",7],["honest-caveat",6],["visible-repetition",5],["learner-discovers",3],["recap",3]];
+document.getElementById("bars").innerHTML=m.map(function(x){return '<div class="bar"><span>'+x[0]+'</span><i style="width:'+x[1]/12*100+'%"></i><b>'+x[1]+'</b></div>'}).join("");
+var s=[["1 Start familiar","ok","10/2/0/0"],["2 Symbol cost","ok","7/3/0/2"],["3 Interface habit","no","0/1/0/11"],["4 Analogy then rigor","pa","5/7/0/0"],["5 Act it out","ok","8/4/0/0"],["6 Dumb way first","ok","7/3/0/2"],["7 Discover via repetition","pa","0/11/1/0"],["8 Pace by novelty","pa","1/8/0/3"],["9 Repeat","ok","7/3/0/2"],["10 Tiny to bigger","pa","4/6/0/2"],["11 Dependency order","ok","12/0/0/0"],["12 Connect","ok","11/1/0/0"],["13 Kid plus expert","pa","1/11/0/0"]];
+var L={ok:"Confirmed",pa:"Partly",no:"Not observed"};
+document.getElementById("grid").innerHTML=s.map(function(x){return '<div class="g '+x[1]+'"><b>'+x[0]+'</b>'+L[x[1]]+' ('+x[2]+')</div>'}).join("");
+</script></body></html>

@@ -1,0 +1,91 @@
+{
+ "id": "XAgXwUwQoPA",
+ "channel": "veritasium",
+ "title": "The Threat of AI Weapons",
+ "duration_s": 407,
+ "upload_date": "20180402",
+ "targets": {
+  "wpm": {
+   "p25": 162.04,
+   "median": 168.55,
+   "p75": 175.16,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.64,
+   "median": 2.28,
+   "p75": 2.72,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.84,
+   "median": 2.11,
+   "p75": 2.61,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.81,
+   "median": 1.05,
+   "p75": 1.42,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.31,
+   "median": 1.67,
+   "p75": 2.12,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.11,
+   "median": 0.27,
+   "p75": 0.37,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.06,
+   "p75": 0.13,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.18,
+   "median": 0.44,
+   "p75": 0.6,
+   "n": 16
+  },
+  "sent_len": {
+   "p25": 14.52,
+   "median": 23.68,
+   "p75": 36.17,
+   "n": 16
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.4,
+   "default": "OFF",
+   "position_median": 0.77
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 1143,
+ "exemplars": [
+  "deep/corpus/compact/HD3k1hgbUXQ.txt",
+  "deep/corpus/compact/38gVZgE39K8.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

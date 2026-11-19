@@ -1,0 +1,72 @@
+videos with all 3 conditions: 81
+
+== all
+  fidelity_err: v1 vs base         {'n': 81, 'mean_diff': 0.045, 'ci95': (-0.007, 0.099), 'better': 37, 'worse': 44, 'sign_p': 0.5052}
+  fidelity_err: v2 vs base         {'n': 81, 'mean_diff': -0.136, 'ci95': (-0.219, -0.046), 'better': 60, 'worse': 21, 'sign_p': 0.0}
+  fidelity_err: v2 vs v1           {'n': 81, 'mean_diff': -0.181, 'ci95': (-0.27, -0.092), 'better': 55, 'worse': 26, 'sign_p': 0.0017}
+  fidelity_err: v3 vs v2           {'n': 81, 'mean_diff': -0.186, 'ci95': (-0.252, -0.124), 'better': 67, 'worse': 14, 'sign_p': 0.0}
+  fidelity_err: v3 vs base         {'n': 81, 'mean_diff': -0.322, 'ci95': (-0.396, -0.248), 'better': 67, 'worse': 14, 'sign_p': 0.0}
+  fidelity_err: base vs const      {'n': 81, 'mean_diff': 0.296, 'ci95': (0.21, 0.381), 'better': 17, 'worse': 64, 'sign_p': 0.0}
+  fidelity_err: v1 vs const        {'n': 81, 'mean_diff': 0.341, 'ci95': (0.256, 0.425), 'better': 14, 'worse': 67, 'sign_p': 0.0}
+  fidelity_err: v2 vs const        {'n': 81, 'mean_diff': 0.16, 'ci95': (0.097, 0.231), 'better': 21, 'worse': 60, 'sign_p': 0.0}
+  fidelity_err: v3 vs const        {'n': 81, 'mean_diff': -0.027, 'ci95': (-0.062, 0.008), 'better': 42, 'worse': 39, 'sign_p': 0.8243}
+  fidelity_err: base vs rvr        {'n': 81, 'mean_diff': -0.045, 'ci95': (-0.134, 0.048), 'better': 45, 'worse': 36, 'sign_p': 0.3742}
+  fidelity_err: v1 vs rvr          {'n': 81, 'mean_diff': 0.001, 'ci95': (-0.087, 0.093), 'better': 46, 'worse': 35, 'sign_p': 0.2664}
+  fidelity_err: v2 vs rvr          {'n': 81, 'mean_diff': -0.181, 'ci95': (-0.26, -0.094), 'better': 67, 'worse': 14, 'sign_p': 0.0}
+  fidelity_err: v3 vs rvr          {'n': 81, 'mean_diff': -0.367, 'ci95': (-0.417, -0.312), 'better': 78, 'worse': 3, 'sign_p': 0.0}
+  wpm_err: v1 vs base              {'n': 81, 'mean_diff': 0.0, 'ci95': (-0.005, 0.006), 'better': 17, 'worse': 13, 'sign_p': 0.5847}
+  wpm_err: v2 vs base              {'n': 81, 'mean_diff': -0.002, 'ci95': (-0.021, 0.017), 'better': 38, 'worse': 37, 'sign_p': 1.0}
+  wpm_err: v2 vs v1                {'n': 81, 'mean_diff': -0.003, 'ci95': (-0.022, 0.018), 'better': 37, 'worse': 38, 'sign_p': 1.0}
+  wpm_err: v3 vs v2                {'n': 81, 'mean_diff': -0.017, 'ci95': (-0.032, -0.004), 'better': 46, 'worse': 25, 'sign_p': 0.017}
+  wpm_err: v3 vs base              {'n': 81, 'mean_diff': -0.019, 'ci95': (-0.037, -0.002), 'better': 47, 'worse': 33, 'sign_p': 0.1456}
+  switch_acc: v1 vs base           {'n': 81, 'mean_diff': -0.043, 'ci95': (-0.111, 0.028), 'better': 20, 'worse': 27, 'sign_p': 0.3817}
+  switch_acc: v2 vs base           {'n': 81, 'mean_diff': 0.105, 'ci95': (0.056, 0.154), 'better': 33, 'worse': 11, 'sign_p': 0.0013}
+  switch_acc: v2 vs v1             {'n': 81, 'mean_diff': 0.148, 'ci95': (0.083, 0.21), 'better': 44, 'worse': 14, 'sign_p': 0.0001}
+  switch_acc: v3 vs v2             {'n': 81, 'mean_diff': 0.065, 'ci95': (0.012, 0.12), 'better': 30, 'worse': 16, 'sign_p': 0.0541}
+  switch_acc: v3 vs base           {'n': 81, 'mean_diff': 0.17, 'ci95': (0.117, 0.222), 'better': 43, 'worse': 7, 'sign_p': 0.0}
+  in_band: v1 vs base              {'n': 81, 'mean_diff': 0.001, 'ci95': (-0.045, 0.046), 'better': 32, 'worse': 32, 'sign_p': 1.0}
+  in_band: v2 vs base              {'n': 81, 'mean_diff': 0.281, 'ci95': (0.225, 0.338), 'better': 67, 'worse': 9, 'sign_p': 0.0}
+  in_band: v2 vs v1                {'n': 81, 'mean_diff': 0.28, 'ci95': (0.217, 0.344), 'better': 61, 'worse': 11, 'sign_p': 0.0}
+  in_band: v3 vs v2                {'n': 81, 'mean_diff': 0.186, 'ci95': (0.123, 0.25), 'better': 54, 'worse': 11, 'sign_p': 0.0}
+  in_band: v3 vs base              {'n': 81, 'mean_diff': 0.467, 'ci95': (0.411, 0.522), 'better': 76, 'worse': 1, 'sign_p': 0.0}
+
+== no_recall
+  fidelity_err: v1 vs base         {'n': 36, 'mean_diff': 0.097, 'ci95': (0.004, 0.192), 'better': 13, 'worse': 23, 'sign_p': 0.1325}
+  fidelity_err: v2 vs base         {'n': 37, 'mean_diff': -0.155, 'ci95': (-0.272, -0.03), 'better': 28, 'worse': 9, 'sign_p': 0.0026}
+  fidelity_err: v2 vs v1           {'n': 36, 'mean_diff': -0.271, 'ci95': (-0.426, -0.124), 'better': 27, 'worse': 9, 'sign_p': 0.0039}
+  fidelity_err: v3 vs v2           {'n': 40, 'mean_diff': -0.172, 'ci95': (-0.262, -0.09), 'better': 33, 'worse': 7, 'sign_p': 0.0}
+  fidelity_err: v3 vs base         {'n': 27, 'mean_diff': -0.281, 'ci95': (-0.414, -0.15), 'better': 20, 'worse': 7, 'sign_p': 0.0192}
+  fidelity_err: base vs const      {'n': 39, 'mean_diff': 0.297, 'ci95': (0.175, 0.427), 'better': 9, 'worse': 30, 'sign_p': 0.0011}
+  fidelity_err: v1 vs const        {'n': 40, 'mean_diff': 0.392, 'ci95': (0.274, 0.52), 'better': 3, 'worse': 37, 'sign_p': 0.0}
+  fidelity_err: v2 vs const        {'n': 58, 'mean_diff': 0.196, 'ci95': (0.112, 0.29), 'better': 15, 'worse': 43, 'sign_p': 0.0003}
+  fidelity_err: v3 vs const        {'n': 45, 'mean_diff': -0.015, 'ci95': (-0.063, 0.035), 'better': 25, 'worse': 20, 'sign_p': 0.5515}
+  fidelity_err: base vs rvr        {'n': 39, 'mean_diff': -0.026, 'ci95': (-0.139, 0.093), 'better': 21, 'worse': 18, 'sign_p': 0.7493}
+  fidelity_err: v1 vs rvr          {'n': 40, 'mean_diff': 0.057, 'ci95': (-0.056, 0.177), 'better': 22, 'worse': 18, 'sign_p': 0.6358}
+  fidelity_err: v2 vs rvr          {'n': 58, 'mean_diff': -0.173, 'ci95': (-0.263, -0.072), 'better': 47, 'worse': 11, 'sign_p': 0.0}
+  fidelity_err: v3 vs rvr          {'n': 45, 'mean_diff': -0.419, 'ci95': (-0.468, -0.369), 'better': 44, 'worse': 1, 'sign_p': 0.0}
+  wpm_err: v1 vs base              {'n': 36, 'mean_diff': 0.003, 'ci95': (-0.004, 0.011), 'better': 4, 'worse': 5, 'sign_p': 1.0}
+  wpm_err: v2 vs base              {'n': 37, 'mean_diff': 0.008, 'ci95': (-0.014, 0.037), 'better': 15, 'worse': 16, 'sign_p': 1.0}
+  wpm_err: v2 vs v1                {'n': 36, 'mean_diff': -0.007, 'ci95': (-0.022, 0.009), 'better': 16, 'worse': 14, 'sign_p': 0.8555}
+  wpm_err: v3 vs v2                {'n': 40, 'mean_diff': -0.005, 'ci95': (-0.033, 0.016), 'better': 17, 'worse': 17, 'sign_p': 1.0}
+  wpm_err: v3 vs base              {'n': 27, 'mean_diff': -0.001, 'ci95': (-0.021, 0.019), 'better': 12, 'worse': 15, 'sign_p': 0.7011}
+  switch_acc: v1 vs base           {'n': 36, 'mean_diff': 0.035, 'ci95': (-0.076, 0.139), 'better': 10, 'worse': 8, 'sign_p': 0.8145}
+  switch_acc: v2 vs base           {'n': 37, 'mean_diff': 0.081, 'ci95': (0.0, 0.162), 'better': 14, 'worse': 8, 'sign_p': 0.2863}
+  switch_acc: v2 vs v1             {'n': 36, 'mean_diff': 0.049, 'ci95': (-0.049, 0.153), 'better': 12, 'worse': 9, 'sign_p': 0.6636}
+  switch_acc: v3 vs v2             {'n': 40, 'mean_diff': 0.075, 'ci95': (0.006, 0.144), 'better': 16, 'worse': 8, 'sign_p': 0.1516}
+  switch_acc: v3 vs base           {'n': 27, 'mean_diff': 0.167, 'ci95': (0.083, 0.25), 'better': 12, 'worse': 1, 'sign_p': 0.0034}
+  in_band: v1 vs base              {'n': 36, 'mean_diff': 0.051, 'ci95': (-0.014, 0.115), 'better': 18, 'worse': 10, 'sign_p': 0.1849}
+  in_band: v2 vs base              {'n': 37, 'mean_diff': 0.261, 'ci95': (0.177, 0.349), 'better': 28, 'worse': 4, 'sign_p': 0.0}
+  in_band: v2 vs v1                {'n': 36, 'mean_diff': 0.231, 'ci95': (0.128, 0.338), 'better': 24, 'worse': 6, 'sign_p': 0.0014}
+  in_band: v3 vs v2                {'n': 40, 'mean_diff': 0.185, 'ci95': (0.119, 0.255), 'better': 29, 'worse': 5, 'sign_p': 0.0}
+  in_band: v3 vs base              {'n': 27, 'mean_diff': 0.397, 'ci95': (0.318, 0.475), 'better': 26, 'worse': 0, 'sign_p': 0.0}
+
+== slots vs hand labels
+  hook_type {'majority_label': 'premise-claim', 'majority_acc': 0.519, 'n_labels': 79, 'train_channel_majority_acc': 0.519, 'base': {'n': 79, 'acc': 0.203, 'top_predictions': [('question', 46), ('premise-claim', 14), ('scenario-you', 7)]}, 'v1': {'n': 79, 'acc': 0.139, 'top_predictions': [('question', 41), ('scenario-you', 13), ('paradox', 10)]}, 'v2': {'n': 79, 'acc': 0.228, 'top_predictions': [('question', 36), ('answer-stated', 18), ('premise-claim', 13)]}, 'v3': {'n': 79, 'acc': 0.532, 'top_predictions': [('premise-claim', 62), ('gag-skit', 10), ('story-anecdote', 7)]}}
+  ending_type {'majority_label': 'teaser-next', 'majority_acc': 0.284, 'n_labels': 74, 'train_channel_majority_acc': 0.324, 'base': {'n': 74, 'acc': 0.176, 'top_predictions': [('phrase-mirror', 42), ('teaser-next', 13), ('open-question', 8)]}, 'v1': {'n': 74, 'acc': 0.311, 'top_predictions': [('phrase-mirror', 42), ('teaser-next', 29), ('applied-game', 1)]}, 'v2': {'n': 74, 'acc': 0.162, 'top_predictions': [('phrase-mirror', 45), ('teaser-next', 9), ('impact-coda', 8)]}, 'v3': {'n': 74, 'acc': 0.365, 'top_predictions': [('teaser-next', 36), ('impact-coda', 21), ('phrase-mirror', 17)]}}
+  answer_given_upfront {'majority_label': 'false', 'majority_acc': 0.886, 'n_labels': 79, 'base': {'n': 79, 'acc': 0.43, 'top_predictions': [('true', 46), ('false', 33)]}, 'v1': {'n': 79, 'acc': 0.759, 'top_predictions': [('false', 67), ('true', 12)]}, 'v2': {'n': 79, 'acc': 0.646, 'top_predictions': [('false', 46), ('true', 33)]}, 'v3': {'n': 79, 'acc': 0.342, 'top_predictions': [('true', 59), ('false', 20)]}}
+
+== measured slots
+  base {'fq_abs_err': (0.15, 57), 'sponsor_ok': (0.568, 81), 'teaser_ok': (0.753, 81), 'wpm_abs_pct': (0.112, 81)}
+  v1 {'fq_abs_err': (0.113, 57), 'sponsor_ok': (0.605, 81), 'teaser_ok': (0.568, 81), 'wpm_abs_pct': (0.112, 81)}
+  v2 {'fq_abs_err': (0.14, 57), 'sponsor_ok': (0.716, 81), 'teaser_ok': (0.815, 81), 'wpm_abs_pct': (0.11, 81)}
+  v3 {'fq_abs_err': (0.13, 57), 'sponsor_ok': (0.815, 81), 'teaser_ok': (0.802, 81), 'wpm_abs_pct': (0.093, 81)}

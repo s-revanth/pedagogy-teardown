@@ -1,0 +1,384 @@
+video,start,end,words,wpm,novelty_level,move_tags,paraphrase
+3Blue1Brown: The essence of calculus,0:14,0:34,70,210,Home,roadmap,Series intro: one binge-watchable set on the heart of calculus
+3Blue1Brown: The essence of calculus,0:34,1:22,148,185,Home,misconception-first you-could-invent-it,Calculus is usually memorized rules; the goal is to feel you could have invented it
+3Blue1Brown: The essence of calculus,1:22,1:59,109,177,Bridge,hook-question special-case-first,Why is a circle's area pi r squared? One bit of geometry will lead to three big ideas
+3Blue1Brown: The essence of calculus,1:59,2:36,111,180,Home,act-it-out multiple-decompositions,"Just you and a radius-3 circle, trying many ways to chop it; rings respect the symmetry"
+3Blue1Brown: The essence of calculus,2:36,3:14,122,193,Bridge,act-it-out,Unroll one ring and approximate it as a rectangle 2 pi r wide
+3Blue1Brown: The essence of calculus,3:14,3:32,54,180,New interface,notation-after-concept concrete-symbol,Names the thickness dr and asks you to think of it as about 0.1
+3Blue1Brown: The essence of calculus,3:32,4:07,110,189,New idea,approximation-gets-less-wrong honest-caveat,Rectangle is slightly wrong but gets better as dr shrinks
+3Blue1Brown: The essence of calculus,4:07,4:46,117,180,New idea,recap visible-repetition,"Sums up: rings from 0 to just under 3, each 2 pi r dr, spaced by dr"
+3Blue1Brown: The essence of calculus,4:46,5:36,158,190,New idea,multiple-decompositions,Stands the rectangles upright along an axis; they touch the line 2 pi r
+3Blue1Brown: The essence of calculus,5:36,6:10,109,192,New idea,approximation-gets-less-wrong brute-force-first,Smaller dr looks like a monstrous sum with nightmare decimals
+3Blue1Brown: The essence of calculus,6:10,6:31,58,166,New idea,learner-discovers,"But together they are the area under a graph: a triangle, giving pi times 3 squared"
+3Blue1Brown: The essence of calculus,6:31,6:50,54,171,New idea,generalize-to-other-domains,Swap 3 for any R and the formula appears
+3Blue1Brown: The essence of calculus,6:50,8:19,247,167,Bridge,recap meta-reflection,Pause and meditate on how approximate became exact; restates the two key facts
+3Blue1Brown: The essence of calculus,8:19,9:47,254,173,Bridge,generalize-to-other-domains,"Many problems are sums of small pieces, like distance from velocity times dt"
+3Blue1Brown: The essence of calculus,9:47,10:26,103,158,New idea,hook-question special-case-first,Lucky it was a triangle; what is the area under x squared from 0 to 3?
+3Blue1Brown: The essence of calculus,10:26,11:17,153,180,New interface,notation-after-concept,Reframe with a moving right endpoint: the mystery function A(x) is called an integral
+3Blue1Brown: The essence of calculus,11:17,11:34,53,187,Bridge,honest-caveat meta-reflection,This is genuinely hard; policy: play with it instead of attacking it head-on
+3Blue1Brown: The essence of calculus,11:34,12:30,149,160,New idea,learner-discovers act-it-out,Nudge x by dx; the sliver dA is about a rectangle x squared by dx
+3Blue1Brown: The essence of calculus,12:30,12:46,42,158,New interface,notation-after-concept approximation-gets-less-wrong,"Rearranged: dA over dx is about x squared, better as dx shrinks"
+3Blue1Brown: The essence of calculus,12:46,13:39,137,155,New idea,special-case-first,Concrete check with 3 and 3.001: change divided by 0.001 is about 9
+3Blue1Brown: The essence of calculus,13:39,13:58,61,193,New idea,generalize-to-other-domains,Nothing special about x squared: any area function has this property
+3Blue1Brown: The essence of calculus,13:58,14:52,149,166,New interface,minimal-definition-then-refine notation-after-concept,"That ratio is the derivative, more precisely its limit; sensitivity to nudges"
+3Blue1Brown: The essence of calculus,14:52,15:23,88,170,New idea,callback-to-hook,Derivatives are the key to integral questions: reverse-engineer A from its derivative
+3Blue1Brown: The essence of calculus,15:23,15:44,50,143,New idea,minimal-definition-then-refine,That back-and-forth is named the fundamental theorem of calculus
+3Blue1Brown: The essence of calculus,15:44,16:03,68,215,Home,recap callback-to-hook teaser-next,Only a peek; details follow; you could have invented this
+3Blue1Brown: The essence of calculus,16:03,16:44,132,191,Home,admin,Patreon thanks
+3Blue1Brown: But what is a neural network?,0:04,0:42,117,185,Home,hook-paradox act-it-out,Shows a blurry 28x28 three and asks you to notice how effortlessly you read it
+3Blue1Brown: But what is a neural network?,0:42,1:15,98,178,Bridge,hook-paradox,Flips it: writing a program for the same task goes from trivial to daunting
+3Blue1Brown: But what is a neural network?,1:15,2:39,290,207,Home,roadmap,"Promises the structure will feel motivated, assuming no background; learning comes next video"
+3Blue1Brown: But what is a neural network?,2:39,2:58,59,186,New idea,minimal-definition-then-refine,A neuron is only a thing that holds a number between 0 and 1
+3Blue1Brown: But what is a neural network?,2:58,3:32,95,168,New idea,toy-world,784 input neurons hold pixel brightness; the number is named activation
+3Blue1Brown: But what is a neural network?,3:32,4:06,75,132,New idea,toy-world,"10 output neurons, one per digit; hidden layers left as a deliberate question mark"
+3Blue1Brown: But what is a neural network?,4:06,4:24,64,213,New idea,honest-caveat,Admits two layers of 16 is an arbitrary choice made to fit the screen
+3Blue1Brown: But what is a neural network?,4:24,5:01,114,185,Bridge,analogy,"Activations in one layer cause the next, loosely like neurons firing"
+3Blue1Brown: But what is a neural network?,5:01,5:36,102,175,New idea,simulation-as-argument,Runs an image through a trained net; brightest output neuron is the answer
+3Blue1Brown: But what is a neural network?,5:36,6:11,108,185,Home,hook-question special-case-first,Asks what middle layers might hope to do; digits are loops and lines
+3Blue1Brown: But what is a neural network?,6:11,7:35,262,187,Bridge,hopeful-hypothesis,"Hope: each neuron detects a part like an upper loop, built from little edges"
+3Blue1Brown: But what is a neural network?,7:35,7:51,60,225,Bridge,honest-caveat,Flags that the trained net may not really do this; will revisit
+3Blue1Brown: But what is a neural network?,7:51,8:23,94,176,Bridge,generalize-to-other-domains,"Layers of abstraction also fit speech: sounds, syllables, words, phrases"
+3Blue1Brown: But what is a neural network?,8:23,9:11,142,178,New idea,design-it-yourself hook-question,Asks you to design the layer-to-layer mechanism: what knobs would it need?
+3Blue1Brown: But what is a neural network?,9:11,10:02,155,182,New idea,special-case-first,"Weights on each connection, weighted sum, shown as a green/red pixel grid"
+3Blue1Brown: But what is a neural network?,10:02,10:18,46,172,New idea,special-case-first,Negative weights around a bright strip turn the neuron into an edge detector
+3Blue1Brown: But what is a neural network?,10:18,10:52,99,175,New idea,minimal-definition-then-refine,"Sum can be any number, so squish it into 0-1 with the sigmoid"
+3Blue1Brown: But what is a neural network?,10:52,11:42,145,174,New idea,design-it-yourself,Want activity only above 10? Add a bias before squishing
+3Blue1Brown: But what is a neural network?,11:42,12:31,135,165,New idea,visible-repetition brute-force-first,"Every neuron repeats this: 784x16 weights, about 13,000 knobs in all"
+3Blue1Brown: But what is a neural network?,12:31,13:22,171,201,Bridge,act-it-out,Learning means finding the knob settings; imagine setting them all by hand
+3Blue1Brown: But what is a neural network?,13:22,15:10,317,176,New interface,notation-after-concept notation-compaction,"Cumbersome sum rewritten as matrix-vector product plus bias vector, sigmoid outside"
+3Blue1Brown: But what is a neural network?,15:10,15:59,140,171,New idea,minimal-definition-then-refine callback-to-hook,Refines neuron to a function; the whole network is one 784-to-10 function
+3Blue1Brown: But what is a neural network?,15:59,16:30,104,201,Home,teaser-next,Complexity is reassuring; next video shows how the weights are learned
+3Blue1Brown: But what is a neural network?,16:30,17:07,122,198,Home,admin,"Subscribe joke about recommendation networks, Patreon thanks"
+3Blue1Brown: But what is a neural network?,17:07,18:26,243,183,New idea,honest-caveat expert-dialogue,"Guest researcher: sigmoid is old school, modern nets use ReLU"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),0:00,0:15,49,196,Home,hook-question second-person-role,Casts you as an aspiring ruler: do you want to rule and fix your country?
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),0:15,0:47,82,154,Home,hook-paradox misconception-first,"Why do rulers act selfishly and stupidly? Are they dumb, or is it something else?"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),0:47,1:21,95,168,New idea,minimal-definition-then-refine,No one rules alone: power is getting others to act; names keys to power
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),1:21,1:37,44,165,New idea,special-case-first,"In a dictatorship the keys are few, maybe a dozen generals and officials"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),1:37,1:52,42,168,New idea,multiple-decompositions,All countries sit on a spectrum from few keys to many
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),1:52,2:25,89,162,New idea,rule-list minimal-definition-then-refine,Rule 1: get key supporters. Rule 2: control the treasure
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),2:25,3:12,123,157,Bridge,second-person-role misconception-first,"You, benevolent dictator, want to help citizens, but that hands rivals a weapon"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),3:12,4:16,165,155,New idea,visible-repetition,"Keys face the same problem one level down, so loyalty must be bought"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),4:16,4:33,45,159,New idea,recap,"The self-sustaining core: court raises treasure, treasure keeps the court"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),4:33,5:06,84,153,New idea,rule-list,Many keys shorten reigns; Rule 3: minimize key supporters
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),5:06,5:55,135,165,Bridge,hook-paradox learner-discovers,Why does a new dictator purge his allies? The rules make it obvious
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),5:55,6:26,79,153,Bridge,second-person-role recap,Excited or exhausted? Turn to democracy
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),6:26,6:57,84,163,New idea,visible-repetition generalize-to-other-domains,"Democracy: same rules, power fractured among many"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),6:57,7:30,81,147,New idea,special-case-first,"Voters are bought as blocks: elderly, homeowners, farmers"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),7:30,7:45,37,148,Home,special-case-first,Farm subsidies follow how key the farm vote is
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),7:45,8:51,187,170,New idea,visible-repetition,"Non-voting blocks get nothing; Rule 3 applies again: gerrymanders, voting rules"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),8:51,9:41,131,157,New idea,visible-repetition,"Big individual keys get loopholes and contracts, not gold"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),9:41,10:13,88,165,Bridge,callback-to-hook,Corruption is a tool; contradictory-looking actions balance keys
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),10:13,10:29,48,180,Bridge,hook-question,Why not just bribe the army? Turn to taxes and revolts
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),10:29,10:46,46,162,New idea,data-chart,"Graph: more keys, lower tax rates"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),10:46,11:18,87,163,Bridge,misconception-first,"You may scoff, but low earners pull the average down; dictators take wealth directly"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),11:18,12:10,122,141,New idea,learner-discovers,Democracies tax less because productive citizens make more treasure
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),12:10,12:41,69,134,New idea,generalize-to-other-domains,Democracies are better not because leaders are better but because incentives align
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),12:41,13:14,83,151,New idea,special-case-first,Resource-rich dictatorships are the worst: mines run without citizens
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),13:14,14:04,127,152,New idea,multiple-decompositions,"Stable democracies, stable resource dictatorships, a valley of revolution between"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),14:04,14:52,124,155,New idea,misconception-first,Romantic popular revolts are mostly fantasy: the court replaces the king
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),14:52,15:11,54,171,New idea,learner-discovers,Why benevolent dictators fail to cross the valley
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),15:11,16:18,189,169,New idea,learner-discovers,Why coups fail in stable democracies: the gamble and the math
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),16:18,16:49,79,153,New idea,generalize-to-other-domains,When democracies fall: poverty or a resource that dwarfs citizen productivity
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),16:49,17:37,124,155,Bridge,generalize-to-other-domains,"The rules explain war, aid, dynasties, corruption, CEOs, HOAs"
+CGP Grey: The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown),17:37,18:13,76,127,Home,callback-to-hook second-person-role,Zeroth rule: without power you affect nothing; maybe you'll be different
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,0:00,0:17,44,155,Home,hook-paradox analogy,"You're under attack every second; your body runs an army with guards, soldiers, intelligence, factories"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,0:17,0:35,43,143,New idea,brute-force-first honest-caveat,"Shows the full system: 12 jobs, 21 cells, a tangle of interactions"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,0:35,0:52,43,152,New idea,notation-compaction new-interface,"Makes it readable: color per job, central color for main duty"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,0:52,1:12,32,96,Bridge,honest-caveat special-case-first,"Admires the complexity, then zooms into a few cells for one infection"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,1:12,1:31,51,161,Home,story act-it-out,A rusty nail breaks the skin; bacteria enter and double every 20 minutes
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,1:31,2:05,105,185,Bridge,analogy running-character,Guard cells (macrophages) swallow up to 100 intruders each
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,2:05,2:22,51,180,Bridge,generalize-to-other-domains,Inflammation: guards order blood vessels to flood the battlefield; that's the swelling you feel
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,2:22,2:42,61,183,Bridge,analogy running-character,"Neutrophils arrive, fight so hard they kill healthy cells, and self-destruct after five days"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,2:42,3:00,58,193,Bridge,analogy running-character,"The dendritic cell, the brain, takes samples and decides: anti-virus or anti-bacteria forces"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,3:00,3:17,49,173,New idea,story,It travels a day to the lymph node where billions of T cells wait
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,3:17,3:38,72,206,New idea,minimal-definition-then-refine,T cells pass harsh training; each has a specific set-up; the dendritic cell seeks the match
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,3:38,3:54,52,195,New idea,visible-repetition,Match found: helper T cells multiply; some become memory cells
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,3:54,4:12,62,207,New idea,analogy,"Helpers activate B cells, weapons factories, when set-ups match"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,4:12,4:32,60,180,Bridge,analogy running-character,"Helpers tell exhausted factories 'don't die yet', and let them die when it's over"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,4:32,4:51,59,186,New idea,minimal-definition-then-refine hook-question,"What do B cells make? Antibodies, proteins built to grab one intruder"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,4:51,5:07,44,165,Bridge,story,At the wound things get dire; guards die; helpers urge them on
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,5:07,5:41,102,180,Bridge,story callback-to-hook,"Antibodies flood in, stun bacteria, tag them for macrophages; the balance shifts"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,5:41,5:59,48,160,Bridge,story,Infection wiped out; most immune cells self-destruct to save resources
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,5:59,6:07,31,232,Bridge,recap teaser-next,Memory cells remain for next time
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,6:07,6:20,37,171,Home,honest-caveat,"This was a very simplified explanation, ignoring many players and the chemistry"
+Kurzgesagt: The Immune System Explained I - Bacteria Infection,6:20,6:29,20,130,Home,callback-to-hook,"Life is complicated, but understanding it reveals wonders"
+OverSimplified: The French Revolution - OverSimplified (Part 1),0:00,0:16,48,180,Home,admin,Sponsor and merch
+OverSimplified: The French Revolution - OverSimplified (Part 1),0:16,1:44,215,147,Home,running-character humor story,Cold open: a royal wedding party; 'France is in financial ruin' set up as a running gag
+OverSimplified: The French Revolution - OverSimplified (Part 1),1:44,2:02,57,190,Home,misconception-first humor,"France as glorious, with an aside: who cares about the starving 80%?"
+OverSimplified: The French Revolution - OverSimplified (Part 1),2:02,2:17,51,204,Bridge,story running-character,France as a little buddy goes to war with Britain and loses; debt
+OverSimplified: The French Revolution - OverSimplified (Part 1),2:17,2:35,71,237,Bridge,humor visible-repetition,"Party harder; peasants pick up the slack, as society has accepted for centuries"
+OverSimplified: The French Revolution - OverSimplified (Part 1),2:35,3:07,126,236,New idea,running-character hook-question,"A peasant asks why: why nobles, why a king? That's the Enlightenment"
+OverSimplified: The French Revolution - OverSimplified (Part 1),3:07,3:24,50,176,Bridge,recap running-character,Louis becomes king: sum-up of debt and doubt; catchphrase scream
+OverSimplified: The French Revolution - OverSimplified (Part 1),3:24,3:41,59,208,New idea,minimal-definition-then-refine,Louis XVI: weak and easily manipulated
+OverSimplified: The French Revolution - OverSimplified (Part 1),3:41,3:57,71,266,Bridge,humor story,Funds the American revolution; America walks away from the loan
+OverSimplified: The French Revolution - OverSimplified (Part 1),3:57,4:50,191,216,Bridge,story running-character,"Marie Antoinette's spending, 'Madame Deficit', scandal pamphlets"
+OverSimplified: The French Revolution - OverSimplified (Part 1),4:50,5:08,54,180,Bridge,humor visible-repetition,Solution: tax the poor
+OverSimplified: The French Revolution - OverSimplified (Part 1),5:08,6:27,294,223,Home,act-it-out visible-repetition humor,"Skit: tax collectors tax windows, tithe, salt, a crying child"
+OverSimplified: The French Revolution - OverSimplified (Part 1),6:27,6:46,63,199,New idea,recap,"Harvest share, labor tax, inconsistency, tax-free first two estates"
+OverSimplified: The French Revolution - OverSimplified (Part 1),6:46,7:32,148,193,Bridge,hook-question story,"What could push them over the edge? Bad harvests, bread prices, riots"
+OverSimplified: The French Revolution - OverSimplified (Part 1),7:32,8:03,113,219,New idea,minimal-definition-then-refine running-character,"King summons the Estates General, unused for 175 years; three estates"
+OverSimplified: The French Revolution - OverSimplified (Part 1),8:03,8:34,86,166,Home,humor analogy,"Porsches for clergy and nobility, nothing for France's debt"
+OverSimplified: The French Revolution - OverSimplified (Part 1),8:34,9:04,94,188,New idea,act-it-out special-case-first,"Voting: 130,000 people, one vote; 350,000, one vote; 27 million, one vote"
+OverSimplified: The French Revolution - OverSimplified (Part 1),9:04,9:36,96,180,New idea,visible-repetition humor learner-discovers,Every motion passes two to one against the third estate
+OverSimplified: The French Revolution - OverSimplified (Part 1),9:36,9:52,56,210,New idea,story,Third estate forms the National Assembly
+OverSimplified: The French Revolution - OverSimplified (Part 1),9:52,10:08,52,195,Bridge,humor story,"Locked out, they find a tennis court: the Tennis Court Oath"
+OverSimplified: The French Revolution - OverSimplified (Part 1),10:08,10:42,107,189,New idea,running-character,"Introduces Robespierre, Danton and the Jacobins, who want the king gone"
+OverSimplified: The French Revolution - OverSimplified (Part 1),10:42,11:15,111,202,New idea,multiple-decompositions,"Fear on every side: king fears the people, people fear the army"
+OverSimplified: The French Revolution - OverSimplified (Part 1),11:15,11:31,40,150,Bridge,story,Fear turns to anger: revolution
+OverSimplified: The French Revolution - OverSimplified (Part 1),11:31,12:01,88,176,New idea,story,National Guard forms; Invalides raided for rifles but no powder
+OverSimplified: The French Revolution - OverSimplified (Part 1),12:01,13:08,227,203,Bridge,story humor,Storming the Bastille; the king in denial at the governor's head on a pike
+OverSimplified: The French Revolution - OverSimplified (Part 1),13:08,13:40,99,186,New idea,multiple-decompositions honest-caveat,The Assembly had two options and embraced the violence; some historians see the roots of the bloodshed here
+OverSimplified: The French Revolution - OverSimplified (Part 1),13:40,14:12,105,197,Bridge,running-character humor,"Marat writes 'kill them all' from his bathtub, then coos at a rubber duck"
+OverSimplified: The French Revolution - OverSimplified (Part 1),14:12,14:45,102,185,New idea,honest-caveat,"Declaration of the Rights of Man: landmark, but only for men"
+OverSimplified: The French Revolution - OverSimplified (Part 1),14:45,15:18,108,196,Bridge,story,People cared more about bread; the king lived far away at Versailles
+OverSimplified: The French Revolution - OverSimplified (Part 1),15:18,16:08,159,191,Bridge,story misconception-first humor,Women's march on Versailles; 'let them eat cake' played as a gag
+OverSimplified: The French Revolution - OverSimplified (Part 1),16:08,16:24,58,218,Bridge,story,Palace broken into; king agrees to share power and move to Paris
+OverSimplified: The French Revolution - OverSimplified (Part 1),16:24,17:31,218,195,Home,admin callback-to-hook,Segue joke into the sponsor
+OverSimplified: The French Revolution - OverSimplified (Part 1),17:31,17:54,38,99,Home,teaser-next,Part two is next
+Primer: Simulating Natural Selection,0:00,0:33,100,182,Home,callback-to-hook roadmap,Previous sims used fixed odds; now selection must come from traits meeting an environment
+Primer: Simulating Natural Selection,0:33,1:05,107,201,Home,toy-world rule-list,"The world: food appears daily; 0 food dies, 1 survives, 2 replicates"
+Primer: Simulating Natural Selection,1:05,1:54,126,154,Home,simulation-as-argument,Watch a few generations first: population grows to carrying capacity of about 95
+Primer: Simulating Natural Selection,1:54,2:14,61,183,New idea,special-case-first design-it-yourself,"Turn on one trait, speed, with a cost: double speed, double energy per distance"
+Primer: Simulating Natural Selection,2:14,2:54,136,204,New idea,inline-quiz commit-to-answer,What would you predict? Lists four plausible outcomes
+Primer: Simulating Natural Selection,2:54,3:11,22,78,New idea,simulation-as-argument honest-caveat,"Speed wins here, or at least the starting value was too slow"
+Primer: Simulating Natural Selection,3:11,3:27,51,191,New idea,minimal-definition-then-refine,First example of natural selection: random variation plus selection raises average speed
+Primer: Simulating Natural Selection,3:27,3:44,46,162,New idea,misconception-first,"Populations evolve, not individuals, despite Pokemon"
+Primer: Simulating Natural Selection,3:44,4:02,63,210,New idea,learner-discovers teaser-next,Population shrinks as speed rises: selection isn't for the good of the species
+Primer: Simulating Natural Selection,4:02,4:43,132,193,New idea,toy-world design-it-yourself,"Add size: eat creatures 20% smaller, but energy cost scales with size cubed"
+Primer: Simulating Natural Selection,4:43,5:15,110,206,New interface,honest-caveat notation-after-concept,"Admits the cost function is a choice; size cubed times speed squared, like kinetic energy"
+Primer: Simulating Natural Selection,5:15,5:53,122,193,New idea,toy-world,"Add sense: see food or threats from farther, at a cost"
+Primer: Simulating Natural Selection,5:53,6:14,72,206,New interface,new-interface,Rewind and vary all three; a 3D scatter plots each creature
+Primer: Simulating Natural Selection,6:14,6:49,69,118,New idea,simulation-as-argument learner-discovers,Average speed differs from before: other creatures are part of the environment
+Primer: Simulating Natural Selection,6:49,7:08,62,196,New idea,misconception-first honest-caveat,He expected strong selection for sense; it didn't happen
+Primer: Simulating Natural Selection,7:08,7:44,103,172,New idea,inline-quiz honest-caveat,Drop food to 10 a day: he says he doesn't know what will happen
+Primer: Simulating Natural Selection,7:44,8:24,97,146,New idea,simulation-as-argument,Sudden drop kills everyone; rewind and lower food gradually
+Primer: Simulating Natural Selection,8:24,8:42,60,200,New idea,learner-discovers misconception-first,"Big loses, sense and speed win; his efficiency guess was wrong again"
+Primer: Simulating Natural Selection,8:42,9:22,120,180,Bridge,generalize-to-other-domains misconception-first,Environment matters; evolution is not a march toward higher creatures
+Primer: Simulating Natural Selection,9:22,9:44,61,162,Home,recap teaser-next,Quick recap; next videos explore counterintuitive traits
+Primer: Simulating Supply and Demand,0:00,0:15,54,216,Home,roadmap special-case-first,"Start with one buyer and one seller, build up to a full market, then argue about it"
+Primer: Simulating Supply and Demand,0:15,0:32,40,141,Home,toy-world running-character,"Blue blobs sell rockets, orange blobs buy"
+Primer: Simulating Supply and Demand,0:32,1:05,109,198,Home,minimal-definition-then-refine,"Each seller has a minimum price, each buyer a maximum"
+Primer: Simulating Supply and Demand,1:05,1:39,113,199,Home,special-case-first,"Concrete numbers: max $40, min $20, trade at $30; each gains $10"
+Primer: Simulating Supply and Demand,1:39,2:12,102,185,Bridge,notation-after-concept minimal-definition-then-refine,"That gain is named surplus, a way to quantify slippery value"
+Primer: Simulating Supply and Demand,2:12,2:29,60,212,New idea,special-case-first,Add a second buyer with a slightly lower limit
+Primer: Simulating Supply and Demand,2:29,3:48,272,207,New idea,rule-list toy-world,"Simulation rules: expected prices, random order, adjust after each day"
+Primer: Simulating Supply and Demand,3:48,4:08,55,165,New idea,brute-force-first simulation-as-argument,Run with one buyer and one seller: nothing happens
+Primer: Simulating Supply and Demand,4:08,4:44,122,203,New idea,inline-quiz simulation-as-argument,Add the second buyer: what do you expect? Price creeps up
+Primer: Simulating Supply and Demand,4:44,5:00,56,210,New idea,learner-discovers,Competing buyers pay more; sellers get the surplus
+Primer: Simulating Supply and Demand,5:00,5:40,111,166,New idea,inline-quiz special-case-first,Add two sellers (3 vs 2): what will happen?
+Primer: Simulating Supply and Demand,5:40,5:55,54,216,New idea,learner-discovers visible-repetition,Price falls; competing sellers hand surplus to buyers
+Primer: Simulating Supply and Demand,5:55,6:11,50,188,New idea,inline-quiz,"Three buyers, three sellers: predict it"
+Primer: Simulating Supply and Demand,6:11,6:36,60,144,New interface,new-interface,Too many blobs: reorganize the display into separate rows
+Primer: Simulating Supply and Demand,6:36,6:53,60,212,New idea,learner-discovers hook-paradox,Only two rockets sell: the lowest buyer and highest seller can never agree
+Primer: Simulating Supply and Demand,6:53,7:08,54,216,New idea,act-it-out,Set the price high or low by hand and watch it settle
+Primer: Simulating Supply and Demand,7:08,7:24,55,206,New idea,minimal-definition-then-refine,Equilibrium: where quantity supplied equals quantity demanded
+Primer: Simulating Supply and Demand,7:24,8:12,149,186,New interface,notation-after-concept notation-compaction,"For huge markets, draw supply and demand curves; they cross at equilibrium"
+Primer: Simulating Supply and Demand,8:12,8:43,106,205,Bridge,honest-caveat,"Now the arguing; specifics vary, so only broad strokes"
+Primer: Simulating Supply and Demand,8:43,9:16,110,200,New idea,learner-discovers honest-caveat,Equilibrium maximizes surplus; one more trade would be negative (not a rigorous proof)
+Primer: Simulating Supply and Demand,9:16,10:03,147,188,New idea,minimal-definition-then-refine,Right number of participants: that's what efficient means; invisible hand
+Primer: Simulating Supply and Demand,10:03,10:35,112,210,New idea,analogy-breakpoint,"Is the ideal a good model? Needs many traders, free exit, good information"
+Primer: Simulating Supply and Demand,10:35,11:23,156,195,New idea,analogy-breakpoint multiple-decompositions,"Is total surplus the right goal? Food, labor, healthcare"
+Primer: Simulating Supply and Demand,11:23,11:40,61,215,Bridge,recap,"Markets are a tool, neither good nor bad"
+Primer: Simulating Supply and Demand,11:40,12:22,143,204,Home,generalize-to-other-domains admin,Joke: free educational videos are a confusing market; like and subscribe
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,0:00,0:41,132,193,Home,multiple-decompositions,Algorithms are either useful (BFS) or beautiful (Towers of Hanoi)
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,0:41,1:10,77,159,Home,hook-paradox,"The FFT is both: it powers wireless and GPS, and it's gorgeous"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,1:10,2:05,162,177,Bridge,misconception-first roadmap,Usually taught with heavy prerequisites; here a discovery approach via polynomial multiplication
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,2:05,2:21,22,82,Home,special-case-first design-it-yourself,Task: design an efficient algorithm to multiply two polynomials
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,2:21,2:36,34,136,Bridge,brute-force-first,The distributive law you learned in algebra is the naive algorithm
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,2:36,3:04,78,167,New interface,new-interface,"Coefficient list representation, index k holds the degree-k coefficient"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,3:04,3:32,69,148,New idea,brute-force-first,Every term times every term: O(d^2); can we do better?
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,3:32,4:12,112,168,New idea,special-case-first hook-question,Simplest case: a line; what other representations map one-to-one to a line?
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,4:12,4:41,84,174,New idea,special-case-first generalize-to-other-domains,Two points fix a line; d+1 points fix a degree-d polynomial
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,4:41,5:35,170,189,New interface,notation-after-concept honest-caveat,Proof sketch with a system of equations and an invertible matrix; full proof linked
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,5:35,6:03,66,141,New idea,minimal-definition-then-refine,Names the value representation
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,6:03,6:55,142,164,New idea,special-case-first act-it-out,Multiply two concrete polynomials by multiplying 5 point values pairwise: O(d)
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,6:55,8:02,168,150,New idea,recap design-it-yourself,"Grand plan: evaluate, multiply pointwise, convert back; the missing magic box is the FFT"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,8:02,8:44,112,160,New idea,brute-force-first,Evaluate at n random points: back to O(d^2)
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,8:44,9:14,90,180,New idea,special-case-first hook-question,Simplify to x^2 at 8 points: which points let one value give another?
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,9:14,10:10,160,171,New idea,learner-discovers,"Positive-negative pairs: even functions repeat, odd ones flip sign"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,10:10,11:04,142,158,New idea,learner-discovers minimal-definition-then-refine,"Split a general polynomial into even and odd parts, functions of x^2"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,11:04,11:45,116,170,New idea,visible-repetition learner-discovers,Each half is another evaluation problem at half the points; smells recursive
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,11:45,12:29,127,173,New idea,recap,"Big picture: an O(n log n) recursive algorithm, if it works"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,12:29,13:07,96,152,New idea,inline-quiz hook-paradox,"One major problem: can you spot it? Squared points are all positive, so recursion breaks"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,13:07,13:34,68,151,New idea,learner-discovers,Fix: extend the domain to complex numbers
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,13:34,15:10,274,171,New idea,special-case-first act-it-out,"Reverse-engineer with n=4: pick 1, then need x with x^2 = -1, which is i"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,15:10,15:39,81,168,New idea,multiple-decompositions,"Alternate view: we solved x^4 = 1, the fourth roots of unity"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,15:39,16:21,133,190,New idea,generalize-to-other-domains,Degree 5 needs 8 points: eighth roots of unity; general rule for n
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,16:21,17:19,179,185,New interface,notation-after-concept notation-compaction,Roots on the unit circle written compactly as powers of omega = e^(2 pi i/n)
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,17:19,18:16,175,184,New idea,minimal-definition-then-refine,"Two key properties: pairs, and squaring gives n/2 roots that are also paired"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,18:16,20:32,399,176,New interface,notation-compaction,"Full FFT outline: base case, two recursive calls, combine with omega^j"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,20:32,20:46,41,176,Bridge,honest-caveat,This part is tricky; take your time verifying each step
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,20:46,22:22,280,175,New interface,new-interface,Translates the outline into 11 lines of code
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,22:22,22:50,66,141,New idea,recap hook-question,"Missing piece: interpolation, which seems much harder"
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,22:50,23:57,173,155,New interface,multiple-decompositions,Evaluation as matrix-vector product; the DFT matrix
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,23:57,25:08,178,150,New interface,learner-discovers honest-caveat,What stands out about the inverse matrix? Omega becomes omega^-1 over n (skipping proofs)
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,25:08,26:48,282,169,New interface,learner-discovers,So the inverse FFT is the same code with one line changed
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,26:48,28:02,199,161,Bridge,recap callback-to-hook,Recaps the four brilliant ideas; why it is his favorite algorithm
+Reducible: The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?,28:02,28:23,77,220,Home,admin,"Like, subscribe, Patreon"
+Sebastian Lague: Coding Adventure: Ray Tracing,0:01,0:54,165,187,Home,roadmap show-your-sources,Sets out to experiment with ray tracing; names the book and blog he learned from
+Sebastian Lague: Coding Adventure: Ray Tracing,0:54,1:12,49,163,Home,toy-world,Builds inside a game engine so the built-in renderer is a baseline to compare against
+Sebastian Lague: Coding Adventure: Ray Tracing,1:12,1:46,84,148,New idea,build-and-verify,Draws a grid of points on the camera's projection plane; checks it tracks FOV and rotation
+Sebastian Lague: Coding Adventure: Ray Tracing,1:46,2:05,51,161,New interface,new-interface,"Walks the code: plane height from FOV and trig, grid transformed by the camera"
+Sebastian Lague: Coding Adventure: Ray Tracing,2:05,2:26,55,157,New idea,act-it-out,Draws arrows for the rays shot from the camera
+Sebastian Lague: Coding Adventure: Ray Tracing,2:26,2:59,88,160,Bridge,misconception-first analogy,"Real light flows from the sun to the eye; we go backwards, ancient Greek style, because it's cheaper"
+Sebastian Lague: Coding Adventure: Ray Tracing,2:59,3:18,63,199,New idea,minimal-definition-then-refine,Millions of rays: a manager script sends camera data to a GPU shader
+Sebastian Lague: Coding Adventure: Ray Tracing,3:18,3:55,120,195,New interface,build-and-verify special-case-first,"Shader basics: return red, then x and y coordinates as gradients"
+Sebastian Lague: Coding Adventure: Ray Tracing,3:55,5:03,207,183,New interface,build-and-verify,Ray struct; outputs direction as color and checks axes map to RGB
+Sebastian Lague: Coding Adventure: Ray Tracing,5:03,5:18,48,192,New idea,special-case-first,Next baby step: spheres as pure math instead of triangles
+Sebastian Lague: Coding Adventure: Ray Tracing,5:18,5:54,98,163,New interface,notation-after-concept,"Sphere equation; solve for distance; discriminant decides miss, touch or two hits"
+Sebastian Lague: Coding Adventure: Ray Tracing,5:54,6:44,143,172,New interface,minimal-definition-then-refine,hitInfo struct; normal vector means 'which way is up on the surface'
+Sebastian Lague: Coding Adventure: Ray Tracing,6:44,6:59,47,188,New idea,build-and-verify,Tests one sphere white on black: 'seems pretty spherical'
+Sebastian Lague: Coding Adventure: Ray Tracing,6:59,8:27,275,188,New idea,visible-repetition,"Many spheres: loop over all, keep the closest hit; checks depth order"
+Sebastian Lague: Coding Adventure: Ray Tracing,8:27,9:00,110,200,Bridge,special-case-first minimal-definition-then-refine,Smooth surfaces reflect at equal angles (specular); rough ones scatter (diffuse)
+Sebastian Lague: Coding Adventure: Ray Tracing,9:00,10:06,210,191,New idea,brute-force-first learner-discovers,Plays at inventing a random number generator from overflowing multiplies
+Sebastian Lague: Coding Adventure: Ray Tracing,10:06,11:14,189,167,New idea,build-and-verify honest-caveat,First attempt looks patterned; tries more; then swaps in tested code from online
+Sebastian Lague: Coding Adventure: Ray Tracing,11:14,11:50,113,188,New idea,brute-force-first,"Random direction: sample a cube until inside a sphere, then normalize"
+Sebastian Lague: Coding Adventure: Ray Tracing,11:50,12:09,53,167,Home,honest-caveat failure-shown,Gets stuck in a while-true loop and crashes the computer; adds a loop limit
+Sebastian Lague: Coding Adventure: Ray Tracing,12:09,12:42,114,207,New idea,brute-force-first simulation-as-argument,Shows skipping the rejection step clumps points at cube corners
+Sebastian Lague: Coding Adventure: Ray Tracing,12:42,13:21,121,186,New idea,honest-caveat,Normal distribution trick works 'for maths reasons I haven't yet grasped'
+Sebastian Lague: Coding Adventure: Ray Tracing,13:21,13:57,101,168,New idea,special-case-first,Flip directions outside the hemisphere using the dot product with the normal
+Sebastian Lague: Coding Adventure: Ray Tracing,13:57,14:16,55,174,New idea,build-and-verify,Tiny visual test confirms it
+Sebastian Lague: Coding Adventure: Ray Tracing,14:16,14:54,124,196,New idea,act-it-out,"Trace loop: hit, move to hit point, bounce randomly, until limit or miss"
+Sebastian Lague: Coding Adventure: Ray Tracing,14:54,15:30,108,180,Bridge,analogy,"Ray color multiplies by object color, like a black object absorbing all light"
+Sebastian Lague: Coding Adventure: Ray Tracing,15:30,16:21,154,181,New idea,minimal-definition-then-refine,Track incoming light separately; emissive materials add light tinted by the path
+Sebastian Lague: Coding Adventure: Ray Tracing,16:21,16:40,67,212,New idea,recap,"Core shader: seed, camera ray, trace"
+Sebastian Lague: Coding Adventure: Ray Tracing,16:40,17:31,158,186,Home,failure-shown humor,Renders a 'photorealistic room without light'; adds a glowing ball as a sun
+Sebastian Lague: Coding Adventure: Ray Tracing,17:31,18:05,105,185,New idea,simulation-as-argument,"Bounce limit 1, 2, 30: indirect light appears, extra bounces matter less"
+Sebastian Lague: Coding Adventure: Ray Tracing,18:05,18:55,156,187,New idea,approximation-gets-less-wrong,Noise comes from one ray per pixel; average 100 rays
+Sebastian Lague: Coding Adventure: Ray Tracing,18:55,19:47,170,196,New idea,approximation-gets-less-wrong,Too slow; accumulate over frames so the image improves over time
+Sebastian Lague: Coding Adventure: Ray Tracing,19:47,20:53,206,187,New idea,special-case-first,Missed rays gather a simple sky gradient with a sun disc
+Sebastian Lague: Coding Adventure: Ray Tracing,20:53,21:45,164,189,New idea,act-it-out learner-discovers,"A slanted beam spreads over more area, so it should count less"
+Sebastian Lague: Coding Adventure: Ray Tracing,21:45,22:18,103,187,New interface,notation-after-concept,Cosine weighting via the dot product; before/after comparison
+Sebastian Lague: Coding Adventure: Ray Tracing,22:18,22:53,115,197,Bridge,simulation-as-argument honest-caveat,Compares with the built-in renderer to notice contact shadows and color bleed
+Sebastian Lague: Coding Adventure: Ray Tracing,22:53,23:27,93,164,New idea,honest-caveat notation-compaction,"Cosine-weighted bounce directions give the same result faster, 'maths I don't understand'"
+Sebastian Lague: Coding Adventure: Ray Tracing,23:27,24:18,140,165,New idea,special-case-first,"Triangles: one triangle first, then a 456-triangle chess knight"
+Sebastian Lague: Coding Adventure: Ray Tracing,24:18,24:51,105,191,New idea,visible-repetition,"Triangle and mesh buffers; same closest-hit logic as spheres, plus bounding boxes"
+Sebastian Lague: Coding Adventure: Ray Tracing,24:51,26:17,266,186,Home,toy-world,Cornell box with colored walls; the knight emerges with colored bounce light
+Sebastian Lague: Coding Adventure: Ray Tracing,26:17,26:51,91,161,New idea,simulation-as-argument,"1, 2, 10 bounces compared; Suzanne the monkey poses"
+Sebastian Lague: Coding Adventure: Ray Tracing,26:51,27:08,48,169,Home,failure-shown humor,An optimization breaks Suzanne; reverts it
+Sebastian Lague: Coding Adventure: Ray Tracing,27:08,27:59,137,161,New idea,callback-to-hook notation-after-concept,Specular reflection via the reflect function; blend by smoothness
+Sebastian Lague: Coding Adventure: Ray Tracing,27:59,28:33,95,168,New idea,visible-repetition,Four balls at smoothness 0.4 to 1: blurry to crisp mirror
+Sebastian Lague: Coding Adventure: Ray Tracing,28:33,29:57,209,149,Home,humor simulation-as-argument,Mirrored balls and a hall-of-mirrors knight room
+Sebastian Lague: Coding Adventure: Ray Tracing,29:57,30:14,58,205,Home,hook-paradox misconception-first,"Why are a red tomato's highlights white, when ours are tinted red?"
+Sebastian Lague: Coding Adventure: Ray Tracing,30:14,30:45,88,170,Bridge,learner-discovers generalize-to-other-domains,A clear coating reflects some light untinted; same for varnished wood
+Sebastian Lague: Coding Adventure: Ray Tracing,30:45,31:33,143,179,New idea,minimal-definition-then-refine,Specular probability per material picks coating vs diffuse bounces
+Sebastian Lague: Coding Adventure: Ray Tracing,31:33,31:48,48,192,Home,callback-to-hook,The tomato ball now looks tomato-y
+Sebastian Lague: Coding Adventure: Ray Tracing,31:48,32:43,178,194,New idea,special-case-first,Depth of field: focus on a single pixel's rays
+Sebastian Lague: Coding Adventure: Ray Tracing,32:43,33:19,109,182,New idea,brute-force-first simulation-as-argument,"Random point in a circle; without the square root, points cluster in the middle"
+Sebastian Lague: Coding Adventure: Ray Tracing,33:19,33:52,96,175,Home,failure-shown,Code doesn't compile; looks up matrix syntax
+Sebastian Lague: Coding Adventure: Ray Tracing,33:52,34:40,144,180,New idea,learner-discovers,Blur everything; bonus: a tiny blur gives anti-aliasing
+Sebastian Lague: Coding Adventure: Ray Tracing,34:40,35:50,203,174,New idea,design-it-yourself act-it-out,Offset ray origins instead so rays converge on a focal plane
+Sebastian Lague: Coding Adventure: Ray Tracing,35:50,37:12,248,181,New idea,build-and-verify,"Test scene: shift focus between pawns, knight, king and queen"
+Sebastian Lague: Coding Adventure: Ray Tracing,37:12,37:39,71,156,Home,teaser-next,"Glass, volumetrics and performance left for later"
+Veritasium: The Big Misconception About Electricity,0:00,0:16,41,154,Home,hook-question toy-world,"Thought experiment: light-second-long wires, bulb 1 m from the switch; how long until it lights?"
+Veritasium: The Big Misconception About Electricity,0:16,0:32,51,191,Home,inline-quiz commit-to-answer,Offers 5 options and asks you to commit in the comments before the reveal
+Veritasium: The Big Misconception About Electricity,0:32,0:48,47,176,Bridge,honest-caveat,"States the idealizations: no resistance, bulb lights instantly"
+Veritasium: The Big Misconception About Electricity,0:48,1:21,97,176,Bridge,hook-paradox,"In AC the electrons only wiggle, so how does energy reach your home?"
+Veritasium: The Big Misconception About Electricity,1:21,2:07,119,155,Home,analogy misconception-first,"His old teaching analogy: electrons as a chain in a tube, pushed by the plant"
+Veritasium: The Big Misconception About Electricity,2:07,2:58,144,169,Bridge,analogy-breakpoint misconception-first,The analogy is wrong: transformers break the wire; why doesn't returning current carry energy back?
+Veritasium: The Big Misconception About Electricity,2:58,3:14,40,150,Bridge,misconception-first,"Names the lies: electrons hold energy, a continuous loop, energy dissipated by electrons"
+Veritasium: The Big Misconception About Electricity,3:14,3:45,72,139,New idea,story,Maxwell: light is oscillating electric and magnetic fields
+Veritasium: The Big Misconception About Electricity,3:45,4:19,92,162,New idea,story special-case-first,"Poynting traces energy flow locally, starting from sunlight"
+Veritasium: The Big Misconception About Electricity,4:19,4:54,92,158,New interface,notation-after-concept,Poynting vector S = E x B over mu naught
+Veritasium: The Big Misconception About Electricity,4:54,5:11,54,191,New interface,minimal-definition-then-refine act-it-out,Cross product explained with the right-hand rule
+Veritasium: The Big Misconception About Electricity,5:11,5:29,50,167,New idea,special-case-first,"For light, energy flows the way light travels: makes sense"
+Veritasium: The Big Misconception About Electricity,5:29,5:46,35,124,New idea,generalize-to-other-domains,The kicker: it works anywhere E and B coincide
+Veritasium: The Big Misconception About Electricity,5:46,6:36,118,142,New idea,toy-world act-it-out,"Simple battery-and-bulb circuit: field extends at light speed, surface charges build"
+Veritasium: The Big Misconception About Electricity,6:36,6:51,36,144,New idea,honest-caveat,Electron drift is only about 0.1 mm per second
+Veritasium: The Big Misconception About Electricity,6:51,8:13,224,164,New idea,act-it-out visible-repetition,"Applies the right-hand rule around the battery, along the wires, at the bulb"
+Veritasium: The Big Misconception About Electricity,8:13,8:45,96,180,Bridge,expert-dialogue,Experts: people think they're buying electrons; energy moves through the space around wires
+Veritasium: The Big Misconception About Electricity,8:45,9:01,49,184,New idea,callback-to-hook,"Electrons go both ways, energy only one way: fields carry it"
+Veritasium: The Big Misconception About Electricity,9:01,10:05,177,166,New idea,generalize-to-other-domains,"AC: E and B flip together, so energy still flows source to bulb"
+Veritasium: The Big Misconception About Electricity,10:05,11:12,184,165,Bridge,story misconception-first,Not academic: the 1858 transatlantic cable failed; Kelvin's water-tube view vs Heaviside's fields
+Veritasium: The Big Misconception About Electricity,11:12,11:42,83,166,Bridge,generalize-to-other-domains,Iron sheath raised capacitance; why power lines hang high above damp ground
+Veritasium: The Big Misconception About Electricity,11:42,12:33,146,172,Bridge,callback-to-hook,Answer: about 1/c seconds; the field crosses the 1 m gap in nanoseconds
+Veritasium: The Big Misconception About Electricity,12:33,12:48,49,196,New idea,honest-caveat,The bulb gets only a fraction of voltage at first; experts disagreed on details
+Veritasium: The Big Misconception About Electricity,12:48,13:06,64,213,Home,expert-dialogue honest-caveat,Jokes about building desert power lines if called out
+Veritasium: The Big Misconception About Electricity,13:06,13:39,82,149,Home,recap,We use this daily and almost nobody knows; think of it at every light switch
+Veritasium: The Big Misconception About Electricity,13:39,14:48,218,190,Home,admin,Sponsor read
+Veritasium: The Most Misunderstood Concept in Physics,0:00,0:19,42,133,Home,hook-paradox,"Teases a concept that governs storms, the universe and maybe time itself"
+Veritasium: The Most Misunderstood Concept in Physics,0:19,0:54,104,178,Home,hook-question misconception-first street-interview,Asks strangers what Earth gets from the sun; most say energy
+Veritasium: The Most Misunderstood Concept in Physics,0:54,1:28,118,208,Home,misconception-first street-interview,Asks how much energy Earth radiates back; most guess less because we use it
+Veritasium: The Most Misunderstood Concept in Physics,1:28,2:01,116,211,Bridge,misconception-first,Reveals it is the same amount; so what are we really getting?
+Veritasium: The Most Misunderstood Concept in Physics,2:01,2:56,147,160,Home,running-character story,"Jumps to 1813: young Sadi Carnot, Napoleon, Paris falls"
+Veritasium: The Most Misunderstood Concept in Physics,2:56,3:47,125,147,Home,story,"Carnot's father, steam engines, French designs behind Britain's"
+Veritasium: The Most Misunderstood Concept in Physics,3:47,4:03,41,154,Bridge,story special-case-first,Engines convert only about 3%; Carnot studies the ideal engine
+Veritasium: The Most Misunderstood Concept in Physics,4:03,5:26,229,166,New idea,toy-world act-it-out,"Hot bar, cold bar, chamber, piston, flywheel: walks the cycle step by step"
+Veritasium: The Most Misunderstood Concept in Physics,5:26,6:17,136,160,New idea,act-it-out,Runs the ideal engine in reverse; everything returns to the start
+Veritasium: The Most Misunderstood Concept in Physics,6:17,6:35,41,137,New idea,misconception-first hook-question,You'd expect a reversible engine to be 100% efficient; it isn't
+Veritasium: The Most Misunderstood Concept in Physics,6:35,7:11,111,185,New idea,act-it-out,"Hot gas pushes harder than cold gas, so some heat must be dumped"
+Veritasium: The Most Misunderstood Concept in Physics,7:11,7:27,41,154,New idea,design-it-yourself,"To raise efficiency, heat the hot side or cool the cold side"
+Veritasium: The Most Misunderstood Concept in Physics,7:27,8:00,84,153,Bridge,story,Kelvin imagines gas so cold the particles stop: absolute zero
+Veritasium: The Most Misunderstood Concept in Physics,8:00,8:17,46,162,New interface,notation-after-concept,Replaces heat with temperatures; efficiency formula on screen
+Veritasium: The Most Misunderstood Concept in Physics,8:17,8:51,101,178,New idea,generalize-to-other-domains,Efficiency depends only on temperatures; 100% is impossible
+Veritasium: The Most Misunderstood Concept in Physics,8:51,9:26,89,153,Bridge,special-case-first,Real engines: 32% theoretical vs 3% actual; heat leaks into walls and axle
+Veritasium: The Most Misunderstood Concept in Physics,9:26,9:43,38,134,New idea,minimal-definition-then-refine,"Spread-out energy can't be recovered: same energy, less usable"
+Veritasium: The Most Misunderstood Concept in Physics,9:43,10:17,78,138,New idea,story minimal-definition-then-refine,Clausius names the measure of spreading: entropy
+Veritasium: The Most Misunderstood Concept in Physics,10:17,10:48,64,124,New idea,minimal-definition-then-refine,"The first two laws: energy is constant, entropy tends to a maximum"
+Veritasium: The Most Misunderstood Concept in Physics,10:48,11:08,49,147,Bridge,generalize-to-other-domains,"Why hot things cool, gas fills containers, no perpetual motion"
+Veritasium: The Most Misunderstood Concept in Physics,11:08,11:24,51,191,New idea,misconception-first analogy-breakpoint,Entropy is usually called disorder; better: energy's tendency to spread
+Veritasium: The Most Misunderstood Concept in Physics,11:24,11:40,34,128,New idea,hook-paradox,"Physics laws run both ways in time, so where does the direction come from?"
+Veritasium: The Most Misunderstood Concept in Physics,11:40,12:30,139,167,New idea,toy-world special-case-first,"Toy model: 8 atoms per bar, 7 and 3 energy packets hopping randomly"
+Veritasium: The Most Misunderstood Concept in Physics,12:30,12:45,43,172,New idea,simulation-as-argument hook-paradox,"Snapshot: 9 packets left, 1 right; heat went cold to hot!"
+Veritasium: The Most Misunderstood Concept in Physics,12:45,13:19,68,120,New idea,minimal-definition-then-refine,"Boltzmann: not impossible, just improbable; counts configurations"
+Veritasium: The Most Misunderstood Concept in Physics,13:19,14:10,136,160,New idea,approximation-gets-less-wrong simulation-as-argument,10.5% chance at small scale; 0.05% at 80 atoms; never at real scale
+Veritasium: The Most Misunderstood Concept in Physics,14:10,14:43,103,187,Home,analogy,"Rubik's cube: one solved state, quintillions of messy ones"
+Veritasium: The Most Misunderstood Concept in Physics,14:43,15:01,43,143,Bridge,hook-paradox,Then how does air conditioning push heat from cold to hot?
+Veritasium: The Most Misunderstood Concept in Physics,15:01,15:37,87,145,Bridge,generalize-to-other-domains,Only by raising entropy more at the power plant
+Veritasium: The Most Misunderstood Concept in Physics,15:37,16:09,75,141,Bridge,hook-question,"If entropy always rises, how does any structure or life exist?"
+Veritasium: The Most Misunderstood Concept in Physics,16:09,16:44,72,123,Bridge,callback-to-hook,Earth isn't closed: the sun gives a stream of low entropy
+Veritasium: The Most Misunderstood Concept in Physics,16:44,17:00,45,169,Home,generalize-to-other-domains,"Plants, animals, predators: each step spreads energy more"
+Veritasium: The Most Misunderstood Concept in Physics,17:00,18:06,164,149,Home,callback-to-hook street-interview,"Back to interviewees: same energy out; one photon in, 20 out"
+Veritasium: The Most Misunderstood Concept in Physics,18:06,19:00,123,137,New idea,honest-caveat generalize-to-other-domains,Speculative: life may be a consequence of the second law (England)
+Veritasium: The Most Misunderstood Concept in Physics,19:00,19:31,89,172,New idea,hook-question,Where did the sun get its low entropy? Back to the Big Bang
+Veritasium: The Most Misunderstood Concept in Physics,19:31,19:47,39,146,New idea,minimal-definition-then-refine honest-caveat,"The past hypothesis says it was low, not why"
+Veritasium: The Most Misunderstood Concept in Physics,19:47,20:05,45,150,New idea,hook-paradox,But the early universe was uniform; how was that low entropy?
+Veritasium: The Most Misunderstood Concept in Physics,20:05,21:11,147,134,New idea,analogy-breakpoint,Gravity flips it: spread-out matter is the unlikely state
+Veritasium: The Most Misunderstood Concept in Physics,21:11,21:29,44,147,New idea,special-case-first,"Entropy budgets: stars, gas, neutrinos, CMB"
+Veritasium: The Most Misunderstood Concept in Physics,21:29,22:51,202,148,New idea,story,"Bekenstein, Hawking: black holes have entropy and a temperature"
+Veritasium: The Most Misunderstood Concept in Physics,22:51,23:31,84,126,New idea,special-case-first,Black holes hold almost all the universe's entropy
+Veritasium: The Most Misunderstood Concept in Physics,23:31,24:07,93,155,Bridge,generalize-to-other-domains,Low-to-high entropy is the arrow of time
+Veritasium: The Most Misunderstood Concept in Physics,24:07,24:55,115,144,New idea,teaser-next,Heat death: the arrow of time disappears
+Veritasium: The Most Misunderstood Concept in Physics,24:55,25:50,125,136,Home,analogy callback-to-hook,"Tea and milk: complexity lives in the middle, where we are"
+Veritasium: The Most Misunderstood Concept in Physics,25:50,27:14,274,196,Home,admin,Sponsor read
+Vsauce: How To Count Past Infinity,0:00,0:12,15,75,Home,hook-question misconception-first,"What's the biggest number you can think of? A googol, a googolplex?"
+Vsauce: How To Count Past Infinity,0:12,0:36,49,122,Home,humor hook-paradox,"Joke: the biggest number is a 40 planted in trees in Russia, by surface area"
+Vsauce: How To Count Past Infinity,0:36,1:16,87,130,Home,visible-repetition,"By amount, there's always 41, 42... no last number"
+Vsauce: How To Count Past Infinity,1:16,1:28,23,115,Bridge,misconception-first minimal-definition-then-refine,Infinity isn't a number but a kind of number; some infinities are bigger
+Vsauce: How To Count Past Infinity,1:28,1:56,56,120,New idea,minimal-definition-then-refine special-case-first,"Cardinal numbers count things: 4 bananas, 20 dots"
+Vsauce: How To Count Past Infinity,1:56,2:21,59,142,New idea,act-it-out,Same cardinality means you can pair members one to one
+Vsauce: How To Count Past Infinity,2:21,2:47,65,150,New interface,notation-after-concept,"How many naturals? Not a natural; named aleph-null, the smallest infinity"
+Vsauce: How To Count Past Infinity,2:47,3:15,76,163,New idea,hook-paradox,"Evens, odds and even fractions all have aleph-null members"
+Vsauce: How To Count Past Infinity,3:15,3:41,41,95,Bridge,brute-force-first,"Aleph-null beats any googolplex tower, yet we can count past it"
+Vsauce: How To Count Past Infinity,3:41,4:09,82,176,New idea,toy-world act-it-out,"Supertask: infinitely many shrinking lines in a finite space, matched to the naturals"
+Vsauce: How To Count Past Infinity,4:09,4:49,88,132,New idea,misconception-first act-it-out,"Add one line: aleph-null plus one? No, re-pair and it's the same amount"
+Vsauce: How To Count Past Infinity,4:49,5:14,68,163,New idea,visible-repetition,"Add two, three, even another infinity: still aleph-null"
+Vsauce: How To Count Past Infinity,5:14,5:29,41,164,New idea,multiple-decompositions,Same sequence made by sliding every other line to the end
+Vsauce: How To Count Past Infinity,5:29,5:43,36,154,New idea,hook-paradox,"Same amount, but clearly something differs. What?"
+Vsauce: How To Count Past Infinity,5:43,6:11,72,154,New idea,learner-discovers,Label lines in order and the extra line needs a label past every natural
+Vsauce: How To Count Past Infinity,6:11,6:37,59,136,New interface,notation-after-concept minimal-definition-then-refine,"Ordinals: omega is the next label; omega+1, omega+2"
+Vsauce: How To Count Past Infinity,6:37,7:04,66,147,Bridge,analogy,Finishing omega-th in a race: infinitely many finished before you
+Vsauce: How To Count Past Infinity,7:04,7:58,125,139,New idea,minimal-definition-then-refine,Order type: first ordinal not needed to label the set; same as cardinality for finite
+Vsauce: How To Count Past Infinity,7:58,8:27,66,137,Bridge,humor honest-caveat,"In 'name the biggest number', omega+1 isn't bigger, just later"
+Vsauce: How To Count Past Infinity,8:27,8:52,67,161,New idea,callback-to-hook,There are infinities with more things than aleph-null
+Vsauce: How To Count Past Infinity,8:52,9:41,115,141,New idea,special-case-first visible-repetition,"Power sets of {1,2} and {1,2,3}: 2^n members"
+Vsauce: How To Count Past Infinity,9:41,10:36,112,122,New idea,act-it-out,List every subset of the naturals as yes/no rows
+Vsauce: How To Count Past Infinity,10:36,11:44,173,153,New idea,learner-discovers act-it-out,Diagonal argument: flip each diagonal entry to build an unlisted subset
+Vsauce: How To Count Past Infinity,11:44,12:11,69,153,New idea,generalize-to-other-domains,Repeated power sets give ever bigger infinities
+Vsauce: How To Count Past Infinity,12:11,12:36,51,122,New idea,hook-paradox honest-caveat,Wait: can we even treat an endless process as a finished whole?
+Vsauce: How To Count Past Infinity,12:36,14:08,219,143,Bridge,minimal-definition-then-refine multiple-decompositions,Math vs science: axioms are true because we say so; invented or discovered?
+Vsauce: How To Count Past Infinity,14:08,14:50,87,124,New idea,story minimal-definition-then-refine,Zermelo's axiom of infinity; reject it and you're a finitist
+Vsauce: How To Count Past Infinity,14:50,15:02,25,125,New idea,hook-paradox,Reaching omega+omega needs another infinite set: a new ceiling
+Vsauce: How To Count Past Infinity,15:02,15:29,74,164,Bridge,analogy minimal-definition-then-refine,Axiom of replacement: swap every element for a banana and it's still a set
+Vsauce: How To Count Past Infinity,15:29,16:21,117,135,New interface,visible-repetition notation-compaction,"Replacement builds omega*2, omega squared, towers, epsilon-nought"
+Vsauce: How To Count Past Infinity,16:21,17:00,95,146,New interface,learner-discovers,"All arrangements of aleph-null things have an order type: omega-1, so aleph-1"
+Vsauce: How To Count Past Infinity,17:00,17:39,94,145,New idea,honest-caveat,Where the power set falls is the continuum hypothesis; unknown
+Vsauce: How To Count Past Infinity,17:39,18:43,154,144,New interface,visible-repetition,"Climb: aleph-omega, aleph-omega-squared, an accelerating feedback loop"
+Vsauce: How To Count Past Infinity,18:43,19:10,61,136,New idea,hook-paradox callback-to-hook,Nothing beyond? That's what we said about the finite
+Vsauce: How To Count Past Infinity,19:10,19:21,25,136,New idea,minimal-definition-then-refine,Inaccessible cardinals: unreachable from below
+Vsauce: How To Count Past Infinity,19:21,20:26,155,143,Bridge,callback-to-hook learner-discovers,Aleph-null is a shadow of this: finite steps never reach it
+Vsauce: How To Count Past Infinity,20:26,20:51,52,125,Bridge,analogy,Nothing to first infinity is like first infinity to an inaccessible
+Vsauce: How To Count Past Infinity,20:51,21:31,83,125,New idea,honest-caveat teaser-next,"Large cardinal axioms, possible contradictions, open questions"
+Vsauce: How To Count Past Infinity,21:31,22:10,82,126,Home,generalize-to-other-domains callback-to-hook,Maybe no physical use; a tiny brain found something truer than the universe
+Vsauce: How To Count Past Infinity,22:10,23:08,44,46,Home,admin,Outro music
+Vsauce: How To Count Past Infinity,23:08,23:46,91,144,New idea,bonus-fact,Post-credits: 1+omega = omega but omega+1 doesn't

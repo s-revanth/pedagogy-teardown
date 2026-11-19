@@ -1,0 +1,180 @@
+{
+ "id": "r6sGWTCMz2k",
+ "channel": "3blue1brown",
+ "title": "But what is a Fourier series? From heat flow to drawing with circles | DE4",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:05",
+   "N",
+   "hook-paradox|simulation-as-argument",
+   "Opens with 300 rotating arrows drawing a shape; each arrow trivial, the sum anything but"
+  ],
+  [
+   "1:31",
+   "H",
+   "roadmap|honest-caveat",
+   "Formula is short; start with real sine waves (Fourier's origin), generalize later; prior videos optional"
+  ],
+  [
+   "2:32",
+   "H",
+   "minimal-definition-then-refine",
+   "Heat equation recap: cosine waves decay exponentially, faster at high frequency"
+  ],
+  [
+   "3:04",
+   "N",
+   "analogy-breakpoint",
+   "Linearity: add and scale solutions to get dials for custom initial conditions"
+  ],
+  [
+   "4:12",
+   "N",
+   "hook-question|story",
+   "Step function from two rods is nothing like waves; Fourier asks the absurd question anyway"
+  ],
+  [
+   "6:13",
+   "N",
+   "misconception-first",
+   "Objection: finite sums are only approximations; infinite sum needed"
+  ],
+  [
+   "7:03",
+   "B",
+   "analogy|approximation-gets-less-wrong",
+   "Infinite sum of fractions to pi/4 as a model of limits; functions do it pointwise in parallel"
+  ],
+  [
+   "8:28",
+   "N",
+   "honest-caveat",
+   "Value at jump forced to 0; analysis nuances swept under rug and linked out"
+  ],
+  [
+   "9:41",
+   "B",
+   "roadmap",
+   "Real challenge is finding coefficients; generalize to complex outputs as drawings"
+  ],
+  [
+   "10:45",
+   "N",
+   "toy-world|simulation-as-argument",
+   "Function as pencil tip tracing a path; real functions are boring 1D drawings"
+  ],
+  [
+   "11:25",
+   "N",
+   "special-case-first",
+   "Pairs of opposite-rotating vectors give a sine wave; Fourier's case is the special case"
+  ],
+  [
+   "12:55",
+   "I",
+   "notation-after-concept|honest-caveat",
+   "e^(it) walks the unit circle; can be treated as shorthand but is more than that"
+  ],
+  [
+   "14:06",
+   "I",
+   "notation-compaction|rule-list",
+   "Rotating vector e^(n 2 pi i t), integer n; includes n=0 to fit the pattern"
+  ],
+  [
+   "15:32",
+   "I",
+   "design-it-yourself",
+   "Knobs: complex constant c_n sets initial size and angle, with 0.5 and 45 degree examples"
+  ],
+  [
+   "16:46",
+   "N",
+   "special-case-first|learner-discovers",
+   "c0 is the average of the drawing; every rotating term averages to zero"
+  ],
+  [
+   "18:48",
+   "N",
+   "analogy|brute-force-first",
+   "Multiply by e^(-n...) to freeze vector n, then average kills the rest (smartphone-for-child joke)"
+  ],
+  [
+   "20:02",
+   "I",
+   "recap|build-and-verify",
+   "General c_n formula read as freeze-then-average; how renders use SVG and numeric sums, 101 vectors"
+  ],
+  [
+   "22:18",
+   "N",
+   "callback-to-hook",
+   "Back to step function; coefficients as exercise"
+  ],
+  [
+   "23:44",
+   "N",
+   "teaser-next|generalize-to-other-domains",
+   "Exponentials for linear differential equations recur; further reading links"
+  ]
+ ],
+ "metrics": {
+  "first_question": "4:28",
+  "notation_first": "12:55",
+  "key_term": "rotating vector e^(2 pi i n t) with coefficient c_n",
+  "misconception": "yes: 'the step function is not a sum of waves, only approximations' (6:29)",
+  "brute_force": "yes 21:14: numerical integration by chopping into delta t, the computer approach shown after the clean formula",
+  "examples": "~4: 300 arrows, step function, eighth-note drawing, 1D-as-boring-drawing; n=0 then n=2 then general n",
+  "ending": "Exercises, resources, teaser for exponentials in later chapters"
+ },
+ "principles": {
+  "1": "partly: heat flow and rods are familiar physics, but 300 arrows open is spectacle first (0:05)",
+  "2": "confirmed: complex exponential held back until 12:55 and presented as shorthand first, with reason for adopting it",
+  "3": "not-observed",
+  "4": "confirmed: pi/4 infinite sum analogy for limits (7:03) before pointwise convergence",
+  "5": "partly: path as pencil tip tracing a drawing (10:45), but not acted out by learner",
+  "6": "partly: c0 average first (16:46) is simplest case; numerical sum comes last (21:14)",
+  "7": "partly: freeze-then-average is narrated stepwise for n=2 before generalizing (18:48), discovery guided",
+  "8": "partly: long hook and heat recap (0:05-6:00) before notation; notation arrives at 12:55; no speech-rate evidence",
+  "9": "confirmed: step function reappears at 4:28, 6:46, 22:18; c_n worked for n=0, 2, general",
+  "10": "confirmed: constant term, then n=2, then any n",
+  "11": "confirmed: sine waves, then complex drawings, then e^(it), then c_n",
+  "12": "confirmed: heat equation, Laplace transform, matrices, links to Mathologer and Coding Train",
+  "13": "partly: says why complex form (cleaner computation, 10:12) and hints depth; rigor deferred explicitly (9:03)"
+ },
+ "new_moves": [
+  {
+   "name": "new:wow-before-why",
+   "what": "Show the finished spectacle first and linger on it, ask viewer to go full screen",
+   "evidence": "0:24-1:31"
+  },
+  {
+   "name": "new:widen-the-frame-to-simplify",
+   "what": "Generalize to complex drawings because the computation gets cleaner; real case becomes boring special case",
+   "evidence": "10:12-12:19"
+  },
+  {
+   "name": "new:read-the-formula-as-procedure",
+   "what": "Narrate the integral as two actions: freeze vector, average away the rest",
+   "evidence": "20:02"
+  },
+  {
+   "name": "new:unanswered-questions-list",
+   "what": "Lists rigor questions aloud then names the field that answers them",
+   "evidence": "8:47-9:22"
+  }
+ ],
+ "theory": "The video earns each symbol by giving it a physical job: rotating arrows come first, e^(it) arrives as shorthand for them, and the coefficient formula arrives as a two-step action on the drawing. Widening the problem to complex functions is sold as simplifying, with the real-valued case demoted to a special case.",
+ "velocity": [
+  "Scene builder: render the finished complex phenomenon first, with a zoom to the smallest components, before any definition",
+  "Voice: when presenting a formula, narrate it as an ordered procedure applied to the on-screen object",
+  "Orchestrator: allow an explicit generalize-to-simplify beat, and say why widening helps",
+  "Learner model: track which rigor questions were deferred and offer them as optional deep dives",
+  "Evals: check notation is introduced as shorthand for a visible object, with its reason stated"
+ ],
+ "quote": [
+  "19:06",
+  "giving a smartphone to an overactive child"
+ ]
+}

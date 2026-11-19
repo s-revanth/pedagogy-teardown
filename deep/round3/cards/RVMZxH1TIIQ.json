@@ -1,0 +1,91 @@
+{
+ "id": "RVMZxH1TIIQ",
+ "channel": "kurzgesagt",
+ "title": "Why Earth Is A Prison and How To Escape It",
+ "duration_s": 416,
+ "upload_date": "20170201",
+ "targets": {
+  "wpm": {
+   "p25": 149.83,
+   "median": 151.42,
+   "p75": 156.41,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.61,
+   "median": 0.82,
+   "p75": 1.22,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.65,
+   "median": 2.5,
+   "p75": 3.44,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.25,
+   "median": 2.16,
+   "p75": 3.34,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.24,
+   "median": 0.64,
+   "p75": 0.76,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.08,
+   "median": 0.1,
+   "p75": 0.18,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.23,
+   "median": 0.4,
+   "p75": 0.53,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 14.63,
+   "median": 15.65,
+   "p75": 16.18,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.5,
+   "default": "ON",
+   "position_median": 0.93
+  },
+  "teaser": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 1049,
+ "exemplars": [
+  "deep/corpus/compact/J0ldO87Pprc.txt",
+  "deep/corpus/compact/DHyUYg8X31c.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

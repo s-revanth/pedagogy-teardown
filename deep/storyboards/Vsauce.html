@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>How Vsauce Teaches</title>
+<style>
+:root{--bg:#f4efe3;--ink:#1d2433;--mut:#5b6475;--card:#fffaf0;--line:#d8cfba;--acc:#d9482b;--acc2:#1f6f78;--ok:#2f8f4e;--part:#d9a21b;--bad:#c23b3b;--na:#9aa0aa}
+@media (prefers-color-scheme:dark){:root{--bg:#12151d;--ink:#eae6da;--mut:#9aa3b5;--card:#1c212d;--line:#323a4c;--acc:#ff7a5c;--acc2:#5cc2cc;--ok:#5fcf86;--part:#f0c04a;--bad:#ff7b7b;--na:#6b7280}}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,serif;overflow-x:hidden}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:2rem;margin:.2em 0}h2{margin:1.6em 0 .5em;font-size:1.25rem;border-bottom:2px solid var(--acc);display:inline-block}
+.sub{color:var(--mut);margin:0 0 12px}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 14px}
+.panel{flex:0 0 min(280px,82vw);scroll-snap-align:start;background:var(--card);border:2px solid var(--ink);border-radius:6px;padding:10px;font:14px/1.4 system-ui,sans-serif}
+.panel .n{font-size:.7rem;color:var(--mut);letter-spacing:.1em}
+.panel h3{margin:2px 0 6px;font:700 1.15rem Georgia,serif;color:var(--acc)}
+.panel svg{width:100%;height:96px;background:var(--bg);border:1px solid var(--line);border-radius:4px;display:block;margin-bottom:6px}
+.panel svg *{stroke:var(--ink);fill:none;stroke-width:2}.panel svg .f{fill:var(--acc2);stroke:none}.panel svg .a{stroke:var(--acc)}.panel svg text{fill:var(--ink);stroke:none;font:11px system-ui}
+.tags span{display:inline-block;background:var(--acc2);color:var(--bg);border-radius:10px;padding:0 7px;font-size:.7rem;margin:2px 2px 0 0}
+.ex{margin:6px 0 0;padding-left:16px;color:var(--mut);font-size:.8rem}
+.bars div{display:grid;grid-template-columns:minmax(120px,38%) 1fr 32px;gap:8px;align-items:center;margin:4px 0;font:13px system-ui,sans-serif}
+.bars i{display:block;height:12px;background:var(--acc);border-radius:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;font:13px system-ui,sans-serif}
+.cell{border:1px solid var(--line);border-left:8px solid var(--na);background:var(--card);padding:6px 8px;border-radius:4px}
+.cell b{display:block}.cell.ok{border-left-color:var(--ok)}.cell.pt{border-left-color:var(--part)}.cell.no{border-left-color:var(--bad)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--acc2);border-radius:4px;padding:10px;font:14px/1.4 system-ui,sans-serif}
+.card h4{margin:0 0 4px;font:700 1rem Georgia,serif}.card em{color:var(--mut)}
+</style></head><body><main>
+<h1>How Vsauce teaches</h1>
+<p class="sub">11 videos analysed (How Earth Moves has no transcript). Swipe the panels: the generalised lesson arc.</p>
+<div class="strip">
+<div class="panel"><div class="n">1 / 8</div><h3>Odd hook</h3><svg viewBox="0 0 240 96"><rect x="20" y="30" width="70" height="40"/><path class="a" d="M100 50h40"/><rect x="150" y="20" width="70" height="60"/><text x="26" y="54">trick?</text></svg><p>Narrator shows a paradox or joke, a fake version first.</p><div class="tags"><span>hook-paradox</span><span>humor</span><span>failure-shown</span></div><ul class="ex"><li>Banach-Tarski 0:00 chocolate trick</li><li>Which Way Is Down 0:00 pun</li></ul></div>
+<div class="panel"><div class="n">2 / 8</div><h3>Obvious answer</h3><svg viewBox="0 0 240 96"><circle cx="70" cy="48" r="30"/><text x="52" y="52">"round"</text><path class="a" d="M130 20l80 56M210 20l-80 56"/></svg><p>States the common belief so it can be broken.</p><div class="tags"><span>misconception-first</span><span>commit-to-answer</span></div><ul class="ex"><li>Flat Earth 0:00 Kansas</li><li>Down 5:26 mass vs weight</li></ul></div>
+<div class="panel"><div class="n">3 / 8</div><h3>Seat swap</h3><svg viewBox="0 0 240 96"><circle class="f" cx="60" cy="48" r="10"/><circle cx="170" cy="48" r="26"/><path class="a" d="M75 48h70" stroke-dasharray="4 4"/><text x="40" y="80">you</text><text x="150" y="86">hole</text></svg><p>You become the observer: faller, subject, proton, stooge.</p><div class="tags"><span>second-person-role</span><span>toy-world</span><span>act-it-out</span></div><ul class="ex"><li>Black Hole 3:02</li><li>Isolation 2:23 stooge</li></ul></div>
+<div class="panel"><div class="n">4 / 8</div><h3>Prop or simulation</h3><svg viewBox="0 0 240 96"><path d="M20 70q60-60 120 0"/><rect class="f" x="150" y="40" width="60" height="6"/><rect x="160" y="30" width="40" height="20"/></svg><p>Cheap object or one-variable sim carries the idea.</p><div class="tags"><span>build-and-verify</span><span>simulation-as-argument</span></div><ul class="ex"><li>Down 17:46 ribbon test</li><li>Black Hole 6:24 paper fold</li></ul></div>
+<div class="panel"><div class="n">5 / 8</div><h3>Name it late</h3><svg viewBox="0 0 240 96"><rect x="30" y="30" width="180" height="36"/><text x="50" y="53">apophenia</text></svg><p>Term arrives after the idea has been felt.</p><div class="tags"><span>notation-after-concept</span><span>minimal-definition-then-refine</span></div><ul class="ex"><li>Red 2:57 qualia</li><li>Spooky 3:29 apophenia</li></ul></div>
+<div class="panel"><div class="n">6 / 8</div><h3>Same trick, new costume</h3><svg viewBox="0 0 240 96"><circle cx="40" cy="48" r="16"/><rect x="90" y="32" width="32" height="32"/><path d="M150 64l20-36 20 36z"/><path class="a" d="M60 20h120"/></svg><p>One pattern re-run across unrelated cases.</p><div class="tags"><span>analogy</span><span>visible-repetition</span><span>generalize</span></div><ul class="ex"><li>Banach 6:41 to 11:17 shift trick</li><li>Kiss 8:12 to 10:06 three species</li></ul></div>
+<div class="panel"><div class="n">7 / 8</div><h3>Honest caveat</h3><svg viewBox="0 0 240 96"><rect x="30" y="20" width="180" height="56" stroke-dasharray="6 4"/><text x="48" y="52">"this model ignores..."</text></svg><p>Admits limits, or ends on an unanswerable reframe.</p><div class="tags"><span>honest-caveat</span><span>commit-to-answer</span></div><ul class="ex"><li>Flat Earth 1:48</li><li>Red 4:48</li></ul></div>
+<div class="panel"><div class="n">8 / 8</div><h3>Callback</h3><svg viewBox="0 0 240 96"><path class="a" d="M200 70C200 10 40 10 40 60"/><path class="a" d="M32 52l8 10 8-10"/><text x="80" y="84">hook, reframed</text></svg><p>Returns to the hook with a new meaning, then plug.</p><div class="tags"><span>callback-to-hook</span><span>second-person-role</span></div><ul class="ex"><li>Banach 18:44 "1+1=1"</li><li>Miss 8:39 star your age</li></ul></div>
+</div>
+<h2>Move frequency (of 11)</h2>
+<div class="bars" id="bars"></div>
+<h2>Principle scorecard</h2>
+<div class="grid" id="grid"></div>
+<p class="sub">Colour and text both show the verdict: C confirmed, P partly, X contradicted, N not observed.</p>
+<h2>New theories</h2>
+<div class="cards">
+<div class="card"><h4>Lived error before label</h4><p>Show the false pattern, name the bias after.</p><em>Spooky 1:02-3:29; Suggestion 15:38-21:14. If so, term recall beats definition-first.</em></div>
+<div class="card"><h4>One trick, many costumes</h4><p>Install one mechanism in 3+ settings before the proof.</p><em>Banach 6:41-11:17; Kiss 8:12-10:06. If so, a fourth variant is solved faster.</em></div>
+<div class="card"><h4>Paired viewpoints</h4><p>Outside versus inside views of the same event.</p><em>Black Hole 3:58; Flat 7:01. If so, observer-dependent predictions improve.</em></div>
+<div class="card"><h4>Steelman then frame</h4><p>Simulate the wrong model faithfully, then expose what data underdetermines.</p><em>Flat 0:17-4:48; Red 1:45.</em></div>
+<div class="card"><h4>Deflate then reverse</h4><p>After "negligible", end with a statement restoring agency.</p><em>Jumped 5:54; Miss 8:39.</em></div>
+<div class="card"><h4>Unanswerable answer</h4><p>For open questions, end on a reframe, not a fake answer.</p><em>Red 4:48; Flat 9:57; Banach 20:46.</em></div>
+</div>
+<script>
+var m=[["callback-to-hook",10],["analogy",10],["story",9],["minimal-definition",9],["act-it-out",9],["honest-caveat",8],["commit-to-answer",8],["misconception-first",8],["hook-question",8],["roadmap",8],["hook-paradox",7],["toy-world",7],["simulation-as-argument",7],["visible-repetition",6],["notation-after-concept",5],["brute-force-first",3],["learner-discovers",2],["inline-quiz",2]];
+document.getElementById("bars").innerHTML=m.map(function(x){return '<div><span>'+x[0]+'</span><i style="width:'+x[1]*10+'%"></i><b>'+x[1]+'</b></div>'}).join("");
+var p=[["1 Familiar start","C",11],["2 Symbol cost","C",9],["3 Interfaces","N",11],["4 Analogy to rigor","P",6],["5 Act it out","C",7],["6 Brute force","N",6],["7 Learner discovers","P",7],["8 Pace by novelty","P",9],["9 Repeat","C",6],["10 Tiny to big","P",4],["11 Dependency order","P",7],["12 Outside sources","C",10],["13 Simple + expert","P",9]];
+var cl={C:"ok",P:"pt",X:"no",N:""},tx={C:"Confirmed",P:"Partly",X:"Contradicted",N:"Not observed"};
+document.getElementById("grid").innerHTML=p.map(function(x){return '<div class="cell '+cl[x[1]]+'"><b>'+x[0]+'</b>'+tx[x[1]]+' ('+x[2]+'/11)</div>'}).join("");
+</script></main></body></html>

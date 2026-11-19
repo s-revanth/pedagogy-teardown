@@ -1,0 +1,91 @@
+{
+ "id": "XRr1kaXKBsU",
+ "channel": "veritasium",
+ "title": "What Everyone Gets Wrong About Gravity",
+ "duration_s": 1053,
+ "upload_date": "20201009",
+ "targets": {
+  "wpm": {
+   "p25": 159.1,
+   "median": 165.28,
+   "p75": 173.47,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.64,
+   "median": 2.08,
+   "p75": 2.44,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 1.06,
+   "median": 1.51,
+   "p75": 2.05,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.63,
+   "median": 1.12,
+   "p75": 1.47,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.26,
+   "median": 2.05,
+   "p75": 3.03,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.22,
+   "p75": 0.32,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.06,
+   "p75": 0.14,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.35,
+   "median": 0.77,
+   "p75": 0.9,
+   "n": 16
+  },
+  "sent_len": {
+   "p25": 14.11,
+   "median": 16.94,
+   "p75": 21.66,
+   "n": 16
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.8,
+   "default": "ON",
+   "position_median": 0.0
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/vjDYfvPW4mA.txt",
+  "deep/corpus/compact/4Wrc4fHSCpw.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

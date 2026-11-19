@@ -1,0 +1,91 @@
+{
+ "id": "Mo1A45ShcMo",
+ "channel": "kurzgesagt",
+ "title": "You're More Stressed Than Ever - Let's Change That",
+ "duration_s": 718,
+ "upload_date": "20251111",
+ "targets": {
+  "wpm": {
+   "p25": 146.7,
+   "median": 161.16,
+   "p75": 165.64,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.82,
+   "median": 1.36,
+   "p75": 4.29,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.03,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.79,
+   "median": 1.17,
+   "p75": 2.21,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.06,
+   "median": 1.59,
+   "p75": 2.4,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.16,
+   "median": 0.26,
+   "p75": 0.38,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.05,
+   "p75": 0.05,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.17,
+   "median": 0.23,
+   "p75": 0.38,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 15.94,
+   "median": 17.1,
+   "p75": 17.52,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.65,
+   "default": "ON",
+   "position_median": 0.86
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 1928,
+ "exemplars": [
+  "deep/corpus/compact/7wK4peez9zE.txt",
+  "deep/corpus/compact/dl0-TveDDGA.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,91 @@
+{
+ "id": "e-P5IFTqB98",
+ "channel": "kurzgesagt",
+ "title": "Black Holes Explained \u2013\u00a0From Birth to Death",
+ "duration_s": 356,
+ "upload_date": "20151215",
+ "targets": {
+  "wpm": {
+   "p25": 157.11,
+   "median": 159.82,
+   "p75": 165.86,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.4,
+   "median": 0.75,
+   "p75": 1.37,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.19,
+   "median": 1.65,
+   "p75": 2.03,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.14,
+   "median": 1.98,
+   "p75": 2.52,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.31,
+   "p75": 0.53,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.11,
+   "p75": 0.19,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.2,
+   "median": 0.34,
+   "p75": 0.95,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 14.17,
+   "median": 16.13,
+   "p75": 16.78,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.5,
+   "default": "ON",
+   "position_median": 0.93
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 948,
+ "exemplars": [
+  "deep/corpus/compact/RLykC1VN7NY.txt",
+  "deep/corpus/compact/GqA42M4RtxE.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

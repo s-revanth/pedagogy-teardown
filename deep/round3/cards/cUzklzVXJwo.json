@@ -1,0 +1,91 @@
+{
+ "id": "cUzklzVXJwo",
+ "channel": "veritasium",
+ "title": "How Imaginary Numbers Were Invented",
+ "duration_s": 1409,
+ "upload_date": "20211101",
+ "targets": {
+  "wpm": {
+   "p25": 156.63,
+   "median": 165.01,
+   "p75": 177.93,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.66,
+   "median": 1.98,
+   "p75": 2.13,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.79,
+   "median": 1.46,
+   "p75": 1.9,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.57,
+   "median": 0.77,
+   "p75": 1.34,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.56,
+   "median": 2.09,
+   "p75": 2.82,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.19,
+   "p75": 0.22,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.06,
+   "median": 0.1,
+   "p75": 0.16,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.45,
+   "median": 0.57,
+   "p75": 0.84,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 12.59,
+   "median": 14.49,
+   "p75": 15.62,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.9,
+   "default": "ON",
+   "position_median": 0.05
+  },
+  "teaser": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/q-_7y0WUnW4.txt",
+  "deep/corpus/compact/H1_OpWiyijU.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

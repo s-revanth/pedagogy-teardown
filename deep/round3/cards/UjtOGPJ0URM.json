@@ -1,0 +1,91 @@
+{
+ "id": "UjtOGPJ0URM",
+ "channel": "kurzgesagt",
+ "title": "Why Alien Life Would be our Doom - The Great Filter",
+ "duration_s": 497,
+ "upload_date": "20180201",
+ "targets": {
+  "wpm": {
+   "p25": 147.95,
+   "median": 153.26,
+   "p75": 162.62,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.79,
+   "median": 1.01,
+   "p75": 1.69,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.94,
+   "median": 2.4,
+   "p75": 3.38,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.3,
+   "median": 1.89,
+   "p75": 2.54,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.18,
+   "median": 0.45,
+   "p75": 0.59,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.15,
+   "median": 0.17,
+   "p75": 0.29,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.25,
+   "median": 0.35,
+   "p75": 0.53,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 13.3,
+   "median": 15.39,
+   "p75": 16.25,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.3,
+   "default": "OFF",
+   "position_median": 0.95
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 1269,
+ "exemplars": [
+  "deep/corpus/compact/MUWUHf-rzks.txt",
+  "deep/corpus/compact/f7KSfjv4Oq0.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,121 @@
+{
+ "id": "9tbxDgcv74c",
+ "channel": "kurzgesagt",
+ "title": "What If You Detonated a Nuclear Bomb In The Marianas Trench?",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:01",
+   "H",
+   "hook-question|misconception-first",
+   "Asks the doom question and lists the popular catastrophe fears (tsunamis, quakes, orbit)."
+  ],
+  [
+   "0:18",
+   "H",
+   "commit-to-answer",
+   "Teases 'almost' then sets up the trench as the stage."
+  ],
+  [
+   "0:34",
+   "B",
+   "toy-world|story",
+   "Trench depth, pitch black, 1000 atm; chosen as the test site."
+  ],
+  [
+   "0:50",
+   "H",
+   "analogy",
+   "Tsar Bomba as reference: shockwave circled Earth thrice; a bomb that could boil a lake."
+  ],
+  [
+   "1:26",
+   "N",
+   "act-it-out|simulation-as-argument",
+   "'Let's pull the trigger': microsecond-by-microsecond walk through fireball, cavity, shockwave."
+  ],
+  [
+   "2:23",
+   "N",
+   "analogy|analogy-breakpoint",
+   "Contrasts surface fireball (10 km) with trench; hydraulic-press analogy for pressure."
+  ],
+  [
+   "2:58",
+   "N",
+   "simulation-as-argument",
+   "Bubble overextends, tug of war, shrinks and regrows, then fragments."
+  ],
+  [
+   "3:34",
+   "N",
+   "commit-to-answer",
+   "Result: just a small wave and warm radioactive plume."
+  ],
+  [
+   "3:52",
+   "N",
+   "misconception-first|failure-shown",
+   "Returns to each fear one by one: fallout, quakes, orbit; refutes with scale comparisons."
+  ],
+  [
+   "4:48",
+   "N",
+   "callback-to-hook|recap",
+   "Planet is too big; answer 'pretty much nothing'."
+  ],
+  [
+   "5:06",
+   "N",
+   "admin",
+   "Patreon bird avatar pitch."
+  ]
+ ],
+ "metrics": {
+  "first_question": "0:01",
+  "notation_first": "none",
+  "key_term": "cavity / bubble",
+  "misconception": "yes: bomb in trench causes tsunamis, quakes, orbit change; refuted 3:34-4:48",
+  "brute_force": "no",
+  "examples": "3 refuted fears, 1 simulated scenario; no growth",
+  "ending": "Callback to hook answer 'pretty much nothing', then Patreon"
+ },
+ "principles": {
+  "1": "confirmed: starts from bombs, oceans, tectonic plates, popular disaster fears 0:01",
+  "2": "not-observed: no symbols",
+  "3": "not-observed: no interface",
+  "4": "partly: hydraulic-press analogy 2:42 and lake-boil 1:26, little step to rigor",
+  "5": "confirmed: literal 'pull the trigger' timeline in microseconds 1:26",
+  "6": "not-observed",
+  "7": "not-observed: single run, no repetition",
+  "8": "partly: narration dense and flat; pace slows via the shrinking-bubble beat 2:58, not speech rate (~170 wpm est)",
+  "9": "partly: three fears refuted in the same pattern 3:52-4:48",
+  "10": "contradicted: jumps straight to huge Tsar Bomba, no small-to-big",
+  "11": "partly: pressure before bubble behaviour 2:23",
+  "12": "confirmed: Tsar Bomba, 1000+ prior tests, yearly equal-energy earthquakes 4:28",
+  "13": "partly: simple enough; tool choice rarely justified"
+ },
+ "new_moves": [
+  {
+   "name": "fear-census-then-deflate",
+   "what": "Voice the audience's wildest expectations first, then refute each with a real-world benchmark.",
+   "evidence": "0:01, 3:52-4:48"
+  },
+  {
+   "name": "comparison-to-ground-truth-events",
+   "what": "Calibrate a hypothetical against events that already happened (prior tests, yearly quakes).",
+   "evidence": "4:28-4:48"
+  }
+ ],
+ "theory": "The video sets up a spectacular premise so the audience's catastrophe intuition is maximal, then simulates it step by step and lets reality anticlimax. Each fear is retired with an empirical benchmark rather than theory, which makes the correction stick.",
+ "velocity": [
+  "Orchestrator: surface the learner's likely misconceptions as a spoken list first, then deflate each with a benchmark scene.",
+  "Scene builder: build a micro-timed simulation (bubble grows, shrinks) with captions per phase.",
+  "Evals: check the tutor ties each refutation to a real reference event.",
+  "Learner model: record which fears the learner voiced to reorder refutations."
+ ],
+ "quote": [
+  "4:48",
+  "The planet is too big. It doesn't care."
+ ]
+}

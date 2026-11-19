@@ -1,0 +1,26 @@
+{
+ "switch_cv": {
+  "sponsor": {
+   "channel": 0.764,
+   "neighbour": 0.849
+  },
+  "teaser": {
+   "channel": 0.895,
+   "neighbour": 0.901
+  },
+  "roadmap": {
+   "channel": 0.84,
+   "neighbour": 0.835
+  },
+  "recap": {
+   "channel": 0.988,
+   "neighbour": 0.988
+  }
+ },
+ "switch_choice": {
+  "sponsor": "neighbour",
+  "teaser": "neighbour",
+  "roadmap": "channel",
+  "recap": "channel"
+ }
+}

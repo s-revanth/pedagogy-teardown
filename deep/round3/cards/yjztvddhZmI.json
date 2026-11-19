@@ -1,0 +1,91 @@
+{
+ "id": "yjztvddhZmI",
+ "channel": "veritasium",
+ "title": "Why You Should Want Driverless Cars On Roads Now",
+ "duration_s": 1087,
+ "upload_date": "20210723",
+ "targets": {
+  "wpm": {
+   "p25": 158.43,
+   "median": 166.01,
+   "p75": 177.93,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.66,
+   "median": 1.94,
+   "p75": 2.08,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.91,
+   "median": 1.3,
+   "p75": 1.9,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.62,
+   "median": 0.97,
+   "p75": 1.34,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.51,
+   "median": 2.65,
+   "p75": 2.84,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.19,
+   "p75": 0.22,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.06,
+   "median": 0.11,
+   "p75": 0.16,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.45,
+   "median": 0.55,
+   "p75": 0.78,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 13.9,
+   "median": 14.76,
+   "p75": 16.11,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.9,
+   "default": "ON",
+   "position_median": 0.03
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/094y1Z2wpJg.txt",
+  "deep/corpus/compact/rhgwIhB58PA.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

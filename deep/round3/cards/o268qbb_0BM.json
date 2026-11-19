@@ -1,0 +1,90 @@
+{
+ "id": "o268qbb_0BM",
+ "channel": "Vsauce",
+ "title": "The Science of Awkwardness",
+ "duration_s": 835,
+ "upload_date": "20150320",
+ "targets": {
+  "wpm": {
+   "p25": 132.52,
+   "median": 136.73,
+   "p75": 139.1,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.11,
+   "median": 1.69,
+   "p75": 1.81,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.33,
+   "median": 0.43,
+   "p75": 0.77,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.16,
+   "median": 1.74,
+   "p75": 2.52,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 0.94,
+   "median": 1.83,
+   "p75": 2.67,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.23,
+   "median": 0.36,
+   "p75": 0.59,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.07,
+   "median": 0.13,
+   "p75": 0.18,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.45,
+   "median": 0.56,
+   "p75": 0.82,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 14.26,
+   "median": 15.6,
+   "p75": 16.17,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 1902,
+ "exemplars": [
+  "deep/corpus/compact/L4AJmvzImbM.txt",
+  "deep/corpus/compact/qXXZLoq2zFc.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

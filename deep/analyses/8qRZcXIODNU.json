@@ -1,0 +1,156 @@
+{
+ "id": "8qRZcXIODNU",
+ "channel": "OverSimplified",
+ "title": "The French Revolution - OverSimplified (Part 1)",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "admin",
+   "admin",
+   "NordVPN and merch sketch"
+  ],
+  [
+   "0:16",
+   "H",
+   "humor|act-it-out",
+   "Party skit: nobles gossip, royal wedding bedroom scene; seeds 'France is in financial ruin' refrain"
+  ],
+  [
+   "1:44",
+   "N",
+   "story",
+   "France was prosperous for the few; 80% poor; war with Britain lost; debt"
+  ],
+  [
+   "2:35",
+   "N",
+   "act-it-out|story",
+   "Drunk peasant asks 'why do nobles get to be rich?' enacting the Enlightenment"
+  ],
+  [
+   "3:24",
+   "N",
+   "story",
+   "Louis XVI weak, funds American revolution, more debt; Marie Antoinette 'Madame Deficit'"
+  ],
+  [
+   "4:50",
+   "N",
+   "brute-force-first|act-it-out|visible-repetition",
+   "Tax the poor: collectors list each tax in turn, 'there's a tax for that' (windows, tithe, salt, a child's tears)"
+  ],
+  [
+   "6:46",
+   "B",
+   "commit-to-answer",
+   "Summarize why anger grew; natural disaster, bread price, riots"
+  ],
+  [
+   "7:32",
+   "N",
+   "act-it-out|design-it-yourself",
+   "Estates General: one vote per estate; skit 8:34-9:20 shows 2-to-1 outcome"
+  ],
+  [
+   "9:36",
+   "N",
+   "story",
+   "National Assembly, Tennis Court Oath, Jacobins"
+  ],
+  [
+   "10:42",
+   "N",
+   "analogy|commit-to-answer",
+   "Fear then anger then violence chain stated as a rule"
+  ],
+  [
+   "11:46",
+   "N",
+   "story|humor",
+   "Bastille storming; king's denial skit ('pike-head deity')"
+  ],
+  [
+   "13:08",
+   "N",
+   "honest-caveat",
+   "Assembly's choice to applaud violence; some historians say it paved the way"
+  ],
+  [
+   "13:23",
+   "N",
+   "story",
+   "Marat's newspaper; Declaration of Rights (men only)"
+  ],
+  [
+   "15:01",
+   "N",
+   "story|act-it-out",
+   "Women's march to Versailles; 'let them eat cake' rebuked"
+  ],
+  [
+   "16:24",
+   "N",
+   "callback-to-hook",
+   "King agrees to return to Paris; ends with the separation removed"
+  ],
+  [
+   "16:40",
+   "admin",
+   "admin",
+   "NordVPN ad, outro"
+  ]
+ ],
+ "metrics": {
+  "first_question": "2:35",
+  "notation_first": "none",
+  "key_term": "the Three Estates / vote system",
+  "misconception": "partial: 'let them eat cake' shown as out-of-touch not literal (15:34); France as beautiful nation (1:44) undercut",
+  "brute_force": "yes 4:50: enumerate taxes one by one so the unfairness is felt before it is named (6:27)",
+  "examples": "taxes (5 in a row), estate votes (3 in a row, then 2 outcomes), king denial skit; escalating absurdity",
+  "ending": "Part 1 ends on royal family forced to Paris, plus VPN sponsor and pointer to Part 2"
+ },
+ "principles": {
+  "1": "confirmed: party and gossip skit, bedroom scene 0:16-1:28",
+  "2": "confirmed: terms like estates defined at point of use 7:48-8:03",
+  "3": "not-observed",
+  "4": "partly: voting skit is a model of the system, no step to rigor",
+  "5": "confirmed: tax collectors at the door 5:08-6:27; vote simulation 8:34-9:20",
+  "6": "confirmed: taxes listed one at a time with a growing count before the summary 6:27-6:46",
+  "7": "confirmed: viewer sees 1 vote each for 130k, 350k, 27 million then predicts the 2-to-1 result 8:34-9:04",
+  "8": "partly: speech stays quick; slows by giving long skits to central ideas (taxes 4:50-6:46, votes 8:34-9:20) and one-line passes elsewhere",
+  "9": "confirmed: 'there's a tax for that' repeated, 'France is in financial ruin' refrain 0:32-1:04, Louis 'OOOh NO' x3",
+  "10": "partly: three-estate example 3-vote then outcome, not a ladder",
+  "11": "confirmed: debt, Enlightenment, king, taxes, famine, Estates General, Assembly, Bastille chain explicit via 'what could push them over?' 6:46",
+  "12": "confirmed: American Revolution, Jefferson, Taco Bell, Porsche gags 3:41, 8:03",
+  "13": "partly: jokes for 12-year-old, real historians cited 13:08; tool reason not stated"
+ },
+ "new_moves": [
+  {
+   "name": "enumerate-until-absurd",
+   "what": "Make a systemic burden felt by escalating itemized examples (taxes), then name it in one sentence",
+   "evidence": "5:08-6:46"
+  },
+  {
+   "name": "simulate-the-rule",
+   "what": "Run the institutional rule (one vote per estate) as a tiny vote so viewer sees the outcome",
+   "evidence": "8:34-9:20"
+  },
+  {
+   "name": "stated-causal-law",
+   "what": "Compress mood into a transferable rule: fear unchecked becomes anger becomes violence",
+   "evidence": "10:42-11:15"
+  }
+ ],
+ "theory": "The strongest move is enumerating one concrete case at a time until the viewer feels the unfairness before the label ('tax inequality') appears. The same device turns an institution (three estates, one vote each) into a rule-run simulation whose outcome the viewer predicts.",
+ "velocity": [
+  "Ghost hands: step through an itemized list with a visible running tally before reveal",
+  "Scene builder: voting/rule simulations with learner prediction before outcome",
+  "Orchestrator: label causal chain with a 'what could push them over' bridge before each escalation",
+  "Evals: reveal summary only after at least 3 enumerated instances"
+ ],
+ "quote": [
+  "10:58",
+  "Fear, left unchecked, often boils over into anger."
+ ]
+}

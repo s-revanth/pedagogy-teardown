@@ -1,0 +1,91 @@
+{
+ "id": "O85OWBJ2ayo",
+ "channel": "3blue1brown",
+ "title": "How (and why) to raise e to the power of a matrix | DE6",
+ "duration_s": 1627,
+ "upload_date": "20210401",
+ "targets": {
+  "wpm": {
+   "p25": 175.95,
+   "median": 192.2,
+   "p75": 201.16,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.53,
+   "median": 1.84,
+   "p75": 2.35,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.71,
+   "median": 1.01,
+   "p75": 1.16,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.81,
+   "median": 1.29,
+   "p75": 1.64,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.61,
+   "median": 2.93,
+   "p75": 3.98,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.33,
+   "median": 0.43,
+   "p75": 0.52,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.15,
+   "median": 0.21,
+   "p75": 0.28,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.1,
+   "median": 0.15,
+   "p75": 0.28,
+   "n": 19
+  },
+  "sent_len": {
+   "p25": 23.44,
+   "median": 25.34,
+   "p75": 27.92,
+   "n": 19
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.1,
+   "default": "OFF",
+   "position_median": 0.94
+  },
+  "teaser": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.2,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.04,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "teaser-next",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/e50Bj7jn9IQ.txt",
+  "deep/corpus/compact/lG4VkPoG3ko.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

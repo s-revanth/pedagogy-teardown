@@ -1,0 +1,174 @@
+{
+ "id": "PNtKXWNKGN8",
+ "channel": "PrimerBlobs",
+ "title": "Simulating Supply and Demand",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "roadmap|hook-question",
+   "One buyer, one seller, grow to many; then argue for and against markets"
+  ],
+  [
+   "0:15",
+   "H",
+   "toy-world|running-character",
+   "Blue blobs sell rockets, orange blobs buy; value shown as a bar"
+  ],
+  [
+   "0:48",
+   "N",
+   "minimal-definition-then-refine",
+   "Seller bar is minimum price, buyer bar is maximum; any price between works"
+  ],
+  [
+   "1:21",
+   "N",
+   "special-case-first|notation-after-concept",
+   "Buyer max $40, seller min $20, trade at $30; each gains $10, named surplus"
+  ],
+  [
+   "1:56",
+   "N",
+   "honest-caveat",
+   "Pause: value is slippery, but comparing alternatives quantifies it"
+  ],
+  [
+   "2:12",
+   "N",
+   "design-it-yourself|rule-list",
+   "Add a second buyer with lower limit; list daily rules for random-order haggling and expectation adjusting"
+  ],
+  [
+   "3:48",
+   "N",
+   "simulation-as-argument|inline-quiz",
+   "One pair: nothing changes; add buyer: what happens?"
+  ],
+  [
+   "4:08",
+   "N",
+   "learner-discovers",
+   "Price creeps upward; buyer competition shifts surplus to seller"
+  ],
+  [
+   "5:00",
+   "N",
+   "visible-repetition|inline-quiz",
+   "Mirror case with three sellers, two buyers: price falls, buyers gain"
+  ],
+  [
+   "6:11",
+   "N",
+   "inline-quiz|commit-to-answer",
+   "Three and three: predict outcome; only two rockets sell"
+  ],
+  [
+   "6:36",
+   "N",
+   "failure-shown",
+   "Lowest buyer and highest seller can never match, so trade count is limited"
+  ],
+  [
+   "7:08",
+   "I",
+   "notation-after-concept",
+   "Equilibrium as quantity supplied equals demanded; supply and demand curves as shorthand for many blobs"
+  ],
+  [
+   "8:12",
+   "N",
+   "roadmap",
+   "Milestone: market built; now argue what model means"
+  ],
+  [
+   "8:43",
+   "N",
+   "simulation-as-argument|special-case-first",
+   "Equilibrium maximizes surplus; the next pair would give negative surplus"
+  ],
+  [
+   "9:33",
+   "N",
+   "commit-to-answer",
+   "Efficiency and invisible hand defined as the automatic result"
+  ],
+  [
+   "10:03",
+   "N",
+   "misconception-first|honest-caveat",
+   "Regulation arguments: real markets need many participants, free exit, information"
+  ],
+  [
+   "10:52",
+   "N",
+   "analogy-breakpoint|honest-caveat",
+   "Surplus measures one blob at a time; society may weigh all blobs, citing food, labor, healthcare"
+  ],
+  [
+   "11:40",
+   "N",
+   "callback-to-hook|humor",
+   "Markets are tools; plug that viewing and support signal demand for videos"
+  ],
+  [
+   "12:13",
+   "N",
+   "admin",
+   "Outro"
+  ]
+ ],
+ "metrics": {
+  "first_question": "3:48",
+  "notation_first": "1:21",
+  "key_term": "surplus / equilibrium",
+  "misconception": "partial: markets are neither fundamentally good nor bad (11:40)",
+  "brute_force": "yes 3:48: simulate haggling blobs rather than draw curves",
+  "examples": "1 buyer/1 seller, 2 buyers/1 seller, 2 buyers/3 sellers, 3 and 3; each adds one actor and a predict prompt",
+  "ending": "Markets as a tool; humorous demand-signal plug"
+ },
+ "principles": {
+  "1": "confirmed: rockets, blobs, haggling before any curve (0:15)",
+  "2": "confirmed: surplus defined at 1:39 only after a $40/$20/$30 example; curves held until 7:39",
+  "3": "partly: supply/demand curves arrive as compression of many blobs (7:39), not practiced",
+  "4": "partly: blobs are concrete agents, but no analogy-then-rigor swap",
+  "5": "confirmed: blobs literally buy and sell, adjust prices daily (2:44-3:48)",
+  "6": "confirmed: simulate the market before curves; daily rules and tracking panel (3:48)",
+  "7": "confirmed: competition shifts surplus (4:08, 5:40), equilibrium emerges from repeated days",
+  "8": "partly: no timing evidence; idea rate slows by adding one actor at a time",
+  "9": "confirmed: buyer competition then seller competition mirror each other (4:08, 5:40)",
+  "10": "confirmed: 1+1, 2+1, 2+3, 3+3 (0:48-6:36)",
+  "11": "confirmed: surplus before equilibrium before curves before efficiency",
+  "12": "partly: only links to policy debates and food, labor, healthcare (11:07); no outside sources",
+  "13": "partly: simple and lists conditions for ideal markets; tool-choice justification limited"
+ },
+ "new_moves": [
+  {
+   "name": "mirror-experiment",
+   "what": "Run the symmetric case to show same mechanism flips the beneficiary",
+   "evidence": "5:00"
+  },
+  {
+   "name": "model-then-argue",
+   "what": "After building the model, state it as a map of arguments rather than conclusions",
+   "evidence": "8:27"
+  },
+  {
+   "name": "scope-the-claim",
+   "what": "Define what surplus measures and what it ignores",
+   "evidence": "10:52"
+  }
+ ],
+ "theory": "The video adds exactly one actor per scene and asks what will happen, so the learner re-derives who benefits before a vocabulary word appears. Terms (surplus, equilibrium, curves) are bolted on after the sim has made them needed, and the final third deliberately marks the model's limits.",
+ "velocity": [
+  "Scene builder: one-actor-at-a-time market scene with a live surplus tally",
+  "Voice: name a term only after the scene has displayed its value",
+  "Orchestrator: ask a prediction before each added actor",
+  "Evals: check that the tutor states what the model leaves out"
+ ],
+ "quote": [
+  "1:56",
+  "we just figured a way to quantify it by comparing alternatives"
+ ]
+}

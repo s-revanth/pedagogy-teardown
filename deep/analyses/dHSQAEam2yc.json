@@ -1,0 +1,108 @@
+{
+ "id": "dHSQAEam2yc",
+ "channel": "OverSimplified",
+ "title": "WW1 - Oversimplified (Part 1)",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:02",
+   "H",
+   "hook-paradox|humor",
+   "Opens with ironic 'height of civilization, let's have a war' then lists grievances as gossip"
+  ],
+  [
+   "0:33",
+   "N",
+   "story|special-case-first",
+   "Archduke assassination as a comic near-miss story, then 'except no' reversal"
+  ],
+  [
+   "1:24",
+   "N",
+   "analogy|humor",
+   "Alliance chain told as friends saying 'you got my back?'; Britain 'maybe...'"
+  ],
+  [
+   "1:58",
+   "N",
+   "roadmap|commit-to-answer",
+   "Schlieffen plan stated as a simple 3-step plan, then 'just one problem' (forts)"
+  ],
+  [
+   "2:19",
+   "N",
+   "failure-shown|story",
+   "Plan forces Belgium route; Belgium resists, Britain joins"
+  ],
+  [
+   "3:16",
+   "B",
+   "act-it-out|humor",
+   "'Spot the French soldier' mini-game shows bright uniforms get shot"
+  ],
+  [
+   "4:30",
+   "N",
+   "story",
+   "Eastern front, Marne gap; one-clause definition of flanking"
+  ],
+  [
+   "5:06",
+   "N",
+   "minimal-definition-then-refine|rule-list",
+   "'Here's how trench warfare works' as ordered 4-step cycle"
+  ],
+  [
+   "5:55",
+   "N",
+   "recap",
+   "Trench misery list; abrupt end, Part 1 cliff"
+  ]
+ ],
+ "metrics": {
+  "first_question": "none",
+  "notation_first": "none",
+  "key_term": "trench warfare / alliances",
+  "misconception": "partial: war was supposed to be quick and old-school (3:35)",
+  "brute_force": "no",
+  "examples": "no repeated examples; one-pass narrative, each event once",
+  "ending": "Ends mid-narrative on trench conditions; no recap or teaser in transcript"
+ },
+ "principles": {
+  "1": "partly: modern-life irony and gossip framing 0:02-0:18, alliances as friends 1:42",
+  "2": "partly: few terms, each defined inline (flanking 4:48, trench warfare 5:06)",
+  "3": "not-observed: no interface",
+  "4": "partly: alliance-as-friendship analogy 1:42, never refined",
+  "5": "confirmed: Spot the French soldier game 3:16",
+  "6": "not-observed: no brute force",
+  "7": "contradicted: told, not discovered",
+  "8": "partly: beats stay about 15s at all points; idea rate is uniform until trench explainer 5:06 slows into steps",
+  "9": "not-observed",
+  "10": "not-observed",
+  "11": "partly: Schlieffen plan then its single flaw then Belgium consequence is a tight dependency chain 1:58-2:39",
+  "12": "partly: Wilson and US German population tie to outside world 3:00",
+  "13": "partly: plain tone, but little tool choice reasoning"
+ },
+ "new_moves": [
+  {
+   "name": "plan-then-single-flaw",
+   "what": "State a character's plan as clean steps, then 'just one problem' to drive the next event",
+   "evidence": "1:58-2:19"
+  },
+  {
+   "name": "reversal-turn",
+   "what": "Offer the expected outcome then negate it with 'except no' to keep causality surprising",
+   "evidence": "0:50-1:07"
+  }
+ ],
+ "theory": "Causality is carried by character intentions and their failed plans, so each event feels motivated rather than listed. Humor and quick persona voices keep the dependency chain light; the only rigorous mini-explanation (trench cycle) is given as an ordered list.",
+ "velocity": [
+  "Orchestrator: template 'plan, flaw, consequence' triples for causal topics",
+  "Scene builder: tiny interactive mini-games (spot the soldier) as act-it-out checks",
+  "Evals: check each new term is defined within one sentence of first use"
+ ],
+ "quote": [
+  "0:02",
+  "Let's have a war."
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "id": "b1reY72ktEc",
+ "channel": "OverSimplified",
+ "title": "The Russian Revolution - OverSimplified (Part 2)",
+ "duration_s": 1461,
+ "upload_date": "20200818",
+ "targets": {
+  "wpm": {
+   "p25": 188.37,
+   "median": 195.62,
+   "p75": 207.79,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.9,
+   "median": 1.37,
+   "p75": 1.73,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.72,
+   "median": 1.07,
+   "p75": 1.39,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.4,
+   "median": 0.57,
+   "p75": 0.67,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.09,
+   "median": 1.26,
+   "p75": 1.55,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.09,
+   "median": 0.12,
+   "p75": 0.17,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.03,
+   "p75": 0.05,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.68,
+   "median": 0.78,
+   "p75": 1.11,
+   "n": 19
+  },
+  "sent_len": {
+   "p25": 11.61,
+   "median": 12.3,
+   "p75": 13.04,
+   "n": 19
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.8,
+   "default": "ON",
+   "position_median": 0.0
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "gag-skit",
+ "ending_default": "teaser-next",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/Cqbleas1mmo.txt",
+  "deep/corpus/compact/EQmjXM4VK2U.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,1039 @@
+{
+ "headline": {
+  "score": "4/10",
+  "verdict": "The teardown transfers as a vocabulary of moves and values, not as a generative arc: format, answer status and endings were unconditioned, so most staged structure missed."
+ },
+ "universal_new_rules": [
+  {
+   "rule": "Format gate before arc: pick an arc template per format and switch off unlicensed moves; under 10 min drop roadmap, recap, callback, notation, 20-25 s beats",
+   "trigger": "Duration <10 min, series label, first-person title, or topic type (psychology, history-of-tech, open question, devlog)",
+   "evidence": "3B1B LPZh9BOjkQs whole; Lague l-hh51ncgDI 0:15-10:46; Primer t9N9S4loyu8 0:20; Kurz n3Xv_g3g-mA 0:00-1:23",
+   "confidence": "high",
+   "channels": [
+    "3blue1brown",
+    "SebastianLague",
+    "PrimerBlobs",
+    "kurzgesagt",
+    "Reducible",
+    "Vsauce"
+   ]
+  },
+  {
+   "rule": "Answer-given gate: state the answer by 0:40, an exception within 20 s, a concrete object by 1:30; skip brute-force numerics, the wall and staged misconception",
+   "trigger": "Title or first 40 s states the answer, thesis or formula",
+   "evidence": "3B1B d-o3eB9sfls 0:19, 1:24; Vsauce JTvcpdfGUtQ 0:18-0:34, fCn8zs912OE 0:39; CGP boezS4C_MFc 0:00; Primer 6YzrVUVO9M0 0:00",
+   "confidence": "high",
+   "channels": [
+    "3blue1brown",
+    "Vsauce",
+    "CGPGrey",
+    "PrimerBlobs",
+    "veritasium"
+   ]
+  },
+  {
+   "rule": "Conditional ending: phrase mirror, impact coda, human pivot, applied game or credits; hook callback only if the hook question is still open, teaser only in a series",
+   "trigger": "Final 10% of runtime",
+   "evidence": "Kurz 1AElONvi9WQ 6:46; Veritasium HeQX2HjkcNo 30:09; Vsauce fCn8zs912OE 18:20; 3B1B d-o3eB9sfls 16:35; CGP boezS4C_MFc 9:50",
+   "confidence": "high",
+   "channels": [
+    "kurzgesagt",
+    "veritasium",
+    "Vsauce",
+    "3blue1brown",
+    "CGPGrey",
+    "Reducible"
+   ]
+  },
+  {
+   "rule": "Recurring anchor: reuse one object, cause tag or gag line 3-5 times, each pass adding a layer or changing the last beat",
+   "trigger": "A cause, toy object, model or gag has been installed",
+   "evidence": "CGP boezS4C_MFc 0:47, 5:10, 8:26; OverS QLq6GEiHqR8 1:52, 2:57; Veritasium HeQX2HjkcNo 0:51, 29:42; Lague l-hh51ncgDI 1:10-8:44",
+   "confidence": "high",
+   "channels": [
+    "CGPGrey",
+    "OverSimplified",
+    "veritasium",
+    "SebastianLague",
+    "kurzgesagt",
+    "3blue1brown"
+   ]
+  },
+  {
+   "rule": "Notation keyed to referent and formula kind: symbol within ~60 s of one worked referent; governing or cost formulas may be early, symbol systems late; no runtime-fraction rule",
+   "trigger": "Any symbol or formula",
+   "evidence": "Veritasium 88bMVbx1dzM 1:26 vs HeQX2HjkcNo 12:13; Lague X-iSQQgOd1A 1:06; 3B1B d-o3eB9sfls 6:17; Reducible JGQe4kiPnrU 5:52",
+   "confidence": "high",
+   "channels": [
+    "veritasium",
+    "SebastianLague",
+    "3blue1brown",
+    "Reducible",
+    "PrimerBlobs"
+   ]
+  },
+  {
+   "rule": "Per-channel pace: use measured channel wpm (140-191 pooled) and 15-30 s beats for fast channels, never a universal 170",
+   "trigger": "Writing narration",
+   "evidence": "Vsauce fCn8zs912OE 134 wpm; OverS 26EivpCPHnQ 207 wpm; CGP 7Pq-S557XQU 42 beats at ~187 wpm; Lague 142 vs 192 by format",
+   "confidence": "high",
+   "channels": [
+    "Vsauce",
+    "CGPGrey",
+    "OverSimplified",
+    "SebastianLague",
+    "kurzgesagt",
+    "3blue1brown"
+   ]
+  },
+  {
+   "rule": "Drop default up-front furniture: front roadmap only with 3+ parallel open questions; otherwise inline signposts; no vote or commit in the hook; misconception only as definition-by-contrast",
+   "trigger": "Generator about to add roadmap, vote, commit prompt or planted misconception",
+   "evidence": "Veritasium 88bMVbx1dzM 0:34; 3B1B LPZh9BOjkQs 3:36; Kurz n3Xv_g3g-mA 0:34; Reducible JGQe4kiPnrU 3:35 (licensed case)",
+   "confidence": "high",
+   "channels": [
+    "veritasium",
+    "3blue1brown",
+    "kurzgesagt",
+    "OverSimplified",
+    "Reducible",
+    "CGPGrey"
+   ]
+  },
+  {
+   "rule": "Typed caveats: epistemic per candidate for open questions, domain caveat in proofs, approximate-winner note, safety referral for advice, inline concessions for theses",
+   "trigger": "Claim type is open, proved, approximate, advice or evidence-based",
+   "evidence": "Kurz 1AElONvi9WQ 3:50, 4:10, 6:29; Vsauce fCn8zs912OE 3:42; 3B1B d-o3eB9sfls 8:11; Reducible JGQe4kiPnrU 18:58; Kurz n3Xv_g3g-mA 9:52",
+   "confidence": "med",
+   "channels": [
+    "kurzgesagt",
+    "Vsauce",
+    "3blue1brown",
+    "Reducible",
+    "CGPGrey"
+   ]
+  },
+  {
+   "rule": "One real viewer turn mid-video: pause, guess or checkpoint at 40-65% of runtime, answered within 10-30 s",
+   "trigger": "Binary decision, absurd magnitude, or a dependent next step",
+   "evidence": "3B1B LPZh9BOjkQs 3:19; Lague l-hh51ncgDI 7:06; Primer 6YzrVUVO9M0 5:40; Reducible JGQe4kiPnrU 7:46; OverS QLq6GEiHqR8 9:32",
+   "confidence": "med",
+   "channels": [
+    "3blue1brown",
+    "SebastianLague",
+    "PrimerBlobs",
+    "Reducible",
+    "OverSimplified"
+   ]
+  },
+  {
+   "rule": "Ladder of named rungs: 4-6 rungs, each a named person/tier plus one number, ending in a wall or break, 1.5-3 min each",
+   "trigger": "History of invention, a thesis with exemptions, or an escalating antagonist",
+   "evidence": "Veritasium 88bMVbx1dzM 2:17-17:04; CGP 7Pq-S557XQU 7:00, 9:03, 11:06; OverS 26EivpCPHnQ 6:43-7:16",
+   "confidence": "med",
+   "channels": [
+    "veritasium",
+    "CGPGrey",
+    "OverSimplified"
+   ]
+  },
+  {
+   "rule": "Defer the title object: open upstream; first mention at ~25-30% of runtime, or later for named applications",
+   "trigger": "Title names an application, trigger event or end state",
+   "evidence": "OverS QLq6GEiHqR8 12:00, 26EivpCPHnQ 14:17; Reducible JGQe4kiPnrU 19:28; CGP 7Pq-S557XQU 4:08",
+   "confidence": "med",
+   "channels": [
+    "OverSimplified",
+    "Reducible",
+    "CGPGrey"
+   ]
+  }
+ ],
+ "channels": [
+  {
+   "channel": "3blue1brown",
+   "rating": 4,
+   "scores": {
+    "arc": 2,
+    "recall": 3,
+    "precision": 2,
+    "pacing": 2,
+    "voice": 3,
+    "regen": 2
+   },
+   "heldout": [
+    {
+     "id": "d-o3eB9sfls",
+     "title": "Why is pi here? And why is it squared? A geometric answer to the Basel problem",
+     "hit_rate": "9/17"
+    },
+    {
+     "id": "LPZh9BOjkQs",
+     "title": "Large Language Models explained briefly",
+     "hit_rate": "10/15"
+    }
+   ],
+   "initial_hypothesis": [
+    "Make the viewer a would-be inventor of the idea",
+    "One concrete object held on screen and morphed",
+    "Every tool arrives as the answer to a problem just felt",
+    "Notation held back, framed as compression of an owned picture",
+    "Honesty is structural: hopes labelled, approximations admitted, stories undercut"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Hook: familiar object plus paradox or wow",
+     "status": "confirmed",
+     "evidence": "d-o3eB9sfls 0:00-0:19: sum question then pi-squared paradox; LPZh9BOjkQs 0:01: scene hook"
+    },
+    {
+     "claim": "Roadmap and caveat up front",
+     "status": "contradicted",
+     "evidence": "LPZh9BOjkQs: no roadmap, inline signposts at 3:36; d-o3eB9sfls only a one-line pointer at 1:24"
+    },
+    {
+     "claim": "Toy world with one object and a thin definition",
+     "status": "confirmed",
+     "evidence": "d-o3eB9sfls 1:24 lighthouses (recall-flagged); LPZh9BOjkQs 0:33 definition refined at 1:07"
+    },
+    {
+     "claim": "Brute force: naive way, slightly wrong",
+     "status": "contradicted",
+     "evidence": "d-o3eB9sfls: no numeric partial sums anywhere; LPZh9BOjkQs: none"
+    },
+    {
+     "claim": "Wall or need posed as a design problem",
+     "status": "partly",
+     "evidence": "d-o3eB9sfls 2:28 one redesign question; LPZh9BOjkQs 3:36 pre-training is not an assistant"
+    },
+    {
+     "claim": "Notation late as shorthand for a picture",
+     "status": "partly",
+     "evidence": "Order held but d-o3eB9sfls lemma formula at 6:17 (~37%), sums stay verbal; LPZh9BOjkQs none"
+    },
+    {
+     "claim": "Run and grow: same machine repeated as the case grows",
+     "status": "confirmed",
+     "evidence": "d-o3eB9sfls 9:18, 10:07, 11:35: circle doubling three times, then the limit at 13:16"
+    },
+    {
+     "claim": "Callback and teaser to close",
+     "status": "partly",
+     "evidence": "d-o3eB9sfls callback mid-video 14:24, ends on credits 16:35; LPZh9BOjkQs teaser by choice 7:08, no callback"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Under 10 min: drop roadmap, recap, callback, notation; beats ~20-25 s",
+     "type": "topic-conditional",
+     "evidence": "LPZh9BOjkQs whole video"
+    },
+    {
+     "finding": "Lemma block: claim now, justify within 60-100 s, optional second proof plus link",
+     "type": "missing-rule",
+     "evidence": "d-o3eB9sfls 5:45-8:28"
+    },
+    {
+     "finding": "Iterate a construction exactly three times, label the last step, then jump to the limit",
+     "type": "underspecified",
+     "evidence": "d-o3eB9sfls 9:18-13:16"
+    },
+    {
+     "finding": "Two-stage payoff: awe beat, voiced objection, then mechanical algebra",
+     "type": "missing-rule",
+     "evidence": "d-o3eB9sfls 14:24-16:35"
+    },
+    {
+     "finding": "Magnitude-guess quiz with a rising ladder of guesses near 40% of runtime",
+     "type": "missing-rule",
+     "evidence": "LPZh9BOjkQs 3:19"
+    }
+   ]
+  },
+  {
+   "channel": "CGPGrey",
+   "rating": 3,
+   "scores": {
+    "arc": 2,
+    "recall": 3,
+    "precision": 2,
+    "pacing": 2,
+    "voice": 3,
+    "regen": 2
+   },
+   "heldout": [
+    {
+     "id": "7Pq-S557XQU",
+     "title": "What Happened to Horses Is Happening to Us",
+     "hit_rate": "7/14"
+    },
+    {
+     "id": "boezS4C_MFc",
+     "title": "America's Worst-Designed Backup Plan",
+     "hit_rate": "6.5/14"
+    }
+   ],
+   "initial_hypothesis": [
+    "Install a tiny model (2-5 named rules or one hidden cause) within a minute",
+    "Replay that model across a ladder of settings until the viewer predicts it",
+    "Cast the viewer as the actor (second-person role)",
+    "State the viewer's wrong belief, let them commit, then break it",
+    "Fast flat speech; fence speculation so confidence never overclaims"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Hook puts you in a situation or paradox",
+     "status": "contradicted",
+     "evidence": "7Pq-S557XQU 0:03 sweeping premise; boezS4C_MFc 0:00 plain question; no second-person setup"
+    },
+    {
+     "claim": "Break belief: state the expected, let you commit, flip",
+     "status": "partly",
+     "evidence": "7Pq-S557XQU belief 0:20-0:56 broken 4:08 and per tier; boezS4C_MFc none staged; no commit in either"
+    },
+    {
+     "claim": "Model: install 2-5 rules in under a minute",
+     "status": "contradicted",
+     "evidence": "No rule list; paired coinage at 7Pq-S557XQU 0:20, dice gag at boezS4C_MFc 0:47"
+    },
+    {
+     "claim": "Toy world: smallest staged case acted out",
+     "status": "contradicted",
+     "evidence": "Absent in both; generator over-applied it"
+    },
+    {
+     "claim": "Replay: same rules, new setting, repeat",
+     "status": "confirmed",
+     "evidence": "7Pq-S557XQU tiers 7:00, 9:03, 11:06; boezS4C_MFc dice 1:03, 5:10, 8:26"
+    },
+    {
+     "claim": "Break and fence: fake ending, speculation fence",
+     "status": "contradicted",
+     "evidence": "No fake ending; 7Pq-S557XQU asserts flatly at 6:04 and 12:33"
+    },
+    {
+     "claim": "Callback with punchline and tease",
+     "status": "partly",
+     "evidence": "boezS4C_MFc homework callback 9:35; 7Pq-S557XQU horse callback 13:07; no teaser"
+    },
+    {
+     "claim": "Theory: one cause, renamed each scene",
+     "status": "confirmed",
+     "evidence": "boezS4C_MFc interpretation-problem tag at 2:09, 4:21, 8:06, 9:17"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Title carries the thesis: plain premise or question in 3 s, through-line analogy by ~0:20",
+     "type": "topic-conditional",
+     "evidence": "boezS4C_MFc 0:00-0:16; 7Pq-S557XQU 0:03"
+    },
+    {
+     "finding": "Ladder of exemptions: surely-X-is-safe, broken with named instances and a number, title card each",
+     "type": "missing-rule",
+     "evidence": "7Pq-S557XQU 7:00, 9:03, 11:06"
+    },
+    {
+     "finding": "Reverse the analogy when the viewer's intuition about the familiar case is right",
+     "type": "missing-rule",
+     "evidence": "7Pq-S557XQU 4:08-4:24"
+    },
+    {
+     "finding": "Ambiguity shown as two parses, then a worst case that exploits it",
+     "type": "missing-rule",
+     "evidence": "boezS4C_MFc 4:21, 8:26"
+    },
+    {
+     "finding": "Beats ~21 s at 176-187 wpm with bracketed rapid-list asides",
+     "type": "voice/craft",
+     "evidence": "boezS4C_MFc 6:47-7:33; 7Pq-S557XQU whole"
+    }
+   ]
+  },
+  {
+   "channel": "OverSimplified",
+   "rating": 4,
+   "scores": {
+    "arc": 3,
+    "recall": 3,
+    "precision": 2,
+    "pacing": 3,
+    "voice": 2,
+    "regen": 2
+   },
+   "heldout": [
+    {
+     "id": "26EivpCPHnQ",
+     "title": "Three Kingdoms - OverSimplified",
+     "hit_rate": "7/10"
+    },
+    {
+     "id": "QLq6GEiHqR8",
+     "title": "The Pig War - OverSimplified",
+     "hit_rate": "6/11"
+    }
+   ],
+   "initial_hypothesis": [
+    "Teach causation, not content: every actor becomes a character with one want",
+    "Each causal hinge performed as a short dialogue skit",
+    "One template replayed until the viewer predicts the turn",
+    "Planted lines paid off 5-20 minutes later",
+    "Comedy replaces ramped difficulty; trades nuance for memorability and says so"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Cold open: sponsor, then a cheeky modern joke",
+     "status": "partly",
+     "evidence": "Sponsor tag 0:00-0:15 in both, but the skit is in-period, not modern (26EivpCPHnQ 0:15; QLq6GEiHqR8 0:16)"
+    },
+    {
+     "claim": "Flip: state the comfortable belief, then say wrong",
+     "status": "partly",
+     "evidence": "26EivpCPHnQ Han golden age flipped 1:21; QLq6GEiHqR8 uses false resolution instead at 1:52, 2:24, 8:58"
+    },
+    {
+     "claim": "Roadmap: one-line cause chain",
+     "status": "contradicted",
+     "evidence": "Absent in both videos"
+    },
+    {
+     "claim": "Skit plus replay: same script, new actors",
+     "status": "confirmed",
+     "evidence": "26EivpCPHnQ father speech 1:54 and 4:57; QLq6GEiHqR8 exchange 1:52 and 2:57"
+    },
+    {
+     "claim": "Chronology with running characters and gags",
+     "status": "confirmed",
+     "evidence": "QLq6GEiHqR8 Harney 20:17, Pickett 23:16; event order within ~30 s"
+    },
+    {
+     "claim": "Tonal pivot or flagged fabrication",
+     "status": "contradicted",
+     "evidence": "No pivot; Civil War delivered flat at QLq6GEiHqR8 34:20; only legend hedges at 26EivpCPHnQ 8:24"
+    },
+    {
+     "claim": "Callback: pay off the hook or planted line",
+     "status": "confirmed",
+     "evidence": "QLq6GEiHqR8 manifest destiny 3:29 paid off at 37:26; 26EivpCPHnQ pattern callback 14:52"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Defer the title object to ~30% (pig) or ~80% (kingdoms); open upstream",
+     "type": "missing-rule",
+     "evidence": "QLq6GEiHqR8 12:00; 26EivpCPHnQ 14:17"
+    },
+    {
+     "finding": "Verbatim gag of 8-15 words reused 2-3 times with the last beat changed",
+     "type": "underspecified",
+     "evidence": "QLq6GEiHqR8 1:52, 2:57; 5:05, 15:50"
+    },
+    {
+     "finding": "Full-complexity map montage when actors exceed ~6, then one thread to keep",
+     "type": "wrong-rule",
+     "evidence": "26EivpCPHnQ 9:33-12:11"
+    },
+    {
+     "finding": "Perspective replay of one event from both sides with an adjudicator's repeated verdict",
+     "type": "missing-rule",
+     "evidence": "QLq6GEiHqR8 30:24-32:25"
+    },
+    {
+     "finding": "Humour is anachronistic, crude and voiced with stingers, not gentle analogy",
+     "type": "voice/craft",
+     "evidence": "26EivpCPHnQ 3:14; QLq6GEiHqR8 12:16"
+    }
+   ]
+  },
+  {
+   "channel": "PrimerBlobs",
+   "rating": 4,
+   "scores": {
+    "arc": 2,
+    "recall": 3,
+    "precision": 2,
+    "pacing": 3,
+    "voice": 2,
+    "regen": 2
+   },
+   "heldout": [
+    {
+     "id": "6YzrVUVO9M0",
+     "title": "Overexplaining the binomial distribution",
+     "hit_rate": "4/8"
+    },
+    {
+     "id": "t9N9S4loyu8",
+     "title": "How I deceived myself",
+     "hit_rate": "3.5/8"
+    }
+   ],
+   "initial_hypothesis": [
+    "Build a small rule-bound blob world and run it before any theory",
+    "Viewer predicts, the simulation settles it",
+    "Names, tables and equations arrive after behaviour is seen",
+    "Presenter flags choices and shows his own wrong guesses",
+    "Ends on a parameter change that breaks the model"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Familiar blob world first",
+     "status": "partly",
+     "evidence": "6YzrVUVO9M0 blobs take over at 0:30 after a human hook; t9N9S4loyu8 has no blobs (on camera)"
+    },
+    {
+     "claim": "Dumb baseline run first",
+     "status": "partly",
+     "evidence": "6YzrVUVO9M0 n=1,2,3 enumerated by hand 1:02-3:45; t9N9S4loyu8 none"
+    },
+    {
+     "claim": "Predict pause with outcomes listed",
+     "status": "partly",
+     "evidence": "One predict pause 6YzrVUVO9M0 2:41; others are checkpoints 5:40, 11:19; none in t9N9S4loyu8"
+    },
+    {
+     "claim": "Run, surprise: the sim settles it",
+     "status": "contradicted",
+     "evidence": "Sim only as a late check at 6YzrVUVO9M0 13:28 (~88%); no sim in t9N9S4loyu8"
+    },
+    {
+     "claim": "Name it after the behaviour was seen",
+     "status": "partly",
+     "evidence": "Formula shown at 6YzrVUVO9M0 0:00, decoded 4:33; t9N9S4loyu8 terms after lay definitions 3:05"
+    },
+    {
+     "claim": "Break it with a parameter flip",
+     "status": "contradicted",
+     "evidence": "No break in either; independence caveat only stated at 6YzrVUVO9M0 5:57"
+    },
+    {
+     "claim": "Teaser then thanks at the end",
+     "status": "contradicted",
+     "evidence": "Pointer to the fix at the front, t9N9S4loyu8 0:37; no end teaser in either"
+    },
+    {
+     "claim": "Theory: honesty is cashable; presenter was wrong",
+     "status": "confirmed",
+     "evidence": "t9N9S4loyu8 is a whole-video retraction; caveats every few minutes in 6YzrVUVO9M0"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Three-template switch: sim exploration, named-formula derivation, on-camera reflection",
+     "type": "topic-conditional",
+     "evidence": "6YzrVUVO9M0 0:00; t9N9S4loyu8 0:20"
+    },
+    {
+     "finding": "Pain-driven second act: state the cost, show the closed form, derive it factor by factor",
+     "type": "missing-rule",
+     "evidence": "6YzrVUVO9M0 8:54-13:11"
+    },
+    {
+     "finding": "Checkpoint pauses before dependent steps, distinct from prediction pauses",
+     "type": "underspecified",
+     "evidence": "6YzrVUVO9M0 5:40, 11:19"
+    },
+    {
+     "finding": "Numbered lessons with a count roadmap and the strongest item last",
+     "type": "missing-rule",
+     "evidence": "t9N9S4loyu8 1:57, 6:57"
+    },
+    {
+     "finding": "Dignify-then-dismiss applied to the presenter's own past reasoning",
+     "type": "underspecified",
+     "evidence": "t9N9S4loyu8 2:49-3:05"
+    }
+   ]
+  },
+  {
+   "channel": "Reducible",
+   "rating": 5,
+   "scores": {
+    "arc": 2,
+    "recall": 4,
+    "precision": 3,
+    "pacing": 2,
+    "voice": 3,
+    "regen": 3
+   },
+   "heldout": [
+    {
+     "id": "Q_1M2JaijjQ",
+     "title": "What Is Big O Notation?",
+     "hit_rate": "9.5/15"
+    },
+    {
+     "id": "JGQe4kiPnrU",
+     "title": "PageRank: A Trillion Dollar Algorithm",
+     "hit_rate": "10/16"
+    }
+   ],
+   "initial_hypothesis": [
+    "Teach an algorithm as a chain of forced moves",
+    "Start from a half-known concrete problem and run the obvious slow approach",
+    "Let it fail or become visibly expensive, and mine the failure for the next idea",
+    "Names, notation and code arrive last as a receipt",
+    "Slow down with staged pauses, small cases and permission to be confused, not speech rate"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Hook or goal: promise something beautiful or surprising",
+     "status": "partly",
+     "evidence": "Hooks are a classroom anecdote (Q_1M2JaijjQ 0:00) and a user scenario (JGQe4kiPnrU 0:00-0:14); no spectacle"
+    },
+    {
+     "claim": "Home problem with a minimal definition",
+     "status": "confirmed",
+     "evidence": "Q_1M2JaijjQ 0:59 one problem, two solvers; JGQe4kiPnrU 2:41 small chain"
+    },
+    {
+     "claim": "Brute force run in full",
+     "status": "partly",
+     "evidence": "Q_1M2JaijjQ triple loop at 0:59; JGQe4kiPnrU brute force is method 1 of 3 at 13:30 and wins at scale"
+    },
+    {
+     "claim": "Failure or cost shown",
+     "status": "confirmed",
+     "evidence": "Q_1M2JaijjQ 3:31, 6:00; JGQe4kiPnrU 10:34, 14:26, 19:42, 22:02"
+    },
+    {
+     "claim": "Special-case ladder",
+     "status": "confirmed",
+     "evidence": "JGQe4kiPnrU two-state counterexamples 7:46, 10:04; Q_1M2JaijjQ f(1..5) ladder"
+    },
+    {
+     "claim": "Name, notation, code last",
+     "status": "partly",
+     "evidence": "Order held; position not: matrix at JGQe4kiPnrU 5:52 (~23%), Big O named 8:14 (~46%)"
+    },
+    {
+     "claim": "Recap and callback",
+     "status": "partly",
+     "evidence": "Q_1M2JaijjQ recap mirrors roadmap 16:49; no callback or teaser in either"
+    },
+    {
+     "claim": "Theory: plan with empty slots, closed in order",
+     "status": "confirmed",
+     "evidence": "JGQe4kiPnrU three questions at 3:35 answered in turn; Q_1M2JaijjQ roadmap 0:44"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Property-hunt arc: hint-led counterexample challenges, then name the failing property",
+     "type": "missing-rule",
+     "evidence": "JGQe4kiPnrU 7:46, 10:04"
+    },
+    {
+     "finding": "Definition-decode beat at 40-55% of runtime, clause by clause on one function",
+     "type": "missing-rule",
+     "evidence": "Q_1M2JaijjQ 9:01-11:44"
+    },
+    {
+     "finding": "Story frame with two named solvers carries a whole comparison video",
+     "type": "wrong-rule",
+     "evidence": "Q_1M2JaijjQ 0:59-8:44"
+    },
+    {
+     "finding": "Hold the named application until theory is built (~77%)",
+     "type": "topic-conditional",
+     "evidence": "JGQe4kiPnrU 19:28"
+    },
+    {
+     "finding": "Dry self-aware reactions to jargon density",
+     "type": "voice/craft",
+     "evidence": "Q_1M2JaijjQ 0:15, 9:31; JGQe4kiPnrU 8:41"
+    }
+   ]
+  },
+  {
+   "channel": "SebastianLague",
+   "rating": 4,
+   "scores": {
+    "arc": 2,
+    "recall": 3,
+    "precision": 2,
+    "pacing": 2,
+    "voice": 2,
+    "regen": 2
+   },
+   "heldout": [
+    {
+     "id": "X-iSQQgOd1A",
+     "title": "Coding Adventure: Ant and Slime Simulations",
+     "hit_rate": "9.5/17"
+    },
+    {
+     "id": "l-hh51ncgDI",
+     "title": "Algorithms Explained - minimax and alpha-beta pruning",
+     "hit_rate": "10.5/17"
+    }
+   ],
+   "initial_hypothesis": [
+    "Build-break-fix in public",
+    "Each concept enters as the smallest repair for a failure just watched",
+    "Correctness shown by rerunning the same test on every variant",
+    "Plain devlog tone with unusual honesty about bugs and cheats",
+    "The lesson is often a side effect of the project"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Tiny toy world first",
+     "status": "confirmed",
+     "evidence": "X-iSQQgOd1A towns-on-a-map toy 0:17; l-hh51ncgDI tiny tree 0:15"
+    },
+    {
+     "claim": "Dumb version, run it",
+     "status": "confirmed",
+     "evidence": "X-iSQQgOd1A enumerate all routes 0:17; l-hh51ncgDI full minimax before pruning 1:10-5:06"
+    },
+    {
+     "claim": "It breaks: failure on screen",
+     "status": "partly",
+     "evidence": "X-iSQQgOd1A factorial blow-up 0:51, Unity bug 4:47; l-hh51ncgDI only bad move ordering 6:26"
+    },
+    {
+     "claim": "Smallest repair: term named after the failure",
+     "status": "contradicted",
+     "evidence": "X-iSQQgOd1A evaporation 7:28 and diffusion 12:44 arrive ungated; pruning motivated by wasted work 5:21"
+    },
+    {
+     "claim": "Verify the same way every time",
+     "status": "confirmed",
+     "evidence": "X-iSQQgOd1A same 20 towns 3:21; l-hh51ncgDI answer stated unchanged 6:12"
+    },
+    {
+     "claim": "Turn one knob to isolate a cause",
+     "status": "partly",
+     "evidence": "One knob X-iSQQgOd1A 5:23; parameter exploration left unnarrated 14:15-15:59"
+    },
+    {
+     "claim": "Honest close: limits, wishlist, callback, teaser",
+     "status": "contradicted",
+     "evidence": "X-iSQQgOd1A ends with links to others' work; l-hh51ncgDI one-line recap plus a chess game 10:18"
+    },
+    {
+     "claim": "Theory: equation revealed as a label after behaviour",
+     "status": "contradicted",
+     "evidence": "Formulas precede the demo at X-iSQQgOd1A 1:06, 1:43"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Format gate: impersonal lecture series vs devlog vs designed-lesson adventure",
+     "type": "topic-conditional",
+     "evidence": "l-hh51ncgDI 0:15-10:46 vs X-iSQQgOd1A"
+    },
+    {
+     "finding": "Layered reruns of one example, one overlay per pass, answer unchanged",
+     "type": "missing-rule",
+     "evidence": "l-hh51ncgDI 1:10, 3:56, 5:06, 8:44"
+    },
+    {
+     "finding": "Pause-the-video quiz at ~65% of runtime in lecture format",
+     "type": "wrong-rule",
+     "evidence": "l-hh51ncgDI 7:06"
+    },
+    {
+     "finding": "Cite the design source (paper, video) at the moment of choice",
+     "type": "underspecified",
+     "evidence": "X-iSQQgOd1A 6:19, 6:37, 7:10"
+    },
+    {
+     "finding": "Open a devlog with an adjacent classic problem and a human-scale blow-up number",
+     "type": "missing-rule",
+     "evidence": "X-iSQQgOd1A 0:02-4:28"
+    }
+   ]
+  },
+  {
+   "channel": "Vsauce",
+   "rating": 3,
+   "scores": {
+    "arc": 2,
+    "recall": 2,
+    "precision": 3,
+    "pacing": 2,
+    "voice": 2,
+    "regen": 2
+   },
+   "heldout": [
+    {
+     "id": "JTvcpdfGUtQ",
+     "title": "What Is The Speed of Dark?",
+     "hit_rate": "6/12"
+    },
+    {
+     "id": "fCn8zs912OE",
+     "title": "The Zipf Mystery",
+     "hit_rate": "5/12"
+    }
+   ],
+   "initial_hypothesis": [
+    "Put the learner inside a vantage point and move it through a chain of questions",
+    "Vocabulary arrives only after the idea has been felt",
+    "Fast flat speech (~170 wpm); idea rate set by stories, jokes and tangents",
+    "One structural pattern repeated across unrelated domains",
+    "Strong at stance change, weak at build-up; tangents are a weakness"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Odd hook: a trick or joke, fake version first",
+     "status": "contradicted",
+     "evidence": "JTvcpdfGUtQ 0:01 phobia statement; fCn8zs912OE 0:00 quantified trivia fact"
+    },
+    {
+     "claim": "Obvious answer stated so it can be broken",
+     "status": "partly",
+     "evidence": "JTvcpdfGUtQ gives the real answer at 0:18, then the exception at 0:34; no planted belief in fCn8zs912OE"
+    },
+    {
+     "claim": "Prop or simulation carries the idea",
+     "status": "partly",
+     "evidence": "fCn8zs912OE monkey derivation 8:07, paper clips 13:34; JTvcpdfGUtQ scissors 6:07"
+    },
+    {
+     "claim": "Name it late, after the idea is felt",
+     "status": "contradicted",
+     "evidence": "Zipf's law named at fCn8zs912OE 1:16; umbra and penumbra at JTvcpdfGUtQ 2:52"
+    },
+    {
+     "claim": "Same trick, new costume across cases",
+     "status": "confirmed",
+     "evidence": "JTvcpdfGUtQ shadow, scissors, interference share one reason; fCn8zs912OE barrage 3:08"
+    },
+    {
+     "claim": "Honest caveat or unanswerable reframe",
+     "status": "confirmed",
+     "evidence": "fCn8zs912OE 3:42, 15:22; JTvcpdfGUtQ 6:40"
+    },
+    {
+     "claim": "Callback reframes the hook, then plug",
+     "status": "partly",
+     "evidence": "JTvcpdfGUtQ valence flip of the dark at 12:57; fCn8zs912OE ends on a quote at 20:04, no callback"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Answer first, then an exception within 20 s",
+     "type": "wrong-rule",
+     "evidence": "JTvcpdfGUtQ 0:18-0:34; fCn8zs912OE 0:39"
+    },
+    {
+     "finding": "Late pivot of the title idea to the human condition, ending on a quote",
+     "type": "missing-rule",
+     "evidence": "JTvcpdfGUtQ 8:53-12:57; fCn8zs912OE 18:20-20:04"
+    },
+    {
+     "finding": "Sanctioned 2-3 min detour (up to ~20%) joined by one pivot sentence",
+     "type": "wrong-rule",
+     "evidence": "JTvcpdfGUtQ 3:26-6:22; fCn8zs912OE 4:18-6:43"
+    },
+    {
+     "finding": "Barrage repetition: 8-14 one-clause instances in under 70 s",
+     "type": "underspecified",
+     "evidence": "fCn8zs912OE 3:08-3:42"
+    },
+    {
+     "finding": "Measured pace 134-148 wpm on full runtime, not ~170",
+     "type": "voice/craft",
+     "evidence": "JTvcpdfGUtQ 148; fCn8zs912OE 134 (139 over speech span)"
+    }
+   ]
+  },
+  {
+   "channel": "kurzgesagt",
+   "rating": 5,
+   "scores": {
+    "arc": 3,
+    "recall": 3,
+    "precision": 2,
+    "pacing": 3,
+    "voice": 2,
+    "regen": 3
+   },
+   "heldout": [
+    {
+     "id": "1AElONvi9WQ",
+     "title": "Why Blue Whales Don't Get Cancer - Peto's Paradox",
+     "hit_rate": "10.5/14"
+    },
+    {
+     "id": "n3Xv_g3g-mA",
+     "title": "Loneliness",
+     "hit_rate": "8.5/14"
+    }
+   ],
+   "initial_hypothesis": [
+    "Every abstract idea gets a physical, agent-like stand-in",
+    "Walk the stand-in through a causal story from familiar to surprising",
+    "Notation almost absent; the hard term is named last",
+    "Flat speech; slows through caveats, objections and a placed trap",
+    "Every video ends by cashing in its opening hook"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Hook: paradox or what-if in one line",
+     "status": "partly",
+     "evidence": "1AElONvi9WQ 0:00 paradox as an assertion, no question; n3Xv_g3g-mA relatable list plus stats 0:00-0:34"
+    },
+    {
+     "claim": "Scope: say what the video will and won't cover",
+     "status": "contradicted",
+     "evidence": "No scope or roadmap beat in either video"
+    },
+    {
+     "claim": "Define: one plain minimal definition",
+     "status": "confirmed",
+     "evidence": "n3Xv_g3g-mA 0:53 loneliness as subjective; 1AElONvi9WQ 0:31 cells as machines"
+    },
+    {
+     "claim": "Stand-in: agent analogy or toy world",
+     "status": "partly",
+     "evidence": "1AElONvi9WQ four agent stand-ins; n3Xv_g3g-mA one analogy at 1:23, never reused"
+    },
+    {
+     "claim": "Break it: misconception or trap",
+     "status": "partly",
+     "evidence": "n3Xv_g3g-mA alone vs lonely at 0:34; 1AElONvi9WQ paradox named at 2:14"
+    },
+    {
+     "claim": "Caveat that still commits to a direction",
+     "status": "partly",
+     "evidence": "Caveats at 1AElONvi9WQ 3:50, 4:10, 6:29 but it refuses to commit; n3Xv_g3g-mA safety referral only 9:52"
+    },
+    {
+     "claim": "Callback cashes in the hook",
+     "status": "partly",
+     "evidence": "Closing-phrase mirror, not a return to the question: 1AElONvi9WQ 6:46; n3Xv_g3g-mA 10:28"
+    },
+    {
+     "claim": "Theory: name the paradox late; stakes before advice",
+     "status": "confirmed",
+     "evidence": "1AElONvi9WQ named at 2:14 (~31%); n3Xv_g3g-mA stakes 5:21 before advice 8:09"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Topic and question-status switch: open question vs psychology change hook, analogy count, caveat type",
+     "type": "topic-conditional",
+     "evidence": "1AElONvi9WQ 2:34; n3Xv_g3g-mA 0:00-1:23"
+    },
+    {
+     "finding": "Advice mirrors the diagnosed loop, one question set per node, then a referral",
+     "type": "missing-rule",
+     "evidence": "n3Xv_g3g-mA 7:02-9:52"
+    },
+    {
+     "finding": "Ladder replay as test: reuse the setup's three rungs once later as evidence",
+     "type": "missing-rule",
+     "evidence": "1AElONvi9WQ 1:54, 6:11"
+    },
+    {
+     "finding": "Second-person self-audit contradicts 'no learner response'",
+     "type": "wrong-rule",
+     "evidence": "n3Xv_g3g-mA 8:27-9:52"
+    },
+    {
+     "finding": "Pace ~146-156 wpm over speech, terse aphorism after each mechanism",
+     "type": "voice/craft",
+     "evidence": "1AElONvi9WQ 5:55; n3Xv_g3g-mA whole"
+    }
+   ]
+  },
+  {
+   "channel": "veritasium",
+   "rating": 4,
+   "scores": {
+    "arc": 3,
+    "recall": 4,
+    "precision": 2,
+    "pacing": 2,
+    "voice": 3,
+    "regen": 2
+   },
+   "heldout": [
+    {
+     "id": "88bMVbx1dzM",
+     "title": "Can You Keep Zooming In Infinitely?",
+     "hit_rate": "3/11"
+    },
+    {
+     "id": "HeQX2HjkcNo",
+     "title": "Math's Fundamental Flaw",
+     "hit_rate": "5.5/11"
+    }
+   ],
+   "initial_hypothesis": [
+    "Make the viewer need the idea before it arrives",
+    "Plant a puzzle or wrong belief in the first minute",
+    "Walk an obstacle course of people trying and failing",
+    "Theory inserted as a block when the plot needs it, via a demo or one analogy",
+    "Notation absent or very late; asks for predictions but answers within seconds"
+   ],
+   "storyboard_claims": [
+    {
+     "claim": "Odd object or myth; popular explanation is wrong",
+     "status": "partly",
+     "evidence": "Spectacle zoom at 88bMVbx1dzM 0:00 and hole-in-maths claim at HeQX2HjkcNo 0:00; no myth stated to the viewer"
+    },
+    {
+     "claim": "Question backlog promised up front",
+     "status": "contradicted",
+     "evidence": "88bMVbx1dzM single question 0:34; HeQX2HjkcNo three questions only at 13:36 (~40%)"
+    },
+    {
+     "claim": "Go there, do it: presenter acts it out with experts",
+     "status": "partly",
+     "evidence": "88bMVbx1dzM lab at 0:18 and 18:09; nothing similar in HeQX2HjkcNo"
+    },
+    {
+     "claim": "Obstacle ladder of rejected alternatives",
+     "status": "confirmed",
+     "evidence": "As a win-then-wall relay of named people: 88bMVbx1dzM 2:17-17:04; HeQX2HjkcNo 3:36-22:39"
+    },
+    {
+     "claim": "Minimal block: one analogy, notation late or never",
+     "status": "contradicted",
+     "evidence": "Formula at 88bMVbx1dzM 1:26; analogies after the formal version at HeQX2HjkcNo 9:33, 20:40"
+    },
+    {
+     "claim": "Defuse the myth: ask for a prediction, then break it",
+     "status": "contradicted",
+     "evidence": "No vote or commit prompt in either video"
+    },
+    {
+     "claim": "Generalise, call back, then teaser or sponsor",
+     "status": "partly",
+     "evidence": "HeQX2HjkcNo generalises 27:02-30:09, callback 32:07, sponsor last; 88bMVbx1dzM ends on lab significance"
+    }
+   ],
+   "new_findings": [
+    {
+     "finding": "Win-then-wall relay ladder: person, year, blocker solved, new wall; countdown climax",
+     "type": "underspecified",
+     "evidence": "88bMVbx1dzM 14:18-17:38"
+    },
+    {
+     "finding": "Impact and legacy coda before the close, then hook reprise",
+     "type": "missing-rule",
+     "evidence": "HeQX2HjkcNo 30:09-32:07; 88bMVbx1dzM 20:13"
+    },
+    {
+     "finding": "Running toy object introduced in 90 s and returned to 3+ times as the climax",
+     "type": "missing-rule",
+     "evidence": "HeQX2HjkcNo 0:51, 10:43, 29:42"
+    },
+    {
+     "finding": "Impossibility theorem followed by a loophole in its hidden assumption",
+     "type": "missing-rule",
+     "evidence": "88bMVbx1dzM 14:01"
+    },
+    {
+     "finding": "Notation by formula type: governing relation early, symbol systems late",
+     "type": "topic-conditional",
+     "evidence": "88bMVbx1dzM 1:26 vs HeQX2HjkcNo 12:13"
+    }
+   ]
+  }
+ ]
+}

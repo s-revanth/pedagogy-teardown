@@ -1,0 +1,538 @@
+{
+ "_how": "Training labels (round 4). Mapped by Claude from the round-1 analyses (first two beats + ending field), using the SAME definitions as eval/real_labels.json. Ending = last content beat before sponsor/outro. phrase-mirror includes any return to the opening image/phrase/question (the hook-callback family). Hook for OverSimplified = first content beat after the sponsor/admin cold open.",
+ "aircAruvnKk": {
+  "channel": "3blue1brown",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "r6sGWTCMz2k": {
+  "channel": "3blue1brown",
+  "hook_type": "spectacle-demo",
+  "ending_type": "teaser-next"
+ },
+ "bBC-nXj3Ng4": {
+  "channel": "3blue1brown",
+  "hook_type": "question",
+  "ending_type": "impact-coda"
+ },
+ "OkmNXy7er84": {
+  "channel": "3blue1brown",
+  "hook_type": "premise-claim",
+  "ending_type": "advice"
+ },
+ "HEfHFsfGXjs": {
+  "channel": "3blue1brown",
+  "hook_type": "spectacle-demo",
+  "ending_type": "teaser-next"
+ },
+ "fNk_zzaMoSs": {
+  "channel": "3blue1brown",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "spUNpyF58BY": {
+  "channel": "3blue1brown",
+  "hook_type": "spectacle-demo",
+  "ending_type": "teaser-next"
+ },
+ "wjZofJX0v4M": {
+  "channel": "3blue1brown",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "v68zYyaEmEA": {
+  "channel": "3blue1brown",
+  "hook_type": "premise-claim",
+  "ending_type": "open-question"
+ },
+ "WUvTyaaNkzM": {
+  "channel": "3blue1brown",
+  "hook_type": "premise-claim",
+  "ending_type": "phrase-mirror"
+ },
+ "IHZwWFHWa-w": {
+  "channel": "3blue1brown",
+  "hook_type": "premise-claim",
+  "ending_type": "human-pivot"
+ },
+ "GNcFjFmqEc8": {
+  "channel": "3blue1brown",
+  "hook_type": "question",
+  "ending_type": "teaser-next"
+ },
+ "iHzzSao6ypE": {
+  "channel": "CGPGrey",
+  "hook_type": "scenario-you",
+  "ending_type": "phrase-mirror"
+ },
+ "qMkYlIA7mgw": {
+  "channel": "CGPGrey",
+  "hook_type": "premise-claim",
+  "ending_type": "other"
+ },
+ "oAHbLRjF0vo": {
+  "channel": "CGPGrey",
+  "hook_type": "question",
+  "ending_type": "advice"
+ },
+ "kF8I_r9XT7A": {
+  "channel": "CGPGrey",
+  "hook_type": "scenario-you",
+  "ending_type": "phrase-mirror"
+ },
+ "wOmjnioNulo": {
+  "channel": "CGPGrey",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "rStL7niR7gs": {
+  "channel": "CGPGrey",
+  "hook_type": "scenario-you",
+  "ending_type": "phrase-mirror"
+ },
+ "rNu8XDBSn10": {
+  "channel": "CGPGrey",
+  "hook_type": "question",
+  "ending_type": "impact-coda"
+ },
+ "uqH_Y1TupoQ": {
+  "channel": "CGPGrey",
+  "hook_type": "scenario-you",
+  "ending_type": "phrase-mirror"
+ },
+ "jNgP6d9HraI": {
+  "channel": "CGPGrey",
+  "hook_type": "premise-claim",
+  "ending_type": "credits-after-result"
+ },
+ "wfYbgdo8e-8": {
+  "channel": "CGPGrey",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "thOifuHs6eY": {
+  "channel": "CGPGrey",
+  "hook_type": "premise-claim",
+  "ending_type": "phrase-mirror"
+ },
+ "l4w6808wJcU": {
+  "channel": "CGPGrey",
+  "hook_type": "gag-skit",
+  "ending_type": "other"
+ },
+ "_uk_6vfqwTA": {
+  "channel": "OverSimplified",
+  "hook_type": "gag-skit",
+  "ending_type": "teaser-next"
+ },
+ "I79TpDe3t2g": {
+  "channel": "OverSimplified",
+  "hook_type": "gag-skit",
+  "ending_type": "teaser-next"
+ },
+ "tsxmyL7TUJg": {
+  "channel": "OverSimplified",
+  "hook_type": "gag-skit",
+  "ending_type": "impact-coda"
+ },
+ "zqllxbPWKNI": {
+  "channel": "OverSimplified",
+  "hook_type": "question",
+  "ending_type": "credits-after-result"
+ },
+ "fo2Rb9h788s": {
+  "channel": "OverSimplified",
+  "hook_type": "story-anecdote",
+  "ending_type": "teaser-next"
+ },
+ "gzALIXcY4pg": {
+  "channel": "OverSimplified",
+  "hook_type": "gag-skit",
+  "ending_type": "credits-after-result"
+ },
+ "AAGIi62-sAU": {
+  "channel": "OverSimplified",
+  "hook_type": "gag-skit",
+  "ending_type": "impact-coda"
+ },
+ "dHSQAEam2yc": {
+  "channel": "OverSimplified",
+  "hook_type": "premise-claim",
+  "ending_type": "credits-after-result"
+ },
+ "8qRZcXIODNU": {
+  "channel": "OverSimplified",
+  "hook_type": "gag-skit",
+  "ending_type": "teaser-next"
+ },
+ "ewLpXw6uN28": {
+  "channel": "OverSimplified",
+  "hook_type": "question",
+  "ending_type": "phrase-mirror"
+ },
+ "Cqbleas1mmo": {
+  "channel": "OverSimplified",
+  "hook_type": "gag-skit",
+  "ending_type": "teaser-next"
+ },
+ "OIYy32RuHao": {
+  "channel": "OverSimplified",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "YNMkADpvO4w": {
+  "channel": "PrimerBlobs",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "0ZGbIKd0XrM": {
+  "channel": "PrimerBlobs",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "XTcP4oo4JI4": {
+  "channel": "PrimerBlobs",
+  "hook_type": "story-anecdote",
+  "ending_type": "teaser-next"
+ },
+ "iLX_r_WPrIw": {
+  "channel": "PrimerBlobs",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "7OLpKqTriio": {
+  "channel": "PrimerBlobs",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "PNtKXWNKGN8": {
+  "channel": "PrimerBlobs",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "tCoEYFbDVoI": {
+  "channel": "PrimerBlobs",
+  "hook_type": "premise-claim",
+  "ending_type": "credits-after-result"
+ },
+ "goePYJ74Ydg": {
+  "channel": "PrimerBlobs",
+  "hook_type": "question",
+  "ending_type": "teaser-next"
+ },
+ "yhO6jfHPFQU": {
+  "channel": "PrimerBlobs",
+  "hook_type": "question",
+  "ending_type": "advice"
+ },
+ "nsVD8VPh96w": {
+  "channel": "PrimerBlobs",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "1_JbJTeLZJs": {
+  "channel": "PrimerBlobs",
+  "hook_type": "question",
+  "ending_type": "impact-coda"
+ },
+ "uRTtlpD_U54": {
+  "channel": "PrimerBlobs",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "h7apO7q16V0": {
+  "channel": "Reducible",
+  "hook_type": "premise-claim",
+  "ending_type": "phrase-mirror"
+ },
+ "ngCos392W4w": {
+  "channel": "Reducible",
+  "hook_type": "premise-claim",
+  "ending_type": "advice"
+ },
+ "aPQY__2H3tE": {
+  "channel": "Reducible",
+  "hook_type": "premise-claim",
+  "ending_type": "advice"
+ },
+ "0me3guauqOU": {
+  "channel": "Reducible",
+  "hook_type": "spectacle-demo",
+  "ending_type": "impact-coda"
+ },
+ "LFKZLXVO-Dg": {
+  "channel": "Reducible",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "EFUYNoFRHQI": {
+  "channel": "Reducible",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "rf6uf3jNjbo": {
+  "channel": "Reducible",
+  "hook_type": "confession",
+  "ending_type": "credits-after-result"
+ },
+ "PMMc4VsIacU": {
+  "channel": "Reducible",
+  "hook_type": "premise-claim",
+  "ending_type": "credits-after-result"
+ },
+ "eED4bSkYCB8": {
+  "channel": "Reducible",
+  "hook_type": "spectacle-demo",
+  "ending_type": "teaser-next"
+ },
+ "6oMZb3yP_H8": {
+  "channel": "Reducible",
+  "hook_type": "spectacle-demo",
+  "ending_type": "phrase-mirror"
+ },
+ "xlVX7dXLS64": {
+  "channel": "Reducible",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "ajv46BSqcK4": {
+  "channel": "Reducible",
+  "hook_type": "question",
+  "ending_type": "impact-coda"
+ },
+ "I0-izyq6q5s": {
+  "channel": "SebastianLague",
+  "hook_type": "question",
+  "ending_type": "teaser-next"
+ },
+ "sLqXFF8mlEU": {
+  "channel": "SebastianLague",
+  "hook_type": "story-anecdote",
+  "ending_type": "human-pivot"
+ },
+ "U4ogK0MIzqk": {
+  "channel": "SebastianLague",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "QZwneRb-zqA": {
+  "channel": "SebastianLague",
+  "hook_type": "confession",
+  "ending_type": "teaser-next"
+ },
+ "UXD97l7ZT0w": {
+  "channel": "SebastianLague",
+  "hook_type": "story-anecdote",
+  "ending_type": "credits-after-result"
+ },
+ "PGk0rnyTa1U": {
+  "channel": "SebastianLague",
+  "hook_type": "confession",
+  "ending_type": "human-pivot"
+ },
+ "rSKMYc1CQHE": {
+  "channel": "SebastianLague",
+  "hook_type": "spectacle-demo",
+  "ending_type": "teaser-next"
+ },
+ "TURzbXTNaA0": {
+  "channel": "SebastianLague",
+  "hook_type": "story-anecdote",
+  "ending_type": "human-pivot"
+ },
+ "r_It_X7v-1E": {
+  "channel": "SebastianLague",
+  "hook_type": "spectacle-demo",
+  "ending_type": "credits-after-result"
+ },
+ "pNp4ug5F6To": {
+  "channel": "SebastianLague",
+  "hook_type": "premise-claim",
+  "ending_type": "credits-after-result"
+ },
+ "hfMk-kjRv4c": {
+  "channel": "SebastianLague",
+  "hook_type": "confession",
+  "ending_type": "teaser-next"
+ },
+ "-L-WgKMFuhE": {
+  "channel": "SebastianLague",
+  "hook_type": "premise-claim",
+  "ending_type": "credits-after-result"
+ },
+ "QDCcuCHOIyY": {
+  "channel": "Vsauce",
+  "hook_type": "story-anecdote",
+  "ending_type": "impact-coda"
+ },
+ "s86-Z-CbaHA": {
+  "channel": "Vsauce",
+  "hook_type": "spectacle-demo",
+  "ending_type": "impact-coda"
+ },
+ "jHbyQ_AQP8c": {
+  "channel": "Vsauce",
+  "hook_type": "question",
+  "ending_type": "phrase-mirror"
+ },
+ "VNqNnUJVcVs": {
+  "channel": "Vsauce",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "7uiv6tKtoKg": {
+  "channel": "Vsauce",
+  "hook_type": "premise-claim",
+  "ending_type": "phrase-mirror"
+ },
+ "iqKdEhx-dD4": {
+  "channel": "Vsauce",
+  "hook_type": "scenario-you",
+  "ending_type": "impact-coda"
+ },
+ "evQsOFQju08": {
+  "channel": "Vsauce",
+  "hook_type": "question",
+  "ending_type": "phrase-mirror"
+ },
+ "3pAnRKD4raY": {
+  "channel": "Vsauce",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "sHCHEykUxP4": {
+  "channel": "Vsauce",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "Xc4xYacTu-E": {
+  "channel": "Vsauce",
+  "hook_type": "question",
+  "ending_type": "phrase-mirror"
+ },
+ "ixQbCXLUUj8": {
+  "channel": "Vsauce",
+  "hook_type": "premise-claim",
+  "ending_type": "phrase-mirror"
+ },
+ "BtN-goy9VOY": {
+  "channel": "kurzgesagt",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "zQGOcOUBi6s": {
+  "channel": "kurzgesagt",
+  "hook_type": "scenario-you",
+  "ending_type": "impact-coda"
+ },
+ "h6fcK_fRYaI": {
+  "channel": "kurzgesagt",
+  "hook_type": "scenario-you",
+  "ending_type": "impact-coda"
+ },
+ "9tbxDgcv74c": {
+  "channel": "kurzgesagt",
+  "hook_type": "question",
+  "ending_type": "phrase-mirror"
+ },
+ "sNhhvQGsMEc": {
+  "channel": "kurzgesagt",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "YI3tsmFsrOg": {
+  "channel": "kurzgesagt",
+  "hook_type": "premise-claim",
+  "ending_type": "phrase-mirror"
+ },
+ "3mnSDifDSxQ": {
+  "channel": "kurzgesagt",
+  "hook_type": "question",
+  "ending_type": "credits-after-result"
+ },
+ "yWO-cvGETRQ": {
+  "channel": "kurzgesagt",
+  "hook_type": "premise-claim",
+  "ending_type": "open-question"
+ },
+ "JyECrGp-Sw8": {
+  "channel": "kurzgesagt",
+  "hook_type": "question",
+  "ending_type": "phrase-mirror"
+ },
+ "0FH9cgRhQ-k": {
+  "channel": "kurzgesagt",
+  "hook_type": "premise-claim",
+  "ending_type": "credits-after-result"
+ },
+ "jAhjPd4uNFY": {
+  "channel": "kurzgesagt",
+  "hook_type": "scenario-you",
+  "ending_type": "impact-coda"
+ },
+ "ulCdoCfw-bY": {
+  "channel": "kurzgesagt",
+  "hook_type": "premise-claim",
+  "ending_type": "impact-coda"
+ },
+ "uxPdPpi5W4o": {
+  "channel": "veritasium",
+  "hook_type": "spectacle-demo",
+  "ending_type": "credits-after-result"
+ },
+ "4Wrc4fHSCpw": {
+  "channel": "veritasium",
+  "hook_type": "story-anecdote",
+  "ending_type": "advice"
+ },
+ "MiUHjLxm3V0": {
+  "channel": "veritasium",
+  "hook_type": "spectacle-demo",
+  "ending_type": "phrase-mirror"
+ },
+ "AeJ9q45PfD0": {
+  "channel": "veritasium",
+  "hook_type": "premise-claim",
+  "ending_type": "teaser-next"
+ },
+ "AF8d72mA41M": {
+  "channel": "veritasium",
+  "hook_type": "premise-claim",
+  "ending_type": "human-pivot"
+ },
+ "pir_muTzYM8": {
+  "channel": "veritasium",
+  "hook_type": "spectacle-demo",
+  "ending_type": "impact-coda"
+ },
+ "094y1Z2wpJg": {
+  "channel": "veritasium",
+  "hook_type": "premise-claim",
+  "ending_type": "phrase-mirror"
+ },
+ "IV3dnLzthDA": {
+  "channel": "veritasium",
+  "hook_type": "premise-claim",
+  "ending_type": "phrase-mirror"
+ },
+ "GcdB5bFwio4": {
+  "channel": "veritasium",
+  "hook_type": "question",
+  "ending_type": "teaser-next"
+ },
+ "ZMByI4s-D-Y": {
+  "channel": "veritasium",
+  "hook_type": "story-anecdote",
+  "ending_type": "phrase-mirror"
+ },
+ "OxGsU8oIWjY": {
+  "channel": "veritasium",
+  "hook_type": "scenario-you",
+  "ending_type": "teaser-next"
+ },
+ "SC2eSujzrUY": {
+  "channel": "veritasium",
+  "hook_type": "story-anecdote",
+  "ending_type": "phrase-mirror"
+ }
+}

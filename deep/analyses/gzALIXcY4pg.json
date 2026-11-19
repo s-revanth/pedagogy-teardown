@@ -1,0 +1,174 @@
+{
+ "id": "gzALIXcY4pg",
+ "channel": "OverSimplified",
+ "title": "The American Revolution - OverSimplified (Part 1)",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "hook-paradox|humor",
+   "Columbus rants at the monarchs about reaching the wrong continent"
+  ],
+  [
+   "0:47",
+   "N",
+   "misconception-first|honest-caveat",
+   "Anticipates 'Vikings discovered America' objection, then sponsor"
+  ],
+  [
+   "1:04",
+   "admin",
+   "admin",
+   "Viking game sponsor"
+  ],
+  [
+   "1:51",
+   "N",
+   "story",
+   "French and English claim same land; Washington sparks the Seven Years' War"
+  ],
+  [
+   "2:40",
+   "N",
+   "act-it-out|analogy",
+   "Britain tells colonies it spent money protecting them and now needs payment"
+  ],
+  [
+   "3:16",
+   "N",
+   "act-it-out|toy-world",
+   "Stamp Act shown as a shopkeeper scene with stamping each step"
+  ],
+  [
+   "3:48",
+   "N",
+   "story",
+   "Colonists react: boycotts hurt British business"
+  ],
+  [
+   "4:20",
+   "N",
+   "visible-repetition",
+   "Britain repeals, then taxes again; same boycott cycle (4:53)"
+  ],
+  [
+   "5:10",
+   "N",
+   "story",
+   "Boston Massacre told as escalation: snowballs to rocks to oyster shells"
+  ],
+  [
+   "6:02",
+   "N",
+   "story",
+   "Tea Party; punishments; colonies form Continental Congress"
+  ],
+  [
+   "6:38",
+   "N",
+   "humor|roadmap",
+   "Roll call of delegates with nicknames"
+  ],
+  [
+   "7:28",
+   "N",
+   "story",
+   "Lexington and Concord; militias surround Boston"
+  ],
+  [
+   "8:34",
+   "N",
+   "story",
+   "Fort Ticonderoga raid and Arnold gag"
+  ],
+  [
+   "9:43",
+   "N",
+   "story|humor",
+   "Washington appointed commander, mock reluctance"
+  ],
+  [
+   "10:00",
+   "N",
+   "story",
+   "Bunker Hill: technical defeat but costly for British"
+  ],
+  [
+   "10:31",
+   "N",
+   "humor",
+   "King's angry letter handwriting gag, colonists still unsure why they fight"
+  ],
+  [
+   "11:37",
+   "N",
+   "build-and-verify|callback-to-hook",
+   "Callback to 'remember all those guns?'; guns hauled and set on Dorchester Heights"
+  ],
+  [
+   "12:28",
+   "N",
+   "story",
+   "Common Sense pamphlet and Declaration vote"
+  ],
+  [
+   "13:19",
+   "N",
+   "story",
+   "Statue melted into 42,000 musket balls"
+  ],
+  [
+   "13:38",
+   "N",
+   "failure-shown",
+   "Battle of Brooklyn: defeat, fog saves army, retreat through New Jersey"
+  ]
+ ],
+ "metrics": {
+  "first_question": "none",
+  "notation_first": "none",
+  "key_term": "taxation / Patriots",
+  "misconception": "yes: Columbus did not discover America; Vikings gag at 0:47",
+  "brute_force": "no",
+  "examples": "Tax cycle twice (Sugar/Stamp, Townshend), then battles of increasing scale",
+  "ending": "Washington's army beaten but alive, music, part 2 implied"
+ },
+ "principles": {
+  "1": "confirmed: starts from Columbus and shared school history (0:00)",
+  "2": "not-observed: no evidence in this narrative history video",
+  "3": "not-observed: no evidence in this narrative history video",
+  "4": "partly: shopkeeper stamp scene (3:16) is analogy-like toy world but not stepped further",
+  "5": "confirmed: Stamp Act performed at 3:16; King and colonies dialogue 2:40",
+  "6": "not-observed: no evidence in this narrative history video",
+  "7": "confirmed: tax then boycott then repeal happens twice; viewer sees it before the narrator tires of it (4:53)",
+  "8": "partly: speech rate flat; scenes lengthen for Stamp Act and Bunker Hill, brisk for lists",
+  "9": "confirmed: tax-boycott-backdown loop 3:48-4:53",
+  "10": "partly: small tax scene to large battles",
+  "11": "confirmed: Seven Years' War debt introduced before taxes (2:21-2:57)",
+  "12": "partly: pop-culture songs and jokes (2:21), Columbus tie to sponsor Vikings",
+  "13": "partly: playful vocabulary, with real details like Dorchester Heights"
+ },
+ "new_moves": [
+  {
+   "name": "plant-and-pay-off",
+   "what": "Mention an object (guns at Ticonderoga) then call back to it minutes later",
+   "evidence": "8:34 then 11:37 'remember all those guns'"
+  },
+  {
+   "name": "escalation-ladder",
+   "what": "Show event growth by listing steps (snowballs, rocks, oyster shells)",
+   "evidence": "5:26"
+  }
+ ],
+ "theory": "The Stamp Act scene (3:16) turns an abstract policy into a concrete transaction the viewer can run in their head, and the tax-boycott-retreat loop teaches causation by repetition. A planted object paid off later (guns) builds memory with no notation.",
+ "velocity": [
+  "Scene builder: perform a rule as a literal transaction with a visible step each time",
+  "Orchestrator: plant objects early, call back by name later (learner-model recall check)",
+  "Ghost hands: show repeated cycles twice before naming the pattern"
+ ],
+ "quote": [
+  "0:15",
+  "There's a whole another freaking continent out there!"
+ ]
+}

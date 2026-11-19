@@ -1,0 +1,39 @@
+{
+  "channel": "Kurzgesagt", "title": "The Immune System Explained I - Bacteria Infection", "id": "zQGOcOUBi6s", "subject": "Biology",
+  "beats": [
+    ["0:00", "H", "hook-paradox|analogy", "You're under attack every second; your body runs an army with guards, soldiers, intelligence, factories"],
+    ["0:17", "N", "brute-force-first|honest-caveat", "Shows the full system: 12 jobs, 21 cells, a tangle of interactions"],
+    ["0:35", "N", "notation-compaction|new-interface", "Makes it readable: color per job, central color for main duty"],
+    ["0:52", "B", "honest-caveat|special-case-first", "Admires the complexity, then zooms into a few cells for one infection"],
+    ["1:12", "H", "story|act-it-out", "A rusty nail breaks the skin; bacteria enter and double every 20 minutes"],
+    ["1:31", "B", "analogy|running-character", "Guard cells (macrophages) swallow up to 100 intruders each"],
+    ["2:05", "B", "generalize-to-other-domains", "Inflammation: guards order blood vessels to flood the battlefield; that's the swelling you feel"],
+    ["2:22", "B", "analogy|running-character", "Neutrophils arrive, fight so hard they kill healthy cells, and self-destruct after five days"],
+    ["2:42", "B", "analogy|running-character", "The dendritic cell, the brain, takes samples and decides: anti-virus or anti-bacteria forces"],
+    ["3:00", "N", "story", "It travels a day to the lymph node where billions of T cells wait"],
+    ["3:17", "N", "minimal-definition-then-refine", "T cells pass harsh training; each has a specific set-up; the dendritic cell seeks the match"],
+    ["3:38", "N", "visible-repetition", "Match found: helper T cells multiply; some become memory cells"],
+    ["3:54", "N", "analogy", "Helpers activate B cells, weapons factories, when set-ups match"],
+    ["4:12", "B", "analogy|running-character", "Helpers tell exhausted factories 'don't die yet', and let them die when it's over"],
+    ["4:32", "N", "minimal-definition-then-refine|hook-question", "What do B cells make? Antibodies, proteins built to grab one intruder"],
+    ["4:51", "B", "story", "At the wound things get dire; guards die; helpers urge them on"],
+    ["5:07", "B", "story|callback-to-hook", "Antibodies flood in, stun bacteria, tag them for macrophages; the balance shifts"],
+    ["5:41", "B", "story", "Infection wiped out; most immune cells self-destruct to save resources"],
+    ["5:59", "B", "recap|teaser-next", "Memory cells remain for next time"],
+    ["6:07", "H", "honest-caveat", "This was a very simplified explanation, ignoring many players and the chemistry"],
+    ["6:20", "H", "callback-to-hook", "Life is complicated, but understanding it reveals wonders"]
+  ],
+  "end": 469,
+  "meta": {
+    "first_question": "0:52",
+    "notation_first": "0:35",
+    "notation_note": "The 'interface' is a color code for cell jobs, introduced right after the full tangle is shown, then used throughout.",
+    "key_term": "macrophages", "key_term_intro": "1:45",
+    "misconception": "none",
+    "brute_force": "yes 0:17: the full, unreadable network of 21 cells is shown first, then simplified",
+    "examples": "1 running scenario (a cut infected by bacteria)",
+    "examples_grow": "one story, escalating through defense layers",
+    "ending": "honest caveat (very simplified) + callback to wonder",
+    "quote": ["4:12", "Don't die yet, we still need you, keep going!"]
+  }
+}

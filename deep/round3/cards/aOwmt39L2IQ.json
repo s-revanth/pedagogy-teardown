@@ -1,0 +1,91 @@
+{
+ "id": "aOwmt39L2IQ",
+ "channel": "kurzgesagt",
+ "title": "Alcohol is AMAZING",
+ "duration_s": 852,
+ "upload_date": "20250812",
+ "targets": {
+  "wpm": {
+   "p25": 146.7,
+   "median": 163.28,
+   "p75": 165.87,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.06,
+   "median": 1.7,
+   "p75": 4.81,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.03,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.75,
+   "median": 1.02,
+   "p75": 1.44,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.06,
+   "median": 1.47,
+   "p75": 2.4,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.12,
+   "median": 0.26,
+   "p75": 0.36,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.05,
+   "p75": 0.06,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.21,
+   "median": 0.27,
+   "p75": 0.4,
+   "n": 19
+  },
+  "sent_len": {
+   "p25": 15.54,
+   "median": 15.92,
+   "p75": 17.26,
+   "n": 19
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.85,
+   "default": "ON",
+   "position_median": 0.86
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/u4LUix-BU0s.txt",
+  "deep/corpus/compact/7wK4peez9zE.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

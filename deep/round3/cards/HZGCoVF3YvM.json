@@ -1,0 +1,91 @@
+{
+ "id": "HZGCoVF3YvM",
+ "channel": "3blue1brown",
+ "title": "Bayes theorem, the geometry of changing beliefs",
+ "duration_s": 911,
+ "upload_date": "20191222",
+ "targets": {
+  "wpm": {
+   "p25": 169.84,
+   "median": 175.95,
+   "p75": 182.96,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.53,
+   "median": 1.93,
+   "p75": 2.23,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.35,
+   "median": 0.7,
+   "p75": 0.89,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.81,
+   "median": 1.11,
+   "p75": 1.53,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.83,
+   "median": 3.24,
+   "p75": 3.76,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.24,
+   "median": 0.37,
+   "p75": 0.48,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.13,
+   "median": 0.24,
+   "p75": 0.31,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.17,
+   "median": 0.28,
+   "p75": 0.4,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 23.09,
+   "median": 24.21,
+   "p75": 25.4,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.15,
+   "default": "OFF",
+   "position_median": 0.9
+  },
+  "teaser": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.2,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.04,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "teaser-next",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/U_85TaXbeIo.txt",
+  "deep/corpus/compact/EK32jo7i5LQ.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

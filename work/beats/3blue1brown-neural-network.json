@@ -1,0 +1,43 @@
+{
+  "channel": "3Blue1Brown", "title": "But what is a neural network?", "id": "aircAruvnKk", "subject": "CS / ML",
+  "beats": [
+    ["0:04", "H", "hook-paradox|act-it-out", "Shows a blurry 28x28 three and asks you to notice how effortlessly you read it"],
+    ["0:42", "B", "hook-paradox", "Flips it: writing a program for the same task goes from trivial to daunting"],
+    ["1:15", "H", "roadmap", "Promises the structure will feel motivated, assuming no background; learning comes next video"],
+    ["2:39", "N", "minimal-definition-then-refine", "A neuron is only a thing that holds a number between 0 and 1"],
+    ["2:58", "N", "toy-world", "784 input neurons hold pixel brightness; the number is named activation"],
+    ["3:32", "N", "toy-world", "10 output neurons, one per digit; hidden layers left as a deliberate question mark"],
+    ["4:06", "N", "honest-caveat", "Admits two layers of 16 is an arbitrary choice made to fit the screen"],
+    ["4:24", "B", "analogy", "Activations in one layer cause the next, loosely like neurons firing"],
+    ["5:01", "N", "simulation-as-argument", "Runs an image through a trained net; brightest output neuron is the answer"],
+    ["5:36", "H", "hook-question|special-case-first", "Asks what middle layers might hope to do; digits are loops and lines"],
+    ["6:11", "B", "hopeful-hypothesis", "Hope: each neuron detects a part like an upper loop, built from little edges"],
+    ["7:35", "B", "honest-caveat", "Flags that the trained net may not really do this; will revisit"],
+    ["7:51", "B", "generalize-to-other-domains", "Layers of abstraction also fit speech: sounds, syllables, words, phrases"],
+    ["8:23", "N", "design-it-yourself|hook-question", "Asks you to design the layer-to-layer mechanism: what knobs would it need?"],
+    ["9:11", "N", "special-case-first", "Weights on each connection, weighted sum, shown as a green/red pixel grid"],
+    ["10:02", "N", "special-case-first", "Negative weights around a bright strip turn the neuron into an edge detector"],
+    ["10:18", "N", "minimal-definition-then-refine", "Sum can be any number, so squish it into 0-1 with the sigmoid"],
+    ["10:52", "N", "design-it-yourself", "Want activity only above 10? Add a bias before squishing"],
+    ["11:42", "N", "visible-repetition|brute-force-first", "Every neuron repeats this: 784x16 weights, about 13,000 knobs in all"],
+    ["12:31", "B", "act-it-out", "Learning means finding the knob settings; imagine setting them all by hand"],
+    ["13:22", "I", "notation-after-concept|notation-compaction", "Cumbersome sum rewritten as matrix-vector product plus bias vector, sigmoid outside"],
+    ["15:10", "N", "minimal-definition-then-refine|callback-to-hook", "Refines neuron to a function; the whole network is one 784-to-10 function"],
+    ["15:59", "H", "teaser-next", "Complexity is reassuring; next video shows how the weights are learned"],
+    ["16:30", "H", "admin", "Subscribe joke about recommendation networks, Patreon thanks"],
+    ["17:07", "N", "honest-caveat|expert-dialogue", "Guest researcher: sigmoid is old school, modern nets use ReLU"]
+  ],
+  "end": 1120,
+  "meta": {
+    "first_question": "5:36",
+    "notation_first": "13:22",
+    "notation_note": "Spoken notation (matrix form). Sigmoid is named at 10:35 but kept as a picture.",
+    "key_term": "neuron", "key_term_intro": "2:39",
+    "misconception": "none",
+    "brute_force": "yes 11:42: element-by-element weighted sums and 13,000 hand-set knobs before the matrix form",
+    "examples": "1 running example (digit recognizer); sub-examples 9, 8, 4, speech",
+    "examples_grow": "scale grows: one neuron, one layer, whole network, then a function",
+    "ending": "teaser-next + expert caveat interview",
+    "quote": ["2:39", "all I want you to think about is a thing that holds a number"]
+  }
+}

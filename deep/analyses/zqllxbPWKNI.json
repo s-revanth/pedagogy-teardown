@@ -1,0 +1,180 @@
+{
+ "id": "zqllxbPWKNI",
+ "channel": "OverSimplified",
+ "title": "The Napoleonic Wars - OverSimplified (Part 1)",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "admin",
+   "admin",
+   "NordVPN and patreon plug over a cold-open birth gag"
+  ],
+  [
+   "0:36",
+   "H",
+   "hook-question|humor",
+   "Great conquerors have grand origins; Napoleon came from an obscure island, so how did he get here"
+  ],
+  [
+   "1:02",
+   "H",
+   "story|running-character",
+   "Corsica sold to France by dialogue between Genoa and France; Napoleon born French and resentful"
+  ],
+  [
+   "1:48",
+   "H",
+   "act-it-out|humor",
+   "Father and son bicker in role-played voices, giving the family tension a face"
+  ],
+  [
+   "2:22",
+   "H",
+   "act-it-out|story",
+   "Military school scene: Napoleon introduces himself to bullies; becomes lonely reader of conquerors"
+  ],
+  [
+   "3:28",
+   "N",
+   "act-it-out|failure-shown",
+   "Promotion denied to the skilled in favor of a nobleman's son, which makes the old order concrete"
+  ],
+  [
+   "4:02",
+   "B",
+   "hook-question",
+   "Revolution framed as the answer to Napoleon's blocked ambition"
+  ],
+  [
+   "4:51",
+   "N",
+   "story|humor",
+   "Marriage to Josephine told as skits with recurring jokes"
+  ],
+  [
+   "5:58",
+   "N",
+   "act-it-out|analogy",
+   "Revolutionary France and Austria as two characters chatting; Europe's monarchs react and war begins"
+  ],
+  [
+   "7:06",
+   "N",
+   "story|toy-world",
+   "Italian campaign: split the enemy in two and beat each half separately"
+  ],
+  [
+   "9:18",
+   "N",
+   "story",
+   "Egypt flop then propaganda return; coup staged as protective cage dialogue"
+  ],
+  [
+   "12:03",
+   "N",
+   "recap|rule-list",
+   "Second Coalition; narrator lists traits that made Napoleon great, one at a time ('one of them')"
+  ],
+  [
+   "13:27",
+   "N",
+   "story",
+   "Alps crossing and Marengo, with the painting versus reality aside"
+  ],
+  [
+   "15:18",
+   "admin",
+   "admin",
+   "Sponsor read in character"
+  ],
+  [
+   "16:38",
+   "N",
+   "recap|rule-list",
+   "Reforms as a stack of problem and fix pairs spoken as quick Q and A"
+  ],
+  [
+   "19:02",
+   "N",
+   "story|callback-to-hook",
+   "Emperor, self-crowning; the ambition joke 'what comes after Emperor'"
+  ],
+  [
+   "22:02",
+   "N",
+   "build-and-verify|rule-list",
+   "Third Coalition: second reason for his wins is speed via corps; then Napoleon shown doing it"
+  ],
+  [
+   "23:23",
+   "N",
+   "act-it-out|story",
+   "Austerlitz trap told as fake baby-boy letter and enemy taking the bait, then fog reveals trick"
+  ],
+  [
+   "26:06",
+   "N",
+   "story",
+   "Trafalgar shown with contrast: normal naval battle versus Nelson cutting the line"
+  ],
+  [
+   "27:11",
+   "N",
+   "story|humor",
+   "Fourth Coalition: Prussia goes alone, ignoring allies; ends with fast defeats at Jena, Friedland"
+  ]
+ ],
+ "metrics": {
+  "first_question": "0:36",
+  "notation_first": "none",
+  "key_term": "coalition",
+  "misconception": "partial: Alps painting versus reality (13:42) and 'Napoleon was short' joke (9:33, 14:14)",
+  "brute_force": "no",
+  "examples": "Four coalition wars told in sequence; later ones get more tactical detail (Austerlitz 1:20 long) than the first",
+  "ending": "Cliffhanger-free stop after Friedland; part 2 implied"
+ },
+ "principles": {
+  "1": "confirmed: opens with a birth scene and school bullies before any politics (0:00-3:28)",
+  "2": "not-observed: no notation; but each new faction gets a recurring character voice, 'Pierre' the advisor",
+  "3": "not-observed: no evidence in this narrative history video",
+  "4": "partly: countries as people chatting (5:58, 12:21) is analogy that never gets stepped to rigor",
+  "5": "confirmed: nearly everything is acted out in dialogue, e.g. the promotion form 3:28, Austrian ambush 23:23",
+  "6": "not-observed: no evidence in this narrative history video",
+  "7": "confirmed: three coalition wars repeat 'Napoleon beats Austria'; viewer sees the pattern before narrator names speed (22:02)",
+  "8": "partly: pace stays quick but later wars get slower beats and extra explanation at Austerlitz (23:23-25:02) than the first coalition (6:49)",
+  "9": "confirmed: the same joke shapes and the same Austria defeat recur across wars",
+  "10": "partly: Italy campaign (7:06) is small, Austerlitz is the large worked example, though ordering is chronology",
+  "11": "partly: Revolution explained before Napoleon rises (4:02), but dependency is just chronology",
+  "12": "partly: references to famous painting (13:42) and Caesar/Alexander (1:02) link to outside knowledge",
+  "13": "partly: 12-year-old register, but expert detail like corps system (22:18) explains why the tool works"
+ },
+ "new_moves": [
+  {
+   "name": "named-factor-countdown",
+   "what": "Narrator promises several reasons for Napoleon's success, reveals them one at a time across the video",
+   "evidence": "13:10 'one of them', 22:02 'one of the biggest reasons, speed'"
+  },
+  {
+   "name": "character-voice-for-abstraction",
+   "what": "Each country or institution becomes a character with a consistent voice so alliances are remembered",
+   "evidence": "5:58 France and Austria, 26:56 Prussia"
+  },
+  {
+   "name": "show-then-do-it",
+   "what": "Asks permission to show a maneuver then replays it as a staged scene",
+   "evidence": "22:50 'Would you like to see him do it'"
+  }
+ ],
+ "theory": "OverSimplified teaches a sprawling timeline by giving every actor a recognisable voice and letting the same outcome recur, so the viewer induces the pattern (Napoleon beats coalitions) before it is named. Tension comes from the narrator's stated question (could the general also govern, 16:38) rather than from slowing down.",
+ "velocity": [
+  "Scene builder: give each recurring entity a persistent avatar and voice so dialogue replaces exposition",
+  "Orchestrator: plant a promised list ('several reasons') and pay off one item per example, giving a built-in progress structure",
+  "Evals: check that a repeated pattern appears at least three times before the tutor names it",
+  "Voice: humor and pacing stay at constant wpm; vary beats rather than speed"
+ ],
+ "quote": [
+  "20:06",
+  "I don't know Pierre, what comes after Emperor?"
+ ]
+}

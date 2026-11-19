@@ -1,0 +1,90 @@
+{
+ "id": "_UTZDR1Go24",
+ "channel": "Vsauce",
+ "title": "LEGO TACO! And Other Great Images -- IMG! Episode #47",
+ "duration_s": 258,
+ "upload_date": "20120128",
+ "targets": {
+  "wpm": {
+   "p25": 129.14,
+   "median": 138.97,
+   "p75": 147.37,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 2.11,
+   "median": 2.9,
+   "p75": 3.3,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.75,
+   "median": 1.03,
+   "p75": 1.3,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.41,
+   "median": 0.71,
+   "p75": 0.78,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.14,
+   "median": 1.4,
+   "p75": 1.87,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.0,
+   "median": 0.17,
+   "p75": 0.39,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.49,
+   "median": 0.71,
+   "p75": 1.0,
+   "n": 16
+  },
+  "sent_len": {
+   "p25": 10.28,
+   "median": 11.41,
+   "p75": 12.63,
+   "n": 16
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "teaser-next",
+ "target_words": 597,
+ "exemplars": [
+  "deep/corpus/compact/_di83KPJY3s.txt",
+  "deep/corpus/compact/7c9f9sr6BPg.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

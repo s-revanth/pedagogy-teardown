@@ -1,0 +1,162 @@
+{
+ "id": "fo2Rb9h788s",
+ "channel": "OverSimplified",
+ "title": "WW2 - OverSimplified (Part 2)",
+ "captions": "manual (transcript is Albanian, likely auto-translated; analysis from text meaning only)",
+ "beats": [
+  [
+   "0:00",
+   "admin",
+   "admin",
+   "Skillshare sponsor intro, then recap of Commonwealth joining the war"
+  ],
+  [
+   "0:32",
+   "N",
+   "story",
+   "Winter War shows Soviet weakness; France's colonies split"
+  ],
+  [
+   "1:02",
+   "N",
+   "story|humor",
+   "Italy tries to take territory three times, with success shrinking each time"
+  ],
+  [
+   "1:33",
+   "N",
+   "story|rule-list",
+   "Tripartite Pact meant to deter the US; Roosevelt's campaign promise joke"
+  ],
+  [
+   "2:06",
+   "N",
+   "build-and-verify|humor",
+   "U-boat problem and Britain's ideas, including the pykrete gag, ended by code breaking"
+  ],
+  [
+   "2:54",
+   "N",
+   "story",
+   "Hitler pressures Balkans before Greece; Rommel pushes Britain back in Africa"
+  ],
+  [
+   "3:25",
+   "N",
+   "story",
+   "Barbarossa: three million troops, big encirclement battles with numbers"
+  ],
+  [
+   "4:11",
+   "N",
+   "humor|failure-shown",
+   "Winter arrives; the frozen horse corpses gag shows poor planning"
+  ],
+  [
+   "5:00",
+   "N",
+   "story",
+   "Japan's southern plan, Pearl Harbor, what Japan failed to hit"
+  ],
+  [
+   "6:08",
+   "N",
+   "honest-caveat",
+   "Japanese victories were based on speed not power, which will catch up with them"
+  ],
+  [
+   "6:42",
+   "N",
+   "story",
+   "Stalingrad: Hitler shifts to oil, factories moved east, trapped army"
+  ],
+  [
+   "8:06",
+   "N",
+   "recap",
+   "Tide turns: Africa, Pacific, Italy invaded, Mussolini ousted"
+  ],
+  [
+   "8:40",
+   "N",
+   "humor|rule-list",
+   "Americans and British argue; 'we'll do it your way' then 'we'll do it our way' repeated"
+  ],
+  [
+   "9:29",
+   "N",
+   "story",
+   "D-Day: deception, weather delay, landing, then breakout"
+  ],
+  [
+   "10:49",
+   "N",
+   "story",
+   "Pacific island-hopping; 'Nuts' reply at Bastogne"
+  ],
+  [
+   "12:22",
+   "N",
+   "story",
+   "Berlin falls, Okinawa, atomic bombs, surrender"
+  ],
+  [
+   "13:42",
+   "N",
+   "recap|teaser-next",
+   "Occupation and aftermath; two superpowers lead into 'very cold' war pun"
+  ],
+  [
+   "14:13",
+   "admin",
+   "admin",
+   "Skillshare read in character"
+  ]
+ ],
+ "metrics": {
+  "first_question": "none",
+  "notation_first": "none",
+  "key_term": "Axis/Allies",
+  "misconception": "none",
+  "brute_force": "no",
+  "examples": "Chronological theatres; no escalation by size",
+  "ending": "Cold War pun teaser (13:57)"
+ },
+ "principles": {
+  "1": "partly: begins with a recap of where Part 1 ended (0:15)",
+  "2": "not-observed: no evidence in this narrative history video",
+  "3": "not-observed: no evidence in this narrative history video",
+  "4": "not-observed: no evidence in this narrative history video",
+  "5": "partly: occasional dialogue skits (Bastogne 12:06, Roosevelt 1:50)",
+  "6": "not-observed: no evidence in this narrative history video",
+  "7": "not-observed: no evidence in this narrative history video",
+  "8": "partly: very dense idea rate across 15 minutes; fewer jokes than others means little recovery, no slowdown for novelty observed",
+  "9": "partly: 'we'll do it your way' gag recurs at 8:40 and 9:13",
+  "10": "not-observed: no evidence in this narrative history video",
+  "11": "partly: Axis shown losing speed advantage (6:08) before the later turn",
+  "12": "confirmed: pykrete (2:22) and Turing (2:37) are outside-world asides",
+  "13": "partly: kid-simple register with named numbers"
+ },
+ "new_moves": [
+  {
+   "name": "foreshadow-limit",
+   "what": "States why current success will fail before it fails",
+   "evidence": "6:08 victories based on speed, not power"
+  },
+  {
+   "name": "running-gag-as-chunk-marker",
+   "what": "Repeated phrase marks a structural parallel between theatres",
+   "evidence": "8:40 and 9:13"
+  }
+ ],
+ "theory": "This is a compression video: 6 years in 15 minutes, so the main move is sequencing with one foreshadowed cause per theatre, glued by a repeated gag. It teaches by narrative momentum rather than concept building, and caution applies because transcript is mistranslated.",
+ "velocity": [
+  "Scene builder: a repeated visual gag can signal 'same structure as before'",
+  "Orchestrator: foreshadow the limit of a method before applying it",
+  "Evals: transcripts in non-English or machine-translated form must be flagged before analysis"
+ ],
+ "quote": [
+  "12:06",
+  "Nuts!"
+ ]
+}

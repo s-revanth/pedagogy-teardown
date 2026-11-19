@@ -1,0 +1,432 @@
+<title>Teardown Held-out Test</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: an eval report. Thesis and score, then method pipeline, leaderboard, per-channel
+   train-to-test explorer (4 lanes), universal rules, pace chart. Single column, max 1120px. */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#16202c; --muted:#5b6676; --line:#dde2ea;
+  --accent:#3b4fd8; --accent-soft:#e7eafc;
+  --ok:#1d7f5c; --ok-soft:#dcf1e8; --mid:#a8670b; --mid-soft:#f8ecd6; --bad:#b4322f; --bad-soft:#f7dfde; --na:#6b7280; --na-soft:#eceef1;
+  --f-display:"Space Grotesk",system-ui,sans-serif; --f-body:"Inter",system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f141b; --surface:#171e28; --ink:#e6eaf0; --muted:#98a3b3; --line:#2a3442;
+  --accent:#8b9bff; --accent-soft:#232b52;
+  --ok:#5fd0a3; --ok-soft:#173a2e; --mid:#e9b05a; --mid-soft:#3d2f17; --bad:#f08482; --bad-soft:#40201f; --na:#9aa3af; --na-soft:#262d38; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141b; --surface:#171e28; --ink:#e6eaf0; --muted:#98a3b3; --line:#2a3442;
+  --accent:#8b9bff; --accent-soft:#232b52;
+  --ok:#5fd0a3; --ok-soft:#173a2e; --mid:#e9b05a; --mid-soft:#3d2f17; --bad:#f08482; --bad-soft:#40201f; --na:#9aa3af; --na-soft:#262d38; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(28px,5vw,44px);letter-spacing:-.01em}
+h2{font-size:24px}
+h3{font-size:16px}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--f-mono);font-size:12.5px}
+.muted{color:var(--muted)}
+section{display:flex;flex-direction:column;gap:18px}
+.lede{max-width:68ch;color:var(--muted)}
+/* hero */
+.hero{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}
+.hero > div{min-width:0}
+.score{font-family:var(--f-display);font-size:72px;font-weight:700;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.score small{font-size:26px;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:18px}
+.stat b{display:block;font-family:var(--f-display);font-size:22px;font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--muted)}
+@media (max-width:640px){.hero{grid-template-columns:1fr}.score{font-size:56px}}
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.stage{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px;position:relative}
+.stage .who{font-family:var(--f-mono);font-size:11px;color:var(--accent)}
+.stage p{font-size:13.5px;color:var(--muted)}
+.stage .io{font-family:var(--f-mono);font-size:11.5px;color:var(--ink);background:var(--bg);border-radius:4px;padding:4px 6px;word-break:break-word}
+.stage.blind{border-style:dashed}
+@media (max-width:900px){.pipe{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.pipe{grid-template-columns:1fr}}
+.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.method-grid > div{min-width:0;display:flex;flex-direction:column;gap:10px}
+.method-grid ul,.method-grid ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+@media (max-width:760px){.method-grid{grid-template-columns:1fr}}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+/* leaderboard */
+.board{display:flex;flex-direction:column;gap:6px}
+.row{display:grid;grid-template-columns:150px 1fr 190px;gap:14px;align-items:center;padding:8px 12px;border-radius:6px;border:1px solid transparent;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.row:hover,.row[aria-pressed="true"]{background:var(--surface);border-color:var(--line)}
+.row:focus-visible,.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.row .name{font-weight:600}
+.bar{height:10px;background:var(--line);border-radius:5px;position:relative;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:5px}
+.dots{display:flex;gap:6px;font-family:var(--f-mono);font-size:11px;color:var(--muted);justify-content:flex-end}
+.dots span{display:inline-flex;flex-direction:column;align-items:center;gap:2px;min-width:22px}
+.dots b{font-variant-numeric:tabular-nums;color:var(--ink)}
+@media (max-width:640px){.row{grid-template-columns:110px 1fr}.dots{grid-column:1/-1;justify-content:flex-start}}
+/* explorer */
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tab{font:inherit;font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.ch-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:baseline}
+.vids{display:flex;flex-wrap:wrap;gap:8px}
+.vid{font-size:12.5px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 10px;display:flex;gap:8px;align-items:baseline;min-width:0}
+.vid a{color:var(--accent)}
+.lanes{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.9fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:980px){.lanes{grid-template-columns:1fr}}
+.lane{display:flex;flex-direction:column;gap:10px;min-width:0}
+.lane-h{display:flex;gap:8px;align-items:baseline}
+.lane-h .n{font-family:var(--f-mono);font-size:11px;color:var(--surface);background:var(--ink);border-radius:4px;padding:1px 6px}
+.lane-h .n.two{background:var(--accent)}
+.hyp{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.hyp ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;font-size:14px}
+.claims{display:flex;flex-direction:column;gap:8px}
+.claim{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.claim .c{padding:10px 12px;font-size:13.5px;font-weight:500;display:flex;flex-direction:column;gap:6px}
+.claim .e{padding:10px 12px;font-size:13px;color:var(--muted);border-left:1px solid var(--line);background:var(--bg)}
+@media (max-width:560px){.claim{grid-template-columns:1fr}.claim .e{border-left:0;border-top:1px solid var(--line)}}
+.claim.confirmed{box-shadow:inset 4px 0 0 var(--ok)}
+.claim.partly{box-shadow:inset 4px 0 0 var(--mid)}
+.claim.contradicted{box-shadow:inset 4px 0 0 var(--bad)}
+.claim.untested{box-shadow:inset 4px 0 0 var(--na)}
+.chip{display:inline-block;width:max-content;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:999px}
+.chip.confirmed{background:var(--ok-soft);color:var(--ok)}
+.chip.partly{background:var(--mid-soft);color:var(--mid)}
+.chip.contradicted{background:var(--bad-soft);color:var(--bad)}
+.chip.untested{background:var(--na-soft);color:var(--na)}
+.chip.type{background:var(--accent-soft);color:var(--accent)}
+.tally{display:flex;gap:10px;flex-wrap:wrap;font-size:12.5px}
+.find{background:var(--surface);border:1px solid var(--accent);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.find p{font-size:14px;font-weight:500}
+.find .ev{font-size:12px;color:var(--muted);font-family:var(--f-mono)}
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.rule{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.rule .top{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.rule p{font-size:14px;font-weight:500}
+.rule .trig{font-size:13px;color:var(--muted)}
+.rule .ev{font-size:11.5px;font-family:var(--f-mono);color:var(--muted);word-break:break-word}
+.chs{display:flex;flex-wrap:wrap;gap:4px}
+.chs span{font-size:11px;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--muted)}
+.conf-high{color:var(--ok)} .conf-med{color:var(--mid)} .conf-low{color:var(--na)}
+/* wpm */
+.wpm svg{width:100%;height:auto;display:block}
+.wpm text{fill:var(--muted);font-family:var(--f-mono);font-size:11px}
+.wpm .lbl{fill:var(--ink);font-family:var(--f-body);font-size:12.5px}
+.wpm .val{fill:var(--ink);font-weight:600}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .5s ease}}
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Pedagogy teardown · rounds 2–4 · held-out tests</div>
+    <h1>Do our channel hypotheses predict videos they never saw?</h1>
+    <p class="lede" style="margin-top:12px" id="verdict"></p>
+    <div class="stats">
+      <div class="stat"><b>9</b><span>channels</span></div>
+      <div class="stat"><b>108</b><span>training videos (12 each)</span></div>
+      <div class="stat"><b>18</b><span>held-out test videos</span></div>
+      <div class="stat"><b>~55% → ~45%</b><span>prediction hit rate, raw → leakage-adjusted</span></div>
+      <div class="stat"><b>2.4 / 5</b><span>mean "could it regenerate this video"</span></div>
+    </div>
+  </div>
+  <div><div class="eyebrow">Opus 5.5 rating</div><div class="score" id="score"></div></div>
+</header>
+
+<section id="round4">
+  <div><div class="eyebrow">Round 4 · same 81 frozen test videos · scored by code</div><h2>v3 closes the text gap and learns the structure priors. It doesn't yet beat them.</h2></div>
+  <p class="lede">v3 replaces the prose report with four things. Per-video targets come from each test video's 20 nearest training videos by upload date and title, a method chosen by leave-one-out on 1,540 training videos. Hook and ending defaults come from 106 hand-labelled training videos. A checker measures each draft with the scoring code, so rule compliance is verified, not claimed. The structure labels on the test set grew from 34 to 79, all blind.</p>
+
+  <div><h3>The climb: fidelity error per condition (lower is better)</h3></div>
+  <div class="board" role="list">
+    <div class="row" role="listitem" style="cursor:default"><span class="name">v1 · report</span><div class="bar"><i style="width:76.7%;background:var(--bad)"></i></div><span class="mono">1.15</span></div>
+    <div class="row" role="listitem" style="cursor:default"><span class="name">base · title only</span><div class="bar"><i style="width:73.7%;background:var(--na)"></i></div><span class="mono">1.11</span></div>
+    <div class="row" role="listitem" style="cursor:default"><span class="name muted">a real episode</span><div class="bar"><i style="width:76.7%;background:var(--line);outline:1px dashed var(--muted)"></i></div><span class="mono">1.15 · fair bar</span></div>
+    <div class="row" role="listitem" style="cursor:default"><span class="name">v2 · rulebook</span><div class="bar"><i style="width:64.7%;background:var(--mid)"></i></div><span class="mono">0.97</span></div>
+    <div class="row" role="listitem" style="cursor:default"><span class="name muted">channel median</span><div class="bar"><i style="width:54%;background:var(--line);outline:1px dashed var(--muted)"></i></div><span class="mono">0.81 · constant</span></div>
+    <div class="row" role="listitem" style="cursor:default"><span class="name">v3 · cards + checker</span><div class="bar"><i style="width:52.2%;background:var(--ok)"></i></div><span class="mono">0.78</span></div>
+  </div>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Metric</th><th>base</th><th>v1</th><th>v2</th><th>v3</th><th>Baseline</th></tr></thead>
+    <tbody>
+      <tr><td>Fidelity error ↓</td><td class="num">1.11</td><td class="num">1.15</td><td class="num">0.97</td><td class="num"><b>0.78</b></td><td class="num">median 0.81 · targets 0.78</td></tr>
+      <tr><td>Switch agreement ↑</td><td class="num">66%</td><td class="num">62%</td><td class="num">77%</td><td class="num"><b>83%</b></td><td class="num"></td></tr>
+      <tr><td>Hook type (n=79) ↑</td><td class="num">20%</td><td class="num">14%</td><td class="num">23%</td><td class="num"><b>53%</b></td><td class="num">channel training majority 52%</td></tr>
+      <tr><td>Ending type (n=74) ↑</td><td class="num">18%</td><td class="num">31%</td><td class="num">16%</td><td class="num"><b>36%</b></td><td class="num">channel training majority 32%</td></tr>
+      <tr><td>Answer given up front ↑</td><td class="num">43%</td><td class="num">76%</td><td class="num">65%</td><td class="num" style="color:var(--bad)">34%</td><td class="num">majority 89%</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="rules">
+    <div class="rule"><div class="top"><span class="chip confirmed">significant</span><span class="mono muted">67 / 81 · p&lt;0.001</span></div><p>v3 beats v2 on fidelity by −0.19 (CI −0.25 to −0.12), beats a real episode on 78 of 81 videos, and ties the channel median (p=0.82). It has the lowest error on all 8 text features.</p></div>
+    <div class="rule"><div class="top"><span class="chip partly">ceiling</span><span class="mono muted">0.78 = 0.78</span></div><p>v3 lands exactly on its own targets. The generator now hits whatever numbers it's given, so the next gain has to come from targets that know the topic, not from better instruction-following.</p></div>
+    <div class="rule"><div class="top"><span class="chip partly">prior learned</span><span class="mono muted">23% → 53%</span></div><p>Hook accuracy more than doubled, up to the channel base rate. Beating the base rate means predicting when a channel breaks its own habit.</p></div>
+    <div class="rule"><div class="top"><span class="chip contradicted">regression</span><span class="mono muted">49 / 62</span></div><p>Generators read a "premise-claim" hook as giving the answer away, so answer-upfront fell to 34%. The rulebook must say that a premise is not the answer.</p></div>
+  </div>
+
+  <div class="method-grid">
+    <div>
+      <h3>New gaps found in round 4</h3>
+      <ul>
+        <li><b>Tie-break bug.</b> SebastianLague's training hooks tied three ways and the card picked story-anecdote. Real test hooks are 86% premise-claim, and v3 scored 14% there.</li>
+        <li><b>Sentence length is partly a caption artifact.</b> Lague, Veritasium and Primer have barely punctuated captions (p90 of 75, 34 and 36 words). 3Blue1Brown's 24-word median is real.</li>
+        <li><b>Card conflict.</b> Some cards set teaser-next as the ending while the teaser switch is OFF. Agents wrote teasers that dodge the detector.</li>
+        <li><b>Goodhart effects.</b> Agents padded sentences with semicolons and two read the scoring code. The in-band score (83%) is partly gamed. The fidelity gain against the real transcript is not.</li>
+        <li><b>Corpus contamination.</b> One CGPGrey exemplar contains another narrator.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Round 5</h3>
+      <ol>
+        <li>Fix the tie-break, the answer-upfront definition and the switch/ending conflict.</li>
+        <li>Train a title → hook/ending classifier on the 106 training labels, and use it only if it beats the majority under leave-one-out.</li>
+        <li>Add topic to the neighbour search, since number and example rates follow the topic.</li>
+        <li>Trim unpunctuated captions and filter other speakers out of the corpus.</li>
+        <li>Add a content metric, such as beat-sequence distance on a labelled sample, so the score isn't style alone.</li>
+      </ol>
+      <p class="muted" style="font-size:13px">Caveats: v3 bundles six changes with no ablation. All hook and ending labels come from one annotator. Training labels were mapped from round-1 analyses. v3 narrations are longer (2,200-word cap against 1,800). Details: <span class="mono">deep/round3/RESULTS.md</span>.</p>
+    </div>
+  </div>
+</section>
+
+<div class="eyebrow" style="border-top:1px solid var(--line);padding-top:24px">Round 3 (below): base vs report vs rulebook</div>
+
+<section id="round3" class="r3">
+  <div><div class="eyebrow">Round 3 · 81 frozen test videos · scored by code, no LLM judge</div><h2>The rulebook helps. The prose report doesn't. Structure is still guessed wrong.</h2></div>
+  <p class="lede">We ran this like an ML evaluation. The corpus was downloaded with yt-dlp, split into a training set and a frozen test set (up to 10 videos per channel), and statistics were fitted on training only. One generator (Haiku 5.5, high effort) wrote 243 blind scripts under three conditions. The same feature code measured the generated narration and the real transcript.</p>
+
+  <div class="pipe">
+    <div class="stage"><span class="who">yt-dlp · seeded split</span><h3>1. Data</h3><p>Corpus of captioned videos. Test: 81 after a caption-quality filter that drops non-English or partial captions. Train: everything else.</p><span class="io">round3/split.json · tests.tsv</span></div>
+    <div class="stage"><span class="who">train only</span><h3>2. Fit</h3><p>Per-channel p10–p90 bands for 14 text features and base rates for sponsor, teaser, roadmap and recap. The rulebook gives every rule an ID.</p><span class="io">train_stats.json · policy/&lt;ch&gt;.md</span></div>
+    <div class="stage blind"><span class="who">Haiku 5.5 high · ≤10 at once</span><h3>3. Generate</h3><p><b>base</b>: title + taxonomy. <b>v1</b>: + channel report. <b>v2</b>: + rulebook + exemplars, plus a trace for every rule. Test transcripts were off-limits.</p><span class="io">scripts/{base,v1,v2}/</span></div>
+    <div class="stage"><span class="who">deterministic code</span><h3>4. Measure</h3><p>|script − real| / channel IQR. Switch agreement. Slots against 34 blind hand labels. Measured compliance for each rule.</p><span class="io">tools/evaluate.py · analyze.py</span></div>
+    <div class="stage"><span class="who">paired · 81 videos</span><h3>5. Test</h3><p>Sign test and bootstrap 95% CI on the same videos. Baselines: the channel median, and a random <i>real</i> training episode (the fair bar).</p><span class="io">eval/analysis.json</span></div>
+  </div>
+
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Metric</th><th>base</th><th>v1 (report)</th><th>v2 (rulebook)</th><th>Baseline</th></tr></thead>
+    <tbody>
+      <tr><td>Text fidelity error ↓</td><td class="num">1.11</td><td class="num">1.15</td><td class="num"><b>0.97</b></td><td class="num">real episode 1.15 · median 0.81</td></tr>
+      <tr><td>Features inside train p25–p75 ↑</td><td class="num">37%</td><td class="num">37%</td><td class="num"><b>65%</b></td><td class="num">real videos 48%</td></tr>
+      <tr><td>Sponsor/teaser/roadmap/recap match ↑</td><td class="num">66%</td><td class="num">62%</td><td class="num"><b>77%</b></td><td class="num">majority default 85%</td></tr>
+      <tr><td>Hook type correct ↑</td><td class="num">24%</td><td class="num">21%</td><td class="num">21%</td><td class="num">majority 44%</td></tr>
+      <tr><td>Ending type correct ↑</td><td class="num">6%</td><td class="num">21%</td><td class="num">24%</td><td class="num">majority 24%</td></tr>
+      <tr><td>Answer given up front ↑</td><td class="num">47%</td><td class="num">65%</td><td class="num">65%</td><td class="num">majority 76%</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="rules">
+    <div class="rule"><div class="top"><span class="chip confirmed">significant</span><span class="mono muted">p&lt;0.001</span></div><p>v2 beats base on fidelity on 60 of 81 videos (−0.14, CI −0.22 to −0.05). In-band rises 28 points and switch agreement 10 points.</p><p class="trig">The same holds on videos the generator did not recognise: −0.16, p=0.003.</p></div>
+    <div class="rule"><div class="top"><span class="chip contradicted">no effect</span><span class="mono muted">p=0.51</span></div><p>The v1 prose report adds nothing over the model's own prior: +0.05 fidelity error, 37 better and 44 worse. On unrecognised videos it is slightly worse (+0.10).</p><p class="trig">The round-1 reports should become rules, not prose.</p></div>
+    <div class="rule"><div class="top"><span class="chip partly">ceiling</span><span class="mono muted">67 / 81</span></div><p>v2 scripts sit closer to the target than another real episode of the same channel does. All conditions still lose to the channel median, because nothing in them predicts how a particular video differs from the average.</p></div>
+    <div class="rule"><div class="top"><span class="chip contradicted">below baseline</span><span class="mono muted">n=34</span></div><p>Structure is guessed wrong in every condition. Models open with a <b>question</b> 13–20 times out of 34 (5 real) and close on a <b>hook-callback</b> 19–20 times (0 real). Real hooks are mostly premise-claims (15/34). v2 over-corrects to phrase-mirror endings (21 predicted, 7 real).</p></div>
+  </div>
+
+  <div><h3>Per channel: fidelity error (real-episode baseline is the fair bar)</h3></div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Channel</th><th>n</th><th>real episode</th><th>base</th><th>v1</th><th>v2</th><th>v2 in-band</th></tr></thead>
+    <tbody>
+      <tr><td>3blue1brown</td><td class="num">10</td><td class="num">1.01</td><td class="num">1.24</td><td class="num">1.30</td><td class="num" style="color:var(--bad)">1.33</td><td class="num">15%</td></tr>
+      <tr><td>CGPGrey</td><td class="num">10</td><td class="num">1.06</td><td class="num">0.88</td><td class="num">0.89</td><td class="num">0.79</td><td class="num">69%</td></tr>
+      <tr><td>OverSimplified</td><td class="num">10</td><td class="num">1.94</td><td class="num">1.65</td><td class="num">1.78</td><td class="num">1.55</td><td class="num">68%</td></tr>
+      <tr><td>PrimerBlobs</td><td class="num">8</td><td class="num">1.50</td><td class="num">1.69</td><td class="num">1.92</td><td class="num">1.51</td><td class="num">23%</td></tr>
+      <tr><td>Reducible</td><td class="num">5</td><td class="num">1.03</td><td class="num">1.13</td><td class="num">1.40</td><td class="num" style="color:var(--ok)">0.67</td><td class="num">83%</td></tr>
+      <tr><td>SebastianLague</td><td class="num">8</td><td class="num">1.05</td><td class="num">1.37</td><td class="num">1.28</td><td class="num">1.07</td><td class="num">70%</td></tr>
+      <tr><td>Vsauce</td><td class="num">10</td><td class="num">0.76</td><td class="num">0.69</td><td class="num">0.58</td><td class="num" style="color:var(--ok)">0.54</td><td class="num">81%</td></tr>
+      <tr><td>kurzgesagt</td><td class="num">10</td><td class="num">0.95</td><td class="num">0.71</td><td class="num">0.79</td><td class="num" style="color:var(--ok)">0.58</td><td class="num">93%</td></tr>
+      <tr><td>veritasium</td><td class="num">10</td><td class="num">1.04</td><td class="num">0.78</td><td class="num">0.71</td><td class="num" style="color:var(--ok)">0.66</td><td class="num">84%</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="method-grid">
+    <div>
+      <h3>Rule gap map: what's missing</h3>
+      <ul>
+        <li><b>Self-reports can't be trusted.</b> 74 numeric-rule "applied" claims fail measurement. The teaser default fails 15 times and the roadmap default 14.</li>
+        <li><b>Sentence length</b> complies 46% of the time. Every condition writes sentences too short (−0.5 to −0.7 IQR).</li>
+        <li><b>Number rate</b> complies 46%. v2 overshoots on dates and figures. <b>Hedges</b> 57%, <b>"I/me"</b> 56%.</li>
+        <li><b>Bands describe the channel, not the video.</b> Only 48% of real test values fall in p25–p75.</li>
+        <li><b>U, C and D rules can't be measured.</b> They're "applied" on the generator's word alone and were almost never marked broken.</li>
+        <li><b>3Blue1Brown's bands mix formats.</b> v2 drifts out of band (15%) because lessons and long proofs share one target.</li>
+        <li><b>Length versus pace.</b> The 1,800-word cap makes the over-10-minute wpm rule impossible to meet.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Round 4: how to climb</h3>
+      <ol>
+        <li>Add per-channel <b>hook and ending base rates</b> as switches. Stop defaulting to question hooks and callback endings.</li>
+        <li>Condition the numeric targets on <b>format class</b>: lesson, proof, devlog, mini-war, explainer.</li>
+        <li>Give every U, C and D rule a <b>measurable test</b>, or drop it.</li>
+        <li>Run <b>features.py inside generation</b> so "applied" is verified, not claimed.</li>
+        <li>Replace the prose report with rules. v1 shows prose adds nothing.</li>
+        <li>Lift the word cap for long videos.</li>
+      </ol>
+      <p class="muted" style="font-size:13px">Caveats: base read the round-1 lens in BRIEF.md. The rulebooks were built before the caption refit. v2 mixes rules and exemplars. Primer, Reducible and Lague have 8, 5 and 8 videos. The slot labels are one blind annotator. Features measure style, not explanation quality. Full write-up: <span class="mono">deep/round3/RESULTS.md</span>.</p>
+    </div>
+  </div>
+</section>
+
+<div class="eyebrow" style="border-top:1px solid var(--line);padding-top:24px">Round 2 (below): the first held-out test, rated by Opus</div>
+
+<section id="method">
+  <div><div class="eyebrow">Methodology</div><h2>How the test was run</h2></div>
+  <p class="lede">We treated each channel report as a trained model and ran it on a held-out test set. A writer who never saw the test video tried to produce its script from the hypothesis alone. A separate judge then compared that script with the real transcript. Where the prediction failed, that's a gap in the hypothesis.</p>
+  <div class="pipe">
+    <div class="stage"><span class="who">Training set · round 1 + deep</span><h3>1. Hypothesis</h3><p>12 analysed videos per channel became a report and a storyboard HTML.</p><span class="io">reports/&lt;ch&gt;.md · storyboards/&lt;ch&gt;.html</span></div>
+    <div class="stage"><span class="who">Test split · 2 per channel</span><h3>2. Held-out pick</h3><p>From each channel's full video list we took the most-viewed videos (5-40 min) that weren't in tracker.csv or round 1. One of each pair was a typical video and one a different format.</p><span class="io">holdout/heldout.tsv</span></div>
+    <div class="stage blind"><span class="who">Sonnet 5.5 · high · ×9</span><h3>3. Blind generator</h3><p>It read only the report, the round-1 findings and the taxonomy, plus the title and duration. It wrote a beat sheet, the full narration, a rule trace and falsifiable predictions.</p><span class="io">holdout/scripts/&lt;id&gt;.md</span></div>
+    <div class="stage"><span class="who">Sonnet 5.5 · high · ×9</span><h3>4. Critic</h3><p>It read the real transcript and wrote the real beat sheet. It scored the predictions as hit, near or miss, aligned the arcs, sorted each gap by type and proposed rule edits.</p><span class="io">holdout/gaps/&lt;id&gt;.md + _summary</span></div>
+    <div class="stage"><span class="who">Opus 5.5 · medium · ×1</span><h3>5. Rater</h3><p>It read every gap file, spot-checked critic claims against the transcripts, recounted wpm for all 18 videos, rated each channel and merged the findings into universal rules.</p><span class="io">holdout/RATING.md · visual_data.json</span></div>
+  </div>
+  <div class="method-grid">
+    <div>
+      <h3>Exactly how each step worked</h3>
+      <ol>
+        <li><b>Transcripts.</b> The 18 test videos were fetched through the local youtube-downloader API at <span class="mono">127.0.0.1:8765</span> with timestamps. They were compacted into lines of about 15 s with the same <span class="mono">compact.py</span> logic used for training (<span class="mono">holdout/tools/fetch_holdout.py</span>).</li>
+        <li><b>Blind generation.</b> One generator per channel, following <span class="mono">GEN_BRIEF.md</span>. Transcript folders and the web were off-limits, and the generator had to declare its recall risk for each video (none, vague or strong).</li>
+        <li><b>Predictions.</b> Each script commits to fixed slots: first question time, first notation time, misconception, brute force, example count and how examples grow, hook type, ending type, and the top 5 moves.</li>
+        <li><b>Critique.</b> One critic per channel, following <span class="mono">CRITIC_BRIEF.md</span>, and only after its generator had finished. Gap types: missing-rule, wrong-rule, underspecified, topic-conditional, generator-error (not charged to the hypothesis) and voice/craft. Six 1-5 scores per video.</li>
+        <li><b>Rating.</b> Opus at medium effort, following <span class="mono">RATER_BRIEF.md</span>. It was told to downgrade hits that looked like recall or general subject knowledge, and to verify critic claims, including the wpm figures, against the raw transcripts.</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Leakage controls and known weaknesses</h3>
+      <ul>
+        <li><b>Recall leakage.</b> Generators flagged some recall for 3 videos (the horses video, the LLM overview and the Basel lamp idea). Critics discounted those hits, so the adjusted hit rate falls from about 55% to about 45%.</li>
+        <li><b>Topic-guess errors.</b> 2 topics were guessed wrong from the title alone (Primer's apology video and Veritasium's electron-microscope video). These were scored as generator errors.</li>
+        <li><b>Subject-knowledge confound.</b> History chronology and algorithm order give some arc hits for free, regardless of the report.</li>
+        <li><b>Small sample.</b> Only 2 videos per channel, one critic per video, and no baseline without a report. The test was also skewed off-format on purpose: 8 of the 18 videos use a format the training set lacked.</li>
+        <li><b>Round 3 fix.</b> 5 held-out videos per channel, a no-report baseline, a recall probe before generating, 2 critics per video with kappa agreement, and a 0-100 rubric (arc order τ 20, timing 15, move F1 25, slots 20, parameters 10, voice 10).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="board">
+  <div><div class="eyebrow">Leaderboard</div><h2>How well each hypothesis generalised</h2></div>
+  <p class="lede">The bar shows the rater's score out of 10. The small numbers are the critics' 1-5 scores: arc, move recall, move precision, pacing, voice and regeneration. Select a row to open that channel below.</p>
+  <div class="board" id="boardRows"></div>
+</section>
+
+<section id="explore">
+  <div><div class="eyebrow">Channel explorer</div><h2>From hypothesis to test result</h2></div>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div class="ch-head"><h3 id="chName" style="font-size:22px"></h3><div class="tally" id="tally"></div></div>
+  <div class="vids" id="vids"></div>
+  <div class="lanes">
+    <div class="lane">
+      <div class="lane-h"><span class="n">1</span><h3>Initial hypothesis</h3></div>
+      <p class="muted" style="font-size:12.5px">The report's core claims, as written before the test.</p>
+      <div class="hyp"><ul id="hyp"></ul></div>
+    </div>
+    <div class="lane">
+      <div class="lane-h"><span class="n">2</span><h3>Storyboard claims</h3><span class="n">3</span><h3>Evidence in held-out videos</h3></div>
+      <p class="muted" style="font-size:12.5px">Left: a claim or arc step already in <span class="mono" id="sbFile"></span>. Right: what the real held-out video did, with timestamps.</p>
+      <div class="claims" id="claims"></div>
+    </div>
+    <div class="lane">
+      <div class="lane-h"><span class="n two">4</span><h3>New from this test</h3></div>
+      <p class="muted" style="font-size:12.5px">Rules or corrections that only the held-out videos revealed.</p>
+      <div class="claims" id="finds"></div>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <div><div class="eyebrow">Cross-channel</div><h2>New universal rules for the teardown</h2></div>
+  <p class="lede">These gaps recurred across 3 or more channels. Each is written so a generator can act on it: a trigger, then an action. Proposed for <span class="mono">pedagogy-teardown.md</span>.</p>
+  <div class="rules" id="ruleGrid"></div>
+</section>
+
+<section id="pace" class="wpm">
+  <div><div class="eyebrow">Recounted on all 18 transcripts</div><h2>Speech rate is not a flat 170 wpm</h2></div>
+  <p class="lede">Round 1 used about 170 wpm as a single setting for every channel. The cross-channel median of about 165 still holds, but channels range from 133 to 191. Pace also shifts with format within a channel: Sebastian Lague's devlog runs at 142 and his lecture at 192.</p>
+  <div id="wpmChart"></div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>held-out wpm, pooled over full runtime</span><span><i style="background:var(--bad)"></i>round-1 assumption, 170</span></div>
+</section>
+
+<footer>Source files are in <span class="mono">deep/holdout/</span>: heldout.tsv, GEN/CRITIC/RATER_BRIEF.md, scripts/, gaps/, RATING.md and visual_data.json. Paraphrased throughout. Kurzgesagt's figure is 150 wpm counting speech only; the Loneliness captions end at 10:46.</footer>
+</div>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const label = {'3blue1brown':'3Blue1Brown','CGPGrey':'CGP Grey','OverSimplified':'OverSimplified','PrimerBlobs':'Primer','Reducible':'Reducible','SebastianLague':'Sebastian Lague','Vsauce':'Vsauce','kurzgesagt':'Kurzgesagt','veritasium':'Veritasium'};
+const name = c => label[c] || c;
+
+const [num] = D.headline.score.split('/');
+$('score').innerHTML = esc(num) + '<small>/10</small>';
+$('verdict').textContent = D.headline.verdict;
+
+const chans = [...D.channels].sort((a,b) => b.rating - a.rating);
+const keys = [['arc','arc'],['recall','rec'],['precision','prec'],['pacing','pace'],['voice','voice'],['regen','regen']];
+$('boardRows').innerHTML = chans.map(c => `
+  <button class="row" data-ch="${esc(c.channel)}" aria-pressed="false">
+    <span class="name">${esc(name(c.channel))}</span>
+    <span style="display:flex;gap:10px;align-items:center"><span class="bar" style="flex:1"><i style="width:${c.rating*10}%"></i></span><span class="mono" style="width:38px;text-align:right">${c.rating}/10</span></span>
+    <span class="dots">${keys.map(([k,l]) => `<span><b>${c.scores?.[k] ?? '–'}</b>${l}</span>`).join('')}</span>
+  </button>`).join('');
+
+$('tabs').innerHTML = chans.map(c => `<button class="tab" role="tab" data-ch="${esc(c.channel)}" aria-selected="false">${esc(name(c.channel))}</button>`).join('');
+
+const statusOrder = ['confirmed','partly','contradicted','untested'];
+function show(ch){
+  const c = D.channels.find(x => x.channel === ch); if(!c) return;
+  document.querySelectorAll('[data-ch]').forEach(b => {
+    const on = b.dataset.ch === ch;
+    if (b.classList.contains('tab')) b.setAttribute('aria-selected', on); else b.setAttribute('aria-pressed', on);
+  });
+  $('chName').textContent = name(ch) + ' · ' + c.rating + '/10';
+  $('sbFile').textContent = 'storyboards/' + ch + '.html';
+  const t = {}; c.storyboard_claims.forEach(s => t[s.status] = (t[s.status]||0)+1);
+  $('tally').innerHTML = statusOrder.filter(s => t[s]).map(s => `<span class="chip ${s}">${t[s]} ${s}</span>`).join('');
+  $('vids').innerHTML = c.heldout.map(v => `<span class="vid"><span class="mono">${esc(v.hit_rate)}</span><a href="https://www.youtube.com/watch?v=${encodeURIComponent(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></span>`).join('') + '<span class="muted" style="font-size:12px;align-self:center">hits / predictions, near-misses counted as half</span>';
+  $('hyp').innerHTML = c.initial_hypothesis.map(h => `<li>${esc(h)}</li>`).join('');
+  $('claims').innerHTML = c.storyboard_claims.map(s => `
+    <div class="claim ${esc(s.status)}"><div class="c"><span class="chip ${esc(s.status)}">${esc(s.status)}</span>${esc(s.claim)}</div><div class="e">${esc(s.evidence)}</div></div>`).join('');
+  $('finds').innerHTML = c.new_findings.map(f => `
+    <div class="find"><span class="chip type">${esc(f.type)}</span><p>${esc(f.finding)}</p><span class="ev">${esc(f.evidence)}</span></div>`).join('');
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-ch]'); if(!b) return;
+  show(b.dataset.ch);
+  if (b.classList.contains('row')) $('explore').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+});
+show(chans[0].channel);
+
+$('ruleGrid').innerHTML = D.universal_new_rules.map(r => `
+  <div class="rule">
+    <div class="top"><span class="eyebrow conf-${esc(r.confidence)}">${esc(r.confidence)} confidence</span><span class="mono muted">${r.channels.length}/9 channels</span></div>
+    <p>${esc(r.rule)}</p>
+    <div class="trig"><b>When:</b> ${esc(r.trigger)}</div>
+    <div class="ev">${esc(r.evidence)}</div>
+    <div class="chs">${r.channels.map(x => `<span>${esc(name(x))}</span>`).join('')}</div>
+  </div>`).join('');
+
+const wpm = [['PrimerBlobs',191],['CGPGrey',183],['OverSimplified',179],['3blue1brown',173],['Reducible',162],['SebastianLague',161],['veritasium',154],['Vsauce',140],['kurzgesagt',133]];
+(function(){
+  const W=720, rowH=30, left=130, right=50, top=10, H=top+wpm.length*rowH+28, min=100, max=200;
+  const x = v => left + (v-min)/(max-min)*(W-left-right);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Words per minute by channel">`;
+  for (let v=100; v<=200; v+=25) s += `<line x1="${x(v)}" x2="${x(v)}" y1="${top}" y2="${H-22}" stroke="var(--line)"/><text x="${x(v)}" y="${H-6}" text-anchor="middle">${v}</text>`;
+  wpm.forEach(([c,v],i) => { const y = top + i*rowH;
+    s += `<text class="lbl" x="${left-10}" y="${y+18}" text-anchor="end">${esc(name(c))}</text><rect x="${x(min)}" y="${y+7}" width="${x(v)-x(min)}" height="15" rx="3" fill="var(--accent)"/><text class="val" x="${x(v)+6}" y="${y+19}">${v}</text>`; });
+  s += `<line x1="${x(170)}" x2="${x(170)}" y1="${top-4}" y2="${H-22}" stroke="var(--bad)" stroke-width="2" stroke-dasharray="4 3"/></svg>`;
+  $('wpmChart').innerHTML = `<div style="overflow-x:auto">${s}</div>`;
+})();
+</script>

@@ -1,0 +1,91 @@
+{
+ "id": "L9zlZjxmwXU",
+ "channel": "SebastianLague",
+ "title": "Introduction to Game Development (E03: Unity overview)",
+ "duration_s": 299,
+ "upload_date": "20160324",
+ "targets": {
+  "wpm": {
+   "p25": 152.0,
+   "median": 159.44,
+   "p75": 165.69,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.45,
+   "median": 0.64,
+   "p75": 0.85,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.6,
+   "median": 0.96,
+   "p75": 1.47,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 3.81,
+   "median": 4.85,
+   "p75": 5.27,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.32,
+   "median": 2.04,
+   "p75": 2.36,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.15,
+   "median": 0.32,
+   "p75": 0.36,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.08,
+   "median": 0.17,
+   "p75": 0.37,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 4
+  },
+  "sent_len": {
+   "p25": 19.31,
+   "median": 20.56,
+   "p75": 20.56,
+   "n": 4
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.1,
+   "default": "OFF",
+   "position_median": 0.99
+  },
+  "teaser": {
+   "rate": 0.8,
+   "default": "ON"
+  },
+  "roadmap": {
+   "rate": 0.35,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "story-anecdote",
+ "ending_default": "teaser-next",
+ "target_words": 794,
+ "exemplars": [
+  "deep/corpus/compact/jitkNxnn-s8.txt",
+  "deep/corpus/compact/m7VY1T6f8Ak.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

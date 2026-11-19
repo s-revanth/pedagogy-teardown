@@ -1,0 +1,455 @@
+{
+ "_how": "Hand-labelled by Claude from the first ~45 s and the last content beat before any outro or sponsor read. Done BLIND, before reading any generated script. Seeded sample (seed 7), 4 videos per channel. Uses the SLOTS.md enums. The ending is the last CONTENT beat, not the sponsor or Patreon outro. Batch 2 (round 4, 47 more videos): labelled blind from the first ~100 and last ~170 words of the transcript, before any v3 script existed and without looking at per-video predictions. ending_type null = the visible tail is a sponsor/promo read, so the content ending is not observable.",
+ "piJkuavhV50": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "phrase-mirror"
+ },
+ "NaL_Cb42WyY": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": true,
+  "ending_type": "impact-coda"
+ },
+ "8idr1WZ1A7Q": {
+  "hook_type": "scenario-you",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next"
+ },
+ "O85OWBJ2ayo": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next"
+ },
+ "8Fn_30AD7Pk": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": true,
+  "ending_type": "phrase-mirror"
+ },
+ "FWP41MXLMGY": {
+  "hook_type": "confession",
+  "answer_given_upfront": false,
+  "ending_type": "other"
+ },
+ "LruaD7XhQ50": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": true,
+  "ending_type": "impact-coda"
+ },
+ "R9OHn5ZF4Uo": {
+  "hook_type": "scenario-you",
+  "answer_given_upfront": true,
+  "ending_type": "phrase-mirror"
+ },
+ "Cln0J87vulU": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda"
+ },
+ "Q-nWA0WeF98": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next"
+ },
+ "BiDvLshi9CY": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda"
+ },
+ "BXpu6tbFCsI": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda"
+ },
+ "UhSStR-FpQc": {
+  "hook_type": "question",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next"
+ },
+ "QC91Bf8hQVo": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "applied-game"
+ },
+ "TZfh8hpJIxo": {
+  "hook_type": "question",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result"
+ },
+ "mMc_z1r96gs": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next"
+ },
+ "Ty0JcR6Dvis": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result"
+ },
+ "yYEMxqreA10": {
+  "hook_type": "scenario-you",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda"
+ },
+ "Ij7NQ-0mIVA": {
+  "hook_type": "question",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda"
+ },
+ "5AllG-i_yto": {
+  "hook_type": "scenario-you",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next"
+ },
+ "XT_CtYN1OOU": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": true,
+  "ending_type": "credits-after-result"
+ },
+ "zQPyGjPUDVE": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "advice"
+ },
+ "mxhxL1LzKww": {
+  "hook_type": "spectacle-demo",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result"
+ },
+ "7k85eD_tQZo": {
+  "hook_type": "question",
+  "answer_given_upfront": false,
+  "ending_type": "human-pivot"
+ },
+ "1sl5KJ69qiA": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result"
+ },
+ "hup_8uDXJx8": {
+  "hook_type": "question",
+  "answer_given_upfront": true,
+  "ending_type": "credits-after-result"
+ },
+ "dFCbJmgeHmA": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "phrase-mirror"
+ },
+ "RVMZxH1TIIQ": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result"
+ },
+ "JGXi_9A__Vc": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "human-pivot"
+ },
+ "UjtOGPJ0URM": {
+  "hook_type": "scenario-you",
+  "answer_given_upfront": true,
+  "ending_type": "phrase-mirror"
+ },
+ "cUzklzVXJwo": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": true,
+  "ending_type": "phrase-mirror"
+ },
+ "XAgXwUwQoPA": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "open-question"
+ },
+ "rjXZzB5bUAo": {
+  "hook_type": "spectacle-demo",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda"
+ },
+ "9cNmUNHSBac": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "phrase-mirror"
+ },
+ "HZGCoVF3YvM": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "k7RM-ot2NWY": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "851U557j6HE": {
+  "hook_type": "paradox",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "VcgJro0sTiM": {
+  "hook_type": "confession",
+  "answer_given_upfront": false,
+  "ending_type": "other",
+  "batch": 2
+ },
+ "sULa9Lc4pck": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "advice",
+  "batch": 2
+ },
+ "S9JGmA5_unY": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "other",
+  "batch": 2
+ },
+ "JEYh5WACqEk": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "T0fAznO1wA8": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "3YFeE1eDlD0": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "PCeMCwxayp0": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "z1ROpIKZe-c": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "phrase-mirror",
+  "batch": 2
+ },
+ "VPBH1eW28mo": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "b1reY72ktEc": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "hRSGxw2AQnk": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "yRmOWcWdQAo": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result",
+  "batch": 2
+ },
+ "ATlila3e9dM": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result",
+  "batch": 2
+ },
+ "Mun1dKkc_As": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "lsbcN9-jU1Y": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "r6sa_fWQB_4": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "GkiITbgu0V0": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "2mTVtToioLg": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "oDvzbBRiNlA": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "GiDsjIBOVoA": {
+  "hook_type": "scenario-you",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "_3cNcmli6xQ": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result",
+  "batch": 2
+ },
+ "WP-Bm65Q-1Y": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result",
+  "batch": 2
+ },
+ "L9zlZjxmwXU": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "egukLtEhyP0": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "human-pivot",
+  "batch": 2
+ },
+ "v1V3T5BPd7E": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "vDrYDAMdpuc": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result",
+  "batch": 2
+ },
+ "Dd7dQh8u4Hc": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "L45Q1_psDqk": {
+  "hook_type": "question",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "o268qbb_0BM": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "-yrZpTHBEss": {
+  "hook_type": "gag-skit",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result",
+  "batch": 2
+ },
+ "_UTZDR1Go24": {
+  "hook_type": "question",
+  "answer_given_upfront": false,
+  "ending_type": "credits-after-result",
+  "batch": 2
+ },
+ "kiQRPRkouAM": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "oakWgLqCwUc": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "Mo1A45ShcMo": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": null,
+  "batch": 2
+ },
+ "e-P5IFTqB98": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "teaser-next",
+  "batch": 2
+ },
+ "t7tA3NNKF0Q": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "advice",
+  "batch": 2
+ },
+ "aOwmt39L2IQ": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": null,
+  "batch": 2
+ },
+ "LBudghsdByQ": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": null,
+  "batch": 2
+ },
+ "t-_VPRCtiUg": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": false,
+  "ending_type": "human-pivot",
+  "batch": 2
+ },
+ "y9c8oZ49pFc": {
+  "hook_type": "question",
+  "answer_given_upfront": false,
+  "ending_type": "impact-coda",
+  "batch": 2
+ },
+ "myh94hpFmJY": {
+  "hook_type": "question",
+  "answer_given_upfront": false,
+  "ending_type": "open-question",
+  "batch": 2
+ },
+ "yjztvddhZmI": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": "human-pivot",
+  "batch": 2
+ },
+ "XRr1kaXKBsU": {
+  "hook_type": "premise-claim",
+  "answer_given_upfront": true,
+  "ending_type": null,
+  "batch": 2
+ },
+ "Y-W-w8yNiKU": {
+  "hook_type": "story-anecdote",
+  "answer_given_upfront": false,
+  "ending_type": null,
+  "batch": 2
+ }
+}

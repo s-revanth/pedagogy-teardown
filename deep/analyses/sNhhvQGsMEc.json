@@ -1,0 +1,127 @@
+{
+ "id": "sNhhvQGsMEc",
+ "channel": "kurzgesagt",
+ "title": "The Fermi Paradox - Where Are All The Aliens? (1/2)",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "hook-paradox|hook-question",
+   "Big-numbers setup: universe size, galaxies, stars, habitable planets; so where are they?"
+  ],
+  [
+   "0:41",
+   "B",
+   "special-case-first|toy-world",
+   "Restrict scope to the Milky Way because other galaxies are unreachable."
+  ],
+  [
+   "1:13",
+   "H",
+   "analogy",
+   "Stars per grain of sand framing; chain of fractions to a million life-bearing planets."
+  ],
+  [
+   "1:30",
+   "N",
+   "approximation-gets-less-wrong",
+   "Assume 0.1% have life; then add time: galaxy is old, trillions of chances."
+  ],
+  [
+   "2:02",
+   "I",
+   "rule-list|minimal-definition-then-refine",
+   "Type 1/2/3 civilization scale; humanity at about 0.73."
+  ],
+  [
+   "2:57",
+   "N",
+   "brute-force-first|simulation-as-argument",
+   "Generation ships colonise the galaxy in two million years: slow method still suffices."
+  ],
+  [
+   "3:15",
+   "N",
+   "commit-to-answer",
+   "Names the paradox only now, as a contradiction of the numbers."
+  ],
+  [
+   "3:33",
+   "N",
+   "rule-list|analogy",
+   "Introduces 'filters' as barriers; filters behind us."
+  ],
+  [
+   "4:09",
+   "N",
+   "multiple-decompositions",
+   "Filters ahead of us; a technology-button joke; elder watcher civilization."
+  ],
+  [
+   "5:05",
+   "N",
+   "honest-caveat|story",
+   "We cannot know; final thought that we may be alone."
+  ],
+  [
+   "5:22",
+   "N",
+   "callback-to-hook|second-person-role",
+   "Emotional frame: fear is right; spread life to the stars."
+  ],
+  [
+   "5:58",
+   "N",
+   "admin",
+   "Patreon credit."
+  ]
+ ],
+ "metrics": {
+  "first_question": "0:00",
+  "notation_first": "2:02",
+  "key_term": "Fermi Paradox / filter",
+  "misconception": "partial: assumes life must be rare or we'd see it; reframed as paradox",
+  "brute_force": "yes 2:57: slow generation ships still colonise galaxy",
+  "examples": "3 civ types, 2 filter placements; grows from counts to scenarios",
+  "ending": "Emotional call to action, teaser of part 2 implied"
+ },
+ "principles": {
+  "1": "confirmed: counts galaxies, grains of sand 1:13",
+  "2": "partly: new terms (Type 1/2/3, filter) introduced one at a time 2:02, 3:33",
+  "3": "partly: Kardashev scale given with humanity's position 2:19",
+  "4": "partly: sand-grain comparison 1:13 then scale 2:02",
+  "5": "not-observed",
+  "6": "confirmed: slow generation ships 2:57 show colonisation easy",
+  "7": "not-observed",
+  "8": "partly: dense number run 0:00-1:30 then slower scenario beats; speech flat",
+  "9": "partly: filters repeated as before/ahead 3:49-4:50",
+  "10": "confirmed: galaxy then star then planet then life 0:41-1:30",
+  "11": "confirmed: scope shrinks to galaxy 0:41, time added 1:46",
+  "12": "partly: Dyson sphere reference 2:38",
+  "13": "partly: sassy 'last words' line 4:31; justification of galaxy scope"
+ },
+ "new_moves": [
+  {
+   "name": "narrow-the-scope-explicitly",
+   "what": "Declare what is out of reach and why, then focus on a tractable subset.",
+   "evidence": "0:41"
+  },
+  {
+   "name": "emotional-landing",
+   "what": "Tell the viewer fear is the correct response, then give a purpose.",
+   "evidence": "5:22"
+  }
+ ],
+ "theory": "The video builds a numeric case that life should be common, and only then names the paradox, so the contradiction lands as the viewer's own conclusion. It then structures the unknown as filters behind versus ahead, giving a reusable frame for speculation.",
+ "velocity": [
+  "Orchestrator: delay naming a concept until the learner has felt its contradiction.",
+  "Scene builder: funnel graphic of stars to planets to life with adjustable fractions.",
+  "Voice: mark speculation vs fact explicitly during open questions.",
+  "Evals: check that scope narrowing is announced with a reason."
+ ],
+ "quote": [
+  "5:22",
+  "Is that scary? That is the right emotional reaction."
+ ]
+}

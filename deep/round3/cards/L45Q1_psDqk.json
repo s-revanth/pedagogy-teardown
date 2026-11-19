@@ -1,0 +1,90 @@
+{
+ "id": "L45Q1_psDqk",
+ "channel": "Vsauce",
+ "title": "Is Anything Real?",
+ "duration_s": 692,
+ "upload_date": "20130603",
+ "targets": {
+  "wpm": {
+   "p25": 129.27,
+   "median": 132.85,
+   "p75": 138.46,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.93,
+   "median": 1.36,
+   "p75": 2.42,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.33,
+   "median": 0.48,
+   "p75": 0.87,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.04,
+   "median": 1.69,
+   "p75": 2.19,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 0.97,
+   "median": 1.6,
+   "p75": 2.59,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.28,
+   "median": 0.37,
+   "p75": 0.64,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.14,
+   "p75": 0.19,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.39,
+   "median": 0.55,
+   "p75": 0.72,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 14.71,
+   "median": 16.48,
+   "p75": 17.18,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "question or premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 1532,
+ "exemplars": [
+  "deep/corpus/compact/coGfGmOeLjE.txt",
+  "deep/corpus/compact/P85Fj8m6v84.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,91 @@
+{
+ "id": "LBudghsdByQ",
+ "channel": "kurzgesagt",
+ "title": "Why Humans Are Vanishing",
+ "duration_s": 786,
+ "upload_date": "20231004",
+ "targets": {
+  "wpm": {
+   "p25": 159.44,
+   "median": 164.39,
+   "p75": 169.2,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.97,
+   "median": 2.0,
+   "p75": 3.06,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.31,
+   "median": 1.75,
+   "p75": 2.19,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.18,
+   "median": 1.72,
+   "p75": 2.17,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.26,
+   "median": 0.38,
+   "p75": 0.49,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.07,
+   "p75": 0.14,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.27,
+   "median": 0.41,
+   "p75": 0.5,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 15.02,
+   "median": 16.14,
+   "p75": 17.97,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.4,
+   "default": "OFF",
+   "position_median": 0.84
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 2153,
+ "exemplars": [
+  "deep/corpus/compact/JOiGEI9pQBs.txt",
+  "deep/corpus/compact/4Stzj2_Rlo4.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

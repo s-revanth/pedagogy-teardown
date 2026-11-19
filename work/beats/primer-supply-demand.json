@@ -1,0 +1,43 @@
+{
+  "channel": "Primer", "title": "Simulating Supply and Demand", "id": "PNtKXWNKGN8", "subject": "Economics",
+  "beats": [
+    ["0:00", "H", "roadmap|special-case-first", "Start with one buyer and one seller, build up to a full market, then argue about it"],
+    ["0:15", "H", "toy-world|running-character", "Blue blobs sell rockets, orange blobs buy"],
+    ["0:32", "H", "minimal-definition-then-refine", "Each seller has a minimum price, each buyer a maximum"],
+    ["1:05", "H", "special-case-first", "Concrete numbers: max $40, min $20, trade at $30; each gains $10"],
+    ["1:39", "B", "notation-after-concept|minimal-definition-then-refine", "That gain is named surplus, a way to quantify slippery value"],
+    ["2:12", "N", "special-case-first", "Add a second buyer with a slightly lower limit"],
+    ["2:29", "N", "rule-list|toy-world", "Simulation rules: expected prices, random order, adjust after each day"],
+    ["3:48", "N", "brute-force-first|simulation-as-argument", "Run with one buyer and one seller: nothing happens"],
+    ["4:08", "N", "inline-quiz|simulation-as-argument", "Add the second buyer: what do you expect? Price creeps up"],
+    ["4:44", "N", "learner-discovers", "Competing buyers pay more; sellers get the surplus"],
+    ["5:00", "N", "inline-quiz|special-case-first", "Add two sellers (3 vs 2): what will happen?"],
+    ["5:40", "N", "learner-discovers|visible-repetition", "Price falls; competing sellers hand surplus to buyers"],
+    ["5:55", "N", "inline-quiz", "Three buyers, three sellers: predict it"],
+    ["6:11", "I", "new-interface", "Too many blobs: reorganize the display into separate rows"],
+    ["6:36", "N", "learner-discovers|hook-paradox", "Only two rockets sell: the lowest buyer and highest seller can never agree"],
+    ["6:53", "N", "act-it-out", "Set the price high or low by hand and watch it settle"],
+    ["7:08", "N", "minimal-definition-then-refine", "Equilibrium: where quantity supplied equals quantity demanded"],
+    ["7:24", "I", "notation-after-concept|notation-compaction", "For huge markets, draw supply and demand curves; they cross at equilibrium"],
+    ["8:12", "B", "honest-caveat", "Now the arguing; specifics vary, so only broad strokes"],
+    ["8:43", "N", "learner-discovers|honest-caveat", "Equilibrium maximizes surplus; one more trade would be negative (not a rigorous proof)"],
+    ["9:16", "N", "minimal-definition-then-refine", "Right number of participants: that's what efficient means; invisible hand"],
+    ["10:03", "N", "analogy-breakpoint", "Is the ideal a good model? Needs many traders, free exit, good information"],
+    ["10:35", "N", "analogy-breakpoint|multiple-decompositions", "Is total surplus the right goal? Food, labor, healthcare"],
+    ["11:23", "B", "recap", "Markets are a tool, neither good nor bad"],
+    ["11:40", "H", "generalize-to-other-domains|admin", "Joke: free educational videos are a confusing market; like and subscribe"]
+  ],
+  "end": 742,
+  "meta": {
+    "first_question": "4:08",
+    "notation_first": "7:24",
+    "notation_note": "Supply and demand curves appear after 7 min of agent-level simulation. Surplus is named at 1:39 as a word, not a symbol.",
+    "key_term": "surplus", "key_term_intro": "1:39",
+    "misconception": "partial: 10:03 challenges the idealized model, but no viewer misconception is set up first",
+    "brute_force": "yes 3:48: the 1-buyer-1-seller run where nothing happens, then add one blob at a time",
+    "examples": "5 market sizes: 1x1, 2x1, 2x3, 3x3, many",
+    "examples_grow": "grows strictly in size, one agent at a time, then compresses to curves",
+    "ending": "recap (markets are a tool) + joke callback to the video's own market",
+    "quote": ["1:39", "this is called surplus"]
+  }
+}

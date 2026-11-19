@@ -1,0 +1,174 @@
+{
+ "id": "eED4bSkYCB8",
+ "channel": "Reducible",
+ "title": "Building Collision Simulations: An Introduction to Computer Graphics",
+ "captions": "automatic",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "hook-question|roadmap",
+   "Shows 250-particle simulation; plan: animation, first simulation, then scaling"
+  ],
+  [
+   "1:13",
+   "H",
+   "simulation-as-argument",
+   "Two animations, 15 vs 60 fps: one looks better; animation is frames"
+  ],
+  [
+   "2:40",
+   "N",
+   "toy-world|special-case-first",
+   "One particle in a box: position, velocity, constant acceleration per frame (dt=1/60)"
+  ],
+  [
+   "4:00",
+   "N",
+   "minimal-definition-then-refine",
+   "Collision detection as point vs line compare, left edge first"
+  ],
+  [
+   "4:44",
+   "N",
+   "honest-caveat",
+   "Collision response: assume elastic, infinite-mass wall, so flip velocity sign"
+  ],
+  [
+   "5:39",
+   "I",
+   "notation-after-concept",
+   "Update function in engine: dynamics then detection code"
+  ],
+  [
+   "6:50",
+   "N",
+   "failure-shown",
+   "Tunneling shown; two easy fixes (slow particles, more frames) and a hard one"
+  ],
+  [
+   "8:12",
+   "N",
+   "multiple-decompositions",
+   "Continuous collision detection: parameterize by t, linear interpolation, solve for tc=0.23"
+  ],
+  [
+   "11:13",
+   "N",
+   "honest-caveat",
+   "Real CCD is harder; points to books"
+  ],
+  [
+   "11:39",
+   "N",
+   "honest-caveat|presenter-was-wrong",
+   "Two particles: detection easy, response hard; author skips derivation, rusty physics"
+  ],
+  [
+   "13:02",
+   "N",
+   "approximation-gets-less-wrong",
+   "Scaling up, shown with six particles"
+  ],
+  [
+   "13:31",
+   "N",
+   "brute-force-first|humor",
+   "All pairs: 5000 tests per frame; 18M tests; laptop sounds, 1h40m render"
+  ],
+  [
+   "14:41",
+   "B",
+   "roadmap",
+   "Broad phase, narrow phase, solve; we already did last two"
+  ],
+  [
+   "15:38",
+   "N",
+   "multiple-decompositions",
+   "Sweep and prune: project to axis, intervals, active interval; 15 pairs down to 2"
+  ],
+  [
+   "18:10",
+   "N",
+   "build-and-verify",
+   "Variance axis note; 100 particles 1h40 to 3 min"
+  ],
+  [
+   "19:06",
+   "N",
+   "multiple-decompositions",
+   "Uniform grid with memory vs checks tradeoff; wasted empty cells"
+  ],
+  [
+   "20:33",
+   "N",
+   "visible-repetition",
+   "kd-tree: median splits alternate axes, termination condition, special case of unsplittable cell"
+  ],
+  [
+   "23:36",
+   "N",
+   "analogy-breakpoint",
+   "Space partitioning bad when objects span cells; object partitioning with BVH, overlapping boxes tradeoff"
+  ],
+  [
+   "27:05",
+   "H",
+   "recap|callback-to-hook",
+   "Recap: frames, detection, scale; ideas recur in ray tracing"
+  ]
+ ],
+ "metrics": {
+  "first_question": "1:28 (implicit: which animation looks better)",
+  "notation_first": "3:33",
+  "key_term": "collision detection / broad phase",
+  "misconception": "partial: tunneling as a failure mode of the basic scheme (6:50)",
+  "brute_force": "yes 13:31: all-pairs test with timing numbers on author's laptop",
+  "examples": "1 particle, 2 particles, 6 particles for partitioning, 100-250 in timing; grows tiny to bigger exactly as scaling story",
+  "ending": "Recap plus bridge to ray tracing"
+ },
+ "principles": {
+  "1": "confirmed: frames per second experience (1:28)",
+  "2": "partly: dt, tc, interpolation introduced with a quick definition each; two-particle equations skipped to avoid symbols (12:35)",
+  "3": "not-observed",
+  "4": "not-observed: no analogy; simulation itself is the demonstration",
+  "5": "confirmed: particle in a box stepped frame by frame (4:00-5:39)",
+  "6": "confirmed: all-pairs checks shown with their cost (13:31) before optimisations",
+  "7": "partly: viewer sees 18M tests then solutions; not asked to infer",
+  "8": "partly: speech flat; slower beats for partition structures, rapid for physics math",
+  "9": "confirmed: sweep, grid, kd, BVH each demonstrated on same six-particle scene",
+  "10": "confirmed: 1, 2, 6 particles, then scale numbers",
+  "11": "confirmed: frames, detection, response, tunnelling, scale",
+  "12": "confirmed: links to ray tracing, ML, books, external derivation (12:35)",
+  "13": "partly: expert terms (BVH, Voronoi-free) given with trade-offs per tool"
+ },
+ "new_moves": [
+  {
+   "name": "cost-in-felt-units",
+   "what": "Turn complexity into human time on own laptop (1h40m to 3 min)",
+   "evidence": "14:00 and 18:38"
+  },
+  {
+   "name": "tradeoff-per-tool",
+   "what": "Every structure ends with what it costs and when it fails, motivating the next",
+   "evidence": "20:01, 23:36, 25:11"
+  },
+  {
+   "name": "skip-with-pointer",
+   "what": "Admit skipping a derivation and point to a source",
+   "evidence": "12:35"
+  }
+ ],
+ "theory": "Complexity is made felt by attaching wall-clock numbers to the naive method, and each optimisation is introduced as the fix for the previous one's stated weakness. The chain grid, kd-tree, BVH is a design-tradeoff narrative, not a list.",
+ "velocity": [
+  "Scene builder: render the naive method's cost as a running counter/timer in the simulation, then rerun with each optimisation on the same scene",
+  "Voice: every technique closes with 'cost / when it fails' sentence template",
+  "Orchestrator: allow 'skip derivation, link source' as an explicit move when a learner model shows low algebra tolerance",
+  "Evals: each optimisation scene reuses the same particle configuration"
+ ],
+ "quote": [
+  "14:26",
+  "this naive method ... is just an awful algorithm"
+ ]
+}

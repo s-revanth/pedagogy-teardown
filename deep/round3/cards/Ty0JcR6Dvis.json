@@ -1,0 +1,79 @@
+{
+ "id": "Ty0JcR6Dvis",
+ "channel": "Reducible",
+ "title": "FFT Example: Unraveling the Recursion",
+ "duration_s": 458,
+ "upload_date": "20201115",
+ "targets": {
+  "wpm": {
+   "p25": 163.32,
+   "median": 172.25,
+   "p75": 184.1,
+   "n": 14
+  },
+  "you_rate": {
+   "p25": 0.73,
+   "median": 1.05,
+   "p75": 1.35,
+   "n": 14
+  },
+  "i_rate": {
+   "p25": 0.46,
+   "median": 0.75,
+   "p75": 1.1,
+   "n": 14
+  },
+  "we_rate": {
+   "p25": 2.46,
+   "median": 3.76,
+   "p75": 4.0,
+   "n": 14
+  },
+  "num_rate": {
+   "p25": 1.82,
+   "median": 2.56,
+   "p75": 3.19,
+   "n": 14
+  },
+  "hedge_rate": {
+   "p25": 0.1,
+   "median": 0.16,
+   "p75": 0.24,
+   "n": 14
+  },
+  "example_rate": {
+   "p25": 0.15,
+   "median": 0.22,
+   "p75": 0.37,
+   "n": 14
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.86,
+   "default": "ON",
+   "position_median": 0.98
+  },
+  "teaser": {
+   "rate": 0.71,
+   "default": "ON"
+  },
+  "roadmap": {
+   "rate": 0.86,
+   "default": "ON"
+  },
+  "recap": {
+   "rate": 0.14,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 1314,
+ "exemplars": [
+  "deep/corpus/compact/h7apO7q16V0.txt",
+  "deep/corpus/compact/xlVX7dXLS64.txt"
+ ],
+ "neighbours_used": 14,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

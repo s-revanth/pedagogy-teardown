@@ -1,0 +1,90 @@
+{
+ "id": "JGXi_9A__Vc",
+ "channel": "kurzgesagt",
+ "title": "Everything You Need to Know About Planet Earth",
+ "duration_s": 442,
+ "upload_date": "20140804",
+ "targets": {
+  "wpm": {
+   "p25": 144.82,
+   "median": 153.98,
+   "p75": 158.41,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.27,
+   "median": 0.58,
+   "p75": 1.14,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.84,
+   "median": 1.23,
+   "p75": 1.98,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.24,
+   "median": 2.12,
+   "p75": 3.5,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.11,
+   "median": 0.35,
+   "p75": 0.62,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.09,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.34,
+   "median": 0.53,
+   "p75": 0.95,
+   "n": 19
+  },
+  "sent_len": {
+   "p25": 13.77,
+   "median": 14.67,
+   "p75": 17.72,
+   "n": 19
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 1134,
+ "exemplars": [
+  "deep/corpus/compact/cR9uphgMZ8U.txt",
+  "deep/corpus/compact/wNDGgL73ihY.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

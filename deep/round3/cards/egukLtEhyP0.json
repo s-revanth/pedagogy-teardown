@@ -1,0 +1,91 @@
+{
+ "id": "egukLtEhyP0",
+ "channel": "SebastianLague",
+ "title": "My First 10 Years of Game Development",
+ "duration_s": 684,
+ "upload_date": "20200101",
+ "targets": {
+  "wpm": {
+   "p25": 158.26,
+   "median": 174.34,
+   "p75": 180.94,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.48,
+   "median": 0.52,
+   "p75": 0.75,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 2.11,
+   "median": 3.14,
+   "p75": 4.05,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.46,
+   "median": 2.17,
+   "p75": 3.16,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 0.99,
+   "median": 1.35,
+   "p75": 1.51,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.12,
+   "median": 0.17,
+   "p75": 0.28,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.05,
+   "median": 0.12,
+   "p75": 0.2,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 4
+  },
+  "sent_len": {
+   "p25": 24.7,
+   "median": 75,
+   "p75": 75,
+   "n": 4
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.1,
+   "default": "OFF",
+   "position_median": 0.65
+  },
+  "teaser": {
+   "rate": 0.85,
+   "default": "ON"
+  },
+  "roadmap": {
+   "rate": 0.35,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "story-anecdote",
+ "ending_default": "teaser-next",
+ "target_words": 1987,
+ "exemplars": [
+  "deep/corpus/compact/--GB9qyZJqg.txt",
+  "deep/corpus/compact/TURzbXTNaA0.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

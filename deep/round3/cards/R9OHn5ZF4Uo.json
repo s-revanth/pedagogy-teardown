@@ -1,0 +1,91 @@
+{
+ "id": "R9OHn5ZF4Uo",
+ "channel": "CGPGrey",
+ "title": "AI Doesn't Know Anything. It Just Passes Tests.",
+ "duration_s": 534,
+ "upload_date": "20171218",
+ "targets": {
+  "wpm": {
+   "p25": 150.41,
+   "median": 180.67,
+   "p75": 192.54,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.26,
+   "median": 1.7,
+   "p75": 3.06,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.12,
+   "median": 0.45,
+   "p75": 1.61,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.28,
+   "median": 0.54,
+   "p75": 0.77,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 0.81,
+   "median": 1.05,
+   "p75": 1.26,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.15,
+   "median": 0.25,
+   "p75": 0.35,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.07,
+   "p75": 0.08,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.14,
+   "median": 0.5,
+   "p75": 1.02,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 12.88,
+   "median": 15.57,
+   "p75": 17.3,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.97
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.01,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 1607,
+ "exemplars": [
+  "deep/corpus/compact/wvWpdrfoEv0.txt",
+  "deep/corpus/compact/C25qzDhGLx8.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

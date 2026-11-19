@@ -1,0 +1,186 @@
+{
+ "id": "AAGIi62-sAU",
+ "channel": "OverSimplified",
+ "title": "Prohibition - OverSimplified",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "admin",
+   "admin",
+   "Honey sponsor read as sketch"
+  ],
+  [
+   "0:15",
+   "H",
+   "humor|act-it-out",
+   "Absurd breakfast skit sets the premise: Americans drank constantly"
+  ],
+  [
+   "0:50",
+   "H",
+   "hook-question",
+   "What is the most American thing? Answer: alcohol"
+  ],
+  [
+   "1:05",
+   "N",
+   "misconception-first|story",
+   "Evidence drinking was normal (Washington, doctors, work) as office skit"
+  ],
+  [
+   "2:07",
+   "N",
+   "story|act-it-out",
+   "Women as the first opposition; saloon speech skit"
+  ],
+  [
+   "3:27",
+   "N",
+   "story",
+   "Women's crusade: praying, WCTU, school textbooks"
+  ],
+  [
+   "5:09",
+   "N",
+   "story|humor",
+   "Carrie Nation hatchet raids; why women's movement faded (sewing skit 6:12)"
+  ],
+  [
+   "6:59",
+   "N",
+   "story|act-it-out",
+   "Anti-Saloon League: Wheeler tailors fear to each group (Paddy demo 7:31)"
+  ],
+  [
+   "9:27",
+   "N",
+   "story",
+   "WWI anti-German sentiment; income tax replaces alcohol revenue 9:59"
+  ],
+  [
+   "10:30",
+   "N",
+   "story",
+   "Amendment passes 282-128; 'we fixed everything' skit"
+  ],
+  [
+   "11:18",
+   "N",
+   "failure-shown|act-it-out",
+   "Americans try water, knitting, kites, then go buy illegal beer"
+  ],
+  [
+   "12:06",
+   "admin",
+   "admin",
+   "Honey ad mid-roll"
+  ],
+  [
+   "13:12",
+   "B",
+   "callback-to-hook|analogy",
+   "Loopholes; Kazaa/Blockbuster analogy: unenforced law is not a law 15:01"
+  ],
+  [
+   "15:34",
+   "N",
+   "commit-to-answer",
+   "Enforcement math: one agent per 70,666 Americans"
+  ],
+  [
+   "16:05",
+   "N",
+   "story",
+   "Moonshine, Rum Row, bootleggers, corruption, Remus case"
+  ],
+  [
+   "20:43",
+   "N",
+   "story",
+   "Speakeasies; New Orleans 35-second beer test 22:07"
+  ],
+  [
+   "22:55",
+   "N",
+   "story",
+   "Social norms collapse; gangs; Capone"
+  ],
+  [
+   "26:34",
+   "N",
+   "running-character",
+   "Hoover and Miles, 'blame the Democrats', report skit"
+  ],
+  [
+   "27:05",
+   "N",
+   "story",
+   "Sabin women's repeal movement; Valentine's Massacre; Capone jailed on taxes"
+  ],
+  [
+   "30:16",
+   "N",
+   "story",
+   "Depression, FDR, 21st Amendment repeal"
+  ],
+  [
+   "32:46",
+   "N",
+   "recap|honest-caveat",
+   "What did we learn? Maybe nothing; ends 'dumb stinky idiots'"
+  ]
+ ],
+ "metrics": {
+  "first_question": "0:50",
+  "notation_first": "none",
+  "key_term": "prohibition / Volstead Act",
+  "misconception": "yes: premise that banning drink would fix society; shown failing 11:18-12:06 and 13:12-",
+  "brute_force": "no",
+  "examples": "many one-off anecdotes; rising stakes from skits to gangsters; Hoover/Miles skit repeats 3 times (26:34, 28:41, 31:02)",
+  "ending": "Mock-moral and shrug: Americans do what you forbid, or no lesson (33:01)"
+ },
+ "principles": {
+  "1": "confirmed: breakfast skit and 'most American thing' 0:15-1:05; Kazaa piracy analogy 15:01",
+  "2": "confirmed: almost no jargon; names given with a role (Wheeler pressure group)",
+  "3": "not-observed",
+  "4": "partly: Kazaa analogy 15:01 starts from home but no rigor step",
+  "5": "confirmed: nearly every point acted as a skit (Paddy 7:31, water/knitting 11:34, Hoover 26:34)",
+  "6": "not-observed",
+  "7": "partly: the water/knitting/kites attempts 11:34 let viewer predict the bootleg turn; otherwise told",
+  "8": "partly: speech steady; idea rate quickens with stories, slows only for loophole list 13:44-15:01",
+  "9": "partly: running gag repeats (Hoover/Miles x3, 'Release the lions', 'You know em, you love em, women' 2:07 and 27:05)",
+  "10": "contradicted: starts big, no tiny-to-big ladder",
+  "11": "partly: temperance, then ASL, then law, then failure, then repeal is chronological and causal",
+  "12": "confirmed: connects to Napster/Kazaa, Depression, WWI, income tax 9:59",
+  "13": "partly: jokes carry content; expert detail (Wheeler, income tax swap) with no tool-choice rationale"
+ },
+ "new_moves": [
+  {
+   "name": "callback-gag-as-structure",
+   "what": "Recurring skit (Hoover/Miles) re-enters at each turning point, doubling as a status check on the plot",
+   "evidence": "26:34, 28:41, 31:02"
+  },
+  {
+   "name": "tailor-the-pitch-demo",
+   "what": "Show the same fact repackaged for each audience to explain coalition-building",
+   "evidence": "7:31-8:19"
+  },
+  {
+   "name": "shrug-ending",
+   "what": "Offer two moral candidates then undercut them",
+   "evidence": "32:46-33:01"
+  }
+ ],
+ "theory": "Each abstract mechanism (pressure politics, unenforceable law) is dramatized as a short character skit, then named in one sentence. Recurring gags and a ranked cause chain keep a 33-minute narrative navigable; the personal analogy (piracy) is the one place the viewer is made to feel the abstraction.",
+ "velocity": [
+  "Scene builder: allow a persistent running-character that re-enters at turning points",
+  "Voice: sponsor-style interruptions are admin beats; tag and skip in learner model",
+  "Orchestrator: reserve a 'you already did this' analogy from learner's own experience (piracy-style) before stating the principle",
+  "Evals: count how many abstract claims get an enacted example within 30 s"
+ ],
+ "quote": [
+  "33:01",
+  "Or maybe there is no lesson."
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "id": "7OLpKqTriio",
+ "channel": "PrimerBlobs",
+ "title": "Epidemic, Endemic, and Eradication Simulations",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "roadmap",
+   "Three phases announced: epidemic, endemic, eradication"
+  ],
+  [
+   "0:15",
+   "H",
+   "toy-world|rule-list",
+   "City of homes/non-homes, blobs roam up to three places daily, SIR states as colors, permanent immunity"
+  ],
+  [
+   "0:55",
+   "N",
+   "honest-caveat",
+   "Admits model is far simpler than reality; goal is patterns, not COVID predictions"
+  ],
+  [
+   "1:01",
+   "N",
+   "simulation-as-argument",
+   "First run: 10 infected, 1% chance; stacked graph read at day 3 with concrete counts"
+  ],
+  [
+   "1:24",
+   "I",
+   "minimal-definition-then-refine|notation-after-concept",
+   "R-naught defined with 2-blob, R0=3 arithmetic, then exponential growth"
+  ],
+  [
+   "2:14",
+   "N",
+   "honest-caveat|failure-shown",
+   "Simulated growth is messier/faster than R0 predicts; averaged R0 is a luxury real world lacks"
+  ],
+  [
+   "2:47",
+   "I",
+   "minimal-definition-then-refine|notation-compaction",
+   "R0 pretends all susceptible; add S to get R; logistic growth named and deferred; R vs 1 thresholds, herd immunity"
+  ],
+  [
+   "3:34",
+   "N",
+   "misconception-first",
+   "Herd immunity is not a cap: 41% infectious at peak, 85% ever infected"
+  ],
+  [
+   "4:08",
+   "N",
+   "visible-repetition|special-case-first",
+   "Rerun at R0 2.5, 1.5, 1.1, 0.9 to see peak shrink and decline below 1"
+  ],
+  [
+   "5:05",
+   "N",
+   "inline-quiz|design-it-yourself",
+   "Vary infectious period and population at fixed R0; viewer predicts peak, total"
+  ],
+  [
+   "6:14",
+   "N",
+   "learner-discovers",
+   "Timelines differ but peak and total fractions nearly identical; only R0 matters"
+  ],
+  [
+   "6:45",
+   "B",
+   "generalize-to-other-domains",
+   "Links R0=2.5 to early COVID estimates, so the do-nothing case is worrying"
+  ],
+  [
+   "7:02",
+   "N",
+   "misconception-first|build-and-verify",
+   "Why diseases do not die out: add lifespans and new susceptibles; R pulled back toward 1"
+  ],
+  [
+   "8:48",
+   "I",
+   "notation-compaction",
+   "Herd immunity = 1 - 1/R0, giving 60% at 2.5, matching quoted 50-70% range"
+  ],
+  [
+   "9:20",
+   "N",
+   "honest-caveat",
+   "Reminds that seasonality, mutation, reaction change real numbers; equilibrium pattern holds"
+  ],
+  [
+   "9:59",
+   "N",
+   "inline-quiz|commit-to-answer",
+   "Vaccinate newborn blobs at 60/50/35/20%; predict before run"
+  ],
+  [
+   "10:33",
+   "N",
+   "presenter-was-wrong|simulation-as-argument",
+   "Only 60% eradicates; presenter expected 50% to work; the gap to threshold lets disease wobble"
+  ],
+  [
+   "11:28",
+   "N",
+   "honest-caveat",
+   "Real eradication is infeasible (animals), but partial vaccination still lowers spikes"
+  ],
+  [
+   "11:59",
+   "N",
+   "admin",
+   "GiveDirectly donation plug and outro"
+  ]
+ ],
+ "metrics": {
+  "first_question": "5:05",
+  "notation_first": "1:24",
+  "key_term": "R-naught / herd immunity",
+  "misconception": "yes: herd immunity is not a cap on infections (3:34); 50% vaccination would eradicate (10:33)",
+  "brute_force": "yes 1:01: simulate blobs in rooms rather than solve equations",
+  "examples": "~5 sims at R0 2.5 reused as baseline, then 4 R0 values, then 4 variants at fixed R0, then endemic, then 4 vaccination rates; each batch of four with a prediction prompt",
+  "ending": "Takeaway that eradication is hard but partial vaccination still helps; charity plug"
+ },
+ "principles": {
+  "1": "confirmed: city, rooms, colored blobs before any formula (0:15-0:46)",
+  "2": "confirmed: R0 at 1:24, S and R at 2:47, logistic named but deferred at 3:02; each symbol introduced only when the sim shows the need",
+  "3": "not-observed: no interface to learn beyond stacked graph, explained with a day-3 reading at 1:24",
+  "4": "partly: SIR blobs act as concrete model, but no separate analogy-to-rigor ladder; the model itself is the analogy",
+  "5": "confirmed: blobs literally move between homes and rooms and infect in rooms (0:15)",
+  "6": "confirmed: run the simulation instead of deriving; messy results shown (2:14)",
+  "7": "confirmed: repeated runs with changed parameter reveal fixed-R0 invariance (5:05-6:29) and vaccination threshold (10:15-11:10)",
+  "8": "partly: transcript text has no speech-rate data; idea rate slows around notation (1:24-3:34) while sim segments are mostly silent runs, supporting idea-rate over speech-rate",
+  "9": "confirmed: R0 sweep, parameter variants, vaccination rates all use the same four-run template",
+  "10": "partly: first run is one scenario and sweeps follow, but there is no tiny-to-big ladder in population (1,000 to 10,000 only at 5:20)",
+  "11": "confirmed: R0 then R then herd immunity then endemic then vaccination, each needing the last",
+  "12": "confirmed: ties R0 2.5 to COVID estimates and the 50-70% herd range (6:45, 9:04)",
+  "13": "partly: plain language, R0 arithmetic, but tools chosen mostly as 'sim shows it' rather than justified against alternatives"
+ },
+ "new_moves": [
+  {
+   "name": "predict-before-batch",
+   "what": "Run four parameter variants side by side after asking for predictions on named quantities (peak, total)",
+   "evidence": "5:35 and 10:33"
+  },
+  {
+   "name": "expected-vs-actual-gap",
+   "what": "Show that the formula's prediction and one run differ, and name why simulations matter",
+   "evidence": "2:14"
+  },
+  {
+   "name": "invariance-discovery",
+   "what": "Vary irrelevant parameters to show what does not matter",
+   "evidence": "6:14"
+  }
+ ],
+ "theory": "The video teaches by treating each formula as a patch for a visible failure of the previous one: R0 fails once immunity builds, so S appears; the epidemic ends, which is wrong, so lifespans appear. Prediction prompts before each four-run batch make the learner commit, and the presenter's own wrong guess at 10:33 models honest updating.",
+ "velocity": [
+  "Scene builder: support four-run parameter grids with a pause for a typed prediction before play",
+  "Orchestrator: introduce a symbol only after a sim frame shows the previous one breaking",
+  "Evals: check that the tutor reports a case where its own expectation failed",
+  "Learner model: log predictions vs outcomes to pick which parameter to vary next"
+ ],
+ "quote": [
+  "10:33",
+  "I thought that 50% might do it"
+ ]
+}

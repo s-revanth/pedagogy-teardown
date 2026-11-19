@@ -1,0 +1,108 @@
+{
+ "id": "HEfHFsfGXjs",
+ "channel": "3blue1brown",
+ "title": "The most unexpected answer to a counting puzzle",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:04",
+   "H",
+   "toy-world|act-it-out",
+   "Two blocks and a wall; idealize away friction and energy loss, add a clack sound to make the count audible"
+  ],
+  [
+   "0:35",
+   "H",
+   "special-case-first|simulation-as-argument",
+   "Equal masses first: three clacks, traced step by step"
+  ],
+  [
+   "0:51",
+   "N",
+   "visible-repetition|learner-discovers",
+   "Mass ratio 100, 10,000, 1,000,000 played in sequence: 31, 314, 3141 clacks; pattern left for viewer"
+  ],
+  [
+   "1:40",
+   "N",
+   "humor|build-and-verify",
+   "Fake-out: says 313, then 'wait for it', corrects to 314"
+  ],
+  [
+   "2:17",
+   "N",
+   "commit-to-answer",
+   "Names the pattern outright: collisions give digits of pi"
+  ],
+  [
+   "2:35",
+   "N",
+   "story|humor",
+   "Credits viewer and 1995 discoverer; frames it as Olympics of comically inefficient pi algorithms"
+  ],
+  [
+   "2:54",
+   "I",
+   "rule-list|show-full-complexity-then-zoom",
+   "Absurd four-step algorithm; 20 digits needs a block heavier than a black hole"
+  ],
+  [
+   "3:46",
+   "B",
+   "honest-caveat",
+   "Over-idealized; not a real algorithm, the interest is why pi appears"
+  ],
+  [
+   "4:20",
+   "N",
+   "hook-question|teaser-next",
+   "Where there is pi there is a hidden circle (energy); answer deferred; asks viewer to try it"
+  ]
+ ],
+ "metrics": {
+  "first_question": "4:05",
+  "notation_first": "none",
+  "key_term": "elastic collision",
+  "misconception": "none",
+  "brute_force": "yes 0:35: simulate ratios 1, 100, 10^4, 10^6 and count",
+  "examples": "4 runs growing by powers of 100",
+  "ending": "Cliffhanger; hidden circle from energy conservation teased, viewers told to attempt puzzle socially"
+ },
+ "principles": {
+  "1": "confirmed: physical scene first, 0:04",
+  "2": "not-observed: no notation at all",
+  "3": "not-observed",
+  "4": "partly: toy world, rigor deferred to next video",
+  "5": "confirmed: literally played out, 0:04",
+  "6": "confirmed: simulation first, algorithm last",
+  "7": "confirmed: pattern shown 3 times before named, 1:23-2:17",
+  "8": "partly: pacing mostly steady, but delays bursts for effect",
+  "9": "confirmed: ratios 100, 10^4, 10^6",
+  "10": "confirmed: 1 to 100 to 10^6",
+  "11": "partly: hook before physics, promised later",
+  "12": "confirmed: black-hole mass comparison, 3:12; credits sources 2:17",
+  "13": "partly: cartoon-simple, no expert depth yet"
+ },
+ "new_moves": [
+  {
+   "name": "promise-then-delay",
+   "what": "Reveal the surprising result fully, explicitly defer the why, and give the viewer homework",
+   "evidence": "4:38 delaying gratification, try it yourself"
+  },
+  {
+   "name": "absurd-algorithm-framing",
+   "what": "Recast the phenomenon as a ridiculous procedure to expose scale and deflate hype",
+   "evidence": "2:54"
+  }
+ ],
+ "theory": "The video sells the question, not the answer. A concrete toy world escalates until the pattern forces itself on the viewer, then a deliberate caveat converts 'useless algorithm' into 'why is pi here?'. Withholding the explanation makes curiosity the product.",
+ "velocity": [
+  "Ghost-hands/sim should support escalating runs of the same scene with an audible counter so the learner spots the pattern before it is named",
+  "Orchestrator can gate the 'why' behind a learner prediction attempt (ask them to guess before revealing)",
+  "Add a deflating-caveat beat to evals: does the tutor say what the demo is NOT"
+ ],
+ "quote": [
+  "2:54",
+  "Step 1, implement a physics engine"
+ ]
+}

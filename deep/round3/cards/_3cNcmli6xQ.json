@@ -1,0 +1,79 @@
+{
+ "id": "_3cNcmli6xQ",
+ "channel": "SebastianLague",
+ "title": "Experimenting with Buses and Three-State Logic",
+ "duration_s": 1122,
+ "upload_date": "20230129",
+ "targets": {
+  "wpm": {
+   "p25": 168.84,
+   "median": 173.36,
+   "p75": 176.77,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.13,
+   "median": 0.22,
+   "p75": 0.46,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 1.93,
+   "median": 2.58,
+   "p75": 3.48,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.66,
+   "median": 3.41,
+   "p75": 4.23,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 0.98,
+   "median": 1.29,
+   "p75": 1.94,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.24,
+   "median": 0.28,
+   "p75": 0.33,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.15,
+   "median": 0.21,
+   "p75": 0.24,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.1,
+   "default": "OFF",
+   "position_median": 0.64
+  },
+  "teaser": {
+   "rate": 0.85,
+   "default": "ON"
+  },
+  "roadmap": {
+   "rate": 0.35,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "story-anecdote",
+ "ending_default": "teaser-next",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/hEDQpqhY2MA.txt",
+  "deep/corpus/compact/Qz0KTGYJtUk.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

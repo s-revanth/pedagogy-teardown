@@ -1,0 +1,108 @@
+{
+ "id": "fNk_zzaMoSs",
+ "channel": "3blue1brown",
+ "title": "Vectors | Chapter 1, Essence of linear algebra",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "roadmap|minimal-definition-then-refine",
+   "Vector is the root building block; three views: physics arrow, CS list, math abstract"
+  ],
+  [
+   "1:29",
+   "B",
+   "commit-to-answer|honest-caveat",
+   "Defer the abstract view; pick arrows rooted at origin as default mental image"
+  ],
+  [
+   "2:37",
+   "N",
+   "notation-after-concept",
+   "Walk through coordinate system; coordinates as walking instructions"
+  ],
+  [
+   "3:47",
+   "I",
+   "notation-compaction",
+   "Vertical bracket column convention to separate vectors from points; 3D adds z"
+  ],
+  [
+   "4:36",
+   "N",
+   "design-it-yourself|analogy",
+   "Addition tip-to-tail, justified as step after step; tied to number line 2+5"
+  ],
+  [
+   "6:06",
+   "I",
+   "visible-repetition|special-case-first",
+   "Numeric example (1,2)+(3,-1): reorder steps, componentwise addition"
+  ],
+  [
+   "6:58",
+   "N",
+   "minimal-definition-then-refine",
+   "Scaling by 2, 1/3, -1.8 shown, then 'scalar' named, then componentwise rule"
+  ],
+  [
+   "8:14",
+   "B",
+   "generalize-to-other-domains|recap",
+   "Value is translation between views; data analysts, graphics programmers, his own animations"
+  ],
+  [
+   "9:23",
+   "N",
+   "teaser-next",
+   "Span, bases, linear dependence next"
+  ]
+ ],
+ "metrics": {
+  "first_question": "1:29",
+  "notation_first": "3:47",
+  "key_term": "vector",
+  "misconception": "partial: three conflicting definitions of vector",
+  "brute_force": "no",
+  "examples": "addition once, scaling three, 2D then 3D",
+  "ending": "Summary of translation between geometry and numbers; teaser for span next"
+ },
+ "principles": {
+  "1": "confirmed: houses as lists 0:51, number line 5:50",
+  "2": "confirmed: bracket notation delayed to 3:47, scalar named after demo 7:17",
+  "3": "confirmed: grids withheld at 3:14 as they would get in the way",
+  "4": "confirmed: arrows first, numbers second, 2:22",
+  "5": "not-observed",
+  "6": "partly: number line before vectors",
+  "7": "confirmed: addition numeric example 6:06 then rule",
+  "8": "partly: speech steady, idea rate slows at addition justification",
+  "9": "partly: addition then scaling twice",
+  "10": "confirmed: 2D before 3D, 4:04",
+  "11": "confirmed: addition and scaling named as the two operations before use, 4:36",
+  "12": "confirmed: data analysis and animation work, 8:50",
+  "13": "partly: why addition is defined that way, 5:15, but little depth"
+ },
+ "new_moves": [
+  {
+   "name": "pick-a-default-mental-image",
+   "what": "Present all views, then explicitly choose one working picture and say why",
+   "evidence": "2:04"
+  },
+  {
+   "name": "justify-the-definition",
+   "what": "Ask why this definition and not another, answer with a physical story",
+   "evidence": "5:15"
+  }
+ ],
+ "theory": "The video chooses a single concrete picture (arrow at origin) and treats numbers as a translation layer, not the subject. Definitions are justified by meaning (steps you take) before being turned into component rules.",
+ "velocity": [
+  "Scene builder should default to one geometric picture with a visible numeric twin, and animate translation between them",
+  "Voice should name a term only after the demo has shown it (scalar at 7:17)",
+  "Learner model could track which 'view' (arrow, list, abstract) a learner holds"
+ ],
+ "quote": [
+  "8:33",
+  "The usefulness of linear algebra is the ability to translate back and forth"
+ ]
+}

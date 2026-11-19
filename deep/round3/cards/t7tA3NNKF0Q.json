@@ -1,0 +1,91 @@
+{
+ "id": "t7tA3NNKF0Q",
+ "channel": "kurzgesagt",
+ "title": "How Facebook is Stealing Billions of Views",
+ "duration_s": 302,
+ "upload_date": "20151110",
+ "targets": {
+  "wpm": {
+   "p25": 158.28,
+   "median": 163.54,
+   "p75": 168.0,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.32,
+   "median": 0.75,
+   "p75": 1.2,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.23,
+   "median": 2.02,
+   "p75": 2.59,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.85,
+   "median": 2.35,
+   "p75": 3.15,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.29,
+   "median": 0.5,
+   "p75": 0.79,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.13,
+   "p75": 0.19,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.11,
+   "median": 0.32,
+   "p75": 0.98,
+   "n": 19
+  },
+  "sent_len": {
+   "p25": 14.17,
+   "median": 16.63,
+   "p75": 18.57,
+   "n": 19
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.6,
+   "default": "ON",
+   "position_median": 0.93
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 823,
+ "exemplars": [
+  "deep/corpus/compact/IXxZRZxafEQ.txt",
+  "deep/corpus/compact/JhHMJCUmq28.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,91 @@
+{
+ "id": "JEYh5WACqEk",
+ "channel": "CGPGrey",
+ "title": "Why Some Diseases Only Traveled One Direction",
+ "duration_s": 672,
+ "upload_date": "20151123",
+ "targets": {
+  "wpm": {
+   "p25": 175.12,
+   "median": 190.88,
+   "p75": 198.92,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.91,
+   "median": 1.98,
+   "p75": 2.59,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.1,
+   "p75": 0.34,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.28,
+   "median": 0.5,
+   "p75": 0.57,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.02,
+   "median": 1.65,
+   "p75": 2.07,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.25,
+   "p75": 0.31,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.06,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.15,
+   "median": 0.32,
+   "p75": 0.42,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 15.75,
+   "median": 16.99,
+   "p75": 18.02,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.15,
+   "default": "OFF",
+   "position_median": 0.89
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.01,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 2137,
+ "exemplars": [
+  "deep/corpus/compact/DbKNlFcg02c.txt",
+  "deep/corpus/compact/Vui-qGCfXuA.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,91 @@
+{
+ "id": "Y-W-w8yNiKU",
+ "channel": "veritasium",
+ "title": "Why is there antimatter?",
+ "duration_s": 2123,
+ "upload_date": "20251205",
+ "targets": {
+  "wpm": {
+   "p25": 166.85,
+   "median": 173.33,
+   "p75": 175.11,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.3,
+   "median": 1.52,
+   "p75": 1.94,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.64,
+   "median": 0.97,
+   "p75": 1.23,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.66,
+   "median": 1.19,
+   "p75": 1.33,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.69,
+   "median": 2.29,
+   "p75": 2.78,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.2,
+   "p75": 0.29,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.03,
+   "median": 0.06,
+   "p75": 0.12,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.38,
+   "median": 0.47,
+   "p75": 0.52,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 14.02,
+   "median": 14.74,
+   "p75": 15.96,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 1.0,
+   "default": "ON",
+   "position_median": 0.51
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/jjp3WC8Unj8.txt",
+  "deep/corpus/compact/NIk_0AW5hFU.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,91 @@
+{
+ "id": "sULa9Lc4pck",
+ "channel": "3blue1brown",
+ "title": "Triangle of Power",
+ "duration_s": 462,
+ "upload_date": "20160626",
+ "targets": {
+  "wpm": {
+   "p25": 165.74,
+   "median": 170.26,
+   "p75": 177.86,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.65,
+   "median": 2.24,
+   "p75": 2.39,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.94,
+   "median": 1.36,
+   "p75": 1.47,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.44,
+   "median": 0.85,
+   "p75": 1.04,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 2.15,
+   "median": 3.74,
+   "p75": 5.03,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.12,
+   "median": 0.17,
+   "p75": 0.26,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.16,
+   "median": 0.27,
+   "p75": 0.33,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.14,
+   "median": 0.18,
+   "p75": 0.28,
+   "n": 17
+  },
+  "sent_len": {
+   "p25": 20.19,
+   "median": 21.93,
+   "p75": 24.25,
+   "n": 17
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.1,
+   "default": "OFF",
+   "position_median": 0.89
+  },
+  "teaser": {
+   "rate": 0.7,
+   "default": "ON"
+  },
+  "roadmap": {
+   "rate": 0.2,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.04,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "teaser-next",
+ "target_words": 1311,
+ "exemplars": [
+  "deep/corpus/compact/kjBOesZCoqc.txt",
+  "deep/corpus/compact/fNk_zzaMoSs.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

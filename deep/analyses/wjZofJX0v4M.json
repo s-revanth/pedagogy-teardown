@@ -1,0 +1,180 @@
+{
+ "id": "wjZofJX0v4M",
+ "channel": "3blue1brown",
+ "title": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "minimal-definition-then-refine",
+   "Unpack GPT initials; transformer is the key word"
+  ],
+  [
+   "0:35",
+   "H",
+   "roadmap",
+   "Visual, follow-the-data explanation; tour of what transformers do (speech, images)"
+  ],
+  [
+   "1:26",
+   "N",
+   "minimal-definition-then-refine",
+   "Model predicts distribution over next chunk"
+  ],
+  [
+   "1:45",
+   "N",
+   "build-and-verify|failure-shown",
+   "Loop: sample, append, repeat; GPT-2 nonsense vs GPT-3 sensible"
+  ],
+  [
+   "3:06",
+   "N",
+   "show-full-complexity-then-zoom|roadmap",
+   "High level preview: tokens, vectors, attention, MLP, repeat, unembed"
+  ],
+  [
+   "5:42",
+   "B",
+   "recap|story",
+   "Chatbot as autocomplete plus system prompt"
+  ],
+  [
+   "6:30",
+   "B",
+   "roadmap|honest-caveat",
+   "What this chapter covers; skip if you know the background"
+  ],
+  [
+   "7:18",
+   "H",
+   "analogy",
+   "Machine learning as knobs and dials; linear regression with house price"
+  ],
+  [
+   "8:52",
+   "N",
+   "rule-list",
+   "Deep learning format: arrays of numbers, layers, weights, weighted sums"
+  ],
+  [
+   "10:35",
+   "I",
+   "notation-compaction",
+   "Weighted sums packaged as matrix-vector products; colour code weights vs data"
+  ],
+  [
+   "12:31",
+   "N",
+   "running-character",
+   "Embedding matrix W_E, vocabulary 50k, columns"
+  ],
+  [
+   "13:44",
+   "N",
+   "analogy|analogy-breakpoint",
+   "High-dim space; 3D slice; directions carry meaning"
+  ],
+  [
+   "15:05",
+   "N",
+   "inline-quiz|honest-caveat",
+   "King minus man plus woman; admits queen is off; better family examples"
+  ],
+  [
+   "16:34",
+   "N",
+   "design-it-yourself|visible-repetition",
+   "Dot product as alignment; test plurality direction on singular vs plural nouns"
+  ],
+  [
+   "17:44",
+   "N",
+   "running-character",
+   "Parameter tally: 617M for embedding"
+  ],
+  [
+   "18:19",
+   "N",
+   "analogy",
+   "Vectors soak up context; king in Scotland; context size 2048"
+  ],
+  [
+   "20:18",
+   "N",
+   "notation-after-concept",
+   "Unembedding W_U, last vector, 617M more"
+  ],
+  [
+   "22:16",
+   "N",
+   "minimal-definition-then-refine",
+   "Softmax: requirements, then 'all you need to know', then the formula"
+  ],
+  [
+   "24:04",
+   "I",
+   "visible-repetition|simulation-as-argument",
+   "Temperature: T=0 trite, higher gets original then nonsense; logits term"
+  ],
+  [
+   "25:53",
+   "B",
+   "callback-to-hook|teaser-next",
+   "Karate Kid wax-on: foundations for attention; Patreon draft"
+  ]
+ ],
+ "metrics": {
+  "first_question": "none",
+  "notation_first": "13:08",
+  "key_term": "embedding",
+  "misconception": "partial: next-word prediction seems unlike generation, 1:45; naive king-queen arithmetic corrected 15:22",
+  "brute_force": "no",
+  "examples": "embeddings: king/queen, Italy/Germany, sushi, plurality; then temperature stories at three settings",
+  "ending": "Foundations laid for attention, Karate Kid framing, next chapter teased"
+ },
+ "principles": {
+  "1": "confirmed: GPT initials, autocomplete, house prices 8:16",
+  "2": "confirmed: weights blue/red vs data gray 11:57; tokens-as-words pretend 12:31",
+  "3": "partly: little spoken but visuals repeat",
+  "4": "confirmed: knobs and dials 7:57; high-dim geometry",
+  "5": "partly: story generation run live",
+  "6": "not-observed",
+  "7": "confirmed: parameter tally 18:00, 22:00; embedding examples repeat",
+  "8": "partly: speech steady; idea rate slows via asides and softmax 'all you need to know' 23:11",
+  "9": "confirmed: embedding repeats; temperature three runs",
+  "10": "confirmed: 3D slice before 12,288D; linear regression before 175B",
+  "11": "confirmed: preview then background then embedding then unembedding then softmax",
+  "12": "confirmed: Python model offer 14:48, Karate Kid 25:53",
+  "13": "partly: plain English, formula optional for the curious 23:11"
+ },
+ "new_moves": [
+  {
+   "name": "running-tally",
+   "what": "Keep a counting target (175B) and add each component's parameters as it is introduced",
+   "evidence": "18:00, 21:59"
+  },
+  {
+   "name": "optional-depth-gate",
+   "what": "Say 'that's all you need to know' then offer the formula for the curious",
+   "evidence": "23:11"
+  },
+  {
+   "name": "color-code-contract",
+   "what": "Fixed colors for weights vs data stated up front",
+   "evidence": "11:57"
+  }
+ ],
+ "theory": "The video builds a mental model by preview first, then fills background in dependency order with a running counter to anchor progress. It gives every tool an optional-depth exit and admits where the famous example fails.",
+ "velocity": [
+  "Persistent on-screen tally/progress object across a lesson",
+  "Voice offers optional-depth gate; learner model decides whether to unfold the formula",
+  "Scene builder fixed color semantics declared once",
+  "Honest-caveat beat when a classic analogy fails (queen example)"
+ ],
+ "quote": [
+  "25:53",
+  "Karate Kid wax-on-wax-off style"
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "id": "3YFeE1eDlD0",
+ "channel": "CGPGrey",
+ "title": "Why Surrendering to Pirates Was Actually Genius",
+ "duration_s": 288,
+ "upload_date": "20200530",
+ "targets": {
+  "wpm": {
+   "p25": 162.27,
+   "median": 176.93,
+   "p75": 183.33,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.85,
+   "median": 1.35,
+   "p75": 2.3,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.39,
+   "median": 1.42,
+   "p75": 2.55,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.12,
+   "median": 0.39,
+   "p75": 0.48,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.07,
+   "median": 1.2,
+   "p75": 1.74,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.13,
+   "median": 0.32,
+   "p75": 0.39,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.08,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.22,
+   "median": 0.58,
+   "p75": 1.23,
+   "n": 17
+  },
+  "sent_len": {
+   "p25": 10.91,
+   "median": 13.24,
+   "p75": 13.82,
+   "n": 17
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.2
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.01,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 849,
+ "exemplars": [
+  "deep/corpus/compact/ABMV4wXx6Xo.txt",
+  "deep/corpus/compact/snAhsXyO3Ck.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

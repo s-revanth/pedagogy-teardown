@@ -1,0 +1,91 @@
+{
+ "id": "oakWgLqCwUc",
+ "channel": "kurzgesagt",
+ "title": "Milk. White Poison or Healthy Drink?",
+ "duration_s": 555,
+ "upload_date": "20200126",
+ "targets": {
+  "wpm": {
+   "p25": 146.1,
+   "median": 153.94,
+   "p75": 155.83,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.09,
+   "median": 0.6,
+   "p75": 1.44,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.0,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.93,
+   "median": 1.18,
+   "p75": 1.85,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 0.77,
+   "median": 1.7,
+   "p75": 2.07,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.32,
+   "p75": 0.4,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.08,
+   "p75": 0.15,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.0,
+   "median": 0.15,
+   "p75": 0.38,
+   "n": 19
+  },
+  "sent_len": {
+   "p25": 14.63,
+   "median": 15.82,
+   "p75": 16.68,
+   "n": 19
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.74
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "question or premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 1423,
+ "exemplars": [
+  "deep/corpus/compact/uFk0mgljtns.txt",
+  "deep/corpus/compact/1AElONvi9WQ.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

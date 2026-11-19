@@ -1,0 +1,38 @@
+{
+  "channel": "Primer", "title": "Simulating Natural Selection", "id": "0ZGbIKd0XrM", "subject": "Biology",
+  "beats": [
+    ["0:00", "H", "callback-to-hook|roadmap", "Previous sims used fixed odds; now selection must come from traits meeting an environment"],
+    ["0:33", "H", "toy-world|rule-list", "The world: food appears daily; 0 food dies, 1 survives, 2 replicates"],
+    ["1:05", "H", "simulation-as-argument", "Watch a few generations first: population grows to carrying capacity of about 95"],
+    ["1:54", "N", "special-case-first|design-it-yourself", "Turn on one trait, speed, with a cost: double speed, double energy per distance"],
+    ["2:14", "N", "inline-quiz|commit-to-answer", "What would you predict? Lists four plausible outcomes"],
+    ["2:54", "N", "simulation-as-argument|honest-caveat", "Speed wins here, or at least the starting value was too slow"],
+    ["3:11", "N", "minimal-definition-then-refine", "First example of natural selection: random variation plus selection raises average speed"],
+    ["3:27", "N", "misconception-first", "Populations evolve, not individuals, despite Pokemon"],
+    ["3:44", "N", "learner-discovers|teaser-next", "Population shrinks as speed rises: selection isn't for the good of the species"],
+    ["4:02", "N", "toy-world|design-it-yourself", "Add size: eat creatures 20% smaller, but energy cost scales with size cubed"],
+    ["4:43", "I", "honest-caveat|notation-after-concept", "Admits the cost function is a choice; size cubed times speed squared, like kinetic energy"],
+    ["5:15", "N", "toy-world", "Add sense: see food or threats from farther, at a cost"],
+    ["5:53", "I", "new-interface", "Rewind and vary all three; a 3D scatter plots each creature"],
+    ["6:14", "N", "simulation-as-argument|learner-discovers", "Average speed differs from before: other creatures are part of the environment"],
+    ["6:49", "N", "misconception-first|honest-caveat", "He expected strong selection for sense; it didn't happen"],
+    ["7:08", "N", "inline-quiz|honest-caveat", "Drop food to 10 a day: he says he doesn't know what will happen"],
+    ["7:44", "N", "simulation-as-argument", "Sudden drop kills everyone; rewind and lower food gradually"],
+    ["8:24", "N", "learner-discovers|misconception-first", "Big loses, sense and speed win; his efficiency guess was wrong again"],
+    ["8:42", "B", "generalize-to-other-domains|misconception-first", "Environment matters; evolution is not a march toward higher creatures"],
+    ["9:22", "H", "recap|teaser-next", "Quick recap; next videos explore counterintuitive traits"]
+  ],
+  "end": 600,
+  "meta": {
+    "first_question": "2:14",
+    "notation_first": "4:43",
+    "notation_note": "Only one formula (size cubed x speed squared), spoken and immediately tied to kinetic energy. The main new interface is a 3D trait scatter at 5:53.",
+    "key_term": "natural selection", "key_term_intro": "3:11",
+    "misconception": "yes: 3:27 (individuals evolve), 6:49 and 8:24 (the presenter's own predictions fail), 8:42 (evolution as a march of progress)",
+    "brute_force": "yes 1:05: watches the population run with no mutations before adding traits one at a time",
+    "examples": "4 runs: no mutation, speed only, three traits, food scarcity",
+    "examples_grow": "grows in complexity: one trait, three traits, a changing environment",
+    "ending": "recap + teaser-next",
+    "quote": ["7:08", "It. Just does what it does."]
+  }
+}

@@ -1,0 +1,91 @@
+{
+ "id": "z1ROpIKZe-c",
+ "channel": "CGPGrey",
+ "title": "Most Cities Got More Democratic. This One Didn't.",
+ "duration_s": 347,
+ "upload_date": "20120919",
+ "targets": {
+  "wpm": {
+   "p25": 198.33,
+   "median": 208.84,
+   "p75": 236.19,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.67,
+   "median": 0.99,
+   "p75": 1.39,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 1.18,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.1,
+   "median": 0.25,
+   "p75": 0.56,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.63,
+   "median": 2.15,
+   "p75": 2.88,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.25,
+   "p75": 0.51,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.07,
+   "p75": 0.12,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.24,
+   "median": 0.3,
+   "p75": 0.46,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 19.19,
+   "median": 21.87,
+   "p75": 23.29,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.89
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.01,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 1207,
+ "exemplars": [
+  "deep/corpus/compact/sHEDXzOfENI.txt",
+  "deep/corpus/compact/7vsCAM17O-M.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

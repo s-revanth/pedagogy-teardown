@@ -1,0 +1,180 @@
+{
+ "id": "ewLpXw6uN28",
+ "title": "Henry VIII - OverSimplified",
+ "beats": [
+  [
+   "0:00",
+   "admin",
+   "admin",
+   "Honey sponsor read before content"
+  ],
+  [
+   "0:15",
+   "H",
+   "hook-question|callback-to-hook|humor",
+   "Dying Henry asks was I a good king; answer: remembered for wife killings"
+  ],
+  [
+   "0:47",
+   "H",
+   "analogy|humor|story",
+   "Mummy teaching toddler Henry words; he mangles them into divorce/off with her head/supreme head: preview of the whole reign as jokes"
+  ],
+  [
+   "1:19",
+   "N",
+   "roadmap|story",
+   "1491 setup: civil war ends, Henry VII, heir Arthur, Henry only the spare"
+  ],
+  [
+   "1:53",
+   "N",
+   "story|humor",
+   "Arthur is a bargaining tool; Spain alliance motivates everything after"
+  ],
+  [
+   "2:25",
+   "N",
+   "story|misconception-first",
+   "Young Henry the cool, theology-loving scholar prince, not the tyrant"
+  ],
+  [
+   "3:15",
+   "N",
+   "story|callback-to-hook",
+   "Tutor's textbook rules (do not be mean, do not violate widows) planted"
+  ],
+  [
+   "3:31",
+   "N",
+   "story",
+   "Arthur dies; Henry inherits heir role and brother's widow; Pope dispensation (the loophole later reversed)"
+  ],
+  [
+   "5:08",
+   "N",
+   "misconception-first|story",
+   "Henry VIII crowned beloved, generous, married for love; contrast with later tyrant"
+  ],
+  [
+   "7:00",
+   "admin",
+   "admin",
+   "Honey ad woven into war-funding plot"
+  ],
+  [
+   "8:05",
+   "N",
+   "story|humor",
+   "Wolsey tells Henry he is the king and can do as he likes; planted line"
+  ],
+  [
+   "9:12",
+   "N",
+   "story",
+   "French war, glory, no male heir, daughter Mary born"
+  ],
+  [
+   "10:32",
+   "N",
+   "story",
+   "Cloth of Gold, Charles V betrayal; alliance collapses, wife loses her utility"
+  ],
+  [
+   "12:39",
+   "N",
+   "story|brute-force-first",
+   "Anne Boleyn, divorce request, Wolsey defers to Pope controlled by Charles"
+  ],
+  [
+   "14:14",
+   "N",
+   "story|humor",
+   "Gout running gag stalls trial two years; Pope says no"
+  ],
+  [
+   "15:18",
+   "N",
+   "story|callback-to-hook",
+   "Henry repeats Wolsey's king line back; breaks from Rome, supreme head"
+  ],
+  [
+   "16:38",
+   "N",
+   "story",
+   "Tudor court excess; monasteries dissolved to pay"
+  ],
+  [
+   "18:05",
+   "N",
+   "callback-to-hook|humor",
+   "Tutor lines inverted as joust shouts; 1536 fall as turning point"
+  ],
+  [
+   "19:10",
+   "N",
+   "story|failure-shown",
+   "Anne executed, Seymour, Cleves, Howard, Parr: wife sequence as rhythm"
+  ],
+  [
+   "24:40",
+   "N",
+   "story|honest-caveat",
+   "Final Boulogne victory; narrator admits it nearly bankrupted England"
+  ],
+  [
+   "25:44",
+   "B",
+   "callback-to-hook|recap",
+   "Why are we fascinated: legacy of authority; and also the wife killings"
+  ]
+ ],
+ "metrics": {
+  "first_question": "0:15",
+  "notation_first": "none",
+  "key_term": "Supreme head of the church",
+  "misconception": "yes: young Henry was a charming Renaissance prince, not the glutton tyrant (2:25, 5:41)",
+  "brute_force": "no",
+  "examples": "n/a narrative; one long biography with 6 wives as repeating template (marry, disappoint, remove)",
+  "ending": "Callback: dying-Henry frame answers opening question; punchline wife killings"
+ },
+ "principles": {
+  "1": "confirmed: opens with toddler lessons and tutor/mother scenes in family terms 0:47",
+  "2": "not-observed: no symbols; names and dates only",
+  "3": "not-observed",
+  "4": "partly: jokes and modern slang as analogy for court politics (codpiece measuring contest 10:47), no rigor step",
+  "5": "confirmed: acts out Henry as toddler, Pope and council as dialogues 0:47, 4:03, 14:45",
+  "6": "not-observed",
+  "7": "partly: wife sequence repeats so viewer anticipates the next removal 19:10-24:00",
+  "8": "partly: narration densely paced; only slowdown is skits; no WPM data",
+  "9": "confirmed: six wives in a row, courtiers each told he can do what he wants 8:21 and 15:18",
+  "10": "not-observed",
+  "11": "confirmed: Arthur death -> widow dispensation -> divorce loophole -> Pope break; each cause set up before use 3:31-15:50",
+  "12": "confirmed: links to Brexit 16:06 and modern portrait spin 19:57",
+  "13": "partly: simple surface, caveats on historians (accident brain damage 18:20) but no tool-choice explanation"
+ },
+ "new_moves": [
+  {
+   "name": "planted-line-payoff",
+   "what": "Throwaway line (be mean, king dumb-dumb) reappears inverted later as cheap callback",
+   "evidence": "3:15 -> 18:05; 8:37 -> 15:18"
+  },
+  {
+   "name": "frame-story-question",
+   "what": "Whole video told as dying man's reflection answering one question",
+   "evidence": "0:15 and 26:00"
+  }
+ ],
+ "theory": "The video teaches causality of a long biography by planting short memorable lines early and paying them off later, so the sequence feels inevitable. Comic skits make each causal hinge a scene rather than a date.",
+ "velocity": [
+  "Orchestrator: plant a tagged phrase in early scene and schedule an inverted callback later as a recall probe",
+  "Scene builder: turn each causal hinge into a short two-voice dialogue",
+  "Evals: check each beat's cause was introduced earlier"
+ ],
+ "quote": [
+  "0:47",
+  "Can you say loaf of bread?"
+ ],
+ "channel": "OverSimplified",
+ "captions": "manual"
+}

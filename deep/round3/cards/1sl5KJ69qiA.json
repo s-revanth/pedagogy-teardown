@@ -1,0 +1,91 @@
+{
+ "id": "1sl5KJ69qiA",
+ "channel": "Vsauce",
+ "title": "The Trolley Problem in Real Life",
+ "duration_s": 2078,
+ "upload_date": "20171206",
+ "targets": {
+  "wpm": {
+   "p25": 142.27,
+   "median": 148.97,
+   "p75": 153.69,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 2.13,
+   "median": 2.69,
+   "p75": 3.06,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 2.57,
+   "median": 3.08,
+   "p75": 3.94,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.38,
+   "median": 1.55,
+   "p75": 2.26,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 0.96,
+   "median": 1.56,
+   "p75": 2.05,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.2,
+   "median": 0.23,
+   "p75": 0.31,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.02,
+   "median": 0.05,
+   "p75": 0.07,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 1.13,
+   "median": 1.99,
+   "p75": 2.1,
+   "n": 11
+  },
+  "sent_len": {
+   "p25": 8.09,
+   "median": 8.39,
+   "p75": 10.33,
+   "n": 11
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.5
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/J51ncHP_BrY.txt",
+  "deep/corpus/compact/1RHsAUyFCAM.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,91 @@
+{
+ "id": "mMc_z1r96gs",
+ "channel": "PrimerBlobs",
+ "title": "How life grows exponentially",
+ "duration_s": 528,
+ "upload_date": "20180620",
+ "targets": {
+  "wpm": {
+   "p25": 169.01,
+   "median": 174.81,
+   "p75": 182.92,
+   "n": 14
+  },
+  "you_rate": {
+   "p25": 0.63,
+   "median": 0.78,
+   "p75": 1.13,
+   "n": 14
+  },
+  "i_rate": {
+   "p25": 0.36,
+   "median": 0.59,
+   "p75": 0.87,
+   "n": 14
+  },
+  "we_rate": {
+   "p25": 2.03,
+   "median": 2.63,
+   "p75": 2.96,
+   "n": 14
+  },
+  "num_rate": {
+   "p25": 2.24,
+   "median": 2.78,
+   "p75": 3.68,
+   "n": 14
+  },
+  "hedge_rate": {
+   "p25": 0.32,
+   "median": 0.39,
+   "p75": 0.44,
+   "n": 14
+  },
+  "example_rate": {
+   "p25": 0.05,
+   "median": 0.07,
+   "p75": 0.09,
+   "n": 14
+  },
+  "q_rate": {
+   "p25": 0.29,
+   "median": 0.41,
+   "p75": 0.46,
+   "n": 5
+  },
+  "sent_len": {
+   "p25": 17.37,
+   "median": 17.39,
+   "p75": 21.54,
+   "n": 5
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.5,
+   "default": "ON",
+   "position_median": 0.96
+  },
+  "teaser": {
+   "rate": 0.36,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.57,
+   "default": "ON"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "teaser-next",
+ "target_words": 1538,
+ "exemplars": [
+  "deep/corpus/compact/uRTtlpD_U54.txt",
+  "deep/corpus/compact/0ZGbIKd0XrM.txt"
+ ],
+ "neighbours_used": 14,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

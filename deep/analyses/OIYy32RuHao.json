@@ -1,0 +1,156 @@
+{
+ "id": "OIYy32RuHao",
+ "title": "The Cold War - OverSimplified (Part 2)",
+ "beats": [
+  [
+   "0:00",
+   "admin",
+   "admin",
+   "Skillshare sponsor"
+  ],
+  [
+   "0:00",
+   "N",
+   "roadmap",
+   "1960s as extreme division; Castro and Che"
+  ],
+  [
+   "0:49",
+   "N",
+   "story",
+   "Bay of Pigs failure; Soviets move missiles to Cuba"
+  ],
+  [
+   "1:25",
+   "N",
+   "humor|story",
+   "Spy plane photo gag; blockade and escalation"
+  ],
+  [
+   "2:14",
+   "N",
+   "story",
+   "Submarine officer vetoes torpedo; Turkey-for-Cuba swap resolves crisis"
+  ],
+  [
+   "3:02",
+   "N",
+   "minimal-definition-then-refine",
+   "Arms race, MAD defined in one line"
+  ],
+  [
+   "3:34",
+   "N",
+   "story|humor",
+   "Palomares bombs dropped, dark joke"
+  ],
+  [
+   "4:57",
+   "N",
+   "analogy",
+   "Domino effect, then choose: lose or send troops"
+  ],
+  [
+   "5:16",
+   "N",
+   "act-it-out|simulation-as-argument",
+   "Spot the Vietcong game shows why guerrilla war is unwinnable"
+  ],
+  [
+   "5:48",
+   "N",
+   "honest-caveat|roadmap",
+   "Admits Vietnam can't be done justice; names what matters for Cold War: proxy wars"
+  ],
+  [
+   "6:54",
+   "B",
+   "simulation-as-argument",
+   "Visual morphing (this became this) shows cultural shift"
+  ],
+  [
+   "7:42",
+   "N",
+   "story",
+   "Detente motivated by economic cost"
+  ],
+  [
+   "8:46",
+   "N",
+   "story",
+   "Nixon resigns; Carter, Reagan, Star Wars"
+  ],
+  [
+   "10:41",
+   "N",
+   "story",
+   "Gorbachev reforms; Eastern Bloc lets go"
+  ],
+  [
+   "12:23",
+   "N",
+   "story|learner-discovers",
+   "East Germans do the math on Hungary border; civil liberties train metaphor"
+  ],
+  [
+   "14:51",
+   "N",
+   "honest-caveat|minimal-definition-then-refine",
+   "Soviet dissolution complex; offers simplified version"
+  ],
+  [
+   "15:42",
+   "B",
+   "callback-to-hook",
+   "Ironic ending: everyone got along forever, right guys"
+  ]
+ ],
+ "metrics": {
+  "first_question": "none",
+  "notation_first": "none",
+  "key_term": "proxy war / detente",
+  "misconception": "partial: ending jokes world got along forever 15:42",
+  "brute_force": "no",
+  "examples": "n/a; crises sequence Cuba, Vietnam, proxy wars, Eastern Bloc",
+  "ending": "Ironic wrap-up with sponsor outro"
+ },
+ "principles": {
+  "1": "partly: starts from Cuba as America's playground 0:32",
+  "2": "not-observed",
+  "3": "not-observed",
+  "4": "partly: Domino effect as analogy 4:57; no rigor step",
+  "5": "confirmed: Spot the Vietcong game acts out the problem 5:16",
+  "6": "not-observed",
+  "7": "partly: repeated crisis-pull-back pattern",
+  "8": "not-observed: no rate data; fastest, densest of the three",
+  "9": "partly: proxy wars list repeats pattern across regions 6:06-6:39",
+  "10": "not-observed",
+  "11": "partly: cause chain missiles -> blockade -> deal; economy -> detente 7:27",
+  "12": "partly: ties culture and TV to war 6:39",
+  "13": "confirmed: explicit caveat 5:48 and 14:51 that content is simplified"
+ },
+ "new_moves": [
+  {
+   "name": "admit-then-compress",
+   "what": "States topic cannot be done justice, then picks the one relevance thread",
+   "evidence": "5:48"
+  },
+  {
+   "name": "game-as-simulation",
+   "what": "Small game makes abstract difficulty felt",
+   "evidence": "5:16"
+  }
+ ],
+ "theory": "Its strongest teaching moves are explicit honesty about compression and a tiny interactive-feeling game that makes guerrilla ambiguity felt. It otherwise relies on speed and gags, so retention depends on sequence strength more than explanation.",
+ "velocity": [
+  "Voice: say out loud what is being omitted and why the kept thread matters",
+  "Scene builder: build a mini-game where learner feels the problem before the explanation",
+  "Evals: dense catalog beats need recap probes since the video has none"
+ ],
+ "quote": [
+  "5:16",
+  "Let's Play: Spot the Vietcong Soldier!"
+ ],
+ "channel": "OverSimplified",
+ "captions": "manual"
+}

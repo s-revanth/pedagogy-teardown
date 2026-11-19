@@ -1,0 +1,91 @@
+{
+ "id": "kiQRPRkouAM",
+ "channel": "Vsauce",
+ "title": "FIRST Photo on the INTERNET ... and other things too.",
+ "duration_s": 247,
+ "upload_date": "20110920",
+ "targets": {
+  "wpm": {
+   "p25": 150.55,
+   "median": 161.61,
+   "p75": 168.97,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 2.23,
+   "median": 3.32,
+   "p75": 4.6,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 1.27,
+   "median": 1.54,
+   "p75": 2.14,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.39,
+   "median": 0.64,
+   "p75": 0.95,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.11,
+   "median": 1.63,
+   "p75": 2.04,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.0,
+   "median": 0.14,
+   "p75": 0.26,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.0,
+   "p75": 0.12,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.18,
+   "median": 0.54,
+   "p75": 0.76,
+   "n": 18
+  },
+  "sent_len": {
+   "p25": 12,
+   "median": 13.58,
+   "p75": 16.49,
+   "n": 18
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.87
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 665,
+ "exemplars": [
+  "deep/corpus/compact/93M3La8n8mw.txt",
+  "deep/corpus/compact/WaUzu-iksi8.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

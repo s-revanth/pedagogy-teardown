@@ -1,0 +1,91 @@
+{
+ "id": "FWP41MXLMGY",
+ "channel": "CGPGrey",
+ "title": "Biking Through Pandemic London",
+ "duration_s": 943,
+ "upload_date": "20210219",
+ "targets": {
+  "wpm": {
+   "p25": 123.98,
+   "median": 166.89,
+   "p75": 177.04,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.07,
+   "median": 1.19,
+   "p75": 2.3,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.48,
+   "median": 2.45,
+   "p75": 3.73,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.11,
+   "median": 0.37,
+   "p75": 0.6,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.04,
+   "median": 1.28,
+   "p75": 1.74,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.0,
+   "median": 0.14,
+   "p75": 0.33,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.06,
+   "p75": 0.09,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.3,
+   "median": 0.51,
+   "p75": 0.84,
+   "n": 15
+  },
+  "sent_len": {
+   "p25": 11.72,
+   "median": 13.24,
+   "p75": 16.31,
+   "n": 15
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.87
+  },
+  "teaser": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.01,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/gqMxf52CCmk.txt",
+  "deep/corpus/compact/_8xhdL8BPvU.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

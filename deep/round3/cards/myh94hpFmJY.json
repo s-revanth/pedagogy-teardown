@@ -1,0 +1,91 @@
+{
+ "id": "myh94hpFmJY",
+ "channel": "veritasium",
+ "title": "Why Do Venomous Animals Live In Warm Climates?",
+ "duration_s": 699,
+ "upload_date": "20130206",
+ "targets": {
+  "wpm": {
+   "p25": 161.47,
+   "median": 171.89,
+   "p75": 182.33,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.96,
+   "median": 2.16,
+   "p75": 2.65,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.91,
+   "median": 1.28,
+   "p75": 1.61,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.84,
+   "median": 1.12,
+   "p75": 1.46,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.24,
+   "median": 1.7,
+   "p75": 2.05,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.07,
+   "median": 0.19,
+   "p75": 0.39,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.1,
+   "p75": 0.21,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.35,
+   "median": 0.74,
+   "p75": 0.99,
+   "n": 14
+  },
+  "sent_len": {
+   "p25": 11.16,
+   "median": 14.2,
+   "p75": 16.15,
+   "n": 14
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.15,
+   "default": "OFF",
+   "position_median": 0.87
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "phrase-mirror",
+ "target_words": 2002,
+ "exemplars": [
+  "deep/corpus/compact/Iuv6hY6zsd0.txt",
+  "deep/corpus/compact/x4I9mmd-2Rc.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

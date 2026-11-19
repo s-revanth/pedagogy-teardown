@@ -1,0 +1,91 @@
+{
+ "id": "y9c8oZ49pFc",
+ "channel": "veritasium",
+ "title": "The Brightest Part of a Shadow is in the Middle",
+ "duration_s": 440,
+ "upload_date": "20151014",
+ "targets": {
+  "wpm": {
+   "p25": 154.49,
+   "median": 165.89,
+   "p75": 175.75,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.77,
+   "median": 2.11,
+   "p75": 2.78,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 1.21,
+   "median": 2.08,
+   "p75": 2.37,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.31,
+   "median": 0.88,
+   "p75": 1.35,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.26,
+   "median": 1.78,
+   "p75": 2.06,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.06,
+   "median": 0.2,
+   "p75": 0.28,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.13,
+   "p75": 0.23,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.24,
+   "median": 0.41,
+   "p75": 0.67,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 14.22,
+   "median": 15.06,
+   "p75": 18.06,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.3,
+   "default": "OFF",
+   "position_median": 0.78
+  },
+  "teaser": {
+   "rate": 0.05,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.01,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "teaser-next",
+ "target_words": 1216,
+ "exemplars": [
+  "deep/corpus/compact/c6wuh0NRG1s.txt",
+  "deep/corpus/compact/He30D8M5fNc.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

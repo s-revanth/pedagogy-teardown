@@ -1,0 +1,91 @@
+{
+ "id": "7k85eD_tQZo",
+ "channel": "Vsauce",
+ "title": "Rainbow Science! ... AND Why Headphones Get So Tangled.",
+ "duration_s": 370,
+ "upload_date": "20111227",
+ "targets": {
+  "wpm": {
+   "p25": 145.81,
+   "median": 160.34,
+   "p75": 162.72,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.72,
+   "median": 2.82,
+   "p75": 3.96,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.77,
+   "median": 1.27,
+   "p75": 2.52,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.36,
+   "median": 0.97,
+   "p75": 1.48,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.37,
+   "median": 1.63,
+   "p75": 2.17,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.0,
+   "median": 0.1,
+   "p75": 0.13,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.19,
+   "p75": 0.34,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.42,
+   "median": 0.57,
+   "p75": 0.64,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 12.12,
+   "median": 14.5,
+   "p75": 15.45,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.41
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 988,
+ "exemplars": [
+  "deep/corpus/compact/Zt9rvaijpPY.txt",
+  "deep/corpus/compact/6LyCC6jjcx8.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,168 @@
+{
+ "id": "Cqbleas1mmo",
+ "title": "The Russian Revolution - OverSimplified (Part 1)",
+ "beats": [
+  [
+   "0:00",
+   "admin",
+   "admin",
+   "NordVPN sponsor read"
+  ],
+  [
+   "0:00",
+   "H",
+   "act-it-out|analogy|toy-world",
+   "Jimmy tours France, Britain, Germany then Russia: modernizing Europe as baseline, Russia as stuck contrast"
+  ],
+  [
+   "1:12",
+   "N",
+   "roadmap|humor",
+   "State problem: backward Russia, tsars refuse to modernize"
+  ],
+  [
+   "2:16",
+   "N",
+   "story|humor",
+   "Alexander II frees serfs with 49-year payment catch"
+  ],
+  [
+   "2:48",
+   "N",
+   "misconception-first",
+   "Viewer would think Alexander II was loved; he is bombed"
+  ],
+  [
+   "3:35",
+   "N",
+   "story|humor",
+   "Alexander III represses; the Okhrana"
+  ],
+  [
+   "4:23",
+   "N",
+   "story|running-character",
+   "Nicholas weak, unprepared; his own admission he is not ready"
+  ],
+  [
+   "5:46",
+   "N",
+   "story",
+   "Khodynka stampede and partying; image tarnished"
+  ],
+  [
+   "6:34",
+   "B",
+   "story",
+   "Pivot to Lenin; Marx manifesto as needed prior"
+  ],
+  [
+   "7:22",
+   "N",
+   "analogy|minimal-definition-then-refine",
+   "Communism and exile; Siberia, newsletter"
+  ],
+  [
+   "8:26",
+   "N",
+   "analogy|humor",
+   "Bolshevik/Menshevik split via cereal-is-soup vote; names mean majority/minority and flip"
+  ],
+  [
+   "9:32",
+   "admin",
+   "admin",
+   "NordVPN mid-roll"
+  ],
+  [
+   "10:36",
+   "N",
+   "story",
+   "Witte industrializes; workers get terrible conditions"
+  ],
+  [
+   "11:57",
+   "N",
+   "story",
+   "Tsar picks war with Japan; defeat"
+  ],
+  [
+   "13:19",
+   "N",
+   "story",
+   "Bloody Sunday and 1905 revolution; soviets"
+  ],
+  [
+   "15:33",
+   "N",
+   "story",
+   "October Manifesto splits opponents; Tsar reneges"
+  ],
+  [
+   "16:40",
+   "B",
+   "callback-to-hook",
+   "Lenin learns from failure; Tsar learns nothing"
+  ],
+  [
+   "17:11",
+   "N",
+   "story",
+   "Stolypin, Stalin heists, Rasputin"
+  ],
+  [
+   "20:27",
+   "B",
+   "teaser-next",
+   "Peace and recovery, then WWI cliffhanger"
+  ]
+ ],
+ "metrics": {
+  "first_question": "2:48",
+  "notation_first": "none",
+  "key_term": "Bolshevik (majority) vs Menshevik (minority)",
+  "misconception": "yes: Alexander II must have been loved, wrong 2:48",
+  "brute_force": "no",
+  "examples": "n/a; three tsars sequence (reformer, repressor, weakling) as a contrast pattern",
+  "ending": "Teaser: WWI begins, part 2"
+ },
+ "principles": {
+  "1": "confirmed: Jimmy's trip through other countries as familiar travel 0:00-1:12",
+  "2": "partly: communism, soviets named with a gloss; Bolshevik gets a silly vote scene 8:26",
+  "3": "not-observed",
+  "4": "partly: cereal-is-soup analogy for split 8:26; no rigor step",
+  "5": "confirmed: tour and serf scenes acted 0:55, 2:16",
+  "6": "not-observed",
+  "7": "partly: three tsars pattern encourages prediction 4:08",
+  "8": "not-observed: no rate data; skits vs narration alternate",
+  "9": "partly: reformer-repressor-weakling and repeated autocrat-unhappy-war loop 11:41",
+  "10": "not-observed",
+  "11": "confirmed: Marx primer inserted exactly before Lenin 7:06; Witte before factories",
+  "12": "partly: ties to Europe's modernization throughout 6:18",
+  "13": "partly: sarcastic simplification with honest hedges (not sure what happened 5:46)"
+ },
+ "new_moves": [
+  {
+   "name": "comparative-baseline-tour",
+   "what": "Show neighbors first so Russia's lag is felt before explained",
+   "evidence": "0:00-1:12"
+  },
+  {
+   "name": "name-explained-by-joke",
+   "what": "Confusing terms made memorable with absurd vote",
+   "evidence": "8:26-8:57"
+  }
+ ],
+ "theory": "It builds a felt baseline (modern Europe via a naive traveler) before stating the problem, then repeats one structural loop: autocrat, unhappy groups, bad fix. Memorable jokes anchor terms that would otherwise be confusing.",
+ "velocity": [
+  "Scene builder: open with a comparative tour so the anomaly is felt before named",
+  "Voice: attach a silly mnemonic scene to confusing paired terms",
+  "Learner model: insert prerequisite primer just before it is needed (Marx before Lenin)"
+ ],
+ "quote": [
+  "2:48",
+  "Everyone must love this guy, right, wrong."
+ ],
+ "channel": "OverSimplified",
+ "captions": "manual"
+}

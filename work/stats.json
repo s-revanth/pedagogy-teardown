@@ -1,0 +1,844 @@
+{
+ "3blue1brown-essence-of-calculus": {
+  "channel": "3Blue1Brown",
+  "title": "The essence of calculus",
+  "id": "WUvTyaaNkzM",
+  "subject": "Math",
+  "quality": "manual captions",
+  "runtime": 1004.42,
+  "beats": 26,
+  "wpm_by_level": {
+   "Home": 192,
+   "Bridge": 175,
+   "New interface": 172,
+   "New idea": 172
+  },
+  "share_by_level": {
+   "Home": 13,
+   "Bridge": 28,
+   "New interface": 15,
+   "New idea": 44
+  },
+  "silence_pct_by_level": {
+   "Home": 10,
+   "Bridge": 11,
+   "New interface": 12,
+   "New idea": 12
+  },
+  "median_beat_s_by_level": {
+   "Home": 28,
+   "Bridge": 38,
+   "New interface": 34,
+   "New idea": 34
+  },
+  "concrete_share": 41,
+  "first_question": "1:22",
+  "notation_first": "3:14",
+  "notation_setup_pct": 19,
+  "key_term": "dr",
+  "key_term_intro": "3:20",
+  "key_term_reps_2min": 8,
+  "tags": {
+   "roadmap": 1,
+   "misconception-first": 1,
+   "you-could-invent-it": 1,
+   "hook-question": 2,
+   "special-case-first": 3,
+   "act-it-out": 3,
+   "multiple-decompositions": 2,
+   "notation-after-concept": 4,
+   "concrete-symbol": 1,
+   "approximation-gets-less-wrong": 3,
+   "honest-caveat": 2,
+   "recap": 3,
+   "visible-repetition": 1,
+   "brute-force-first": 1,
+   "learner-discovers": 2,
+   "generalize-to-other-domains": 3,
+   "meta-reflection": 2,
+   "minimal-definition-then-refine": 2,
+   "callback-to-hook": 2,
+   "teaser-next": 1
+  },
+  "misconception": "partly: 0:34 says calculus is taught as memorized rules, then the whole video breaks that by deriving it",
+  "brute_force": "yes 5:36: the monstrous sum of thin rectangles before seeing it as area under a graph",
+  "examples": "3 core cases: circle area, area under x squared, distance from velocity (mentioned)",
+  "examples_grow": "grows in abstraction: specific radius 3, general R, then an unknown function",
+  "ending": "recap + callback to the 'you could have invented it' hook + teaser for the series",
+  "quote": [
+   "0:49",
+   "you could have invented calculus yourself"
+  ],
+  "notation_note": "dr is introduced as a concrete small number (about 0.1), after 112 s of concrete setup from the circle question."
+ },
+ "3blue1brown-neural-network": {
+  "channel": "3Blue1Brown",
+  "title": "But what is a neural network?",
+  "id": "aircAruvnKk",
+  "subject": "CS / ML",
+  "quality": "manual captions",
+  "runtime": 1106.64,
+  "beats": 25,
+  "wpm_by_level": {
+   "Home": 198,
+   "Bridge": 189,
+   "New idea": 174,
+   "New interface": 176
+  },
+  "share_by_level": {
+   "Home": 18,
+   "Bridge": 24,
+   "New idea": 48,
+   "New interface": 10
+  },
+  "silence_pct_by_level": {
+   "Home": 12,
+   "Bridge": 7,
+   "New idea": 11,
+   "New interface": 10
+  },
+  "median_beat_s_by_level": {
+   "Home": 36,
+   "Bridge": 35,
+   "New idea": 35,
+   "New interface": 108
+  },
+  "concrete_share": 41,
+  "first_question": "5:36",
+  "notation_first": "13:22",
+  "notation_setup_pct": 72,
+  "key_term": "neuron",
+  "key_term_intro": "2:48",
+  "key_term_reps_2min": 10,
+  "tags": {
+   "hook-paradox": 2,
+   "act-it-out": 2,
+   "roadmap": 1,
+   "minimal-definition-then-refine": 3,
+   "toy-world": 2,
+   "honest-caveat": 3,
+   "analogy": 1,
+   "simulation-as-argument": 1,
+   "hook-question": 2,
+   "special-case-first": 3,
+   "hopeful-hypothesis": 1,
+   "generalize-to-other-domains": 1,
+   "design-it-yourself": 2,
+   "visible-repetition": 1,
+   "brute-force-first": 1,
+   "notation-after-concept": 1,
+   "notation-compaction": 1,
+   "callback-to-hook": 1,
+   "teaser-next": 1,
+   "expert-dialogue": 1
+  },
+  "misconception": "none",
+  "brute_force": "yes 11:42: element-by-element weighted sums and 13,000 hand-set knobs before the matrix form",
+  "examples": "1 running example (digit recognizer); sub-examples 9, 8, 4, speech",
+  "examples_grow": "scale grows: one neuron, one layer, whole network, then a function",
+  "ending": "teaser-next + expert caveat interview",
+  "quote": [
+   "2:39",
+   "all I want you to think about is a thing that holds a number"
+  ],
+  "notation_note": "Spoken notation (matrix form). Sigmoid is named at 10:35 but kept as a picture."
+ },
+ "cgpgrey-rules-for-rulers": {
+  "channel": "CGP Grey",
+  "title": "The Rules for Rulers (now titled: Try to Rule Fairly and You'll Be Overthrown)",
+  "id": "rStL7niR7gs",
+  "subject": "Political science",
+  "quality": "manual captions",
+  "runtime": 1093,
+  "beats": 31,
+  "wpm_by_level": {
+   "Home": 149,
+   "New idea": 157,
+   "Bridge": 161
+  },
+  "share_by_level": {
+   "Home": 9,
+   "New idea": 68,
+   "Bridge": 23
+  },
+  "silence_pct_by_level": {
+   "Home": 3,
+   "New idea": 0,
+   "Bridge": 0
+  },
+  "median_beat_s_by_level": {
+   "Home": 24,
+   "New idea": 33,
+   "Bridge": 32
+  },
+  "concrete_share": 32,
+  "first_question": "0:00",
+  "notation_first": "none",
+  "notation_setup_pct": null,
+  "key_term": "keys",
+  "key_term_intro": "1:14",
+  "key_term_reps_2min": 7,
+  "tags": {
+   "hook-question": 2,
+   "second-person-role": 4,
+   "hook-paradox": 2,
+   "misconception-first": 4,
+   "minimal-definition-then-refine": 2,
+   "special-case-first": 4,
+   "multiple-decompositions": 2,
+   "rule-list": 2,
+   "visible-repetition": 4,
+   "recap": 2,
+   "learner-discovers": 4,
+   "generalize-to-other-domains": 4,
+   "callback-to-hook": 2,
+   "data-chart": 1
+  },
+  "misconception": "yes: 0:15 (rulers are just stupid), 2:25 (benevolence is safe), 14:04 (people overthrow kings). Broken from 0:47 onward.",
+  "brute_force": "no",
+  "examples": "many: dictatorship, coups, democracy blocks, farm subsidies, resource states, middling dictators, stable democracies, CEOs and HOAs",
+  "examples_grow": "same 3 rules repeated across settings of growing complexity: king, dictatorship, democracy, any organization",
+  "ending": "generalize to every organization + callback to the second-person ruler hook with a zeroth rule",
+  "quote": [
+   "0:47",
+   "No. Man. Rules. Alone."
+  ],
+  "notation_note": "No notation. Its 'interface' is a numbered rule set (rules 1-3, plus a zeroth rule at the end) and one chart at 10:29."
+ },
+ "kurzgesagt-immune-system": {
+  "channel": "Kurzgesagt",
+  "title": "The Immune System Explained I - Bacteria Infection",
+  "id": "zQGOcOUBi6s",
+  "subject": "Biology",
+  "quality": "manual captions",
+  "runtime": 389.2,
+  "beats": 21,
+  "wpm_by_level": {
+   "Home": 157,
+   "New idea": 181,
+   "Bridge": 173
+  },
+  "share_by_level": {
+   "Home": 15,
+   "New idea": 32,
+   "Bridge": 53
+  },
+  "silence_pct_by_level": {
+   "Home": 7,
+   "New idea": 5,
+   "Bridge": 6
+  },
+  "median_beat_s_by_level": {
+   "Home": 15,
+   "New idea": 18,
+   "Bridge": 19
+  },
+  "concrete_share": 68,
+  "first_question": "0:52",
+  "notation_first": "0:35",
+  "notation_setup_pct": 9,
+  "key_term": "macrophages",
+  "key_term_intro": "1:44",
+  "key_term_reps_2min": 2,
+  "tags": {
+   "hook-paradox": 1,
+   "analogy": 6,
+   "brute-force-first": 1,
+   "honest-caveat": 3,
+   "notation-compaction": 1,
+   "new-interface": 1,
+   "special-case-first": 1,
+   "story": 5,
+   "act-it-out": 1,
+   "running-character": 4,
+   "generalize-to-other-domains": 1,
+   "minimal-definition-then-refine": 2,
+   "visible-repetition": 1,
+   "hook-question": 1,
+   "callback-to-hook": 2,
+   "recap": 1,
+   "teaser-next": 1
+  },
+  "misconception": "none",
+  "brute_force": "yes 0:17: the full, unreadable network of 21 cells is shown first, then simplified",
+  "examples": "1 running scenario (a cut infected by bacteria)",
+  "examples_grow": "one story, escalating through defense layers",
+  "ending": "honest caveat (very simplified) + callback to wonder",
+  "quote": [
+   "4:12",
+   "Don't die yet, we still need you, keep going!"
+  ],
+  "notation_note": "The 'interface' is a color code for cell jobs, introduced right after the full tangle is shown, then used throughout."
+ },
+ "oversimplified-french-revolution-1": {
+  "channel": "OverSimplified",
+  "title": "The French Revolution - OverSimplified (Part 1)",
+  "id": "8qRZcXIODNU",
+  "subject": "History",
+  "quality": "manual captions",
+  "runtime": 1074,
+  "beats": 33,
+  "wpm_by_level": {
+   "Home": 173,
+   "Bridge": 201,
+   "New idea": 197
+  },
+  "share_by_level": {
+   "Home": 24,
+   "Bridge": 42,
+   "New idea": 34
+  },
+  "silence_pct_by_level": {
+   "Home": 6,
+   "Bridge": 4,
+   "New idea": 1
+  },
+  "median_beat_s_by_level": {
+   "Home": 31,
+   "Bridge": 18,
+   "New idea": 32
+  },
+  "concrete_share": 66,
+  "first_question": "2:35",
+  "notation_first": "none",
+  "notation_setup_pct": null,
+  "key_term": "estate",
+  "key_term_intro": "6:46",
+  "key_term_reps_2min": 5,
+  "tags": {
+   "running-character": 8,
+   "humor": 12,
+   "story": 13,
+   "misconception-first": 2,
+   "visible-repetition": 4,
+   "hook-question": 2,
+   "recap": 2,
+   "minimal-definition-then-refine": 2,
+   "act-it-out": 2,
+   "analogy": 1,
+   "special-case-first": 1,
+   "learner-discovers": 1,
+   "multiple-decompositions": 2,
+   "honest-caveat": 2,
+   "teaser-next": 1
+  },
+  "misconception": "partial: 1:44 glamorous France undercut by sarcasm; 15:18 'let them eat cake' shown as a gag, not as fact-checked",
+  "brute_force": "no",
+  "examples": "skits: tax collector, voting, Bastille, march on Versailles",
+  "examples_grow": "chronological, escalating stakes",
+  "ending": "sponsor + teaser-next for part 2",
+  "quote": [
+   "8:49",
+   "You'll get ... one vote."
+  ],
+  "notation_note": "No notation. New terms (estates, Estates General, National Assembly, Jacobins) are introduced as characters or skits."
+ },
+ "primer-natural-selection": {
+  "channel": "Primer",
+  "title": "Simulating Natural Selection",
+  "id": "0ZGbIKd0XrM",
+  "subject": "Biology",
+  "quality": "manual captions",
+  "runtime": 584.54,
+  "beats": 20,
+  "wpm_by_level": {
+   "Home": 173,
+   "New idea": 173,
+   "New interface": 206,
+   "Bridge": 180
+  },
+  "share_by_level": {
+   "Home": 23,
+   "New idea": 61,
+   "New interface": 9,
+   "Bridge": 7
+  },
+  "silence_pct_by_level": {
+   "Home": 19,
+   "New idea": 19,
+   "New interface": 7,
+   "Bridge": 15
+  },
+  "median_beat_s_by_level": {
+   "Home": 32,
+   "New idea": 20,
+   "New interface": 26,
+   "Bridge": 40
+  },
+  "concrete_share": 30,
+  "first_question": "2:14",
+  "notation_first": "4:43",
+  "notation_setup_pct": 48,
+  "key_term": "natural selection",
+  "key_term_intro": "0:00",
+  "key_term_reps_2min": 4,
+  "tags": {
+   "callback-to-hook": 1,
+   "roadmap": 1,
+   "toy-world": 3,
+   "rule-list": 1,
+   "simulation-as-argument": 4,
+   "special-case-first": 1,
+   "design-it-yourself": 2,
+   "inline-quiz": 2,
+   "commit-to-answer": 1,
+   "honest-caveat": 4,
+   "minimal-definition-then-refine": 1,
+   "misconception-first": 4,
+   "learner-discovers": 3,
+   "teaser-next": 2,
+   "notation-after-concept": 1,
+   "new-interface": 1,
+   "generalize-to-other-domains": 1,
+   "recap": 1
+  },
+  "misconception": "yes: 3:27 (individuals evolve), 6:49 and 8:24 (the presenter's own predictions fail), 8:42 (evolution as a march of progress)",
+  "brute_force": "yes 1:05: watches the population run with no mutations before adding traits one at a time",
+  "examples": "4 runs: no mutation, speed only, three traits, food scarcity",
+  "examples_grow": "grows in complexity: one trait, three traits, a changing environment",
+  "ending": "recap + teaser-next",
+  "quote": [
+   "7:08",
+   "It. Just does what it does."
+  ],
+  "notation_note": "Only one formula (size cubed x speed squared), spoken and immediately tied to kinetic energy. The main new interface is a 3D trait scatter at 5:53."
+ },
+ "primer-supply-demand": {
+  "channel": "Primer",
+  "title": "Simulating Supply and Demand",
+  "id": "PNtKXWNKGN8",
+  "subject": "Economics",
+  "quality": "manual captions",
+  "runtime": 742,
+  "beats": 25,
+  "wpm_by_level": {
+   "Home": 192,
+   "Bridge": 199,
+   "New idea": 198,
+   "New interface": 172
+  },
+  "share_by_level": {
+   "Home": 14,
+   "Bridge": 12,
+   "New idea": 64,
+   "New interface": 10
+  },
+  "silence_pct_by_level": {
+   "Home": 6,
+   "Bridge": 1,
+   "New idea": 6,
+   "New interface": 16
+  },
+  "median_beat_s_by_level": {
+   "Home": 25,
+   "Bridge": 31,
+   "New idea": 20,
+   "New interface": 36
+  },
+  "concrete_share": 26,
+  "first_question": "4:08",
+  "notation_first": "7:24",
+  "notation_setup_pct": 60,
+  "key_term": "surplus",
+  "key_term_intro": "1:52",
+  "key_term_reps_2min": 1,
+  "tags": {
+   "roadmap": 1,
+   "special-case-first": 4,
+   "toy-world": 2,
+   "running-character": 1,
+   "minimal-definition-then-refine": 4,
+   "notation-after-concept": 2,
+   "rule-list": 1,
+   "brute-force-first": 1,
+   "simulation-as-argument": 2,
+   "inline-quiz": 3,
+   "learner-discovers": 4,
+   "visible-repetition": 1,
+   "new-interface": 1,
+   "hook-paradox": 1,
+   "act-it-out": 1,
+   "notation-compaction": 1,
+   "honest-caveat": 2,
+   "analogy-breakpoint": 2,
+   "multiple-decompositions": 1,
+   "recap": 1
+  },
+  "misconception": "partial: 10:03 challenges the idealized model, but no viewer misconception is set up first",
+  "brute_force": "yes 3:48: the 1-buyer-1-seller run where nothing happens, then add one blob at a time",
+  "examples": "5 market sizes: 1x1, 2x1, 2x3, 3x3, many",
+  "examples_grow": "grows strictly in size, one agent at a time, then compresses to curves",
+  "ending": "recap (markets are a tool) + joke callback to the video's own market",
+  "quote": [
+   "1:39",
+   "this is called surplus"
+  ],
+  "notation_note": "Supply and demand curves appear after 7 min of agent-level simulation. Surplus is named at 1:39 as a word, not a symbol."
+ },
+ "reducible-fft": {
+  "channel": "Reducible",
+  "title": "The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?",
+  "id": "h7apO7q16V0",
+  "subject": "Algorithms",
+  "quality": "auto-generated (no punctuation, a few misheard words), usable",
+  "runtime": 1703,
+  "beats": 35,
+  "wpm_by_level": {
+   "Home": 161,
+   "Bridge": 166,
+   "New interface": 171,
+   "New idea": 165
+  },
+  "share_by_level": {
+   "Home": 5,
+   "Bridge": 9,
+   "New interface": 36,
+   "New idea": 49
+  },
+  "silence_pct_by_level": {
+   "Home": 9,
+   "Bridge": 1,
+   "New interface": 0,
+   "New idea": 1
+  },
+  "median_beat_s_by_level": {
+   "Home": 29,
+   "Bridge": 35,
+   "New interface": 69,
+   "New idea": 41
+  },
+  "concrete_share": 15,
+  "first_question": "3:04",
+  "notation_first": "2:36",
+  "notation_setup_pct": 9,
+  "key_term": "value representation",
+  "key_term_intro": "5:56",
+  "key_term_reps_2min": 4,
+  "tags": {
+   "multiple-decompositions": 3,
+   "hook-paradox": 2,
+   "misconception-first": 1,
+   "roadmap": 1,
+   "special-case-first": 6,
+   "design-it-yourself": 2,
+   "brute-force-first": 3,
+   "new-interface": 2,
+   "hook-question": 3,
+   "generalize-to-other-domains": 2,
+   "notation-after-concept": 2,
+   "honest-caveat": 3,
+   "minimal-definition-then-refine": 3,
+   "act-it-out": 2,
+   "recap": 4,
+   "learner-discovers": 6,
+   "visible-repetition": 1,
+   "inline-quiz": 1,
+   "notation-compaction": 2,
+   "callback-to-hook": 1
+  },
+  "misconception": "partial: 1:10 says the FFT is usually taught behind heavy prerequisites; 12:29 sets a trap (positive-negative pairs break at depth 2) and breaks it",
+  "brute_force": "yes, twice: 2:21 distributive law O(d^2); 8:02 evaluating at random points",
+  "examples": "4: lines, x^2 and x^3 at 8 points, degree-3 with n=4, degree-5 with n=8",
+  "examples_grow": "grows in size and abstraction: line, single-term, general polynomial, n=4, n=8, general n",
+  "ending": "recap of the four ideas + callback to 'most beautiful algorithm' hook",
+  "quote": [
+   "11:32",
+   "this is starting to smell like the start of a recursive algorithm"
+  ],
+  "notation_note": "Light interface (a coefficient list) at 2:36, but heavy notation (omega, complex exponentials) waits until 16:21, after 14 minutes of concrete point-picking."
+ },
+ "sebastianlague-ray-tracing": {
+  "channel": "Sebastian Lague",
+  "title": "Coding Adventure: Ray Tracing",
+  "id": "Qz0KTGYJtUk",
+  "subject": "CS / graphics",
+  "quality": "manual captions",
+  "runtime": 2259.25,
+  "beats": 55,
+  "wpm_by_level": {
+   "Home": 174,
+   "New idea": 181,
+   "New interface": 178,
+   "Bridge": 182
+  },
+  "share_by_level": {
+   "Home": 19,
+   "New idea": 63,
+   "New interface": 11,
+   "Bridge": 7
+  },
+  "silence_pct_by_level": {
+   "Home": 0,
+   "New idea": 0,
+   "New interface": 0,
+   "Bridge": 0
+  },
+  "median_beat_s_by_level": {
+   "Home": 27,
+   "New idea": 38,
+   "New interface": 36,
+   "Bridge": 33
+  },
+  "concrete_share": 26,
+  "first_question": "29:57",
+  "notation_first": "1:46",
+  "notation_setup_pct": 5,
+  "key_term": "ray",
+  "key_term_intro": "0:05",
+  "key_term_reps_2min": 4,
+  "tags": {
+   "roadmap": 1,
+   "show-your-sources": 1,
+   "toy-world": 2,
+   "build-and-verify": 7,
+   "new-interface": 1,
+   "act-it-out": 4,
+   "misconception-first": 2,
+   "analogy": 2,
+   "minimal-definition-then-refine": 5,
+   "special-case-first": 7,
+   "notation-after-concept": 3,
+   "visible-repetition": 3,
+   "brute-force-first": 4,
+   "learner-discovers": 4,
+   "honest-caveat": 5,
+   "failure-shown": 4,
+   "simulation-as-argument": 6,
+   "recap": 1,
+   "humor": 3,
+   "approximation-gets-less-wrong": 2,
+   "notation-compaction": 1,
+   "callback-to-hook": 2,
+   "hook-paradox": 1,
+   "generalize-to-other-domains": 1,
+   "design-it-yourself": 1,
+   "teaser-next": 1
+  },
+  "misconception": "yes: 2:26 (light goes from source to eye, so tracing backwards seems wrong); 29:57 tomato highlights",
+  "brute_force": "yes, often: home-made RNG (9:00), cube rejection sampling (11:14), no-sqrt circle points (32:43), shown and then replaced",
+  "examples": "many scenes: spheres, Cornell box knight, Suzanne, mirror balls, tomato, chess depth of field",
+  "examples_grow": "grows in complexity: one sphere, many spheres, triangles, meshes, materials, camera effects",
+  "ending": "teaser-next (glass, volumetrics, performance)",
+  "quote": [
+   "16:40",
+   "A photorealistic rendering of a room without any light."
+  ],
+  "notation_note": "Code appears early (1:46) but each piece of math (sphere equation, dot products) arrives only when the next visual step needs it. Viewers are rarely asked questions; the presenter asks himself."
+ },
+ "veritasium-electricity-misconception": {
+  "channel": "Veritasium",
+  "title": "The Big Misconception About Electricity",
+  "id": "bHIhgxav9LY",
+  "subject": "Physics",
+  "quality": "manual captions",
+  "runtime": 888,
+  "beats": 26,
+  "wpm_by_level": {
+   "Home": 166,
+   "Bridge": 170,
+   "New idea": 158,
+   "New interface": 168
+  },
+  "share_by_level": {
+   "Home": 16,
+   "Bridge": 36,
+   "New idea": 42,
+   "New interface": 6
+  },
+  "silence_pct_by_level": {
+   "Home": 6,
+   "Bridge": 1,
+   "New idea": 3,
+   "New interface": 0
+  },
+  "median_beat_s_by_level": {
+   "Home": 18,
+   "Bridge": 32,
+   "New idea": 24,
+   "New interface": 26
+  },
+  "concrete_share": 52,
+  "first_question": "0:16",
+  "notation_first": "4:19",
+  "notation_setup_pct": 29,
+  "key_term": "Poynting",
+  "key_term_intro": "3:57",
+  "key_term_reps_2min": 5,
+  "tags": {
+   "hook-question": 1,
+   "toy-world": 2,
+   "inline-quiz": 1,
+   "commit-to-answer": 1,
+   "honest-caveat": 4,
+   "hook-paradox": 1,
+   "analogy": 1,
+   "misconception-first": 4,
+   "analogy-breakpoint": 1,
+   "story": 3,
+   "special-case-first": 2,
+   "notation-after-concept": 1,
+   "minimal-definition-then-refine": 1,
+   "act-it-out": 3,
+   "generalize-to-other-domains": 3,
+   "visible-repetition": 1,
+   "expert-dialogue": 2,
+   "callback-to-hook": 2,
+   "recap": 1
+  },
+  "misconception": "yes: the hook question invites the wrong answer (0:16); the presenter's own chain analogy is stated (1:21) and broken (2:07)",
+  "brute_force": "no",
+  "examples": "4: light, DC battery circuit, AC power line, undersea cable, then the hook circuit",
+  "examples_grow": "grows in complexity: light, DC loop, AC grid, failed cable",
+  "ending": "callback to the hook question with the answer, honest caveat, then sponsor",
+  "quote": [
+   "2:07",
+   "The only problem is, it's wrong."
+  ],
+  "notation_note": "Poynting formula arrives after the hook, a broken analogy and a history story: 259 s of setup."
+ },
+ "veritasium-misunderstood-concept": {
+  "channel": "Veritasium",
+  "title": "The Most Misunderstood Concept in Physics",
+  "id": "DxL2HoqLbyA",
+  "subject": "Physics",
+  "quality": "manual captions",
+  "runtime": 1634,
+  "beats": 45,
+  "wpm_by_level": {
+   "Home": 160,
+   "Bridge": 153,
+   "New idea": 151,
+   "New interface": 162
+  },
+  "share_by_level": {
+   "Home": 23,
+   "Bridge": 19,
+   "New idea": 56,
+   "New interface": 1
+  },
+  "silence_pct_by_level": {
+   "Home": 6,
+   "Bridge": 6,
+   "New idea": 6,
+   "New interface": 8
+  },
+  "median_beat_s_by_level": {
+   "Home": 35,
+   "Bridge": 33,
+   "New idea": 34,
+   "New interface": 17
+  },
+  "concrete_share": 42,
+  "first_question": "0:19",
+  "notation_first": "8:00",
+  "notation_setup_pct": 29,
+  "key_term": "entropy",
+  "key_term_intro": "9:58",
+  "key_term_reps_2min": 6,
+  "tags": {
+   "hook-paradox": 5,
+   "hook-question": 4,
+   "misconception-first": 5,
+   "street-interview": 3,
+   "running-character": 1,
+   "story": 6,
+   "special-case-first": 5,
+   "toy-world": 2,
+   "act-it-out": 3,
+   "design-it-yourself": 1,
+   "notation-after-concept": 1,
+   "generalize-to-other-domains": 6,
+   "minimal-definition-then-refine": 5,
+   "analogy-breakpoint": 2,
+   "simulation-as-argument": 2,
+   "approximation-gets-less-wrong": 1,
+   "analogy": 2,
+   "callback-to-hook": 3,
+   "honest-caveat": 2,
+   "teaser-next": 1
+  },
+  "misconception": "yes, 4 times: 0:54 (energy is used up), 6:17 (reversible = 100%), 11:08 (entropy = disorder), 12:30 (heat never flows cold to hot). First broken at 1:28.",
+  "brute_force": "partial: counts configurations explicitly at small scale before scaling up",
+  "examples": "6+: ideal engine, real steam engine, 2-bar toy model at 2 scales, Rubik's cube, air conditioner, food chain, tea and milk",
+  "examples_grow": "grows in size: 8 atoms, 80 atoms, everyday solids, Earth, universe, black holes",
+  "ending": "callback to the sun question + memorable analogy (tea and milk) + sponsor",
+  "quote": [
+   "1:45",
+   "what are we really getting from the sun?"
+  ],
+  "notation_note": "The only formula (Carnot efficiency) appears after about 4 min of concrete engine setup and 8 min overall."
+ },
+ "vsauce-count-past-infinity": {
+  "channel": "Vsauce",
+  "title": "How To Count Past Infinity",
+  "id": "SrU9YDoXE88",
+  "subject": "Mixed (math)",
+  "quality": "auto-generated (aleph rendered as 'Alf', some misheard words), usable",
+  "runtime": 1426,
+  "beats": 41,
+  "wpm_by_level": {
+   "Home": 122,
+   "Bridge": 138,
+   "New idea": 142,
+   "New interface": 142
+  },
+  "share_by_level": {
+   "Home": 8,
+   "Bridge": 22,
+   "New idea": 54,
+   "New interface": 15
+  },
+  "silence_pct_by_level": {
+   "Home": 1,
+   "Bridge": 0,
+   "New idea": 0,
+   "New interface": 0
+  },
+  "median_beat_s_by_level": {
+   "Home": 32,
+   "Bridge": 27,
+   "New idea": 28,
+   "New interface": 39
+  },
+  "concrete_share": 31,
+  "first_question": "0:00",
+  "notation_first": "2:21",
+  "notation_setup_pct": 10,
+  "key_term": "aleph null",
+  "key_term_intro": "2:36",
+  "key_term_reps_2min": 6,
+  "tags": {
+   "hook-question": 1,
+   "misconception-first": 3,
+   "humor": 2,
+   "hook-paradox": 6,
+   "visible-repetition": 5,
+   "minimal-definition-then-refine": 8,
+   "special-case-first": 2,
+   "act-it-out": 5,
+   "notation-after-concept": 2,
+   "brute-force-first": 1,
+   "toy-world": 1,
+   "multiple-decompositions": 2,
+   "learner-discovers": 4,
+   "analogy": 3,
+   "honest-caveat": 4,
+   "callback-to-hook": 4,
+   "generalize-to-other-domains": 2,
+   "story": 1,
+   "notation-compaction": 1,
+   "teaser-next": 1,
+   "bonus-fact": 1
+  },
+  "misconception": "yes: 1:16 (infinity is the biggest number), 4:09 (adding one makes it bigger), 7:58 (omega+1 is bigger)",
+  "brute_force": "yes: counting 41, 42, 43 and googolplex towers before aleph-null",
+  "examples": "many: tree 40, supertask lines, race, power sets of {1,2,3}, diagonal list, bananas",
+  "examples_grow": "grows in size and abstraction: finite, aleph-null, omega ladders, aleph-1, inaccessibles",
+  "ending": "philosophical callback + honest open questions + post-credits bonus",
+  "quote": [
+   "1:16",
+   "Infinity is not a number; instead, it's a kind of number."
+  ],
+  "notation_note": "Aleph-null arrives after 2 min of everyday counting and pairing; ordinals and towers come later."
+ }
+}

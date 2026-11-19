@@ -1,0 +1,161 @@
+{
+ "id": "PMMc4VsIacU",
+ "channel": "Reducible",
+ "title": "Depth First Search (DFS) Explained: Algorithm, Examples, and Code",
+ "captions": "automatic",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "roadmap",
+   "Four-part plan: traversal concept, invent your own, implementation, applications"
+  ],
+  [
+   "0:41",
+   "H",
+   "minimal-definition-then-refine",
+   "Graph traversal = visit every vertex from a start; algorithms differ in order"
+  ],
+  [
+   "1:25",
+   "N",
+   "design-it-yourself|you-could-invent-it",
+   "Let's invent a traversal: pick any unvisited neighbour, go on"
+  ],
+  [
+   "1:39",
+   "N",
+   "act-it-out|visible-repetition",
+   "Walk a 10-vertex graph aloud: go deeper, hit dead end, retrace; 2:49-4:11 repeated backtracks"
+  ],
+  [
+   "4:11",
+   "B",
+   "analogy|second-person-role",
+   "Think of yourself as a bold adventurous explorer who retraces at dead ends"
+  ],
+  [
+   "4:39",
+   "N",
+   "visible-repetition|honest-caveat",
+   "Second valid ordering, different choices; exams specify tie-breaking (smaller first)"
+  ],
+  [
+   "6:30",
+   "H",
+   "special-case-first",
+   "Move to a smaller graph for implementation; notice it is naturally recursive"
+  ],
+  [
+   "7:09",
+   "N",
+   "failure-shown|learner-discovers",
+   "First recursion attempt; 'pause, find the bug'; infinite loop via vertex 0"
+  ],
+  [
+   "8:04",
+   "I",
+   "build-and-verify",
+   "Fix with marked/boolean list; trace the recursion call by call"
+  ],
+  [
+   "11:05",
+   "I",
+   "multiple-decompositions",
+   "Iterative version with stack; trace including duplicates on stack"
+  ],
+  [
+   "14:03",
+   "N",
+   "honest-caveat",
+   "Both O(V+E); recursive is standard, iterative generalises to other traversals"
+  ],
+  [
+   "14:58",
+   "N",
+   "minimal-definition-then-refine",
+   "Pre-order vs post-order; post-order is moving the visit call to the end"
+  ],
+  [
+   "17:02",
+   "N",
+   "generalize-to-other-domains",
+   "Applications: cycle detection, connected components"
+  ],
+  [
+   "17:43",
+   "N",
+   "teaser-next",
+   "Topological sort; reverse post-order; 'think why' left to viewer"
+  ],
+  [
+   "19:33",
+   "N",
+   "humor",
+   "Maze generation: randomised neighbour order; try solving it"
+  ],
+  [
+   "20:27",
+   "N",
+   "admin",
+   "Outro, like/patreon"
+  ]
+ ],
+ "metrics": {
+  "first_question": "7:37",
+  "notation_first": "6:57",
+  "key_term": "depth-first search / graph traversal",
+  "misconception": "partial: the naive recursion bug (infinite loop) is surfaced deliberately at 7:37",
+  "brute_force": "yes 1:39: invent-your-own walk precedes any code or name",
+  "examples": "2 full traversals of 10-vertex graph, 5-vertex graph recursive trace, same graph iterative trace, post-order, topo sort, maze; sizes shrink for code then grow in applications",
+  "ending": "Applications montage ending on a playful maze, no strong recap"
+ },
+ "principles": {
+  "1": "confirmed: traversal defined as getting to every vertex (0:41)",
+  "2": "confirmed: code and 'marked' appear only after the walk is invented (6:57)",
+  "3": "not-observed",
+  "4": "partly: single explorer persona at 4:25, thin analogy",
+  "5": "confirmed: character walk through the graph for 2.5 minutes before code (1:39-4:11)",
+  "6": "confirmed: hand traversal is the scratch pad; buggy first code (7:09)",
+  "7": "confirmed: viewer asked to spot the infinite loop (7:37) and recursion shape is noticed from examples (6:45)",
+  "8": "partly: speech flat; the hand-walk beats are long and many (3 min) vs code summary and applications compressed",
+  "9": "confirmed: two orderings, then iterative and recursive traces with same structure",
+  "10": "confirmed: 10-vertex walk, then 5-vertex for code",
+  "11": "confirmed: traversal, walk, recursion, marking, stack, post-order, applications",
+  "12": "partly: exam advice, flood fill-like mazes, topo sort tasks",
+  "13": "partly: expert O(V+E) and equivalence note; 12yo reachable via explorer"
+ },
+ "new_moves": [
+  {
+   "name": "invent-then-name",
+   "what": "Derive the algorithm by narration before the name is given, then state 'this is exactly DFS'",
+   "evidence": "1:25"
+  },
+  {
+   "name": "shrink-for-implementation",
+   "what": "Switch to a smaller graph when moving from concept to code to reduce moving parts",
+   "evidence": "6:30"
+  },
+  {
+   "name": "deliberate-bug-then-fix",
+   "what": "Show naive implementation, ask viewer to find flaw, then patch",
+   "evidence": "7:37-8:18"
+  },
+  {
+   "name": "leave-proof-to-viewer",
+   "what": "Hand over a why-question with a hint",
+   "evidence": "19:20"
+  }
+ ],
+ "theory": "The video teaches DFS as something the viewer could have invented: a long literal walk establishes the intuition, and only later does code appear as a transcription of that behaviour. The buggy first draft turns the visited array into a discovered fix rather than a given rule.",
+ "velocity": [
+  "Playbook: 'invent-then-name' for algorithms, with ghost hands tracing the walk and the name revealed only after the second repetition",
+  "Scene builder: auto-generate a small graph from a large one when the concept switches to code",
+  "Learner model: pause and ask the learner to predict the bug in a naive version before showing it",
+  "Evals: algorithm name should not appear before the first full literal walkthrough"
+ ],
+ "quote": [
+  "4:25",
+  "think of yourself as a bold and adventurous explorer"
+ ]
+}

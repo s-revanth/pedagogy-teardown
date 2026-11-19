@@ -1,0 +1,90 @@
+{
+ "id": "hup_8uDXJx8",
+ "channel": "Vsauce",
+ "title": "How Much Is A Bird in The Hand Worth?",
+ "duration_s": 355,
+ "upload_date": "20120328",
+ "targets": {
+  "wpm": {
+   "p25": 142.52,
+   "median": 147.12,
+   "p75": 151.12,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.78,
+   "median": 3.41,
+   "p75": 3.84,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.5,
+   "median": 1.08,
+   "p75": 1.26,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.41,
+   "median": 0.92,
+   "p75": 1.33,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 0.75,
+   "median": 1.26,
+   "p75": 2.25,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.09,
+   "median": 0.15,
+   "p75": 0.39,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.12,
+   "p75": 0.27,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.38,
+   "median": 0.54,
+   "p75": 0.75,
+   "n": 20
+  },
+  "sent_len": {
+   "p25": 12.1,
+   "median": 14.04,
+   "p75": 15.93,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "question or premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 870,
+ "exemplars": [
+  "deep/corpus/compact/Jf7Uo6nqaIg.txt",
+  "deep/corpus/compact/yBs5yrDyGqc.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

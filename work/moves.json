@@ -1,0 +1,174 @@
+{
+ "special-case-first": {
+  "videos": 12,
+  "beats": 39
+ },
+ "minimal-definition-then-refine": {
+  "videos": 12,
+  "beats": 38
+ },
+ "honest-caveat": {
+  "videos": 11,
+  "beats": 34
+ },
+ "act-it-out": {
+  "videos": 10,
+  "beats": 26
+ },
+ "visible-repetition": {
+  "videos": 10,
+  "beats": 22
+ },
+ "generalize-to-other-domains": {
+  "videos": 10,
+  "beats": 24
+ },
+ "callback-to-hook": {
+  "videos": 10,
+  "beats": 20
+ },
+ "misconception-first": {
+  "videos": 9,
+  "beats": 26
+ },
+ "hook-question": {
+  "videos": 9,
+  "beats": 18
+ },
+ "notation-after-concept": {
+  "videos": 9,
+  "beats": 17
+ },
+ "recap": {
+  "videos": 9,
+  "beats": 16
+ },
+ "hook-paradox": {
+  "videos": 9,
+  "beats": 21
+ },
+ "learner-discovers": {
+  "videos": 8,
+  "beats": 28
+ },
+ "teaser-next": {
+  "videos": 8,
+  "beats": 9
+ },
+ "brute-force-first": {
+  "videos": 7,
+  "beats": 12
+ },
+ "toy-world": {
+  "videos": 7,
+  "beats": 14
+ },
+ "analogy": {
+  "videos": 7,
+  "beats": 16
+ },
+ "roadmap": {
+  "videos": 6,
+  "beats": 6
+ },
+ "multiple-decompositions": {
+  "videos": 6,
+  "beats": 12
+ },
+ "notation-compaction": {
+  "videos": 6,
+  "beats": 7
+ },
+ "simulation-as-argument": {
+  "videos": 5,
+  "beats": 15
+ },
+ "design-it-yourself": {
+  "videos": 5,
+  "beats": 8
+ },
+ "new-interface": {
+  "videos": 5,
+  "beats": 6
+ },
+ "story": {
+  "videos": 5,
+  "beats": 28
+ },
+ "running-character": {
+  "videos": 4,
+  "beats": 14
+ },
+ "inline-quiz": {
+  "videos": 4,
+  "beats": 7
+ },
+ "approximation-gets-less-wrong": {
+  "videos": 3,
+  "beats": 6
+ },
+ "rule-list": {
+  "videos": 3,
+  "beats": 4
+ },
+ "humor": {
+  "videos": 3,
+  "beats": 17
+ },
+ "analogy-breakpoint": {
+  "videos": 3,
+  "beats": 5
+ },
+ "expert-dialogue": {
+  "videos": 2,
+  "beats": 3
+ },
+ "commit-to-answer": {
+  "videos": 2,
+  "beats": 2
+ },
+ "you-could-invent-it": {
+  "videos": 1,
+  "beats": 1
+ },
+ "concrete-symbol": {
+  "videos": 1,
+  "beats": 1
+ },
+ "meta-reflection": {
+  "videos": 1,
+  "beats": 2
+ },
+ "hopeful-hypothesis": {
+  "videos": 1,
+  "beats": 1
+ },
+ "second-person-role": {
+  "videos": 1,
+  "beats": 4
+ },
+ "data-chart": {
+  "videos": 1,
+  "beats": 1
+ },
+ "show-your-sources": {
+  "videos": 1,
+  "beats": 1
+ },
+ "build-and-verify": {
+  "videos": 1,
+  "beats": 7
+ },
+ "failure-shown": {
+  "videos": 1,
+  "beats": 4
+ },
+ "street-interview": {
+  "videos": 1,
+  "beats": 3
+ },
+ "bonus-fact": {
+  "videos": 1,
+  "beats": 1
+ }
+}

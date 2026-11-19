@@ -1,0 +1,79 @@
+{
+ "id": "JYBPXTful2g",
+ "channel": "SebastianLague",
+ "title": "Blender Character Creation: Texturing",
+ "duration_s": 952,
+ "upload_date": "20150106",
+ "targets": {
+  "wpm": {
+   "p25": 134.08,
+   "median": 154.75,
+   "p75": 158.69,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 0.37,
+   "median": 0.51,
+   "p75": 0.6,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.83,
+   "median": 1.12,
+   "p75": 1.43,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 3.86,
+   "median": 4.81,
+   "p75": 5.9,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.2,
+   "median": 1.45,
+   "p75": 1.81,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.18,
+   "median": 0.25,
+   "p75": 0.34,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.04,
+   "p75": 0.1,
+   "n": 20
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.0
+  },
+  "teaser": {
+   "rate": 0.65,
+   "default": "ON"
+  },
+  "roadmap": {
+   "rate": 0.35,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.02,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "story-anecdote",
+ "ending_default": "teaser-next",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/TPEmonfLo94.txt",
+  "deep/corpus/compact/Q9f-WVs3ghI.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

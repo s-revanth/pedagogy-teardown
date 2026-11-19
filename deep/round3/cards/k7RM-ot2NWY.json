@@ -1,0 +1,91 @@
+{
+ "id": "k7RM-ot2NWY",
+ "channel": "3blue1brown",
+ "title": "Linear combinations, span, and basis vectors | Chapter 2, Essence of linear algebra",
+ "duration_s": 599,
+ "upload_date": "20160806",
+ "targets": {
+  "wpm": {
+   "p25": 158.89,
+   "median": 166.11,
+   "p75": 171.67,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.82,
+   "median": 2.17,
+   "p75": 2.39,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.92,
+   "median": 1.15,
+   "p75": 1.44,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.59,
+   "median": 0.96,
+   "p75": 1.06,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 2.56,
+   "median": 3.48,
+   "p75": 3.96,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.14,
+   "median": 0.23,
+   "p75": 0.28,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.24,
+   "median": 0.31,
+   "p75": 0.42,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.14,
+   "median": 0.2,
+   "p75": 0.26,
+   "n": 16
+  },
+  "sent_len": {
+   "p25": 21.64,
+   "median": 22.58,
+   "p75": 24.25,
+   "n": 16
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.91
+  },
+  "teaser": {
+   "rate": 0.65,
+   "default": "ON"
+  },
+  "roadmap": {
+   "rate": 0.2,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.04,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "premise-claim",
+ "ending_default": "teaser-next",
+ "target_words": 1658,
+ "exemplars": [
+  "deep/corpus/compact/fNk_zzaMoSs.txt",
+  "deep/corpus/compact/P2LTAUO1TdA.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

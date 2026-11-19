@@ -1,0 +1,185 @@
+{
+ "id": "ajv46BSqcK4",
+ "channel": "Reducible",
+ "title": "A Strange But Elegant Approach to a Surprisingly Hard Problem (GJK Algorithm)",
+ "captions": "automatic",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "hook-question",
+   "Do two shapes intersect? Easy to see, hard for computers across circles, polygons, odd shapes"
+  ],
+  [
+   "0:42",
+   "H",
+   "roadmap|honest-caveat",
+   "Promise: roller coaster of shifts in perspective, not a straight line"
+  ],
+  [
+   "2:04",
+   "N",
+   "minimal-definition-then-refine",
+   "Convex vs concave; split concave into convex pieces (nine triangles)"
+  ],
+  [
+   "3:15",
+   "N",
+   "toy-world",
+   "Thought experiment: infinite point sets and a magic computer; intersection means a common point"
+  ],
+  [
+   "3:43",
+   "N",
+   "commit-to-answer",
+   "Common point iff difference of points is origin; Minkowski sum/difference defined"
+  ],
+  [
+   "5:09",
+   "N",
+   "rule-list",
+   "Two properties: difference of convex is convex; intersection means origin inside"
+  ],
+  [
+   "5:52",
+   "N",
+   "failure-shown",
+   "Full difference is infeasible; sample three points and get a triangle around origin"
+  ],
+  [
+   "7:30",
+   "I",
+   "notation-after-concept",
+   "Simplex as triangle in 2D, tetrahedron in 3D"
+  ],
+  [
+   "8:23",
+   "N",
+   "design-it-yourself",
+   "Need a scheme to choose points: detour to furthest point in a direction"
+  ],
+  [
+   "9:47",
+   "I",
+   "notation-after-concept",
+   "Support function; support of Minkowski difference = difference of support points"
+  ],
+  [
+   "10:57",
+   "N",
+   "generalize-to-other-domains",
+   "Support via dot product; polygon max over vertices, circle radius times direction; shape-agnostic"
+  ],
+  [
+   "13:00",
+   "N",
+   "roadmap",
+   "Two-pass plan: bird's-eye, then details"
+  ],
+  [
+   "13:29",
+   "N",
+   "act-it-out|visible-repetition",
+   "Bird's-eye run: direction, support point, toward origin, sanity check, normal direction; intersecting then non-intersecting case"
+  ],
+  [
+   "16:45",
+   "N",
+   "commit-to-answer",
+   "Pat on back; list the five open questions to answer one by one"
+  ],
+  [
+   "17:54",
+   "I",
+   "build-and-verify",
+   "Past-origin check is dot product with d; perpendicular via vector triple product"
+  ],
+  [
+   "20:39",
+   "N",
+   "inline-quiz",
+   "Voronoi regions; ask how many of the seven regions need checking"
+  ],
+  [
+   "22:29",
+   "N",
+   "learner-discovers",
+   "Eliminate five regions by reasoning about how point a was found; only two checks remain"
+  ],
+  [
+   "26:06",
+   "I",
+   "build-and-verify",
+   "Full implementation, line case and triangle case"
+  ],
+  [
+   "29:09",
+   "N",
+   "recap|callback-to-hook",
+   "Three shifts of perspective: infinite points, Minkowski difference, support functions"
+  ],
+  [
+   "31:00",
+   "N",
+   "humor",
+   "Original paper dense; tip hat; sign off"
+  ]
+ ],
+ "metrics": {
+  "first_question": "0:00",
+  "notation_first": "3:57",
+  "key_term": "Minkowski difference / support function",
+  "misconception": "partial: simple-shape solutions break on weird shapes (0:28)",
+  "brute_force": "partly 3:15: infinite-point thought experiment as a literal brute force, then fed by sampling three points at 6:07",
+  "examples": "2 shapes repeatedly reused; intersecting and non-intersecting runs; region cases drawn for abstract triangle",
+  "ending": "Recap of perspective shifts plus admiration"
+ },
+ "principles": {
+  "1": "confirmed: question 'do these shapes intersect' is visual (0:00)",
+  "2": "confirmed: terms Minkowski, simplex, support point each introduced just before use and defined minimally (4:11, 7:44, 9:47)",
+  "3": "not-observed",
+  "4": "partly: no analogy but the magic computer thought experiment (3:15) plays the rigour-ramp role",
+  "5": "partly: sample three points and subtract by hand (6:07)",
+  "6": "confirmed: infinite-points idea is naive form; computing three points by hand is the scratch pad",
+  "7": "confirmed: open questions list (17:14) and region elimination (22:01) invite thinking",
+  "8": "confirmed: speech flat; idea rate slows on dot-product and Voronoi bits with explicit 'take your time' (29:09)",
+  "9": "confirmed: intersecting and non-intersecting runs use same steps",
+  "10": "confirmed: points, triangle, regions, then code",
+  "11": "confirmed: convex, Minkowski, simplex, support function, then GJK, then each sub-question",
+  "12": "partly: Voronoi, 3b1b joke, paper citation, 3D extension",
+  "13": "confirmed: 'why this tool' explicit for support functions (30:05)"
+ },
+ "new_moves": [
+  {
+   "name": "two-pass-explanation",
+   "what": "Bird's-eye pass with intuition, then list the unanswered questions and resolve each, then code",
+   "evidence": "13:00 and 17:14-26:06"
+  },
+  {
+   "name": "perspective-shift-framing",
+   "what": "Count the reframings as the core insight and recap them at the end",
+   "evidence": "1:36, 29:24"
+  },
+  {
+   "name": "eliminate-by-history",
+   "what": "Quiz that is answered by reasoning about how the data got there",
+   "evidence": "21:49-25:54"
+  },
+  {
+   "name": "permission-to-be-overwhelmed",
+   "what": "Says it is a lot, take time, but the core idea is reasonable",
+   "evidence": "26:06, 29:09"
+  }
+ ],
+ "theory": "The video frames the algorithm as a sequence of reframings of the problem, each of which makes it easier, and teaches the high-level loop before the proofs of each step. Open questions are enumerated explicitly so the later detail has places to land.",
+ "velocity": [
+  "Orchestrator: for dense algorithms, run bird's-eye pass first, store open questions as learner-model slots and close each",
+  "Scene builder: keep same two shapes across all scenes, color-code the Minkowski difference",
+  "Voice: occasional explicit 'this is a lot, here is the one thing' regulator when idea rate spikes",
+  "Evals: check that a recap lists the reframings in order"
+ ],
+ "quote": [
+  "16:59",
+  "you're probably not satisfied and for good reason"
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "id": "mxhxL1LzKww",
+ "channel": "Vsauce",
+ "title": "How Much of the Earth Can You See at Once?",
+ "duration_s": 1591,
+ "upload_date": "20170717",
+ "targets": {
+  "wpm": {
+   "p25": 138.76,
+   "median": 148.97,
+   "p75": 151.73,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 2.13,
+   "median": 2.69,
+   "p75": 3.08,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 2.57,
+   "median": 3.08,
+   "p75": 4.01,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 1.38,
+   "median": 1.55,
+   "p75": 2.26,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.0,
+   "median": 1.59,
+   "p75": 2.08,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.2,
+   "median": 0.22,
+   "p75": 0.28,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.02,
+   "median": 0.05,
+   "p75": 0.07,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 1.13,
+   "median": 1.99,
+   "p75": 2.1,
+   "n": 9
+  },
+  "sent_len": {
+   "p25": 8.09,
+   "median": 8.39,
+   "p75": 10.33,
+   "n": 9
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.05,
+   "default": "OFF",
+   "position_median": 0.5
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "question or premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/J51ncHP_BrY.txt",
+  "deep/corpus/compact/Xc4xYacTu-E.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,91 @@
+{
+ "id": "lsbcN9-jU1Y",
+ "channel": "OverSimplified",
+ "title": "The Second Punic War - OverSimplified (Part 1)",
+ "duration_s": 1695,
+ "upload_date": "20240119",
+ "targets": {
+  "wpm": {
+   "p25": 185.96,
+   "median": 192.7,
+   "p75": 207.79,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 1.24,
+   "median": 1.43,
+   "p75": 1.73,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.82,
+   "median": 1.08,
+   "p75": 1.4,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.43,
+   "median": 0.58,
+   "p75": 0.69,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.09,
+   "median": 1.26,
+   "p75": 1.4,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.09,
+   "median": 0.15,
+   "p75": 0.19,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.03,
+   "p75": 0.05,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.68,
+   "median": 0.91,
+   "p75": 1.11,
+   "n": 18
+  },
+  "sent_len": {
+   "p25": 11.46,
+   "median": 12.3,
+   "p75": 12.92,
+   "n": 18
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.85,
+   "default": "ON",
+   "position_median": 0.0
+  },
+  "teaser": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "gag-skit",
+ "ending_default": "teaser-next",
+ "target_words": 2200,
+ "exemplars": [
+  "deep/corpus/compact/1BVJzaXv3rk.txt",
+  "deep/corpus/compact/QLq6GEiHqR8.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}

@@ -1,0 +1,185 @@
+{
+ "id": "EFUYNoFRHQI",
+ "channel": "Reducible",
+ "title": "How PNG Works: Compromising Speed for Quality",
+ "captions": "automatic",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "hook-question|roadmap",
+   "JPEG artifacts on text vs lossless PNG; promises QOI, a 50x faster format, at the end"
+  ],
+  [
+   "1:23",
+   "H",
+   "toy-world|design-it-yourself",
+   "You are asked to compress an RGB image to fewest bits, must be exactly reversible"
+  ],
+  [
+   "2:04",
+   "N",
+   "special-case-first|brute-force-first",
+   "Exploit redundancy via Huffman on a single channel, 4-value toy image; tree built by merging least frequent"
+  ],
+  [
+   "3:14",
+   "N",
+   "honest-caveat",
+   "1.89 vs 2 bits is misleading since the tree must be stored; PNG uses Huffman but later"
+  ],
+  [
+   "4:10",
+   "B",
+   "failure-shown",
+   "Huffman ignores neighbours; run-length encoding for repeats, then an image where it fails"
+  ],
+  [
+   "5:05",
+   "N",
+   "minimal-definition-then-refine",
+   "LZSS back references: text example, sliding window and lookahead defined"
+  ],
+  [
+   "6:44",
+   "N",
+   "visible-repetition|act-it-out",
+   "Step through the encoding char by char: literal, (offset,len) pairs, window slides"
+  ],
+  [
+   "9:03",
+   "I",
+   "build-and-verify",
+   "Decode the stream to show nothing is lost"
+  ],
+  [
+   "9:45",
+   "N",
+   "honest-caveat",
+   "Window size changes results; real values 32KB/258B; overlap matches (len>offset); min length 3"
+  ],
+  [
+   "12:03",
+   "N",
+   "humor|simulation-as-argument",
+   "Overlap trick yields run-length encoding for free"
+  ],
+  [
+   "13:13",
+   "B",
+   "failure-shown",
+   "Gradient image breaks both LZSS and Huffman: 'so depressing'"
+  ],
+  [
+   "13:41",
+   "N",
+   "commit-to-answer",
+   "Transform the problem instead of inventing a new method: filtering turns gradient into constant differences"
+  ],
+  [
+   "14:36",
+   "I",
+   "rule-list",
+   "Five PNG filters (none, sub, up, average, Paeth), mod 256 wraparound with 134-139=251"
+  ],
+  [
+   "17:47",
+   "N",
+   "approximation-gets-less-wrong",
+   "Brute-force filter choice is 5^240; heuristic min sum of abs differences instead"
+  ],
+  [
+   "20:19",
+   "N",
+   "honest-caveat",
+   "No proof this heuristic is best; nobody has beaten it"
+  ],
+  [
+   "21:00",
+   "N",
+   "recap",
+   "Full pipeline: filter, LZSS, Huffman = deflate"
+  ],
+  [
+   "22:37",
+   "B",
+   "callback-to-hook",
+   "PNG is complicated and slow; sets up QOI"
+  ],
+  [
+   "23:44",
+   "I",
+   "rule-list|you-could-invent-it",
+   "QOI: five byte-aligned rules (run, small diff, big diff, index of seen, raw) on 64-pixel toy image"
+  ],
+  [
+   "27:42",
+   "N",
+   "build-and-verify",
+   "50 bytes vs 192; 20-50x faster; one-page spec vs PNG monster; exercise to implement"
+  ],
+  [
+   "29:19",
+   "N",
+   "story|generalize-to-other-domains",
+   "Moral: simple solutions deserve respect; manage complexity"
+  ],
+  [
+   "30:29",
+   "N",
+   "admin",
+   "Brilliant sponsor"
+  ]
+ ],
+ "metrics": {
+  "first_question": "1:23",
+  "notation_first": "3:14",
+  "key_term": "lossless compression / redundancy",
+  "misconception": "partial: JPEG-quality assumption at hook; Huffman savings 'slightly misleading' at 3:28",
+  "brute_force": "yes 2:04: per-pixel Huffman first, then RLE, then LZSS, each shown to fail on some input",
+  "examples": "~6 toy images (4-value channel, text string with repeats, repeated-pair, gradient, 64-pixel QOI); grow tiny to realistic only at the end via benchmark",
+  "ending": "Philosophical moral about simplicity (QOI) plus sponsor read"
+ },
+ "principles": {
+  "1": "confirmed: starts from a bag of RGB pixels and 'redundancy' (1:38-2:04)",
+  "2": "partly: Huffman tree/LZSS terms defined just in time via example before names (6:02); filters delivered as a rule list at 14:36",
+  "3": "not-observed",
+  "4": "partly: no analogy; concept-first then rigor through toy data",
+  "5": "confirmed: LZSS and QOI are executed by hand on tiny inputs (6:44, 23:59)",
+  "6": "confirmed: Huffman, RLE, then LZSS each tried and broken before PNG's combination (2:04-13:41); 5^240 brute force named at 18:29",
+  "7": "partly: gradient failure at 13:27 creates the need, but presenter states the filter fix",
+  "8": "partly: speech flat; slows via many tiny worked beats in LZSS (6:44-9:30) and speeds through Huffman (assumed known, 2:18)",
+  "9": "confirmed: LZSS stepped repeatedly with a changing window; 5 filters share one template",
+  "10": "confirmed: single channel, 4 values, then 64 px",
+  "11": "confirmed: Huffman, RLE, LZSS, filtering, deflate; stepping stones invented (RLE as failure bridge)",
+  "12": "partly: ties to zip, JPEG, QOI inventor story (29:32)",
+  "13": "partly: expert depth (Paeth, mod 256) with 'why this tool' answered by failure cases"
+ },
+ "new_moves": [
+  {
+   "name": "break-the-toolkit",
+   "what": "After building two tools, present a trivial input that defeats both, then motivate a transform step",
+   "evidence": "13:13-13:55 gradient image"
+  },
+  {
+   "name": "reduce-to-solved-problem",
+   "what": "Explicitly name the choice: invent a new method or transform the problem to fit an existing one",
+   "evidence": "13:55"
+  },
+  {
+   "name": "exhaust-or-heuristic-justification",
+   "what": "Quantify brute force absurdity (5^240) then admit heuristic has no proof",
+   "evidence": "18:29-20:19"
+  }
+ ],
+ "theory": "The video builds a stack of tools by having each one visibly fail on a tiny input, so every new component is the answer to a failure the learner just saw. Honest caveats (misleading 1.89 bits, no proof for the heuristic) buy trust for the dense later material.",
+ "velocity": [
+  "Scene builder: for multi-stage pipelines generate a 'counterexample input' scene per stage that breaks the previous stage before introducing the next",
+  "Orchestrator: when playbook is 'stack of tools', insert a failure beat before each new tool and a callback in the final recap",
+  "Evals: check that every named technique is preceded by a shown failure or need within ~60 s"
+ ],
+ "quote": [
+  "13:41",
+  "we just spent all this time going through our two main weapons"
+ ]
+}

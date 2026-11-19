@@ -1,0 +1,133 @@
+{
+ "id": "YI3tsmFsrOg",
+ "channel": "kurzgesagt",
+ "title": "The Deadliest Being on Planet Earth - The Bacteriophage",
+ "captions": "manual",
+ "beats": [
+  [
+   "0:00",
+   "H",
+   "hook-paradox|story",
+   "War for billions of years, trillions killed daily; deadliest entity is the phage."
+  ],
+  [
+   "0:15",
+   "N",
+   "minimal-definition-then-refine",
+   "A phage is a virus, not quite alive; icosahedron head and tail described."
+  ],
+  [
+   "0:47",
+   "N",
+   "humor|analogy",
+   "More phages than everything else; billions on your hands; they only kill bacteria."
+  ],
+  [
+   "1:22",
+   "B",
+   "analogy",
+   "Phage as cruise missile hunting one family; host specificity."
+  ],
+  [
+   "1:37",
+   "N",
+   "act-it-out",
+   "Step by step infection: attach, syringe, inject, takeover, endolysin burst."
+  ],
+  [
+   "2:32",
+   "B",
+   "story|running-character",
+   "Humans as second deadliest; bacteria were our phages, antibiotics our weapon."
+  ],
+  [
+   "3:26",
+   "N",
+   "failure-shown",
+   "We lost respect, overuse, superbugs, 2050 projection."
+  ],
+  [
+   "4:01",
+   "N",
+   "misconception-first",
+   "Asks 'how could injecting viruses help?'; humans are immune."
+  ],
+  [
+   "4:34",
+   "B",
+   "analogy",
+   "Carpet bombing vs guided missiles."
+  ],
+  [
+   "4:54",
+   "N",
+   "misconception-first",
+   "Won't bacteria resist? Arms race; resisting phage costs antibiotic resistance."
+  ],
+  [
+   "5:30",
+   "N",
+   "story",
+   "Patient case, Pseudomonas cured after weeks."
+  ],
+  [
+   "6:13",
+   "N",
+   "honest-caveat|callback-to-hook",
+   "Still experimental; pharma reluctant; trial in 2016; deadliest being could save us."
+  ],
+  [
+   "6:52",
+   "N",
+   "admin",
+   "Gates Foundation credit and Patreon."
+  ]
+ ],
+ "metrics": {
+  "first_question": "4:17",
+  "notation_first": "none",
+  "key_term": "bacteriophage",
+  "misconception": "yes: injecting viruses is dangerous; bacteria will just resist, both addressed 4:17-5:30",
+  "brute_force": "no",
+  "examples": "1 mechanism walk-through, 1 case; analogies stack",
+  "ending": "Callback to hook 'deadliest being' with caveat, then credits"
+ },
+ "principles": {
+  "1": "confirmed: war, monsters, weapons framing, antibiotics known 2:48",
+  "2": "not-observed: only term 'endolysin' 2:14",
+  "3": "not-observed",
+  "4": "confirmed: cruise missile 1:37, carpet bombing vs guided missiles 4:34",
+  "5": "confirmed: infection narrated as sequence 1:37-2:14",
+  "6": "not-observed",
+  "7": "not-observed: single mechanism walkthrough",
+  "8": "partly: flat speech; slowdown by pausing for objections 4:17, 4:54",
+  "9": "partly: missile motif repeated 1:37, 4:34",
+  "10": "partly: one mechanism then a case, no growth",
+  "11": "confirmed: how phages work, then human problem, then solution 1:22-4:01",
+  "12": "partly: ties to antibiotic history and 2016 trial 6:13",
+  "13": "confirmed: second-deadliest humans framing 2:32 makes it accessible; weapons chosen with reason 4:34"
+ },
+ "new_moves": [
+  {
+   "name": "voiced-objection",
+   "what": "Narrator interrupts with the viewer's doubt ('Hold on...', 'Wait a minute') and answers it.",
+   "evidence": "4:17, 4:54"
+  },
+  {
+   "name": "war-metaphor-spine",
+   "what": "One metaphor (war, weapons, monsters) frames the whole video.",
+   "evidence": "0:00, 2:48, 4:34"
+  }
+ ],
+ "theory": "One sustained metaphor (war between predators and prey) carries every concept, so new facts slot into a story the learner already holds. The narrator voices the learner's objections at the exact moment they would arise, then answers them.",
+ "velocity": [
+  "Orchestrator: insert scripted 'wait, but...' objection beats at predicted confusion points.",
+  "Voice: keep one running metaphor across the session and reuse its vocabulary.",
+  "Scene builder: sequential infection animation with step labels.",
+  "Evals: check caveats about unfinished science are stated at the end."
+ ],
+ "quote": [
+  "4:34",
+  "Antibiotics are like carpet bombing; phages are guided missiles."
+ ]
+}

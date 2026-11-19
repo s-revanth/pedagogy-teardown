@@ -1,0 +1,90 @@
+{
+ "id": "-yrZpTHBEss",
+ "channel": "Vsauce",
+ "title": "What Color Is A Mirror?",
+ "duration_s": 301,
+ "upload_date": "20120803",
+ "targets": {
+  "wpm": {
+   "p25": 138.69,
+   "median": 145.81,
+   "p75": 153.51,
+   "n": 20
+  },
+  "you_rate": {
+   "p25": 2.01,
+   "median": 3.62,
+   "p75": 4.3,
+   "n": 20
+  },
+  "i_rate": {
+   "p25": 0.45,
+   "median": 0.65,
+   "p75": 0.97,
+   "n": 20
+  },
+  "we_rate": {
+   "p25": 0.83,
+   "median": 0.99,
+   "p75": 1.25,
+   "n": 20
+  },
+  "num_rate": {
+   "p25": 1.26,
+   "median": 1.76,
+   "p75": 2.11,
+   "n": 20
+  },
+  "hedge_rate": {
+   "p25": 0.12,
+   "median": 0.16,
+   "p75": 0.21,
+   "n": 20
+  },
+  "example_rate": {
+   "p25": 0.0,
+   "median": 0.12,
+   "p75": 0.27,
+   "n": 20
+  },
+  "q_rate": {
+   "p25": 0.42,
+   "median": 0.58,
+   "p75": 0.94,
+   "n": 19
+  },
+  "sent_len": {
+   "p25": 13.27,
+   "median": 13.71,
+   "p75": 15.14,
+   "n": 19
+  }
+ },
+ "switches": {
+  "sponsor": {
+   "rate": 0.0,
+   "default": "OFF"
+  },
+  "teaser": {
+   "rate": 0.1,
+   "default": "OFF"
+  },
+  "roadmap": {
+   "rate": 0.16,
+   "default": "OFF"
+  },
+  "recap": {
+   "rate": 0.0,
+   "default": "OFF"
+  }
+ },
+ "hook_default": "question or premise-claim",
+ "ending_default": "impact-coda",
+ "target_words": 731,
+ "exemplars": [
+  "deep/corpus/compact/zRP82omMX0g.txt",
+  "deep/corpus/compact/F981CD-8YEg.txt"
+ ],
+ "neighbours_used": 20,
+ "_how": "Built from the 20 training videos of this channel nearest by upload date + title words (selected by training LOO), never from the test video."
+}
